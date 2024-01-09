@@ -40,4 +40,7 @@ class Solution(object):
         #Loop throught the list as for loop iterates over the element of nums where i is the index and num is current element
         for i,num in enumerate(nums):
 
+            #Calculate the complement needed to reach target
+            num_to_reach_target = target-num
+
            
