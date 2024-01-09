@@ -33,4 +33,7 @@ class Solution(object):
     #method definition
     def twoSum(self, nums, target):
         
+        #empty dictionary to store indexes
+        indx_dict = {}
+
        
