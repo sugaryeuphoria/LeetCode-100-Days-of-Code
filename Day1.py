@@ -43,4 +43,8 @@ class Solution(object):
             #Calculate the complement needed to reach target
             num_to_reach_target = target-num
 
+            #Check if complement is already in indx_dict
+            if  num_to_reach_target in indx_dict:
+                return [indx_dict[ num_to_reach_target],i]
+
            
