@@ -46,5 +46,9 @@ class Solution(object):
             #Check if complement is already in indx_dict
             if  num_to_reach_target in indx_dict:
                 return [indx_dict[ num_to_reach_target],i]
+            
+             #if complement is not in dictionary it adds current num to its index place 
+            indx_dict[num]=i
+
 
            
