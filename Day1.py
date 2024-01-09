@@ -36,4 +36,8 @@ class Solution(object):
         #empty dictionary to store indexes
         indx_dict = {}
 
-       
+
+        #Loop throught the list as for loop iterates over the element of nums where i is the index and num is current element
+        for i,num in enumerate(nums):
+
+           
