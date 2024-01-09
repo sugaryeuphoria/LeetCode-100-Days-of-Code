@@ -30,4 +30,7 @@ Follow-up: Can you come up with an algorithm that is less than O(n2) time comple
 #Class definition
 class Solution(object):
 
-  
+    #method definition
+    def twoSum(self, nums, target):
+        
+        
