@@ -13,3 +13,7 @@ class Solution(object):
 
 # Example usage
 solution = Solution()
+result = solution.romanToInt("III")
+
+
+    
