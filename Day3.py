@@ -7,4 +7,6 @@ class Solution(object):
             if i < len(s) - 1 and roman_dictionary[s[i]] < roman_dictionary[s[i + 1]]:
                  result -= roman_dictionary[s[i]]
             else:
-              
+                result += roman_dictionary[s[i]]
+
+       
