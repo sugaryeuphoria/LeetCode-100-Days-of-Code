@@ -14,6 +14,6 @@ class Solution(object):
 # Example usage
 solution = Solution()
 result = solution.romanToInt("III")
-
+print(result)  # Output: 3
 
     
