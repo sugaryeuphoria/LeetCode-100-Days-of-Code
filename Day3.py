@@ -9,4 +9,7 @@ class Solution(object):
             else:
                 result += roman_dictionary[s[i]]
 
-       
+        return result
+
+
+    
