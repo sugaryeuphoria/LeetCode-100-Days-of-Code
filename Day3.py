@@ -11,5 +11,5 @@ class Solution(object):
 
         return result
 
-
-    
+# Example usage
+solution = Solution()
