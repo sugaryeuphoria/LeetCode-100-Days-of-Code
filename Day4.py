@@ -6,4 +6,7 @@ class Solution(object):
         if not strs:
             return ""
 
+        # Sort the list of strings lexicographically
+        strs.sort()
+
        
