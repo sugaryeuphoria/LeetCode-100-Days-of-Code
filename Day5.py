@@ -16,4 +16,6 @@ class Solution(object):
                 # Check if the popped element matches the corresponding open bracket
                 if bracket_mapping[char] != top_element:
                     return False
-          
+            else:
+                # If it's an open bracket, push it onto the stack
+                stack.append(char)
