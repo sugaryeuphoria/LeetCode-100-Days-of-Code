@@ -19,3 +19,7 @@ class Solution(object):
             else:
                 # If it's an open bracket, push it onto the stack
                 stack.append(char)
+
+        # The string is valid if the stack is empty at the end
+        return not stack
+
