@@ -10,4 +10,7 @@ class Solution(object):
         for char in s:
             # If the character is a closing bracket
             if char in bracket_mapping:
+                # Pop the top element from the stack if it's not empty, otherwise assign a dummy value
+                top_element = stack.pop() if stack else '#'
+
              
