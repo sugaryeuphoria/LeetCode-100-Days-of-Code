@@ -13,4 +13,7 @@ class Solution(object):
                 # Pop the top element from the stack if it's not empty, otherwise assign a dummy value
                 top_element = stack.pop() if stack else '#'
 
-             
+                # Check if the popped element matches the corresponding open bracket
+                if bracket_mapping[char] != top_element:
+                    return False
+          
