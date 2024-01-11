@@ -33,3 +33,8 @@ class Solution(object):
 # Create an instance of the Solution class
 solution = Solution()
 
+# Call the longestCommonPrefix method with the example input
+result = solution.longestCommonPrefix(["aaa", "aa", "aaa"])
+
+# Print the result
+print(result)
