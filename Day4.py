@@ -20,5 +20,6 @@ class Solution(object):
             # Check if the index is within the length of the last string
             # and if the characters at the current index are the same in both strings
             if i < len(last_str) and first_str[i] == last_str[i]:
-               
+                # Append the common character to the common_prefix list
+                common_prefix.append(first_str[i])
        
