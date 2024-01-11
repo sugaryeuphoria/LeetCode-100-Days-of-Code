@@ -22,4 +22,8 @@ class Solution(object):
             if i < len(last_str) and first_str[i] == last_str[i]:
                 # Append the common character to the common_prefix list
                 common_prefix.append(first_str[i])
-       
+            else:
+                # Break the loop if the characters are not the same
+                break
+
+    
