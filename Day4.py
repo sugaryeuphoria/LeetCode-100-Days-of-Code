@@ -9,7 +9,10 @@ class Solution(object):
         # Sort the list of strings lexicographically
         strs.sort()
 
- # Get the first and last strings after sorting
+        # Get the first and last strings after sorting
         first_str, last_str = strs[0], strs[-1]
 
-     
+        # Initialize an empty list to store the common prefix characters
+        common_prefix = []
+
+        
