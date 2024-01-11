@@ -17,5 +17,8 @@ class Solution(object):
 
         # Iterate through the characters of the first string
         for i in range(len(first_str)):
-           
+            # Check if the index is within the length of the last string
+            # and if the characters at the current index are the same in both strings
+            if i < len(last_str) and first_str[i] == last_str[i]:
+               
        
