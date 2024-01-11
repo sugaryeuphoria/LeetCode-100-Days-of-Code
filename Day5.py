@@ -23,3 +23,4 @@ class Solution(object):
         # The string is valid if the stack is empty at the end
         return not stack
 
+# Example usage:
