@@ -6,4 +6,6 @@ class Solution(object):
         #define a dictionary to store the mapping of brackets
         bracket_mapping = {')': '(', '}': '{', ']': '['}
 
-      
+      # Iterate through each character in the input string
+        for char in s:
+       
