@@ -24,3 +24,4 @@ class Solution(object):
         return not stack
 
 # Example usage:
+# Create an instance of the Solution class
