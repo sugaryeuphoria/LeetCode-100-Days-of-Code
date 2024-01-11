@@ -29,3 +29,7 @@ class Solution(object):
         # Join the characters in the common_prefix list to form the final result
         return "".join(common_prefix)
 
+# Example usage:
+# Create an instance of the Solution class
+solution = Solution()
+
