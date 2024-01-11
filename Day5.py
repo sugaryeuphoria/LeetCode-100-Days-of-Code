@@ -27,3 +27,6 @@ class Solution(object):
 # Create an instance of the Solution class
 solution = Solution()
 
+# Call the isValid method with the example input
+result = solution.isValid("()[]{}")
+
