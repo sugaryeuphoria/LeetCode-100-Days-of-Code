@@ -30,3 +30,5 @@ solution = Solution()
 # Call the isValid method with the example input
 result = solution.isValid("()[]{}")
 
+# Print the result
+print(result)  
