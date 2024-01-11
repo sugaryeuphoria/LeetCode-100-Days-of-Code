@@ -15,4 +15,7 @@ class Solution(object):
         # Initialize an empty list to store the common prefix characters
         common_prefix = []
 
-        
+        # Iterate through the characters of the first string
+        for i in range(len(first_str)):
+           
+       
