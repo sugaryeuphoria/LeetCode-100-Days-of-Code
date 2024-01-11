@@ -26,4 +26,6 @@ class Solution(object):
                 # Break the loop if the characters are not the same
                 break
 
-    
+        # Join the characters in the common_prefix list to form the final result
+        return "".join(common_prefix)
+
