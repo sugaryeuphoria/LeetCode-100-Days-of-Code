@@ -4,5 +4,6 @@ class Solution(object):
     def longestCommonPrefix(self, strs):
         # Check if the list of strings is empty
         if not strs:
-          
-    
+            return ""
+
+       
