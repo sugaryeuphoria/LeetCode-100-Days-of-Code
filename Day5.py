@@ -25,3 +25,5 @@ class Solution(object):
 
 # Example usage:
 # Create an instance of the Solution class
+solution = Solution()
+
