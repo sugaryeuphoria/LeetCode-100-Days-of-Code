@@ -21,5 +21,6 @@ class Solution(object):
         while list1 and list2:
             # Compare values of the current nodes in list1 and list2
             if list1.val < list2.val:
-              
+                current.next = list1
+             
        
