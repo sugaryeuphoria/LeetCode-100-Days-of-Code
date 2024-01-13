@@ -11,4 +11,7 @@ class Solution(object):
         # Check if either list is empty
         if not list1:
             return list2
+        if not list2:
+            return list1
+        
        
