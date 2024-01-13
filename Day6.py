@@ -26,6 +26,8 @@ class Solution(object):
             else:
                 current.next = list2
                 list2 = list2.next
-           
+             # Move the current pointer to the next node
+            current = current.next
+
        
             
