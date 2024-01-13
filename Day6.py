@@ -22,5 +22,5 @@ class Solution(object):
             # Compare values of the current nodes in list1 and list2
             if list1.val < list2.val:
                 current.next = list1
-             
-       
+                list1 = list1.next
+            
