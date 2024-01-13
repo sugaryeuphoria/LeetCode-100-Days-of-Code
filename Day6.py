@@ -31,5 +31,7 @@ class Solution(object):
 
         # Append the remaining nodes from the non-empty list
         if list1:
-        
+            current.next = list1
+       
+       
             
