@@ -8,4 +8,7 @@ class ListNode(object):
 
 class Solution(object):
     def mergeTwoLists(self, list1, list2):
+        # Check if either list is empty
+        if not list1:
+            return list2
        
