@@ -17,6 +17,9 @@ class Solution(object):
         # Initialize a dummy node to start the merged list
         merged_head = ListNode()
         current = merged_head
- # Iterate until either list1 or list2 becomes empty
+        # Iterate until either list1 or list2 becomes empty
         while list1 and list2:
-        
+            # Compare values of the current nodes in list1 and list2
+            if list1.val < list2.val:
+              
+       
