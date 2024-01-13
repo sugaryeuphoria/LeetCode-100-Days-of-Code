@@ -14,4 +14,6 @@ class Solution(object):
         if not list2:
             return list1
         
+        # Initialize a dummy node to start the merged list
+        merged_head = ListNode()
        
