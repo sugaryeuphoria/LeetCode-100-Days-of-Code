@@ -17,5 +17,6 @@ class Solution(object):
         # Initialize a dummy node to start the merged list
         merged_head = ListNode()
         current = merged_head
-
-       
+ # Iterate until either list1 or list2 becomes empty
+        while list1 and list2:
+        
