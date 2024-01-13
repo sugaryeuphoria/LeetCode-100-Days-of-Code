@@ -35,5 +35,7 @@ class Solution(object):
         elif list2:
             current.next = list2
 
-      
+        # Return the head of the merged list
+        return merged_head.next   
+       
             
