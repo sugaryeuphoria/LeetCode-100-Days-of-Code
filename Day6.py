@@ -16,4 +16,6 @@ class Solution(object):
         
         # Initialize a dummy node to start the merged list
         merged_head = ListNode()
+        current = merged_head
+
        
