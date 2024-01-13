@@ -29,5 +29,7 @@ class Solution(object):
              # Move the current pointer to the next node
             current = current.next
 
-       
+        # Append the remaining nodes from the non-empty list
+        if list1:
+        
             
