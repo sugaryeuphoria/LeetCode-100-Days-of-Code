@@ -9,7 +9,8 @@ class Solution(object):
         # Initialize the unique element count
         unique_count = 1
         
-        # Iterate through the list starting from the second element
+        # Iteration through List: for i in range(1, len(nums)): -
+        
         for i in range(1, len(nums)):
             # Compare the current element with the previous one
             if nums[i] != nums[i - 1]:
