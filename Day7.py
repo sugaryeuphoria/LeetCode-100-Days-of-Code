@@ -6,7 +6,8 @@ class Solution(object):
         if not nums:
             return 0
         
-        # Initialize the unique element count
+        # Check for Empty List: if not nums: - This checks if the list nums is empty.
+        # If it is, the function returns 0 because there are no duplicates to remove in an empty list.
         unique_count = 1
         
         # Iteration through List: for i in range(1, len(nums)): -
