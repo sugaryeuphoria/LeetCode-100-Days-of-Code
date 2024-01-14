@@ -10,7 +10,8 @@ class Solution(object):
         unique_count = 1
         
         # Iteration through List: for i in range(1, len(nums)): -
-        
+        # This loop iterates through the list, starting from the second element (index 1) 
+        # because the uniqueness of the first element is already known.
         for i in range(1, len(nums)):
             # Compare the current element with the previous one
             if nums[i] != nums[i - 1]:
