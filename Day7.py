@@ -6,4 +6,7 @@ class Solution(object):
         if not nums:
             return 0
         
-       
+        # Initialize the unique element count
+        unique_count = 1
+        
+      
