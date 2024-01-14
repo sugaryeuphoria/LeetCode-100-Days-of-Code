@@ -15,4 +15,7 @@ class Solution(object):
             if nums[i] != nums[i - 1]:
                 # If they are different, increment the unique count
                 unique_count += 1
-               
+                # Update the current position with the unique element
+                nums[unique_count - 1] = nums[i]
+        
+   
