@@ -18,4 +18,5 @@ class Solution(object):
                 # Update the current position with the unique element
                 nums[unique_count - 1] = nums[i]
         
-   
+        # Return the count of unique elements
+        return unique_count
