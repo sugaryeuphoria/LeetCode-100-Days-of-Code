@@ -20,5 +20,6 @@ class Solution(object):
                 # Update the current position with the unique element
                 nums[unique_count - 1] = nums[i]
         
-        # Return the count of unique elements
+        # Return Unique Count: return unique_count - Finally, the function returns
+        # the count of unique elements after processing the entire list.
         return unique_count
