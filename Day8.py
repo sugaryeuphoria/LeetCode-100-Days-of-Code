@@ -13,4 +13,5 @@ class Solution(object):
         for i in range(len(nums)):
             # Check if the current element is not equal to val
             if nums[i] != val:
-               
+                # Update the non-val element at the pointer position
+                
