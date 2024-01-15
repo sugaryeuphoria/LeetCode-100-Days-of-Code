@@ -11,4 +11,6 @@ class Solution(object):
 
         # Iterate through the list
         for i in range(len(nums)):
-         
+            # Check if the current element is not equal to val
+            if nums[i] != val:
+               
