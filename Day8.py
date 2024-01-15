@@ -6,4 +6,6 @@ class Solution(object):
         if not nums:
             return 0  # If empty, no elements to remove, return 0
 
-    
+        # Initialize a pointer for non-val elements
+        non_val_pointer = 0
+
