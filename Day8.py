@@ -9,3 +9,6 @@ class Solution(object):
         # Initialize a pointer for non-val elements
         non_val_pointer = 0
 
+        # Iterate through the list
+        for i in range(len(nums)):
+         
