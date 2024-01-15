@@ -15,4 +15,5 @@ class Solution(object):
             if nums[i] != val:
                 # Update the non-val element at the pointer position
                 nums[non_val_pointer] = nums[i]
-               
+                # Move the pointer to the next position
+             
