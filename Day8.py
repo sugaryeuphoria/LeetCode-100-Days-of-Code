@@ -19,4 +19,4 @@ class Solution(object):
                 non_val_pointer += 1
 
         # Return the count of non-val elements
-      
+        return non_val_pointer
