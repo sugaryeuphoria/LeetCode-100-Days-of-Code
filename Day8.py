@@ -17,3 +17,6 @@ class Solution(object):
                 nums[non_val_pointer] = nums[i]
                 # Move the pointer to the next position
                 non_val_pointer += 1
+
+        # Return the count of non-val elements
+      
