@@ -11,5 +11,7 @@ class Solution(object):
         if not needle:
             return 0
 
-       
+      # Iterate through the haystack
+        for i in range(len(haystack) - len(needle) + 1):
+      
  
