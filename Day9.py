@@ -7,4 +7,6 @@ class Solution(object):
         :type needle: str
         :rtype: int
         """
-       
+       # Check if needle is an empty string
+        if not needle:
+        
