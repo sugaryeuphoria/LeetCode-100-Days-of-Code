@@ -14,4 +14,5 @@ class Solution(object):
       # Iterate through the haystack
         for i in range(len(haystack) - len(needle) + 1):
             # Check if the substring matches needle
-           
+            if haystack[i:i+len(needle)] == needle:
+              
