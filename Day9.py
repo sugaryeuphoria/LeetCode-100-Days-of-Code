@@ -9,4 +9,7 @@ class Solution(object):
         """
        # Check if needle is an empty string
         if not needle:
-        
+            return 0
+
+       
+ 
