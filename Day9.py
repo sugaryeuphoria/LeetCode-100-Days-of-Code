@@ -16,4 +16,7 @@ class Solution(object):
             # Check if the substring matches needle
             if haystack[i:i+len(needle)] == needle:
                 return i
-      
+        
+        # Return -1 if needle is not found
+       
+ 
