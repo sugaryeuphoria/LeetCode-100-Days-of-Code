@@ -18,5 +18,4 @@ class Solution(object):
                 return i
         
         # Return -1 if needle is not found
-       
- 
+        return -1
