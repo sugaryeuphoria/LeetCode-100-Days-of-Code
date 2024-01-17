@@ -56,4 +56,6 @@ Since 4193 is in the range [-231, 231 - 1], the final result is 4193.'''
 
 #Class definition
 class Solution(object):
+    #Method declaration
+    def myAtoi(self, s):
    
