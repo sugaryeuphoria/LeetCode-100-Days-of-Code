@@ -83,3 +83,6 @@ class Solution(object):
     # Update the result
             result = result * 10 + digit
             i += 1
+
+      # Apply sign to the result
+        return result * sign
