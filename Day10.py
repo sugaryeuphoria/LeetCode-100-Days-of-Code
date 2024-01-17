@@ -71,3 +71,8 @@ class Solution(object):
         if i < len(s) and (s[i] == '+' or s[i] == '-'):
             sign = -1 if s[i] == '-' else 1
             i += 1
+
+              # Read digits until a non-digit character is encountered
+        while i < len(s) and s[i].isdigit():
+            digit = int(s[i])
+            
