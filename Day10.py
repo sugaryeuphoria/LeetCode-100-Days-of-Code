@@ -67,3 +67,7 @@ class Solution(object):
         while i < len(s) and s[i] == ' ':
             i += 1
         
+         # Check for sign
+        if i < len(s) and (s[i] == '+' or s[i] == '-'):
+            sign = -1 if s[i] == '-' else 1
+            i += 1
