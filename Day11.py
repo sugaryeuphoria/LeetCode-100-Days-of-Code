@@ -33,4 +33,4 @@ class Solution(object):
 
          # Binary search algorithm
         while low <= high:
-            mid = (low + high) // 2
+            mid = (low + high) //2
