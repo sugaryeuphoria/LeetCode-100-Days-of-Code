@@ -79,3 +79,7 @@ class Solution(object):
      # Check for overflow
             if result > (2**31 - 1) // 10 or (result == (2**31 - 1) // 10 and digit > 7):
                 return (2**31 - 1) if sign == 1 else -2**31
+
+    # Update the result
+            result = result * 10 + digit
+            i += 1
