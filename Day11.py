@@ -38,4 +38,9 @@ class Solution(object):
         # Check if target is at mid position
         if nums[mid] == target:
             return mid
-            
+        
+         # Adjust search space based on target and nums[mid]
+            if target < nums[mid]:
+                high = mid - 1
+            else:
+                low = mid + 1
