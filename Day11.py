@@ -34,3 +34,8 @@ class Solution(object):
          # Binary search algorithm
         while low <= high:
             mid = (low + high) //2
+
+        # Check if target is at mid position
+        if nums[mid] == target:
+            return mid
+            
