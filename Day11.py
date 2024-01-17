@@ -26,4 +26,11 @@ nums contains distinct values sorted in ascending order.
 -104 <= target <= 104"""
 #Class definiton
 class Solution(object):
-   
+    def searchInsert(self, nums, target):
+    
+        # Initialize variables
+        low, high = 0, len(nums) - 1
+
+         # Binary search algorithm
+        while low <= high:
+            mid = (low + high) // 2
