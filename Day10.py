@@ -67,12 +67,15 @@ class Solution(object):
         while i < len(s) and s[i] == ' ':
             i += 1
         
-         # Check for sign
+    # Check for sign
         if i < len(s) and (s[i] == '+' or s[i] == '-'):
             sign = -1 if s[i] == '-' else 1
-            i += 1
+            i += 1     
 
-              # Read digits until a non-digit character is encountered
+    # Read digits until a non-digit character is encountered
         while i < len(s) and s[i].isdigit():
             digit = int(s[i])
             
+     # Check for overflow
+            if result > (2**31 - 1) // 10 or (result == (2**31 - 1) // 10 and digit > 7):
+                return (2**31 - 1) if sign == 1 else -2**31
