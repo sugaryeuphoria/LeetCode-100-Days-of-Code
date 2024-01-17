@@ -63,4 +63,7 @@ class Solution(object):
         result = 0
         sign = 1
         i = 0
-   
+    # Remove leading whitespace
+        while i < len(s) and s[i] == ' ':
+            i += 1
+        
