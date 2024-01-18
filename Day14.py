@@ -35,7 +35,7 @@ class Solution(object):
             j -= 1
 
         # If there is a carry after iterating through all bits, prepend it to the result
-        if carry > 0:
-            result = str(carry) + result
+            if carry > 0:
+                result = str(carry) + result
 
-        return result
+            return result
