@@ -9,4 +9,6 @@ Output: "100"
 """
 class Solution(object):
     def addBinary(self, a, b):
-       
+        # Initialize variables to store the result and carry
+        result = ""
+        carry = 0
