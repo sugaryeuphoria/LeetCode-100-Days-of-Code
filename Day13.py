@@ -12,3 +12,5 @@ class Solution(object):
              # Check for carry
             if digits[i] < 10:
                 return digits
+            # If there is a carry, set the current digit to 0
+            digits[i] = 0
