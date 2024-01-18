@@ -7,4 +7,6 @@ class Solution(object):
     def plusOne(self, digits):
         # Iterate through the digits from right to left
         for i in range(len(digits) - 1, -1, -1):
-          
+           # Increment the current digit
+            digits[i] += 1
+            
