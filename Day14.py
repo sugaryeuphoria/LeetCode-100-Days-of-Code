@@ -22,4 +22,20 @@ class Solution(object):
             bit_a = int(a[i]) if i >= 0 else 0
             bit_b = int(b[j]) if j >= 0 else 0
 
-          
+            # Calculate the sum and carry
+            current_sum = bit_a + bit_b + carry
+            carry = current_sum // 2
+            current_sum %= 2
+
+            # Prepend the current sum to the result
+            result = str(current_sum) + result
+
+            # Move to the next bit in each binary string
+            i -= 1
+            j -= 1
+
+        # If there is a carry after iterating through all bits, prepend it to the result
+        if carry > 0:
+            result = str(carry) + result
+
+        return result
