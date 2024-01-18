@@ -12,3 +12,8 @@ class Solution(object):
         # Initialize variables to store the result and carry
         result = ""
         carry = 0
+
+        # Iterate through the binary strings from right to left
+        i, j = len(a) - 1, len(b) - 1
+
+      
