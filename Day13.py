@@ -5,4 +5,6 @@ Increment the large integer by one and return the resulting array of digits."""
 class Solution(object):
     #Method definition
     def plusOne(self, digits):
-       
+        # Iterate through the digits from right to left
+        for i in range(len(digits) - 1, -1, -1):
+          
