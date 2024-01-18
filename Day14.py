@@ -16,4 +16,10 @@ class Solution(object):
         # Iterate through the binary strings from right to left
         i, j = len(a) - 1, len(b) - 1
 
-      
+        # Continue until both binary strings are exhausted
+        while i >= 0 or j >= 0:
+            # Get the current bits from each binary string, default to 0 if exhausted
+            bit_a = int(a[i]) if i >= 0 else 0
+            bit_b = int(b[j]) if j >= 0 else 0
+
+          
