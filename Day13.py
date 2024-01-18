@@ -14,3 +14,8 @@ class Solution(object):
                 return digits
             # If there is a carry, set the current digit to 0
             digits[i] = 0
+
+            # If there is a carry after iterating through all digits, insert 1 at the beginning
+            digits.insert(0, 1)
+        
+            return digits
