@@ -17,5 +17,8 @@ class Solution(object):
                 return mid
             elif mid_squared < x:
                 left = mid + 1
-           
+            else:
+                right = mid - 1
+
+       
       
