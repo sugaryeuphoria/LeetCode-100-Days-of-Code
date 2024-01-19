@@ -15,5 +15,7 @@ class Solution(object):
             # Check if mid is the square root
             if mid_squared == x:
                 return mid
+            elif mid_squared < x:
+                left = mid + 1
            
       
