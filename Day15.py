@@ -1,12 +1,14 @@
-#Class definition
 class Solution(object):
-    #Method definition
     def mySqrt(self, x):
-    
+        """
+        :type x: int
+        :rtype: int
+        """
         # Handle base case
         if x == 0 or x == 1:
             return x
-  # Binary search for the square root
+
+        # Binary search for the square root
         left, right = 0, x
         while left <= right:
             mid = (left + right) // 2
@@ -20,6 +22,5 @@ class Solution(object):
             else:
                 right = mid - 1
 
-       
-       # Return the floor value of the square root
+        # Return the floor value of the square root
         return right
