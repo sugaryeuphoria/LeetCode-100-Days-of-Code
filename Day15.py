@@ -21,4 +21,5 @@ class Solution(object):
                 right = mid - 1
 
        
-      
+       # Return the floor value of the square root
+        return right
