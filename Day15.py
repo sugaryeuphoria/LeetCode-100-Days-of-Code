@@ -10,4 +10,6 @@ class Solution(object):
         left, right = 0, x
         while left <= right:
             mid = (left + right) // 2
-           
+            mid_squared = mid * mid
+
+          
