@@ -12,3 +12,5 @@ class Solution(object):
         while current and current.next:
             # Check if the current node's value is equal to the next node's value
             if current.val == current.next.val:
+                  # Skip the next node by updating the pointers
+                current.next = current.next.next
