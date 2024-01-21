@@ -10,4 +10,6 @@ class Solution(object):
         
         # Initialize variables for the two previous steps
         prev1 = 1
-       
+        prev2 = 2
+        
+     
