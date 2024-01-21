@@ -17,3 +17,5 @@ class Solution(object):
             else:
                 # Move to the next node
                 current = current.next
+            # The linked list with duplicates removed is the modified head
+            return head
