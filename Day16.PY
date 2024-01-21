@@ -16,4 +16,6 @@ class Solution(object):
         for i in range(3, n + 1):
             # Calculate the current step by summing the previous two steps
             current = prev1 + prev2
-            
+             # Update the previous steps for the next iteration
+            prev1 = prev2
+         
