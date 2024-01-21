@@ -12,4 +12,6 @@ class Solution(object):
         prev1 = 1
         prev2 = 2
         
-     
+     # Iterate from the third step to the nth step
+        for i in range(3, n + 1):
+          
