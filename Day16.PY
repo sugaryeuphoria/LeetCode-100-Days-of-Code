@@ -14,4 +14,6 @@ class Solution(object):
         
      # Iterate from the third step to the nth step
         for i in range(3, n + 1):
-          
+            # Calculate the current step by summing the previous two steps
+            current = prev1 + prev2
+            
