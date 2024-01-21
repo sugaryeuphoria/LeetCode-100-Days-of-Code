@@ -5,4 +5,5 @@ class Solution(object):
          # Base cases for n = 1 and n = 2
         if n == 1:
             return 1
-      
+        if n == 2:
+         
