@@ -14,3 +14,6 @@ class Solution(object):
             if current.val == current.next.val:
                   # Skip the next node by updating the pointers
                 current.next = current.next.next
+                else:
+                # Move to the next node
+                current = current.next
