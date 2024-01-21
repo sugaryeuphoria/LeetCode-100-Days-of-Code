@@ -8,3 +8,5 @@ class Solution(object):
             return head
          # Start from the head of the linked list
         current = head
+          # Traverse the linked list
+        while current and current.next:
