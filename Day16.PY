@@ -4,4 +4,5 @@ class Solution(object):
     def climbStairs(self, n):
          # Base cases for n = 1 and n = 2
         if n == 1:
-        
+            return 1
+      
