@@ -19,3 +19,5 @@ class Solution(object):
              # Update the previous steps for the next iteration
             prev1 = prev2
             prev2 = current
+             # The final result is the number of distinct ways to reach the top
+        return prev2
