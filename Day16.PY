@@ -6,4 +6,8 @@ class Solution(object):
         if n == 1:
             return 1
         if n == 2:
-         
+            return 2
+        
+        # Initialize variables for the two previous steps
+        prev1 = 1
+       
