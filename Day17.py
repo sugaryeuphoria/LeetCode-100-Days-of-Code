@@ -6,7 +6,7 @@ class Solution(object):
         # Check if the linked list is empty or has only one node
         if not head or not head.next:
             return head
-         # Start from the head of the linked list
+        # Start from the head of the linked list
         current = head
         # Traverse the linked list
         while current and current.next:
