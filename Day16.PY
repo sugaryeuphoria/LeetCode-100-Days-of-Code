@@ -5,7 +5,7 @@ Each time you can either climb 1 or 2 steps. In how many distinct ways can you c
 class Solution(object):
     #Method definition
     def climbStairs(self, n):
-         # Base cases for n = 1 and n = 2
+        # Base cases for n = 1 and n = 2
         if n == 1:
             return 1
         if n == 2:
