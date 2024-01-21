@@ -18,4 +18,4 @@ class Solution(object):
             current = prev1 + prev2
              # Update the previous steps for the next iteration
             prev1 = prev2
-         
+            prev2 = current
