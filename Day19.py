@@ -16,4 +16,7 @@ class Solution(object):
         
         # Helper function for recursive traversal
         def traverse(node):
-           
+            # Base case: if the node is None, return
+            if not node:
+                return
+            
