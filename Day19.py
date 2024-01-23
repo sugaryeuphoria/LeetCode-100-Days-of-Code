@@ -29,4 +29,7 @@ class Solution(object):
             # Traverse the right subtree
             traverse(node.right)
         
-      
+        # Start the traversal from the root
+        traverse(root)
+        
+     
