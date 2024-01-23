@@ -9,3 +9,6 @@ class Solution(object):
 
         # Initialize pointer for the end of nums1
         k = m + n - 1
+
+         # Merge from the end to the beginning
+        while i >= 0 and j >= 0:
