@@ -14,4 +14,6 @@ class Solution(object):
         # Initialize the result list
         result = []
         
-       
+        # Helper function for recursive traversal
+        def traverse(node):
+           
