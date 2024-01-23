@@ -1,3 +1,4 @@
+""" Merge sorted array"""
 #Class Declaration
 class Solution(object):
     #Method Declaration
