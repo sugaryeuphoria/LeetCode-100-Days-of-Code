@@ -6,3 +6,6 @@ class Solution(object):
         # Initialize pointers for nums1 and nums2
         i = m - 1
         j = n - 1
+
+        # Initialize pointer for the end of nums1
+        k = m + n - 1
