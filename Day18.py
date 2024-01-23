@@ -10,5 +10,9 @@ class Solution(object):
         # Initialize pointer for the end of nums1
         k = m + n - 1
 
-         # Merge from the end to the beginning
+        # Merge from the end to the beginning
         while i >= 0 and j >= 0:
+             # Compare elements from both arrays and place the larger one at the end of nums1
+            if nums1[i] > nums2[j]:
+                nums1[k] = nums1[i]
+                i -= 1
