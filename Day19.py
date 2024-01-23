@@ -12,4 +12,6 @@ class Solution(object):
         :rtype: List[int]
         """
         # Initialize the result list
+        result = []
+        
        
