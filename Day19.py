@@ -23,4 +23,7 @@ class Solution(object):
             # Traverse the left subtree
             traverse(node.left)
             
+            # Visit the current node (append its value to the result list)
+            result.append(node.val)
             
+          
