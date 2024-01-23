@@ -21,3 +21,4 @@ class Solution(object):
                 j -= 1
             k -= 1
              # If there are remaining elements in nums2, copy them to nums1
+             while j >= 0:
