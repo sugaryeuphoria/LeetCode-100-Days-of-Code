@@ -26,4 +26,7 @@ class Solution(object):
             # Visit the current node (append its value to the result list)
             result.append(node.val)
             
-          
+            # Traverse the right subtree
+            traverse(node.right)
+        
+      
