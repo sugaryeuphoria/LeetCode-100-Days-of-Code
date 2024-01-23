@@ -5,3 +5,5 @@
 #         self.left = left
 #         self.right = right
 
+class Solution(object):
+   
