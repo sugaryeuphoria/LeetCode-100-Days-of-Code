@@ -32,4 +32,5 @@ class Solution(object):
         # Start the traversal from the root
         traverse(root)
         
-     
+        # Return the final result
+        return result 
