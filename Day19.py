@@ -6,6 +6,7 @@
 #         self.right = right
 #Class definiton
 class Solution(object):
+    #Method definiton
     def inorderTraversal(self, root):
         """
         :type root: TreeNode
