@@ -19,7 +19,7 @@ class Solution(object):
             else:
                 nums1[k] = nums2[j]
                 j -= 1
-            k -= 1
+                k -= 1
             # If there are remaining elements in nums2, copy them to nums1
             while j >= 0:
                 nums1[k] = nums2[j]
