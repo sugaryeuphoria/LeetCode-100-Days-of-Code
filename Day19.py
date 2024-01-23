@@ -19,4 +19,8 @@ class Solution(object):
             # Base case: if the node is None, return
             if not node:
                 return
+         
+            # Traverse the left subtree
+            traverse(node.left)
+            
             
