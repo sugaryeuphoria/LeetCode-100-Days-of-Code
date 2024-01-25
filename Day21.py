@@ -35,3 +35,6 @@ node2a.left = node3a
 node2a.right = node4a
 node2b.left = node4b
 node2b.right = node3b
+
+# Create Solution object
+solution = Solution()
