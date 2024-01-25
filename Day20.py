@@ -27,3 +27,4 @@ class Solution:
         # Check left and right branches only if not both nodes are None
         return self.isSameTree(p.left, q.left) and self.isSameTree(p.right, q.right)
 
+# Example usage:
