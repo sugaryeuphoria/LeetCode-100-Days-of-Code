@@ -22,4 +22,7 @@ class Solution(object):
             # Update longest_palindrome if a longer palindrome is found
             if len_odd > len(longest_palindrome):
                 longest_palindrome = palindrome_odd
+            # Check for even-length palindromes with centers at i and i+1
+            palindrome_even = expand_around_center(i, i + 1)
+            len_even = len(palindrome_even)
       
