@@ -40,3 +40,9 @@ tree2 = TreeNode.create(1, node2, node3)
 # Create Solution object
 solution = Solution()
 
+# Check if trees are the same
+result = solution.isSameTree(tree1, tree2)
+print(result)  # Output: True
+  
+     
+     
