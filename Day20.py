@@ -30,5 +30,6 @@ class Solution:
 # Example usage:
 # Create tree nodes using the class method
 node1 = TreeNode.create(1)
+node2 = TreeNode.create(2)
 
      
