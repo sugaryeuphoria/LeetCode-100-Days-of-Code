@@ -38,3 +38,7 @@ node2b.right = node3b
 
 # Create Solution object
 solution = Solution()
+
+# Check if the tree is symmetric
+result = solution.isSymmetric(node1)
+print(result)  # Output: True
