@@ -35,6 +35,8 @@ node3 = TreeNode.create(3)
 
 # Build trees
 tree1 = TreeNode.create(1, node2, node3)
+tree2 = TreeNode.create(1, node2, node3)
 
-     
-     
+# Create Solution object
+solution = Solution()
+
