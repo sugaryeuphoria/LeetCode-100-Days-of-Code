@@ -12,3 +12,6 @@ class Solution(object):
                 return False
              # Check if the values are the same and their subtrees are mirrors
             return (left.val == right.val) and isMirror(left.left, right.right) and isMirror(left.right, right.left)
+         # If the tree is empty, it is symmetric
+        if not root:
+            return True
