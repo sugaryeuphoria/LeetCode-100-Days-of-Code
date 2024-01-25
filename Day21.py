@@ -17,3 +17,13 @@ class Solution(object):
             return True
          # Check if the left and right subtrees are mirrors
         return isMirror(root.left, root.right)
+    
+    # Example usage:
+# Create tree nodes
+node1 = TreeNode(1)
+node2a = TreeNode(2)
+node2b = TreeNode(2)
+node3a = TreeNode(3)
+node3b = TreeNode(3)
+node4a = TreeNode(4)
+node4b = TreeNode(4)
