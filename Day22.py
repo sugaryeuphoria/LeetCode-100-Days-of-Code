@@ -15,4 +15,7 @@ class Solution(object):
         longest_palindrome = ""
          # Iterate through each character in the string
         for i in range(len(s)):
+             # Check for odd-length palindromes with center at i
+            palindrome_odd = expand_around_center(i, i)
+            len_odd = len(palindrome_odd)
       
