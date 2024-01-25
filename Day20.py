@@ -20,6 +20,6 @@ class Solution:
         if not p or not q:
             return False
         
-      
-     
-     
+      # Check if the current nodes have the same value
+        if p.val != q.val:
+            return False
