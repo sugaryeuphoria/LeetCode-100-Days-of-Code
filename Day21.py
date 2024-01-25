@@ -10,3 +10,5 @@ class Solution(object):
              # If one is empty and the other is not, they are not mirrors
             if not left or not right:
                 return False
+             # Check if the values are the same and their subtrees are mirrors
+            return (left.val == right.val) and isMirror(left.left, right.right) and isMirror(left.right, right.left)
