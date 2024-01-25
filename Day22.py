@@ -7,3 +7,6 @@ class Solution(object):
             # If both are empty, they are mirrors
             if not left and not right:
                 return True
+            # If one is empty and the other is not, they are not mirrors
+            if not left or not right:
+                return False
