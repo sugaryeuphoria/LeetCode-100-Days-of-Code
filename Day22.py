@@ -8,4 +8,7 @@ class Solution(object):
                 left -= 1
                 right += 1
             return s[left + 1:right]
+         # Base case: if the string has 1 or 0 characters, it's already a palindrome
+        if len(s) <= 1:
+            return s
       
