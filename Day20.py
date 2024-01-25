@@ -12,4 +12,9 @@ class TreeNode:
 class Solution:
     #method declaration
     def isSameTree(self, p, q):
+        # Base case: If both trees are empty, they are the same
+        if not p and not q:
+            return True
+       
+     
      
