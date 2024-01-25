@@ -31,5 +31,10 @@ class Solution:
 # Create tree nodes using the class method
 node1 = TreeNode.create(1)
 node2 = TreeNode.create(2)
+node3 = TreeNode.create(3)
 
+# Build trees
+tree1 = TreeNode.create(1, node2, node3)
+
+     
      
