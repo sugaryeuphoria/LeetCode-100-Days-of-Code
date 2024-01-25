@@ -15,6 +15,11 @@ class Solution:
         # Base case: If both trees are empty, they are the same
         if not p and not q:
             return True
-       
+        
+        # If one tree is empty and the other is not, they are different
+        if not p or not q:
+            return False
+        
+      
      
      
