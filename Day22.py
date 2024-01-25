@@ -28,4 +28,6 @@ class Solution(object):
              # Update longest_palindrome if a longer palindrome is found
             if len_even > len(longest_palindrome):
                 longest_palindrome = palindrome_even
+             # Return the longest palindrome found
+        return longest_palindrome
       
