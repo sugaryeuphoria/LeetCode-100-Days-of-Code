@@ -18,4 +18,8 @@ class Solution(object):
              # Check for odd-length palindromes with center at i
             palindrome_odd = expand_around_center(i, i)
             len_odd = len(palindrome_odd)
+
+            # Update longest_palindrome if a longer palindrome is found
+            if len_odd > len(longest_palindrome):
+                longest_palindrome = palindrome_odd
       
