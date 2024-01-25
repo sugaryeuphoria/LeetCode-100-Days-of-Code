@@ -8,6 +8,6 @@ class TreeNode:
         node.left = left
         node.right = right
         return node
-
-
-     
+#Solution class created
+class Solution:
+   
