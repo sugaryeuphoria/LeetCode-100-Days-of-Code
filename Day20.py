@@ -10,4 +10,6 @@ class TreeNode:
         return node
 #Solution class created
 class Solution:
-   
+    #method declaration
+    def isSameTree(self, p, q):
+     
