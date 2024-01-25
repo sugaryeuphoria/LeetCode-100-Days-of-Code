@@ -17,8 +17,8 @@ class Solution(object):
             return True
          # Check if the left and right subtrees are mirrors
         return isMirror(root.left, root.right)
-    
-    # Example usage:
+
+# Example usage:
 # Create tree nodes
 node1 = TreeNode(1)
 node2a = TreeNode(2)
@@ -27,3 +27,11 @@ node3a = TreeNode(3)
 node3b = TreeNode(3)
 node4a = TreeNode(4)
 node4b = TreeNode(4)
+
+# Build a symmetric tree
+node1.left = node2a
+node1.right = node2b
+node2a.left = node3a
+node2a.right = node4a
+node2b.left = node4b
+node2b.right = node3b
