@@ -23,3 +23,7 @@ class Solution:
       # Check if the current nodes have the same value
         if p.val != q.val:
             return False
+
+        # Check left and right branches only if not both nodes are None
+        return self.isSameTree(p.left, q.left) and self.isSameTree(p.right, q.right)
+
