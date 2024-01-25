@@ -13,4 +13,6 @@ class Solution(object):
             return s
          # Initialize the variable to store the longest palindrome
         longest_palindrome = ""
+         # Iterate through each character in the string
+        for i in range(len(s)):
       
