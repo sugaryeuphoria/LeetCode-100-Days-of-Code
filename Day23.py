@@ -32,6 +32,7 @@ class Solution(object):
     def maxDepth(self, root):
         #Calculate depth method
         def calculate_depth(node):
+            #If condition
             if node is None:
                 return 0
             left_depth = calculate_depth(node.left)
