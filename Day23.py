@@ -20,6 +20,7 @@ class TreeNode(object):
     #Overide class method
     @classmethod
     def create(cls, val=0, left=None, right=None):
+        #Node creation
         node = cls()
         node.val = val
         node.left = left
