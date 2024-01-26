@@ -28,6 +28,7 @@ class TreeNode(object):
         return node
 #Class definition
 class Solution(object):
+    #Method definition
     def maxDepth(self, root):
         
         def calculate_depth(node):
