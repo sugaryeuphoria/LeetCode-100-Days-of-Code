@@ -40,7 +40,7 @@ class Solution(object):
             right_depth = calculate_depth(node.right)
             #return max
             return max(left_depth, right_depth) + 1
-
+        #return depth
         return calculate_depth(root)
 
 # Example usage:
