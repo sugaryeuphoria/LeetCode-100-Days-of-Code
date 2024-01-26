@@ -35,6 +35,7 @@ class Solution(object):
             #If condition
             if node is None:
                 return 0
+            #Depth traversal
             left_depth = calculate_depth(node.left)
             right_depth = calculate_depth(node.right)
             return max(left_depth, right_depth) + 1
