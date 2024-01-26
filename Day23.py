@@ -8,6 +8,7 @@ class TreeNode(object):
             self.right = right
 #Class Creation
 class Solution(object):
+    # maxDepth method creation
     def maxDepth(self, root):
         """
         :type root: TreeNode
