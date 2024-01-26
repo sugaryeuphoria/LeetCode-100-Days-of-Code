@@ -26,7 +26,7 @@ class TreeNode(object):
         node.left = left
         node.right = right
         return node
-
+#Class definition
 class Solution(object):
     def maxDepth(self, root):
         
