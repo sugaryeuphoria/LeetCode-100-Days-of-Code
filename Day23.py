@@ -10,8 +10,5 @@ class TreeNode(object):
 class Solution(object):
     # maxDepth method creation
     def maxDepth(self, root):
-        """
-        :type root: TreeNode
-        :rtype: int
-        """
+        #Return statement
         return 0 if root is None else max(self.maxDepth(root.left), self.maxDepth(root.right)) + 1
