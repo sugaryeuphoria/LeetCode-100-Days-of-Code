@@ -17,6 +17,7 @@ class Solution(object):
 # Alternate method
     #Class creation 
 class TreeNode(object):
+    #Overide class method
     @classmethod
     def create(cls, val=0, left=None, right=None):
         node = cls()
@@ -27,10 +28,7 @@ class TreeNode(object):
 
 class Solution(object):
     def maxDepth(self, root):
-        """
-        :type root: TreeNode
-        :rtype: int
-        """
+        
         def calculate_depth(node):
             if node is None:
                 return 0
