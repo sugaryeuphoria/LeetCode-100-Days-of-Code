@@ -38,6 +38,7 @@ class Solution(object):
             #Depth traversal
             left_depth = calculate_depth(node.left)
             right_depth = calculate_depth(node.right)
+            #return max
             return max(left_depth, right_depth) + 1
 
         return calculate_depth(root)
