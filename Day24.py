@@ -25,3 +25,6 @@ class Solution:
                # Increase i, since i is too small
                 i_min = i + 1
             elif i > 0 and nums1[i - 1] > nums2[j]:
+                 # Decrease i, since i is too large
+                i_max = i - 1
+            else:
