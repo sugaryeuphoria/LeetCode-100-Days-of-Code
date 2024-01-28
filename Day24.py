@@ -35,3 +35,6 @@ class Solution:
                     return float(max_left)
                  # Calculate min_right for even total length
                 min_right = min(nums1[i] if i < m else float('inf'), nums2[j] if j < n else float('inf'))
+
+                 # Return the average of max_left and min_right as median
+                return (max_left + min_right) / 2.0
