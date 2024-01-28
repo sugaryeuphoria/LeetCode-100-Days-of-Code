@@ -28,3 +28,5 @@ class Solution:
                  # Decrease i, since i is too large
                 i_max = i - 1
             else:
+                # i is perfect, calculate median
+                max_left = max(nums1[i - 1] if i > 0 else float('-inf'), nums2[j - 1] if j > 0 else float('-inf'))
