@@ -38,3 +38,6 @@ class Solution:
 
                  # Return the average of max_left and min_right as median
                 return (max_left + min_right) / 2.0
+            
+              # Should never be reached
+        return 0.0
