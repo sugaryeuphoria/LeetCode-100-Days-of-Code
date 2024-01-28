@@ -14,3 +14,6 @@ class Solution(object):
             else:
                 # Check if the first characters match or if there is a '.' in the pattern
                 first_match = i < len(s) and (s[i] == p[j] or p[j] == '.')
+
+                # Check for '*' in the pattern
+                if j + 1 < len(p) and p[j + 1] == '*':
