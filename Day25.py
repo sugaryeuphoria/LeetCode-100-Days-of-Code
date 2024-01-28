@@ -5,3 +5,6 @@ class Solution(object):
        # Create a memoization table to store intermediate results
         memo = {}
         def dp(i, j):
+             # Check if the result is already memoized
+            if (i, j) in memo:
+                return memo[(i, j)]
