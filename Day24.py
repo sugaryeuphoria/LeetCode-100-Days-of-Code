@@ -41,3 +41,9 @@ class Solution:
             
               # Should never be reached
         return 0.0
+    
+# Example usage
+sol = Solution()
+nums1 = [1, 3]
+nums2 = [2]
+print(sol.findMedianSortedArrays(nums1, nums2))
