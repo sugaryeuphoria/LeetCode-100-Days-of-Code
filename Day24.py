@@ -1,0 +1,2 @@
+#Class creation
+class Solution:
