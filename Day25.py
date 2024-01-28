@@ -17,3 +17,9 @@ class Solution(object):
 
                 # Check for '*' in the pattern
                 if j + 1 < len(p) and p[j + 1] == '*':
+
+                 # Two options: 1. Ignore the '*' and move to the next character in the pattern
+                    #              2. Keep the '*' and try to match the remaining string
+                    ans = (dp(i, j + 2) or
+                           (first_match and dp(i + 1, j)))
+                else:
