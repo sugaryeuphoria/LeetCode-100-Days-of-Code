@@ -20,7 +20,7 @@ class Solution:
             i = (i_min + i_max) // 2
             j = half_len - i
 
-             # Check conditions for the binary search
+            # Check conditions for the binary search
             if i < m and nums2[j - 1] > nums1[i]:
                 # Increase i, since i is too small
                 i_min = i + 1
