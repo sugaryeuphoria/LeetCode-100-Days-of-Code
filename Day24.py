@@ -30,3 +30,6 @@ class Solution:
             else:
                 # i is perfect, calculate median
                 max_left = max(nums1[i - 1] if i > 0 else float('-inf'), nums2[j - 1] if j > 0 else float('-inf'))
+                if (m + n) % 2 == 1:
+                    # Odd total length, return max_left as median
+                    return float(max_left)
