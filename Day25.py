@@ -23,3 +23,17 @@ class Solution(object):
                     ans = (dp(i, j + 2) or
                            (first_match and dp(i + 1, j)))
                 else:
+                    # If no '*', simply move to the next characters in both string and pattern
+                    ans = first_match and dp(i + 1, j + 1)
+
+                 # Memoize the result and return
+                memo[(i, j)] = ans
+                return ans
+
+                return dp(0, 0)
+            
+# Example usage
+sol = Solution()
+print(sol.isMatch("aa", "a"))    # Output: False
+print(sol.isMatch("aa", "a*"))   # Output: True
+print(sol.isMatch("ab", ".*"))   # Output: True
