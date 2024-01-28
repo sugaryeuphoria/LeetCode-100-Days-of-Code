@@ -33,3 +33,5 @@ class Solution:
                 if (m + n) % 2 == 1:
                     # Odd total length, return max_left as median
                     return float(max_left)
+                 # Calculate min_right for even total length
+                min_right = min(nums1[i] if i < m else float('inf'), nums2[j] if j < n else float('inf'))
