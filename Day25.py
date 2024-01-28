@@ -35,6 +35,8 @@ class Solution(object):
 # Example usage
 sol = Solution()
 # Output: False
-print(sol.isMatch("aa", "a"))    
-print(sol.isMatch("aa", "a*"))   # Output: True
-print(sol.isMatch("ab", ".*"))   # Output: True
+print(sol.isMatch("aa", "a")) 
+# Output: True   
+print(sol.isMatch("aa", "a*")) 
+# Output: True  
+print(sol.isMatch("ab", ".*"))   
