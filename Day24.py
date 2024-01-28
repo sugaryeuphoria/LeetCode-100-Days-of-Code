@@ -15,3 +15,7 @@ class Solution:
         i_min, i_max, half_len = 0, m, (m + n + 1) // 2
 
         while i_min <= i_max:
+
+             # Perform binary search on nums1
+            i = (i_min + i_max) // 2
+            j = half_len - i
