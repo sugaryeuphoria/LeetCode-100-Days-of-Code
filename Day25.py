@@ -12,3 +12,5 @@ class Solution(object):
             if j == len(p):
                 ans = i == len(s)
             else:
+                # Check if the first characters match or if there is a '.' in the pattern
+                first_match = i < len(s) and (s[i] == p[j] or p[j] == '.')
