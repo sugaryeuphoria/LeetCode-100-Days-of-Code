@@ -7,3 +7,5 @@ class TreeNode:
         self.right = right
 class Solution:  
     def sortedArrayToBST(self, nums):      
+        if not nums:
+            return None
