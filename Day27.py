@@ -26,3 +26,6 @@ class Solution:
 
         # Update the maximum length
             max_length = max(max_length, end - start + 1)
+
+        # Return the final maximum length
+        return max_length
