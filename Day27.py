@@ -3,3 +3,5 @@ Also appeared in the LeetCode contest
 """
 class Solution:
     def lengthOfLongestSubstring(self, s):
+         # Map to store the last index of each character
+        char_index_map = {}
