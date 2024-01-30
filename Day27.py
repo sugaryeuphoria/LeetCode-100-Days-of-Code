@@ -23,3 +23,6 @@ class Solution:
 
         # Update the last index of the character
             char_index_map[s[end]] = end
+
+        # Update the maximum length
+            max_length = max(max_length, end - start + 1)
