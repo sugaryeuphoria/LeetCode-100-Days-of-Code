@@ -8,3 +8,6 @@ class Solution:
 
         # Starting index of the current substring
         start = 0
+
+        # Maximum length of substring without repeating characters
+        max_length = 0
