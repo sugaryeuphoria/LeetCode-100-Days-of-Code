@@ -5,4 +5,5 @@ class TreeNode:
         self.val = val
         self.left = left
         self.right = right
-class Solution:        
+class Solution:  
+    def sortedArrayToBST(self, nums):      
