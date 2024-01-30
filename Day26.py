@@ -9,3 +9,6 @@ class Solution:
     def sortedArrayToBST(self, nums):      
         if not nums:
             return None
+        
+        mid = len(nums) // 2
+        root = TreeNode(nums[mid])
