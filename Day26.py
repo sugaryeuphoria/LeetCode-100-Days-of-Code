@@ -20,3 +20,5 @@ class Solution:
     
 # Example usage
 sol = Solution()
+nums1 = [-10, -3, 0, 5, 9]
+tree1 = sol.sortedArrayToBST(nums1)
