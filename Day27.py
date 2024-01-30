@@ -11,3 +11,6 @@ class Solution:
 
         # Maximum length of substring without repeating characters
         max_length = 0
+
+        # Iterate through the characters in the string
+        for end in range(len(s)):
