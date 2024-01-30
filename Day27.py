@@ -16,7 +16,7 @@ class Solution:
 
          # Check if the character is repeated and its last occurrence is after the start index
             if s[end] in char_index_map and char_index_map[s[end]] >= start:
-        
+    
         # Move the start index to the next position of the repeated character
               start = char_index_map[s[end]] + 1
 
