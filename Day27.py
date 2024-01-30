@@ -20,3 +20,6 @@ class Solution:
         
         # Move the start index to the next position of the repeated character
                 start = char_index_map[s[end]] + 1
+
+        # Update the last index of the character
+            char_index_map[s[end]] = end
