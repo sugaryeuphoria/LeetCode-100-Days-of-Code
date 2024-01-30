@@ -5,3 +5,6 @@ class Solution:
     def lengthOfLongestSubstring(self, s):
          # Map to store the last index of each character
         char_index_map = {}
+
+        # Starting index of the current substring
+        start = 0
