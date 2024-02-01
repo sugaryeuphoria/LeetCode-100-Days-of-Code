@@ -22,3 +22,8 @@ class Solution(object):
              # Check if the difference between the third and first elements is greater than k
             if nums[i + 2] - nums[i] > k:
                 return []  # If the condition is not satisfied, return an empty array
+            else:
+                # Append a new array to the result
+                result.append([nums[i], nums[i + 1], nums[i + 2]])
+
+        return result
