@@ -11,3 +11,5 @@ class Solution:
              # Recursively calculate the height of the left and right subtrees
             left_height = height(node.left)
             right_height = height(node.right)
+              # Check if the left or right subtree is unbalanced, or if the current subtree is unbalanced
+            if left_height == -1 or right_height == -1 or abs(left_height - right_height) > 1:
