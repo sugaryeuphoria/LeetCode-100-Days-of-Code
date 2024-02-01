@@ -7,3 +7,7 @@ class Solution:
            # Base case: If the node is None, the height is 0
             if not node:
                 return 0
+            
+             # Recursively calculate the height of the left and right subtrees
+            left_height = height(node.left)
+            right_height = height(node.right)
