@@ -9,4 +9,7 @@ Return a 2D array containing all the arrays. If it is impossible to satisfy the 
  """
 #Class defintion
 class Solution(object):
-    
+    #Method deinition
+    def divideArray(self, nums, k):
+       # Sort the array in ascending order
+        nums.sort()
