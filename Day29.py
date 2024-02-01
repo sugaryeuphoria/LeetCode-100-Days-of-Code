@@ -15,3 +15,5 @@ class Solution:
             if left_height == -1 or right_height == -1 or abs(left_height - right_height) > 1:
                  # If any of the above conditions are true, the subtree is unbalanced, return -1
                 return -1
+              # If the current subtree is balanced, return the height of the subtree
+            return 1 + max(left_height, right_height)
