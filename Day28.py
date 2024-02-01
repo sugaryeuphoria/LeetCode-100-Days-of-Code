@@ -16,3 +16,6 @@ class Solution(object):
 
         # Initialize an empty array to store the result
         result = []
+
+         # Iterate through the sorted array with a step size of 3
+        for i in range(0, len(nums), 3):
