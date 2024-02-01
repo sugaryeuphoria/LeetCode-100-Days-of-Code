@@ -27,3 +27,7 @@ class Solution(object):
                 result.append([nums[i], nums[i + 1], nums[i + 2]])
 
         return result
+    
+# Example usage:
+sol = Solution()
+print(sol.divideArray([1,3,4,8,7,9,3,5,1], 2))
