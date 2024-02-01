@@ -21,3 +21,4 @@ class Solution(object):
         for i in range(0, len(nums), 3):
              # Check if the difference between the third and first elements is greater than k
             if nums[i + 2] - nums[i] > k:
+                return []  # If the condition is not satisfied, return an empty array
