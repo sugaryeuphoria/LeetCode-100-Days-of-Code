@@ -17,3 +17,6 @@ class Solution:
                 return -1
               # If the current subtree is balanced, return the height of the subtree
             return 1 + max(left_height, right_height)
+        
+        # Check if the height of the entire tree is not -1 (indicating it is balanced)
+        return height(root) != -1
