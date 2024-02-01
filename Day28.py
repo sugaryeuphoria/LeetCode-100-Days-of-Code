@@ -13,3 +13,6 @@ class Solution(object):
     def divideArray(self, nums, k):
        # Sort the array in ascending order
         nums.sort()
+
+        # Initialize an empty array to store the result
+        result = []
