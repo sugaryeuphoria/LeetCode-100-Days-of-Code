@@ -19,3 +19,5 @@ class Solution(object):
 
          # Iterate through the sorted array with a step size of 3
         for i in range(0, len(nums), 3):
+             # Check if the difference between the third and first elements is greater than k
+            if nums[i + 2] - nums[i] > k:
