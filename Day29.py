@@ -13,3 +13,5 @@ class Solution:
             right_height = height(node.right)
               # Check if the left or right subtree is unbalanced, or if the current subtree is unbalanced
             if left_height == -1 or right_height == -1 or abs(left_height - right_height) > 1:
+                 # If any of the above conditions are true, the subtree is unbalanced, return -1
+                return -1
