@@ -23,8 +23,10 @@ class AlgorithmVisualizer:
         bar_width = 800 / self.size  # Calculate the width of each bar
 
         for i, value in enumerate(self.array):
-            x1, y1 = i * bar_width, 400  # Coordinates of the bottom-left corner of the rectangle
-            x2, y2 = x1 + bar_width, 400 - value  # Coordinates of the top-right corner of the rectangle
+            # Coordinates of the bottom-left corner of the rectangle
+            x1, y1 = i * bar_width, 400  
+            # Coordinates of the top-right corner of the rectangle
+            x2, y2 = x1 + bar_width, 400 - value  
             rect = self.canvas.create_rectangle(x1, y1, x2, y2, fill="blue")  # Create a blue rectangle
             self.rectangles.append(rect)  # Add the rectangle object to the list
 
