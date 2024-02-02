@@ -4,3 +4,6 @@ class Solution(object):
         # Initialize an empty list to store sequential digits in the given range
 
         result = []
+
+        # Iterate through the digits 1 to 9
+        for i in range(1, 10):  # Start from 1 to 9
