@@ -17,3 +17,5 @@ class Solution(object):
              # Break if the number goes beyond the high limit
             if num > high:  
                 break
+
+            return sorted(result)  # Return the sorted list of sequential digits
