@@ -10,4 +10,5 @@ class Solution(object):
             # Initialize the current number with the current digit
             num = num * 10 + j  # Add the next digit to the current number
 
-            
+            # Check if the current number is within the given range
+                if low <= num <= high:
