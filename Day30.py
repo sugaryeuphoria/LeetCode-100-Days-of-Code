@@ -5,7 +5,6 @@ Return a sorted list of all the integers in the range [low, high] inclusive that
 class Solution(object):
     def sequentialDigits(self, low, high):
         # Initialize an empty list to store sequential digits in the given range
-
         result = []
 
         # Iterate through the digits 1 to 9
