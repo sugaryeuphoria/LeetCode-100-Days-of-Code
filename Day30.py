@@ -11,4 +11,5 @@ class Solution(object):
             num = num * 10 + j  # Add the next digit to the current number
 
             # Check if the current number is within the given range
-                if low <= num <= high:
+            if low <= num <= high:
+                    result.append(num)  # Add the current number to the result list
