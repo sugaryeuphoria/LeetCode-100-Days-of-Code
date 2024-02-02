@@ -8,6 +8,6 @@ class Solution(object):
         # Iterate through the digits 1 to 9
         for i in range(1, 10):  # Start from 1 to 9
             # Initialize the current number with the current digit
-            num = i
+            num = num * 10 + j  # Add the next digit to the current number
 
             
