@@ -8,3 +8,4 @@ class Solution(object):
 
         left, right = 0, 0  # Pointers to define the current window.
         formed_chars = 0  # Count of unique characters formed in the current window.
+         window_char_count = Counter()  # Counter to track character frequencies in the current window.
