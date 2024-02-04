@@ -28,3 +28,6 @@ class Solution(object):
                 window_char_count[s[left]] -= 1
                 if window_char_count[s[left]] < char_count_t[s[left]]:
                     formed_chars -= 1
+
+                # Move the left pointer
+                left += 1
