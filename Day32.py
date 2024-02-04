@@ -11,3 +11,4 @@ class Solution(object):
         window_char_count = Counter()  # Counter to track character frequencies in the current window.
         min_len = float('inf')  # Initialize the minimum window length to positive infinity.
         min_window = ""  # Variable to store the minimum window substring.
+        while right < len(s):
