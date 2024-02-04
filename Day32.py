@@ -16,3 +16,6 @@ class Solution(object):
             window_char_count[s[right]] += 1
             if window_char_count[s[right]] == char_count_t[s[right]]:
                 formed_chars += 1
+
+             # Check if all characters from t are present in the current window
+            while formed_chars == required_chars:
