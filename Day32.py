@@ -31,3 +31,6 @@ class Solution(object):
 
                 # Move the left pointer
                 left += 1
+
+             # Move the right pointer to expand the window
+            right += 1
