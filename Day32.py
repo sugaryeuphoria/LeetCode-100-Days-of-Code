@@ -19,3 +19,7 @@ class Solution(object):
 
              # Check if all characters from t are present in the current window
             while formed_chars == required_chars:
+                # Update the minimum window
+                if right - left + 1 < min_len:
+                    min_len = right - left + 1
+                    min_window = s[left:right + 1]
