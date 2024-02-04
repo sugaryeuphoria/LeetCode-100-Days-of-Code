@@ -23,3 +23,8 @@ class Solution(object):
                 if right - left + 1 < min_len:
                     min_len = right - left + 1
                     min_window = s[left:right + 1]
+
+                  # Shrink the window and update character count
+                window_char_count[s[left]] -= 1
+                if window_char_count[s[left]] < char_count_t[s[left]]:
+                    formed_chars -= 1
