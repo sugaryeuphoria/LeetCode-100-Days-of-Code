@@ -34,3 +34,5 @@ class Solution(object):
 
              # Move the right pointer to expand the window
             right += 1
+
+        return min_window  # Return the final minimum window substring.
