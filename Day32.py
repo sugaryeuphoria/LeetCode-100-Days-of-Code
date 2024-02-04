@@ -1,4 +1,4 @@
-#Import
+#Import Counter to efficiently count character frequencies.
 from collections import Counter  # Import Counter to efficiently count character frequencies.
 #Class and method definition
 class Solution(object):
