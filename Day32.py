@@ -10,3 +10,4 @@ class Solution(object):
         formed_chars = 0  # Count of unique characters formed in the current window.
         window_char_count = Counter()  # Counter to track character frequencies in the current window.
         min_len = float('inf')  # Initialize the minimum window length to positive infinity.
+        min_window = ""  # Variable to store the minimum window substring.
