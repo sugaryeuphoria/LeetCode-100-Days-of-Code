@@ -12,3 +12,7 @@ class Solution(object):
         min_len = float('inf')  # Initialize the minimum window length to positive infinity.
         min_window = ""  # Variable to store the minimum window substring.
         while right < len(s):
+              # Expand the window and update character count
+            window_char_count[s[right]] += 1
+            if window_char_count[s[right]] == char_count_t[s[right]]:
+                formed_chars += 1
