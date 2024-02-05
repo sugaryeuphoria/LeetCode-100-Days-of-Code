@@ -7,3 +7,7 @@ class Solution(object):
 
  # Let's use a defaultdict to count occurrences
         char_count = defaultdict(int)
+
+ # First pass: Count occurrences
+        for char in s:
+            char_count[char] += 1
