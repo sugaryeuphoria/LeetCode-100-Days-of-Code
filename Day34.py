@@ -4,3 +4,9 @@ class Solution(object):
 
         if numRows == 1 or numRows >= len(s):
             return s
+        
+         # Initialize an empty list of lists to represent the rows
+        rows = [''] * min(numRows, len(s))
+        index, step = 0, 1
+
+        Initialize an empty list of lists to represent the rows
