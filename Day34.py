@@ -9,4 +9,9 @@ class Solution(object):
         rows = [''] * min(numRows, len(s))
         index, step = 0, 1
 
-        Initialize an empty list of lists to represent the rows
+        #Initialize an empty list of lists to represent the rows
+        rows = [''] * min(numRows, len(s))
+        index, step = 0, 1
+
+         # Iterate through each character in s
+        for char in s:
