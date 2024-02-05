@@ -15,4 +15,8 @@ class Solution(object):
  # Second pass: Find the first unique character
         for i, char in enumerate(s):
             if char_count[char] == 1:
-                return i         
+                return i 
+
+  # If no unique character is found, return -1
+        return -1
+                   
