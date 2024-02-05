@@ -16,3 +16,11 @@ class Solution(object):
          # Iterate through each character in s
         for char in s:
              rows[index] += char  # Directly store the character in the corresponding row
+             if index == 0:
+                step = 1
+             elif index == numRows - 1:
+                step = -1
+             index += step
+             # Concatenate all rows to get the final result
+        result = ''.join(rows)
+        return result
