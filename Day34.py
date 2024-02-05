@@ -15,3 +15,4 @@ class Solution(object):
 
          # Iterate through each character in s
         for char in s:
+             rows[index] += char  # Directly store the character in the corresponding row
