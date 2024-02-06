@@ -14,4 +14,7 @@ class Solution(object):
             return 0
          
            
-        queue = deque([(root, 1)])  # Initialize the queue with the root and its level
+        queue = deque([(root, 1)])  # 
+    
+         while queue:
+            node, depth = queue.popleft()
