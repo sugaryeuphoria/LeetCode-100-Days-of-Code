@@ -18,3 +18,7 @@ class Solution(object):
     
          while queue:
             node, depth = queue.popleft()
+
+         # Check if the current node is a leaf node
+            if not node.left and not node.right:
+                return depth
