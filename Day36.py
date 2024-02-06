@@ -16,9 +16,13 @@ class Solution(object):
            
         queue = deque([(root, 1)])  # 
     
-         while queue:
+        while queue:
             node, depth = queue.popleft()
 
          # Check if the current node is a leaf node
             if not node.left and not node.right:
                 return depth
+            
+              # Add the left child to the queue
+            if node.left:
+                queue.append((node.left, depth + 1))
