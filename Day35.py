@@ -17,3 +17,7 @@ solution = Solution()
 strs1 = ["eat", "tea", "tan", "ate", "nat", "bat"]
 print(solution.groupAnagrams(strs1))
 # Output: [['eat', 'tea', 'ate'], ['tan', 'nat'], ['bat']]
+
+strs2 = [""]
+print(solution.groupAnagrams(strs2))
+# Output: [['']]
