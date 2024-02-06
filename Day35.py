@@ -21,3 +21,7 @@ print(solution.groupAnagrams(strs1))
 strs2 = [""]
 print(solution.groupAnagrams(strs2))
 # Output: [['']]
+
+strs3 = ["a"]
+print(solution.groupAnagrams(strs3))
+# Output: [['a']]
