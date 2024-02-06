@@ -12,3 +12,6 @@ class Solution(object):
 
          if not root:
             return 0
+         
+           
+        queue = deque([(root, 1)])  # Initialize the queue with the root and its level
