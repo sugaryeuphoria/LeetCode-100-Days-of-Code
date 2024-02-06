@@ -26,3 +26,7 @@ class Solution(object):
               # Add the left child to the queue
             if node.left:
                 queue.append((node.left, depth + 1))
+
+            # Add the right child to the queue
+            if node.right:
+                queue.append((node.right, depth + 1))
