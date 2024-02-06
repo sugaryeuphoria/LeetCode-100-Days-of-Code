@@ -9,3 +9,6 @@ from collections import deque
 # method and class definition
 class Solution(object):
     def minDepth(self, root):
+
+         if not root:
+            return 0
