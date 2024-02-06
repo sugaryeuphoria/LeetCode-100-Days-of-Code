@@ -12,3 +12,7 @@ class Solution(object):
             anagrams[sorted_word].append(word)
         
         return list(anagrams.values())
+# Example Usage:
+solution = Solution()
+strs1 = ["eat", "tea", "tan", "ate", "nat", "bat"]
+print(solution.groupAnagrams(strs1))
