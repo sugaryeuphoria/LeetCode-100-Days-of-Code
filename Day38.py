@@ -16,3 +16,7 @@ class Solution(object):
             total = val1 + val2 + carry
             carry = total // 10
             sum_digit = total % 10
+
+            # Create new node with sum digit
+            curr.next = ListNode(sum_digit)
+            curr = curr.next
