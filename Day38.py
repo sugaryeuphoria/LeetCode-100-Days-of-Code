@@ -20,3 +20,9 @@ class Solution(object):
             # Create new node with sum digit
             curr.next = ListNode(sum_digit)
             curr = curr.next
+
+             # Move to next nodes
+            l1 = l1.next if l1 else None
+            l2 = l2.next if l2 else None
+        
+        return dummy.next
