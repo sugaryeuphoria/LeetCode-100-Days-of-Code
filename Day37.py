@@ -15,4 +15,5 @@ class Solution(object):
         count = Counter(s)
 # Sort the characters based on their frequency in descending order
         sorted_chars = sorted(count.items(), key=lambda x: (-x[1], x[0]))
-        
+         # Build the sorted string
+        sorted_str = ''.join(char * freq for char, freq in sorted_chars)
