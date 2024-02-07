@@ -13,3 +13,6 @@ class Solution(object):
     def frequencySort(self, s):
         # Count the frequency of each character
         count = Counter(s)
+# Sort the characters based on their frequency in descending order
+        sorted_chars = sorted(count.items(), key=lambda x: (-x[1], x[0]))
+        
