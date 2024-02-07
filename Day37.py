@@ -11,3 +11,5 @@ from collections import Counter
 class Solution(object):
 # Method definition
     def frequencySort(self, s):
+        # Count the frequency of each character
+        count = Counter(s)
