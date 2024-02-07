@@ -4,4 +4,10 @@ You may assume the two numbers do not contain any leading zero, except the numbe
 # Method and class definition
 class Solution(object):
     def addTwoNumbers(self, l1, l2):
-        
+        carry = 0
+        dummy = ListNode(0)
+        curr = dummy
+    
+        while l1 or l2 or carry:
+            val1 = l1.val if l1 else 0
+            val2 = l2.val if l2 else 0
