@@ -7,7 +7,12 @@ class Solution(object):
         carry = 0
         dummy = ListNode(0)
         curr = dummy
-    
+
         while l1 or l2 or carry:
             val1 = l1.val if l1 else 0
             val2 = l2.val if l2 else 0
+
+            # Calculate sum and carry
+            total = val1 + val2 + carry
+            carry = total // 10
+            sum_digit = total % 10
