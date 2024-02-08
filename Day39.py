@@ -14,3 +14,6 @@ Input: n = 13
 Output: 2
 Explanation: 13 = 4 + 9."""
 # Class definition
+class Solution(object):
+    # Method definition
+    def numSquares(self, n):
