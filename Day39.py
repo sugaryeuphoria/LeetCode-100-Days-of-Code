@@ -29,3 +29,6 @@ class Solution(object):
 
          # Iterate through all numbers from 1 to n
         for i in range(1, n + 1):
+
+             # Iterate through all perfect squares less than or equal to i
+            for square in squares:
