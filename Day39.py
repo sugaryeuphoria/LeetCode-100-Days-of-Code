@@ -13,3 +13,4 @@ Example 2:
 Input: n = 13
 Output: 2
 Explanation: 13 = 4 + 9."""
+# Class definition
