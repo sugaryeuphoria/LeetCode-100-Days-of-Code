@@ -36,3 +36,6 @@ class Solution(object):
                  # If the current number is less than the square, break out of the loop
                 if i < square:
                     break
+
+                 # Update the minimum number of perfect squares required for the current number i
+                dp[i] = min(dp[i], dp[i - square] + 1)
