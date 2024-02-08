@@ -23,3 +23,6 @@ class Solution(object):
 
         # Initialize a list to store the minimum number of perfect squares required for each number up to n
         dp = [float('inf')] * (n + 1)
+
+         # Base case: 0 perfect squares required for 0
+        dp[0] = 0
