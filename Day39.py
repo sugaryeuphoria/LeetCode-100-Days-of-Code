@@ -39,5 +39,5 @@ class Solution(object):
                  # Update the minimum number of perfect squares required for the current number i
                 dp[i] = min(dp[i], dp[i - square] + 1)
 
-                 # Return the minimum number of perfect squares required for n
+        # Return the minimum number of perfect squares required for n
         return dp[n]
