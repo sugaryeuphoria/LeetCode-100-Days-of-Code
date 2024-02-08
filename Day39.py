@@ -32,3 +32,7 @@ class Solution(object):
 
              # Iterate through all perfect squares less than or equal to i
             for square in squares:
+
+                 # If the current number is less than the square, break out of the loop
+                if i < square:
+                    break
