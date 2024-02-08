@@ -26,3 +26,6 @@ class Solution(object):
 
          # Base case: 0 perfect squares required for 0
         dp[0] = 0
+
+         # Iterate through all numbers from 1 to n
+        for i in range(1, n + 1):
