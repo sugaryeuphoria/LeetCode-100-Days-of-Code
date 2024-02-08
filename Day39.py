@@ -17,3 +17,6 @@ Explanation: 13 = 4 + 9."""
 class Solution(object):
     # Method definition
     def numSquares(self, n):
+
+        # Generate a list of perfect squares less than or equal to n
+        squares = [i * i for i in range(1, int(n**0.5) + 1)]
