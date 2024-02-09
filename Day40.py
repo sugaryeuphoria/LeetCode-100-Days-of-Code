@@ -65,3 +65,6 @@ class Solution(object):
 
                   # Decrease the current length
                 curr_length -= 1  
+
+                 # Return the result in reverse order
+        return result[::-1] 
