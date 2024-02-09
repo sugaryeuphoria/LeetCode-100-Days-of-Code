@@ -13,3 +13,7 @@ class Solution(object):
 
      # Define a function to find the largest divisible subset
     def largestDivisibleSubset(self, nums):  
+
+         # If nums is empty, return an empty list
+        if not nums:  
+            return [] 
