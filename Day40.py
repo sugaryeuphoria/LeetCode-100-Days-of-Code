@@ -2,4 +2,9 @@
 
 answer[i] % answer[j] == 0, or
 answer[j] % answer[i] == 0
-If there are multiple solutions, return any of them."""
+If there are multiple solutions, return any of them.
+
+Input: nums = [1,2,3]
+Output: [1,2]
+Explanation: [1,3] is also accepted.
+"""
