@@ -36,3 +36,6 @@ class Solution(object):
 
              # Iterate through the elements before the current element
             for j in range(i):  
+
+                 # If the current element is divisible by the previous element
+                if nums[i] % nums[j] == 0:  
