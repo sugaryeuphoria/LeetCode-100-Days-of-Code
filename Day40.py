@@ -53,3 +53,6 @@ class Solution(object):
 
            # Initialize a variable to track the current length
         curr_length = max_length  
+
+        # Iterate backwards from the maximum index to 0
+        for i in range(max_index, -1, -1): 
