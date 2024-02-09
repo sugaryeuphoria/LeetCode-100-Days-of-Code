@@ -47,3 +47,6 @@ class Solution(object):
                     if dp[i] > max_length:  
                         max_length = dp[i]  
                         max_index = i  
+
+                        # Initialize an empty list to store the result
+        result = []  
