@@ -59,3 +59,6 @@ class Solution(object):
 
              # If the current length matches the length in dp and either max_index divides nums[i] or nums[i] divides max_index
             if curr_length == dp[i] and (max_index % nums[i] == 0 or nums[i] % max_index == 0):  
+
+                 # Add the current number to the result
+                result.append(nums[i])  
