@@ -10,3 +10,6 @@ Explanation: [1,3] is also accepted.
 """
 #Class definition
 class Solution(object): 
+
+     # Define a function to find the largest divisible subset
+    def largestDivisibleSubset(self, nums):  
