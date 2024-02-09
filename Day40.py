@@ -20,4 +20,7 @@ class Solution(object):
         
          # Sort the input list
         nums.sort()  
+
+        # Get the length of the input list
+        n = len(nums)  
         
