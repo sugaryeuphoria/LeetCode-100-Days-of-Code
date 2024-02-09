@@ -24,3 +24,5 @@ class Solution(object):
         # Get the length of the input list
         n = len(nums)  
         
+        # Initialize a dynamic programming array with all elements set to 1
+        dp = [1] * n
