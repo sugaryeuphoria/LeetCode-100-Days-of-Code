@@ -62,3 +62,6 @@ class Solution(object):
 
                  # Add the current number to the result
                 result.append(nums[i])  
+
+                  # Decrease the current length
+                curr_length -= 1  
