@@ -42,3 +42,8 @@ class Solution(object):
 
                       # Update the length of the subset
                     dp[i] = max(dp[i], dp[j] + 1) 
+
+                    # If the updated length is greater than the maximum length, update the maximum length and its index
+                    if dp[i] > max_length:  
+                        max_length = dp[i]  
+                        max_index = i  
