@@ -39,3 +39,6 @@ class Solution(object):
 
                  # If the current element is divisible by the previous element
                 if nums[i] % nums[j] == 0:  
+
+                      # Update the length of the subset
+                    dp[i] = max(dp[i], dp[j] + 1) 
