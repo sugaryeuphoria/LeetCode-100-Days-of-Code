@@ -56,3 +56,6 @@ class Solution(object):
 
         # Iterate backwards from the maximum index to 0
         for i in range(max_index, -1, -1): 
+
+             # If the current length matches the length in dp and either max_index divides nums[i] or nums[i] divides max_index
+            if curr_length == dp[i] and (max_index % nums[i] == 0 or nums[i] % max_index == 0):  
