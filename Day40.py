@@ -30,3 +30,6 @@ class Solution(object):
          # Initialize variables to track the maximum length and its index
         max_length = 1  
         max_index = 0  
+
+          # Iterate through the elements of the input list
+        for i in range(1, n): 
