@@ -17,3 +17,7 @@ class Solution(object):
          # If nums is empty, return an empty list
         if not nums:  
             return [] 
+        
+         # Sort the input list
+        nums.sort()  
+        
