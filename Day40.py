@@ -33,3 +33,6 @@ class Solution(object):
 
           # Iterate through the elements of the input list
         for i in range(1, n): 
+
+             # Iterate through the elements before the current element
+            for j in range(i):  
