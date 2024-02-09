@@ -50,3 +50,6 @@ class Solution(object):
 
                         # Initialize an empty list to store the result
         result = []  
+
+           # Initialize a variable to track the current length
+        curr_length = max_length  
