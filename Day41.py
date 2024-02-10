@@ -21,3 +21,6 @@ class Solution(object):  # Define a class named Solution.
             if s[i] == s[i + 1]:  # Check if adjacent characters are equal.
                     dp[i][i + 1] = True  # Mark substrings of length 2 as palindromes.
             count += 1  # Increment the count of palindromic substrings.
+            # Check for palindromes of length greater than 2
+        for length in range(3, n + 1):  # Iterate through possible lengths of substrings greater than 2.
+              for i in range(n - length + 1):  # Iterate through each starting index of substrings.
