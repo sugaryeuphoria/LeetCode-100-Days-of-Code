@@ -20,3 +20,4 @@ class Solution(object):  # Define a class named Solution.
              
             if s[i] == s[i + 1]:  # Check if adjacent characters are equal.
                     dp[i][i + 1] = True  # Mark substrings of length 2 as palindromes.
+            count += 1  # Increment the count of palindromic substrings.
