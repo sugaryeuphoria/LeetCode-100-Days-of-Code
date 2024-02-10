@@ -11,4 +11,5 @@ class Solution(object):  # Define a class named Solution.
               count = 0 # Initialize a 2D array 'dp' to store whether substrings are palindromes or not.
 
                 # Single characters are palindrome by default
-        for i in range(n):  # Iterate through each index of the string.
+      for i in range(n):  # Iterate through each index of the string.
+              dp[i][i] = True  # Mark single characters as palindromes
