@@ -27,4 +27,6 @@ class Solution(object):  # Define a class named Solution.
                 j = i + length - 1  # Calculate the ending index of the substring.
                 if s[i] == s[j] and dp[i + 1][j - 1]:  # Check if the characters at the ends are equal and the substring within them is a palindrome.
                     dp[i][j] = True  # Mark the current substring as a palindrome.
-                     count += 1  # Increment the count of palindromic substrings.
+                    count += 1  # Increment the count of palindromic substrings.
+ 
+                return count  # Return the total count of palindromic substrings.
