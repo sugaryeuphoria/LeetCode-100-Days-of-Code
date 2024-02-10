@@ -24,4 +24,5 @@ class Solution(object):  # Define a class named Solution.
             # Check for palindromes of length greater than 2
         for length in range(3, n + 1):  # Iterate through possible lengths of substrings greater than 2.
               for i in range(n - length + 1):  # Iterate through each starting index of substrings.
-                      j = i + length - 1  # Calculate the ending index of the substring.
+                j = i + length - 1  # Calculate the ending index of the substring.
+                 if s[i] == s[j] and dp[i + 1][j - 1]:  # Check if the characters at the ends are equal and the substring within them is a palindrome.
