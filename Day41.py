@@ -13,3 +13,4 @@ class Solution(object):  # Define a class named Solution.
                 # Single characters are palindrome by default
       for i in range(n):  # Iterate through each index of the string.
               dp[i][i] = True  # Mark single characters as palindromes
+               count += 1  # Increment the count of palindromic substrings.
