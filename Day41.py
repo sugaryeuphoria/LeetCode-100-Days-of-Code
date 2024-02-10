@@ -18,4 +18,5 @@ class Solution(object):  # Define a class named Solution.
             # Check for palindromes of length 2
         for i in range(n - 1):  # Iterate through each index up to the second-to-last index.
              
-              if s[i] == s[i + 1]:  # Check if adjacent characters are equal.
+            if s[i] == s[i + 1]:  # Check if adjacent characters are equal.
+                    dp[i][i + 1] = True  # Mark substrings of length 2 as palindromes.
