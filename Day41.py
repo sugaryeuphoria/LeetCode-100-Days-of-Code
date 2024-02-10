@@ -24,3 +24,4 @@ class Solution(object):  # Define a class named Solution.
             # Check for palindromes of length greater than 2
         for length in range(3, n + 1):  # Iterate through possible lengths of substrings greater than 2.
               for i in range(n - length + 1):  # Iterate through each starting index of substrings.
+                      j = i + length - 1  # Calculate the ending index of the substring.
