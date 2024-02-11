@@ -16,3 +16,4 @@ Both robots should reach the bottom row in grid.
 class Solution(object):  # Define a class named Solution.
      def cherryPickup(self, grid):  # Define a method named cherryPickup within the Solution class, which takes a grid as input.
            rows, cols = len(grid), len(grid[0])  # Get the number of rows and columns in the grid.
+           dp = [[[-1] * cols for _ in range(cols)] for _ in range(rows)]  # Initialize a 3D DP array to store the maximum cherries collected at each position for both robots.
