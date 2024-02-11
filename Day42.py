@@ -24,5 +24,18 @@ class Solution(object):  # Define a class named Solution.
               return dp[r1][c1][c2]
 
             cherries = grid[r1][c1]  # Cherries collected by the first robot at position (r1, c1).
+        cherries += grid[r1][c2]
+
+            max_cherries = 0  # Initialize a variable to store the maximum cherries collected from the current state.
+            for d1 in [-1, 0, 1]:  # Iterate over possible movements for the first robot.
+                for d2 in [-1, 0, 1]:  # Iterate over possible movements for the second robot.
+                    nc1, nc2 = c1 + d1, c2 + d2  # Calculate the new positions of the robots after movement.
+                    if 0 <= nc1 < cols and 0 <= nc2 < cols:  # Check if the new positions are within the grid bounds.
+                        max_cherries = max(max_cherries, helper(r1 + 1, nc1, nc2))  # Recursively compute the maximum cherries collected from the new state.
+
+            dp[r1][c1][c2] = max_cherries + cherries  # Memoize the result for the current state.
+            return dp[r1][c1][c2]  # Return the maximum cherries collected from the current state.
+
+        return helper(0, 0, cols - 1)  # Call the helper function with initial positions of both robots and return the result.
        
        
