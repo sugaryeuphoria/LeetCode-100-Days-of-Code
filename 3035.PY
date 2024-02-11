@@ -35,6 +35,13 @@ Explanation: In this example, there is no need to perform any operation.
 There is one palindrome in words "a".
 It can be shown that it is not possible to get more than one palindrome after any number of operations.
 Hence, the answer is 1.
+ 
+
+Constraints:
+
+1 <= words.length <= 1000
+1 <= words[i].length <= 100
+words[i] consists only of lowercase English letters.
 """
 class Solution:
     def maxPalindromesAfterOperations(self, words):
