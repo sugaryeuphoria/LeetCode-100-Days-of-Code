@@ -21,3 +21,6 @@ class Solution(object):  # Define a class named Solution.
        if r1 == rows:  # Base case: If the first robot reaches the bottom row, return 0 cherries.
               return 0
             if dp[r1][c1][c2] != -1:  # If the result for the current state has already been computed, return it.
+              return dp[r1][c1][c2]
+
+            cherries = grid[r1][c1]  # Cherries collected by the first robot at position (r1, c1).
