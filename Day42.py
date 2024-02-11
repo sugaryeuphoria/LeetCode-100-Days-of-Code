@@ -19,3 +19,5 @@ class Solution(object):  # Define a class named Solution.
            dp = [[[-1] * cols for _ in range(cols)] for _ in range(rows)]  # Initialize a 3D DP array to store the maximum cherries collected at each position for both robots.
  def helper(r1, c1, c2):  # Define a recursive helper function to compute the maximum cherries that can be collected from a given state (r1, c1, c2).
        if r1 == rows:  # Base case: If the first robot reaches the bottom row, return 0 cherries.
+              return 0
+            if dp[r1][c1][c2] != -1:  # If the result for the current state has already been computed, return it.
