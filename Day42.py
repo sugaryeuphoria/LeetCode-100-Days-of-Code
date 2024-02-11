@@ -14,3 +14,4 @@ Both robots cannot move outside of the grid at any moment.
 Both robots should reach the bottom row in grid.
 """
 class Solution(object):  # Define a class named Solution.
+     def cherryPickup(self, grid):  # Define a method named cherryPickup within the Solution class, which takes a grid as input.
