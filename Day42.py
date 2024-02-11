@@ -13,3 +13,4 @@ When both robots stay in the same cell, only one takes the cherries.
 Both robots cannot move outside of the grid at any moment.
 Both robots should reach the bottom row in grid.
 """
+class Solution(object):  # Define a class named Solution.
