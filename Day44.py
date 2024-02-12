@@ -50,3 +50,8 @@ class Solution:
 
          # Initialize a 3D dp array
         dp = [[[0] * cols for _ in range(cols)] for _ in range(rows)]
+
+         # Iterate through rows in reverse order
+        for r in range(rows - 1, -1, -1):
+            for c1 in range(cols):
+                for c2 in range(cols):
