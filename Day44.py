@@ -67,3 +67,7 @@ class Solution:
                                 nc2 = c2 + dc2
                                 if 0 <= nc2 < cols:
                                     max_cherries = max(max_cherries, dp[r + 1][nc1][nc2])
+
+                    # Update the current cell's value
+                    dp[r][c1][c2] = cherries + max_cherries
+        
