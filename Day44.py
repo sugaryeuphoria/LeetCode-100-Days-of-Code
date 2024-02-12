@@ -70,4 +70,7 @@ class Solution:
 
                     # Update the current cell's value
                     dp[r][c1][c2] = cherries + max_cherries
+
+                    # Return the maximum cherries from the top row
+                    return dp[0][0][cols - 1]
         
