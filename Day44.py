@@ -45,3 +45,5 @@ cols == grid[i].length
 class Solution:
     # Method definition
     def cherryPickup(self, grid: List[List[int]]) -> int:
+        # rows and colors
+        rows, cols = len(grid), len(grid[0])
