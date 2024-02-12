@@ -53,3 +53,5 @@ class Solution:
         for num in nums:
             if num == candidate:
                 count += 1
+
+        return candidate if count > len(nums) // 2 else -1
