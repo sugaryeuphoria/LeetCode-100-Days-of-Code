@@ -47,3 +47,6 @@ class Solution:
     def cherryPickup(self, grid: List[List[int]]) -> int:
         # rows and colors
         rows, cols = len(grid), len(grid[0])
+
+         # Initialize a 3D dp array
+        dp = [[[0] * cols for _ in range(cols)] for _ in range(rows)]
