@@ -41,3 +41,7 @@ cols == grid[i].length
 2 <= rows, cols <= 70
 0 <= grid[i][j] <= 100
 """
+# Class defintion
+class Solution:
+    # Method definition
+    def cherryPickup(self, grid: List[List[int]]) -> int:
