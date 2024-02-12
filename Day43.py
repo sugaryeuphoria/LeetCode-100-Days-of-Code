@@ -39,3 +39,7 @@ class Solution:
 
 # Method defintion 
     def majorityElement(self, nums: List[int]) -> int:
+        # Count
+        count = 0
+
+        
