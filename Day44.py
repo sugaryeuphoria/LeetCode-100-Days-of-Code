@@ -58,3 +58,12 @@ class Solution:
 
          # Calculate the current cell's cherry count
                     cherries = grid[r][c1] if c1 == c2 else grid[r][c1] + grid[r][c2]
+                    # Calculate the maximum cherries considering all possible moves
+                    max_cherries = 0
+                    for dc1 in [-1, 0, 1]:
+                        nc1 = c1 + dc1
+                        if 0 <= nc1 < cols:
+                            for dc2 in [-1, 0, 1]:
+                                nc2 = c2 + dc2
+                                if 0 <= nc2 < cols:
+                                    max_cherries = max(max_cherries, dp[r + 1][nc1][nc2])
