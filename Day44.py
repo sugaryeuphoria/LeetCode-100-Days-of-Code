@@ -55,3 +55,6 @@ class Solution:
         for r in range(rows - 1, -1, -1):
             for c1 in range(cols):
                 for c2 in range(cols):
+
+         # Calculate the current cell's cherry count
+                    cherries = grid[r][c1] if c1 == c2 else grid[r][c1] + grid[r][c2]
