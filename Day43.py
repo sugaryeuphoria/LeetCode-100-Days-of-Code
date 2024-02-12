@@ -47,3 +47,9 @@ class Solution:
          if count == 0:
                 candidate = num
                 count += 1 if num == candidate else -1
+ 
+        # Validate if the candidate is the majority element
+        count = 0
+        for num in nums:
+            if num == candidate:
+                count += 1
