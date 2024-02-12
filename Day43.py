@@ -43,3 +43,7 @@ class Solution:
         count = 0
   # Find the candidate majority element
         for num in nums:
+# If condition added
+         if count == 0:
+                candidate = num
+                count += 1 if num == candidate else -1
