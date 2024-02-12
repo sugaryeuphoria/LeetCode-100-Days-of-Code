@@ -34,3 +34,8 @@ n == nums.length
 
 Follow-up: Could you solve the problem in linear time and in O(1) space?
 """
+# Class definition
+class Solution:
+
+# Method defintion 
+    def majorityElement(self, nums: List[int]) -> int:
