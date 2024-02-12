@@ -41,5 +41,5 @@ class Solution:
     def majorityElement(self, nums: List[int]) -> int:
         # Count
         count = 0
-
-        
+  # Find the candidate majority element
+        for num in nums:
