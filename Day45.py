@@ -40,3 +40,6 @@ class Solution:
 
          # Iterate through each word in the list
         for word in words:
+
+             # Check if the current word is a palindrome using the isPalindrome method
+            if self.isPalindrome(word):
