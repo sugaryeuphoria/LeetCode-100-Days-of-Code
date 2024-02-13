@@ -30,3 +30,6 @@ words[i] consists only of lowercase English letters.
 
 # Define a class
 class Solution:
+
+      # Define a method to check if a string is a palindrome
+    def isPalindrome(self, s: str) -> bool:
