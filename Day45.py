@@ -46,3 +46,6 @@ class Solution:
 
                  # If it's a palindrome, return it
                 return word
+            
+                # If no palindrome is found, return an empty string
+        return ""
