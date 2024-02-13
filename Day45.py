@@ -33,3 +33,5 @@ class Solution:
 
       # Define a method to check if a string is a palindrome
     def isPalindrome(self, s: str) -> bool:
+        # Check if the string is equal to its reverse
+        return s == s[::-1]
