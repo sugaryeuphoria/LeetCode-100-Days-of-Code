@@ -35,3 +35,5 @@ class Solution:
     def isPalindrome(self, s: str) -> bool:
         # Check if the string is equal to its reverse
         return s == s[::-1]
+         # Define a method to find the first palindrome in the list of words
+    def firstPalindrome(self, words: List[str]) -> str:
