@@ -43,3 +43,6 @@ class Solution:
 
              # Check if the current word is a palindrome using the isPalindrome method
             if self.isPalindrome(word):
+
+                 # If it's a palindrome, return it
+                return word
