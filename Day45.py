@@ -37,3 +37,6 @@ class Solution:
         return s == s[::-1]
          # Define a method to find the first palindrome in the list of words
     def firstPalindrome(self, words: List[str]) -> str:
+
+         # Iterate through each word in the list
+        for word in words:
