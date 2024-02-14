@@ -45,3 +45,6 @@ nums.length is even
 nums consists of equal number of positive and negative integers.
 """
 # Class definition 
+class Solution:
+    # Method definition
+    def rearrangeArray(self, nums: List[int]) -> List[int]:
