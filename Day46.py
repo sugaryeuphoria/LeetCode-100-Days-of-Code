@@ -54,3 +54,5 @@ class Solution:
  
         # Initialize an empty list to store the rearranged array
         result = []
+        # Initialize pointers for positive_nums and negative_nums lists
+        i, j = 0, 0
