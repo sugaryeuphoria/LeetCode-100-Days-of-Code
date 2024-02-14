@@ -58,3 +58,6 @@ class Solution:
         i, j = 0, 0
         # Iterate through both lists simultaneously
         while i < len(positive_nums) and j < len(negative_nums):
+             # Append one positive integer followed by one negative integer
+            result.append(positive_nums[i])
+            result.append(negative_nums[j])
