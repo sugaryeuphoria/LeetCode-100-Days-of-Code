@@ -61,3 +61,7 @@ class Solution:
              # Append one positive integer followed by one negative integer
             result.append(positive_nums[i])
             result.append(negative_nums[j])
+               # Move pointers to the next elements in both lists
+            i += 1
+            j += 1
+        
