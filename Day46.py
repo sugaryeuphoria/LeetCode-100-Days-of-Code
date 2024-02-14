@@ -48,3 +48,6 @@ nums consists of equal number of positive and negative integers.
 class Solution:
     # Method definition
     def rearrangeArray(self, nums: List[int]) -> List[int]:
+        # Separate positive and negative integers into separate lists
+        positive_nums = [num for num in nums if num > 0]
+        negative_nums = [num for num in nums if num < 0]
