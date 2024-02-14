@@ -56,3 +56,5 @@ class Solution:
         result = []
         # Initialize pointers for positive_nums and negative_nums lists
         i, j = 0, 0
+        # Iterate through both lists simultaneously
+        while i < len(positive_nums) and j < len(negative_nums):
