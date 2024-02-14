@@ -64,4 +64,8 @@ class Solution:
                # Move pointers to the next elements in both lists
             i += 1
             j += 1
+
+             # Return the rearranged array
+        return result
+
         
