@@ -51,3 +51,6 @@ class Solution:
         # Separate positive and negative integers into separate lists
         positive_nums = [num for num in nums if num > 0]
         negative_nums = [num for num in nums if num < 0]
+ 
+        # Initialize an empty list to store the rearranged array
+        result = []
