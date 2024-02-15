@@ -46,6 +46,8 @@ public long largestPerimeter(int[] nums) {
     Arrays.sort(nums);
     // Iterate through the nums array in reverse order starting from the second last element.
     for (int i = nums.length - 1; i >= 2; --i) {
+        // Subtract the current element nums[i] from the prefix sum.
+      prefix -= nums[i];
     }
 }
 }
