@@ -42,6 +42,8 @@ class day47{
 public long largestPerimeter(int[] nums) {
       // Calculate the sum of all elements in the nums array using streams and store it in the variable prefix.
       long prefix = Arrays.stream(nums).asLongStream().sum();
+       // Sort the nums array in ascending order.
+    Arrays.sort(nums);
 }
 }
    
