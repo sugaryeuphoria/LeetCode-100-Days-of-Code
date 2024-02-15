@@ -53,6 +53,8 @@ public long largestPerimeter(int[] nums) {
          // If the condition is met, return the sum of prefix and nums[i].
          return prefix + nums[i];
       }
+      // If no valid perimeter can be formed, return -1.
+    return -1;
     }
 }
 }
