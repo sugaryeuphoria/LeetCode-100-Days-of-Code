@@ -49,7 +49,10 @@ public long largestPerimeter(int[] nums) {
         // Subtract the current element nums[i] from the prefix sum.
       prefix -= nums[i];
       // Check if the sum of all elements (excluding nums[i]) is greater than nums[i].
-      if (prefix > nums[i])
+      if (prefix > nums[i]){
+         // If the condition is met, return the sum of prefix and nums[i].
+         return prefix + nums[i];
+      }
     }
 }
 }
