@@ -37,25 +37,29 @@ Constraints:
  * 
 */
 // Class definition
-class day47{
-// Define a method named largestPerimeter that takes an array of integers as input and returns a long.
-public long largestPerimeter(int[] nums) {
+class Solution {
+    // Define a method named largestPerimeter that takes an array of integers as input and returns a long.
+    public long largestPerimeter(int[] nums) {
       // Calculate the sum of all elements in the nums array using streams and store it in the variable prefix.
       long prefix = Arrays.stream(nums).asLongStream().sum();
-       // Sort the nums array in ascending order.
-    Arrays.sort(nums);
-    // Iterate through the nums array in reverse order starting from the second last element.
-    for (int i = nums.length - 1; i >= 2; --i) {
+  
+      // Sort the nums array in ascending order.
+      Arrays.sort(nums);
+  
+      // Iterate through the nums array in reverse order starting from the second last element.
+      for (int i = nums.length - 1; i >= 2; --i) {
         // Subtract the current element nums[i] from the prefix sum.
-      prefix -= nums[i];
-      // Check if the sum of all elements (excluding nums[i]) is greater than nums[i].
-      if (prefix > nums[i]){
-         // If the condition is met, return the sum of prefix and nums[i].
-         return prefix + nums[i];
+        prefix -= nums[i];
+        // Check if the sum of all elements (excluding nums[i]) is greater than nums[i].
+        if (prefix > nums[i])
+          // If the condition is met, return the sum of prefix and nums[i].
+          return prefix + nums[i];
       }
+  
       // If no valid perimeter can be formed, return -1.
-    return -1;
+      return -1;
     }
-}
-}
+  }
+  
+  
    
