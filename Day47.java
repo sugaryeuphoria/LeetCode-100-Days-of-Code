@@ -40,6 +40,8 @@ Constraints:
 class day47{
 // Define a method named largestPerimeter that takes an array of integers as input and returns a long.
 public long largestPerimeter(int[] nums) {
+      // Calculate the sum of all elements in the nums array using streams and store it in the variable prefix.
+      long prefix = Arrays.stream(nums).asLongStream().sum();
 }
 }
    
