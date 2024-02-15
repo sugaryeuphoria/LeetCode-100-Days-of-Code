@@ -36,3 +36,8 @@ Constraints:
 1 <= nums[i] <= 109
  * 
 */
+// Class definition
+class day47{
+
+}
+   
