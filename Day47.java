@@ -44,6 +44,9 @@ public long largestPerimeter(int[] nums) {
       long prefix = Arrays.stream(nums).asLongStream().sum();
        // Sort the nums array in ascending order.
     Arrays.sort(nums);
+    // Iterate through the nums array in reverse order starting from the second last element.
+    for (int i = nums.length - 1; i >= 2; --i) {
+    }
 }
 }
    
