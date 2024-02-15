@@ -38,6 +38,8 @@ Constraints:
 */
 // Class definition
 class day47{
-
+// Define a method named largestPerimeter that takes an array of integers as input and returns a long.
+public long largestPerimeter(int[] nums) {
+}
 }
    
