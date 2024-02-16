@@ -28,7 +28,10 @@ class Solution {
         Map<Integer, Integer> count = new HashMap<>();
         
         // Count the frequency of each element in the array
-    for (final int a : arr)
-    count.merge(a, 1, Integer::sum);
+        for (final int a : arr)
+        count.merge(a, 1, Integer::sum);
+
+        // Step 2: Create a min-heap to store frequencies
+        Queue<Integer> minHeap = new PriorityQueue<>(count.values());
     }
 }
