@@ -24,8 +24,11 @@ import java.util.Queue;
 class Solution {
     // Method definition
     public int findLeastNumOfUniqueInts(int[] arr, int k) {
-// Step 1: Create a frequency map
-Map<Integer, Integer> count = new HashMap<>();
-
+        // Step 1: Create a frequency map
+        Map<Integer, Integer> count = new HashMap<>();
+        
+        // Count the frequency of each element in the array
+    for (final int a : arr)
+    count.merge(a, 1, Integer::sum);
     }
 }
