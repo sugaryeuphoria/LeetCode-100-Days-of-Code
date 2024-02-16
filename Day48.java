@@ -22,4 +22,8 @@ import java.util.PriorityQueue;
 import java.util.Queue;
 // Class definition
 class Solution {
+    // Method definition
+    public int findLeastNumOfUniqueInts(int[] arr, int k) {
+
+    }
 }
