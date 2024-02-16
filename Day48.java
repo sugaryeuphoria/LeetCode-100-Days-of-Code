@@ -36,5 +36,7 @@ class Solution {
 
          // Step 3: Greedily remove the k least frequent numbers to have the least number of unique integers
         while (k > 0)
+        k -= minHeap.poll(); // Remove the least frequent number from the min-heap
+
     }
 }
