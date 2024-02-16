@@ -39,7 +39,7 @@ class Solution {
         k -= minHeap.poll(); //
         
          // Step 4: Return the number of unique integers left after removals
-    return minHeap.size() + (k < 0 ? 1 : 0); // If k is negative, one more unique integer is removed partially
+        return minHeap.size() + (k < 0 ? 1 : 0); // If k is negative, one more unique integer is removed partially
 
     }
 }
