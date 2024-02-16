@@ -33,5 +33,8 @@ class Solution {
 
         // Step 2: Create a min-heap to store frequencies
         Queue<Integer> minHeap = new PriorityQueue<>(count.values());
+
+         // Step 3: Greedily remove the k least frequent numbers to have the least number of unique integers
+        while (k > 0)
     }
 }
