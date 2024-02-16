@@ -14,7 +14,6 @@ Constraints:
 1 <= arr.length <= 10^5
 1 <= arr[i] <= 10^9
 0 <= k <= arr.length
- * 
 */
 import java.util.HashMap;
 import java.util.Map;
