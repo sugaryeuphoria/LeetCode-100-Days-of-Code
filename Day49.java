@@ -41,3 +41,7 @@ Constraints:
  */
 // Import priority queue
 import java.util.PriorityQueue;
+// Class definition
+class Solution {
+
+}
