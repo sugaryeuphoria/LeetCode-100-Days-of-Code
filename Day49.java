@@ -39,3 +39,5 @@ Constraints:
 0 <= bricks <= 109
 0 <= ladders <= heights.length
  */
+// Import priority queue
+import java.util.PriorityQueue;
