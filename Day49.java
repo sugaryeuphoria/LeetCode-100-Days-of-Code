@@ -58,6 +58,9 @@ class Solution {
                 // we need to use bricks instead of ladders
                 if (pq.size() > ladders) {
                     bricks -= pq.poll(); // Use bricks for the smallest difference
+                     // If we don't have enough bricks, return the current index
+                     if (bricks < 0) {
+                        return i;
             }}
     }
 
