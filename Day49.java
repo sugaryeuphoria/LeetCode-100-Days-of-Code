@@ -41,7 +41,7 @@ Constraints:
  */
 // Import priority queue
 import java.util.PriorityQueue;
-
+// Class definition
 class Solution {
     public int furthestBuilding(int[] heights, int bricks, int ladders) {
         // Initialize a priority queue to store the differences in heights that require bricks
