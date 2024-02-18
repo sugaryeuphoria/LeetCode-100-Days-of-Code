@@ -10,7 +10,8 @@ class Day50 {
         int diff = heights[i + 1] - heights[i];
          // If the difference is positive, it means we need bricks to reach the next building
          if (diff > 0) {
-
+            // Add the difference to the priority queue
+            pq.offer(diff);
          }
     }
     }
