@@ -22,4 +22,7 @@ class Day50 {
                 }
     }
     }
-}
+    }
+// If we reach here, it means we can reach the last building
+return heights.length - 1;
+}}
