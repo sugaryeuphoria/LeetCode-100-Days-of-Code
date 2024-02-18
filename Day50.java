@@ -12,6 +12,10 @@ class Day50 {
          if (diff > 0) {
             // Add the difference to the priority queue
             pq.offer(diff);
+            // If the size of the priority queue exceeds the number of available ladders,
+                // we need to use bricks instead of ladders
+                if (pq.size() > ladders) {
+                    bricks -= pq.poll(); // Use bricks for the smallest difference
          }
     }
     }
