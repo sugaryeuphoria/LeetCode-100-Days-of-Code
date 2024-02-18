@@ -37,6 +37,13 @@ Explanation:
 - At time 6, all three rooms are being used. The fifth meeting is delayed.
 - At time 10, the meetings in rooms 1 and 2 finish. The fifth meeting starts in room 1 for the time period [10,12).
 Room 0 held 1 meeting while rooms 1 and 2 each held 2 meetings, so we return 1. 
+Constraints:
+
+1 <= n <= 100
+1 <= meetings.length <= 105
+meetings[i].length == 2
+0 <= starti < endi <= 5 * 105
+All the values of starti are unique.
  * 
  */
 import java.util.PriorityQueue;
