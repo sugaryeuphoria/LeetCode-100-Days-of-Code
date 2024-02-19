@@ -28,3 +28,8 @@ Constraints:
 class Solution(object):
     # Method definition
     def isPowerOfTwo(self, n):
+
+        """
+        :type n: int
+        :rtype: bool
+        """
