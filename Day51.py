@@ -24,3 +24,4 @@ Constraints:
 
 -231 <= n <= 231 - 1
 """
+# Class declaration
