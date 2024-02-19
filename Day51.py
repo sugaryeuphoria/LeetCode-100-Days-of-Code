@@ -14,4 +14,9 @@ Example 2:
 Input: n = 16
 Output: true
 Explanation: 24 = 16
+
+Example 3:
+
+Input: n = 3
+Output: false
 """
