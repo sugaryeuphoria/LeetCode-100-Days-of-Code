@@ -33,3 +33,5 @@ class Solution(object):
         :type n: int
         :rtype: bool
         """
+        # return 
+        return n > 0 and (n & (n - 1)) == 0
