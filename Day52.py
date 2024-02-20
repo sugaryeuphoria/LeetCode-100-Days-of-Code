@@ -31,4 +31,5 @@ class Solution(object):
      def missingNumber(self, nums):
           # length calculated
            n = len(nums)
-        
+        # total sum
+           total_sum = n * (n + 1) // 2
