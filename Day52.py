@@ -27,3 +27,6 @@ Follow up: Could you implement a solution using only O(1) extra space complexity
 """
 # Class definition
 class Solution(object):
+     # Method definition
+     def missingNumber(self, nums):
+        
