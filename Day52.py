@@ -34,4 +34,6 @@ class Solution(object):
         # total sum
            total_sum = n * (n + 1) // 2
         # Actual sum
-            actual_sum = sum(nums)
+           actual_sum = sum(nums)
+        # return
+            return total_sum - actual_sum
