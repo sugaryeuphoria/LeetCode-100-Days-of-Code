@@ -33,3 +33,5 @@ class Solution(object):
            n = len(nums)
         # total sum
            total_sum = n * (n + 1) // 2
+        # Actual sum
+            actual_sum = sum(nums)
