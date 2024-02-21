@@ -19,3 +19,5 @@ Constraints:
 
 0 <= left <= right <= 231 - 1
 """
+# Class definition
+class Solution(object):
