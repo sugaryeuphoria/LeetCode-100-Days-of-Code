@@ -21,3 +21,5 @@ Constraints:
 """
 # Class definition
 class Solution(object):
+    #Method definition
+     def rangeBitwiseAnd(self, left, right):
