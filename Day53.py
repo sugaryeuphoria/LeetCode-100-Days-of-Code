@@ -21,8 +21,10 @@ Constraints:
 """
 # Class definition
 class Solution(object):
-    #Method definition
+    # Method definition
      def rangeBitwiseAnd(self, left, right):
           # While condition
           while right > left:
             right &= (right - 1)
+            # Return
+            return right
