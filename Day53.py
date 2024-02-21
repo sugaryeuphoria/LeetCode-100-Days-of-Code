@@ -4,4 +4,9 @@ Example 1:
 
 Input: left = 5, right = 7
 Output: 4
+
+Example 2:
+
+Input: left = 0, right = 0
+Output: 0
 """
