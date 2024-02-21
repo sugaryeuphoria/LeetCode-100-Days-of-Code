@@ -23,3 +23,5 @@ Constraints:
 class Solution(object):
     #Method definition
      def rangeBitwiseAnd(self, left, right):
+          # While condition
+          while right > left:
