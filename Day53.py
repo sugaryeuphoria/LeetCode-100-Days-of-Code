@@ -25,3 +25,4 @@ class Solution(object):
      def rangeBitwiseAnd(self, left, right):
           # While condition
           while right > left:
+            right &= (right - 1)
