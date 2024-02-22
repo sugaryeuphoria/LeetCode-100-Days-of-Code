@@ -32,20 +32,20 @@ ai != bi
 */
 // Class definition
 class Day54 {
-// Function to find the town judge
+    // Function to find the town judge
     public int findJudge(int n, int[][] trust) {
         // Array to store the count of trusts for each person
         int[] count = new int[n + 1];
         // Iterate through the trust relationships
         for (int[] t : trust) {
-            --count[t[0]];  // Decrement trust count for the person who trusts
-            ++count[t[1]];  // Increment trust count for the person who is trusted
-    }
-    // Check if there is a person trusted by everyone else
-    for (int i = 1; i < n + 1; ++i)
-        if (count[i] == n - 1){
-            return i;  // Return the label of the town judge
+            --count[t[0]]; // Decrement trust count for the person who trusts
+            ++count[t[1]]; // Increment trust count for the person who is trusted
         }
-        return -1;  // Return -1 if no town judge is found
-}
+        // Check if there is a person trusted by everyone else
+        for (int i = 1; i < n + 1; ++i)
+            if (count[i] == n - 1) {
+                return i; // Return the label of the town judge
+            }
+        return -1; // Return -1 if no town judge is found
+    }
 }
