@@ -34,6 +34,7 @@ ai != bi
 class Day54 {
 // Function to find the town judge
 public int findJudge(int n, int[][] trust) {
-
+    // Array to store the count of trusts for each person
+    int[] count = new int[n + 1];
 }
 }
