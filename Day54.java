@@ -43,6 +43,8 @@ class Day54 {
     }
     // Check if there is a person trusted by everyone else
     for (int i = 1; i < n + 1; ++i)
-    if (count[i] == n - 1)
+        if (count[i] == n - 1){
+            return i;  // Return the label of the town judge
+        }
 }
 }
