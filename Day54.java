@@ -39,5 +39,7 @@ class Day54 {
         // Iterate through the trust relationships
         for (int[] t : trust) {
             --count[t[0]];  // Decrement trust count for the person who trusts
+            ++count[t[1]];  // Increment trust count for the person who is trusted
     }
+}
 }
