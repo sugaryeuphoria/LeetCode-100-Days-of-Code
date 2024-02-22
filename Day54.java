@@ -33,8 +33,10 @@ ai != bi
 // Class definition
 class Day54 {
 // Function to find the town judge
-public int findJudge(int n, int[][] trust) {
-    // Array to store the count of trusts for each person
-    int[] count = new int[n + 1];
-}
+    public int findJudge(int n, int[][] trust) {
+        // Array to store the count of trusts for each person
+        int[] count = new int[n + 1];
+        // Iterate through the trust relationships
+        for (int[] t : trust) {
+    }
 }
