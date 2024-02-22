@@ -41,5 +41,8 @@ class Day54 {
             --count[t[0]];  // Decrement trust count for the person who trusts
             ++count[t[1]];  // Increment trust count for the person who is trusted
     }
+    // Check if there is a person trusted by everyone else
+    for (int i = 1; i < n + 1; ++i)
+    if (count[i] == n - 1)
 }
 }
