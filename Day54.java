@@ -38,5 +38,6 @@ class Day54 {
         int[] count = new int[n + 1];
         // Iterate through the trust relationships
         for (int[] t : trust) {
+            --count[t[0]];  // Decrement trust count for the person who trusts
     }
 }
