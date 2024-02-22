@@ -46,5 +46,6 @@ class Day54 {
         if (count[i] == n - 1){
             return i;  // Return the label of the town judge
         }
+        return -1;  // Return -1 if no town judge is found
 }
 }
