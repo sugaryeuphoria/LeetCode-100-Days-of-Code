@@ -32,5 +32,8 @@ ai != bi
 */
 // Class definition
 class Day54 {
+// Function to find the town judge
+public int findJudge(int n, int[][] trust) {
 
+}
 }
