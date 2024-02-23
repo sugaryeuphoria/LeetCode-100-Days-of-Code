@@ -19,6 +19,9 @@ public class Day55 {
       final int v = flight[1]; // Destination city
       final int w = flight[2]; // Price of the flight
       graph[u].add(new Pair<>(v, w)); // Add the flight to the adjacency list of the departure city
+
+       // Call Dijkstra's algorithm to find the shortest path
+    return dijkstra(graph, src, dst, k);
     }
         }
     }  
