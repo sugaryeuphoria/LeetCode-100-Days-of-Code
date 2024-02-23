@@ -46,6 +46,9 @@ public class Day55 {
     }
      // If the current vertex is the destination, return the distance
      if (u == dst)
-     return d;
+        return d;
+     // If no stops left, continue to the next iteration
+     if (stops == 0)
+        continue;
 }  }
 
