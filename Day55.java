@@ -1,7 +1,10 @@
 // Class definition
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
+import java.util.PriorityQueue;
+import java.util.Queue;
 
 public class Day55 {
     // Method definition
@@ -28,7 +31,11 @@ public class Day55 {
     // Initialize an array to store distances
     int[][] dist = new int[graph.length][k + 2];
      // Initialize all distances to infinity
-     Arrays.stream(dist).forEach(A -> Arrays.fill(A, Integer.MAX_VALUE));
-        }
+    Arrays.stream(dist).forEach(A -> Arrays.fill(A, Integer.MAX_VALUE));
+     // Initialize a priority queue to store vertices (d, u, stops)
+    Queue<int[]> minHeap = new PriorityQueue<>((a, b) -> a[0] - b[0]);
+     // Initialize distance from source to source with k+1 stops as 0
+    dist[src][k + 1] = 0;
+        
     }}  
 
