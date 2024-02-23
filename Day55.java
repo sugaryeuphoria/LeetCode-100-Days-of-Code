@@ -36,6 +36,8 @@ public class Day55 {
     Queue<int[]> minHeap = new PriorityQueue<>((a, b) -> a[0] - b[0]);
      // Initialize distance from source to source with k+1 stops as 0
     dist[src][k + 1] = 0;
+     // Add source vertex to the priority queue
+    minHeap.offer(new int[] {dist[src][k + 1], src, k + 1});
         
     }}  
 
