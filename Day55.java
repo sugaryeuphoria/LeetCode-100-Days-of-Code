@@ -40,5 +40,8 @@ public class Day55 {
     minHeap.offer(new int[] {dist[src][k + 1], src, k + 1});
          // Dijkstra's algorithm loop
     while (!minHeap.isEmpty()) {
-    }}  
+      final int d = minHeap.peek()[0]; // Distance to the current vertex
+      final int u = minHeap.peek()[1]; // Current vertex
+      final int stops = minHeap.poll()[2]; // Number of stops left
+    }}  }
 
