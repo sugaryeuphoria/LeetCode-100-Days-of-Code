@@ -50,5 +50,22 @@ public class Day55 {
      // If no stops left, continue to the next iteration
      if (stops == 0)
         continue;
+
+        // Iterate over the adjacent vertices of the current vertex
+      for (Pair<Integer, Integer> pair : graph[u]) {
+        final int v = pair.getKey(); // Adjacent vertex
+        final int w = pair.getValue(); // Weight of the edge from u to v
+
+        // If the new distance is smaller than the stored distance, update it
+        if (d + w < dist[v][stops - 1]) {
+          dist[v][stops - 1] = d + w;
+          // Add the new distance, vertex, and stops to the priority queue
+          minHeap.offer(new int[] {dist[v][stops - 1], v, stops - 1});
+        }
+      }
+    
+
+    // If no path found, return -1
+    return -1;
 }  }
 
