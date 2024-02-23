@@ -38,6 +38,7 @@ public class Day55 {
     dist[src][k + 1] = 0;
      // Add source vertex to the priority queue
     minHeap.offer(new int[] {dist[src][k + 1], src, k + 1});
-        
+         // Dijkstra's algorithm loop
+    while (!minHeap.isEmpty()) {
     }}  
 
