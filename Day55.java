@@ -25,6 +25,10 @@ public class Day55 {
     }
     // Dijkstra's algorithm implementation
   private int dijkstra(List<Pair<Integer, Integer>>[] graph, int src, int dst, int k) {
+    // Initialize an array to store distances
+    int[][] dist = new int[graph.length][k + 2];
+     // Initialize all distances to infinity
+     Arrays.stream(dist).forEach(A -> Arrays.fill(A, Integer.MAX_VALUE));
         }
-    }  
+    }}  
 
