@@ -43,5 +43,9 @@ public class Day55 {
       final int d = minHeap.peek()[0]; // Distance to the current vertex
       final int u = minHeap.peek()[1]; // Current vertex
       final int stops = minHeap.poll()[2]; // Number of stops left
-    }}  }
+    }
+     // If the current vertex is the destination, return the distance
+     if (u == dst)
+     return d;
+}  }
 
