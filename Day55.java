@@ -23,6 +23,8 @@ public class Day55 {
        // Call Dijkstra's algorithm to find the shortest path
     return dijkstra(graph, src, dst, k);
     }
+    // Dijkstra's algorithm implementation
+  private int dijkstra(List<Pair<Integer, Integer>>[] graph, int src, int dst, int k) {
         }
     }  
 
