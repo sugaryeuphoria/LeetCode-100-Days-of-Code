@@ -60,4 +60,9 @@ class UnionFind:
         uf.unionByRank(x, y)
         peopleUnioned.add(x)
         peopleUnioned.add(y)
+
+         # Reset individuals who are not connected to the first person after the meeting
+      for person in peopleUnioned:
+        if not uf.connected(person, 0):
+          uf.reset(person)
     
