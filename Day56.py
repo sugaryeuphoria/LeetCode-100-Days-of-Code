@@ -25,3 +25,7 @@ class UnionFind:
     def connected(self, u: int, v: int) -> bool:
     # Check if elements 'u' and 'v' belong to the same set.
         return self._find(self.id[u]) == self._find(self.id[v])
+    
+    def reset(self, u: int) -> None:
+        # Reset the parent of element 'u' to itself.
+        self.id[u] = u
