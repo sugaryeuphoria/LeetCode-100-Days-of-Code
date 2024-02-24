@@ -65,4 +65,7 @@ class UnionFind:
       for person in peopleUnioned:
         if not uf.connected(person, 0):
           uf.reset(person)
+
+           # Find all people connected to the first person
+    return [i for i in range(n) if uf.connected(i, 0)]
     
