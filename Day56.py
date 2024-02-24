@@ -8,3 +8,6 @@ class UnionFind:
     # Perform union by rank operation between sets containing elements 'u' and 'v'.
     i = self._find(u)  # Find the root of 'u'
     j = self._find(v)  # Find the root of 'v'
+
+    if i == j:
+      return           # If 'u' and 'v' are already in the same set, no need to union them
