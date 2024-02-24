@@ -54,4 +54,10 @@ class UnionFind:
       # Process meetings in chronological order
     for _, pairs in sorted(timeToPairs.items(), key=lambda x: x[0]):
       peopleUnioned = set()
+
+      # Union people attending the current meeting
+      for x, y in pairs:
+        uf.unionByRank(x, y)
+        peopleUnioned.add(x)
+        peopleUnioned.add(y)
     
