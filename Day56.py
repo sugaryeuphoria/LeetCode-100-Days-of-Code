@@ -29,3 +29,15 @@ class UnionFind:
     def reset(self, u: int) -> None:
         # Reset the parent of element 'u' to itself.
         self.id[u] = u
+
+    def _find(self, u: int) -> int:
+    # Find the root of the set containing element 'u' (with path compression).
+        if self.id[u] != u:
+            self.id[u] = self._find(self.id[u])  # Path compression
+        return self.id[u]  # Return the root
+    
+    class Solution:
+     def findAllPeople(self, n: int, meetings: List[List[int]], firstPerson: int) -> List[int]:
+    # Initialize UnionFind object
+        uf = UnionFind(n)
+    
