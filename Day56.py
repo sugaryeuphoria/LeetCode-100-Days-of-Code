@@ -11,3 +11,6 @@ class UnionFind:
 
     if i == j:
       return           # If 'u' and 'v' are already in the same set, no need to union them
+    
+     if self.rank[i] < self.rank[j]:
+      self.id[i] = j   # Attach the root of 'u' to the root of 'v' if rank of 'u' is less
