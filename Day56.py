@@ -19,5 +19,9 @@ class UnionFind:
             self.id[j] = i   # Attach the root of 'v' to the root of 'u' if rank of 'v' is less
 
         else:
-      self.id[i] = j   # If ranks are equal, arbitrarily choose one as parent and increase rank
-      self.rank[j] += 1
+            self.id[i] = j   # If ranks are equal, arbitrarily choose one as parent and increase rank
+            self.rank[j] += 1
+        
+    def connected(self, u: int, v: int) -> bool:
+    # Check if elements 'u' and 'v' belong to the same set.
+        return self._find(self.id[u]) == self._find(self.id[v])
