@@ -46,4 +46,8 @@ class UnionFind:
 
     # Start the first meeting with 'firstPerson'
     uf.unionByRank(0, firstPerson)
+
+     # Group meetings by time
+    for x, y, time in meetings:
+      timeToPairs[time].append((x, y))
     
