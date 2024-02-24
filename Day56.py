@@ -50,4 +50,8 @@ class UnionFind:
      # Group meetings by time
     for x, y, time in meetings:
       timeToPairs[time].append((x, y))
+
+      # Process meetings in chronological order
+    for _, pairs in sorted(timeToPairs.items(), key=lambda x: x[0]):
+      peopleUnioned = set()
     
