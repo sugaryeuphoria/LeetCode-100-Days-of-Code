@@ -40,4 +40,8 @@ class UnionFind:
      def findAllPeople(self, n: int, meetings: List[List[int]], firstPerson: int) -> List[int]:
     # Initialize UnionFind object
         uf = UnionFind(n)
+
+        # Dictionary to store meetings grouped by time
+    timeToPairs = collections.defaultdict(list)
+
     
