@@ -17,5 +17,11 @@ class UnionFind {
  id[i] = i;
 for (int i = 0; i < n; ++i)
  sz[i] = 1;
-}
+}// Method to perform union by size
+public void unionBySize(int u, int v) {
+    final int i = find(u);
+    final int j = find(v);
+    if (i == j)
+      return;
+    if (sz[i] < sz[j]) {
     }}
