@@ -12,5 +12,10 @@ class UnionFind {
  // Initialize arrays for id and sz (size)
  id = new int[n];
  sz = new int[n];
-
+ // Initialize each element's id to itself and size to 1
+ for (int i = 0; i < n; ++i)
+ id[i] = i;
+for (int i = 0; i < n; ++i)
+ sz[i] = 1;
+}
     }}
