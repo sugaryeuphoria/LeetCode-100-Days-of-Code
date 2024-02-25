@@ -6,3 +6,9 @@ Your task is to determine if for every pair of indices i and j in nums, where i 
 Return true if it is possible to traverse between all such pairs of indices, or false otherwise.
  * 
  */
+// Class and method declaration
+class UnionFind {
+    public UnionFind(int n) {
+
+
+    }}
