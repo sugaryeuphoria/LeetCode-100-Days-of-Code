@@ -24,4 +24,12 @@ public void unionBySize(int u, int v) {
     if (i == j)
       return;
     if (sz[i] < sz[j]) {
+        // Update size and id arrays based on the sizes of components
+      sz[j] += sz[i];
+      id[i] = j;
+    } else {
+      sz[i] += sz[j];
+      id[j] = i;
+    }
+  }
     }}
