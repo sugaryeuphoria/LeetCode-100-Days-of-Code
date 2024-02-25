@@ -9,6 +9,8 @@ Return true if it is possible to traverse between all such pairs of indices, or 
 // Class and method declaration
 class UnionFind {
     public UnionFind(int n) {
-
+ // Initialize arrays for id and sz (size)
+ id = new int[n];
+ sz = new int[n];
 
     }}
