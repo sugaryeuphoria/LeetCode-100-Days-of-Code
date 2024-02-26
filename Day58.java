@@ -13,5 +13,6 @@ public class Day58 {
 // Remove the last digit from the input number
             x /= 10; 
         }
+         // Check if the reversed number is within the range of 32-bit signed integer
     }
 }
