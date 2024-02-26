@@ -8,6 +8,8 @@ public class Day58 {
 // Iterate until the input number becomes 0
         while (x != 0) {
 
+// Multiply the current reversed number by 10 and add the last digit of the input number
+            ans = ans * 10 + x % 10; 
         }
     }
 }
