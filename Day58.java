@@ -15,6 +15,9 @@ Example 3:
 
 Input: x = 120
 Output: 21
+Constraints:
+
+-231 <= x <= 231 - 1
  * 
 */
 public class Day58 {
