@@ -15,6 +15,8 @@ public class Day58 {
         }
          // Check if the reversed number is within the range of 32-bit signed integer
     
-        // // If it's outside the range, return 0; otherwise, cast it to int and return
+        // If it's outside the range, return 0; otherwise, cast it to int and return
+        return (ans < Integer.MIN_VALUE || ans > Integer.MAX_VALUE) ? 0 : (int) ans;
+
      }
 }
