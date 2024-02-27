@@ -23,3 +23,5 @@ class TreeNode(object):
 #Method and class definition
 class Solution(object):
     def diameterOfBinaryTree(self, root):
+        # Initialize maximum diameter variable
+        self.max_diameter = 0
