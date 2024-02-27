@@ -44,3 +44,6 @@ class Solution(object):
 
               # Return depth of the current node
             return max(left_depth, right_depth) + 1
+        
+        # Call the depth function to compute the depth of each node
+        depth(root)
