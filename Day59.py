@@ -32,3 +32,6 @@ class Solution(object):
              # Base case: if node is None, return 0
             if not node:
                 return 0
+            
+             # Recursively calculate the depth of left subtree
+            left_depth = depth(node.left)
