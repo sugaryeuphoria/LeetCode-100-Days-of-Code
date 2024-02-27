@@ -47,3 +47,6 @@ class Solution(object):
         
         # Call the depth function to compute the depth of each node
         depth(root)
+
+        # Return the maximum diameter encountered
+        return self.max_diameter
