@@ -25,3 +25,6 @@ class Solution(object):
     def diameterOfBinaryTree(self, root):
         # Initialize maximum diameter variable
         self.max_diameter = 0
+
+         # Define a recursive function to calculate the depth of each node
+        def depth(node):
