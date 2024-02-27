@@ -38,3 +38,6 @@ class Solution(object):
 
             # Recursively calculate the depth of right subtree
             right_depth = depth(node.right)
+
+            # Update max diameter with the sum of left and right subtree depths
+            self.max_diameter = max(self.max_diameter, left_depth + right_depth)
