@@ -35,3 +35,6 @@ class Solution(object):
             
              # Recursively calculate the depth of left subtree
             left_depth = depth(node.left)
+
+            # Recursively calculate the depth of right subtree
+            right_depth = depth(node.right)
