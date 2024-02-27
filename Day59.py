@@ -20,3 +20,6 @@ class TreeNode(object):
         self.val = val
         self.left = left
         self.right = right
+#Method and class definition
+class Solution(object):
+    def diameterOfBinaryTree(self, root):
