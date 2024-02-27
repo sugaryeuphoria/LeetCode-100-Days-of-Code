@@ -28,3 +28,7 @@ class Solution(object):
 
          # Define a recursive function to calculate the depth of each node
         def depth(node):
+
+             # Base case: if node is None, return 0
+            if not node:
+                return 0
