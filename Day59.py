@@ -41,3 +41,6 @@ class Solution(object):
 
             # Update max diameter with the sum of left and right subtree depths
             self.max_diameter = max(self.max_diameter, left_depth + right_depth)
+
+              # Return depth of the current node
+            return max(left_depth, right_depth) + 1
