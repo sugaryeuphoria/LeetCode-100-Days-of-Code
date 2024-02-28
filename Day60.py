@@ -46,3 +46,7 @@ class Solution(object):
 
                 # Pop the node from the left of the queue
                 node = queue.popleft()
+
+                  # If it's the first node in the level, update leftmost_value
+                if i == 0:  
+                    leftmost_value = node.val
