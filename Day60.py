@@ -29,3 +29,7 @@ class TreeNode(object):
 # Class and method definition
 class Solution(object):
     def findBottomLeftValue(self, root):
+        # Check if the root is None
+        if not root:
+            return None
+        
