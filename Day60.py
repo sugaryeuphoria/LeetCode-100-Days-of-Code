@@ -26,3 +26,6 @@ class TreeNode(object):
         self.val = val
         self.left = left
         self.right = right
+# Class and method definition
+class Solution(object):
+    def findBottomLeftValue(self, root):
