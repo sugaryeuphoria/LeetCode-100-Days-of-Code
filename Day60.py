@@ -43,3 +43,6 @@ class Solution(object):
 
             # Iterate over all nodes in the current level
             for i in range(level_size):
+
+                # Pop the node from the left of the queue
+                node = queue.popleft()
