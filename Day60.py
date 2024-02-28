@@ -37,3 +37,6 @@ class Solution(object):
          # Initialize the leftmost value as None
         leftmost_value = None
         while queue:
+
+             # Get the size of the current level
+            level_size = len(queue)
