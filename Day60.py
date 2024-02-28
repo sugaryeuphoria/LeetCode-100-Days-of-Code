@@ -58,3 +58,6 @@ class Solution(object):
                     # Add the right child to the queue if exists
                 if node.right:
                     queue.append(node.right)
+
+                    # Return the leftmost value found in the last level
+        return leftmost_value
