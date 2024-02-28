@@ -34,3 +34,6 @@ class Solution(object):
             return None
          # Perform level-order traversal using a queue
         queue = deque([root])
+         # Initialize the leftmost value as None
+        leftmost_value = None
+        while queue:
