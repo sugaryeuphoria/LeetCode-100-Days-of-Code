@@ -32,4 +32,5 @@ class Solution(object):
         # Check if the root is None
         if not root:
             return None
-        
+         # Perform level-order traversal using a queue
+        queue = deque([root])
