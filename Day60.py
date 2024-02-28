@@ -40,3 +40,6 @@ class Solution(object):
 
              # Get the size of the current level
             level_size = len(queue)
+
+            # Iterate over all nodes in the current level
+            for i in range(level_size):
