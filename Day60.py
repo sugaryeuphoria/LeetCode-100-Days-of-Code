@@ -54,3 +54,7 @@ class Solution(object):
                      # Add the left child to the queue if exists
                 if node.left:
                     queue.append(node.left)
+
+                    # Add the right child to the queue if exists
+                if node.right:
+                    queue.append(node.right)
