@@ -50,3 +50,7 @@ class Solution(object):
                   # If it's the first node in the level, update leftmost_value
                 if i == 0:  
                     leftmost_value = node.val
+
+                     # Add the left child to the queue if exists
+                if node.left:
+                    queue.append(node.left)
