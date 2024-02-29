@@ -25,3 +25,6 @@ class Solution(object):
 
             # Initialize the previous node's value as None
             prev_value = None
+
+             # Iterate over all nodes in the current level
+            for _ in range(level_size):
