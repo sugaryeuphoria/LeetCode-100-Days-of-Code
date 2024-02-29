@@ -17,3 +17,6 @@ class Solution(object):
 
         # Initialize the level index
         level = 0
+
+        # Perform level-order traversal
+        while queue:
