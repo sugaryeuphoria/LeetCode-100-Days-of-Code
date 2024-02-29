@@ -42,3 +42,6 @@ class Solution(object):
                      # For odd-indexed levels: even values in decreasing order
                     if node.val % 2 != 0 or (prev_value is not None and prev_value <= node.val):
                         return False
+                    
+                     # Update the previous value with the current node's value
+                prev_value = node.val
