@@ -6,3 +6,4 @@ For every even-indexed level, all nodes at the level have odd integer values in 
 For every odd-indexed level, all nodes at the level have even integer values in strictly decreasing order (from left to right).
 Given the root of a binary tree, return true if the binary tree is Even-Odd, otherwise return false.
 """
+from collections import deque
