@@ -22,3 +22,6 @@ class Solution(object):
         while queue:
             # Get the number of nodes in the current level
             level_size = len(queue)
+
+            # Initialize the previous node's value as None
+            prev_value = None
