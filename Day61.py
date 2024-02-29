@@ -45,3 +45,9 @@ class Solution(object):
                     
                      # Update the previous value with the current node's value
                 prev_value = node.val
+
+                # Enqueue the left and right children if they exist
+                if node.left:
+                    queue.append(node.left)
+                if node.right:
+                    queue.append(node.right)
