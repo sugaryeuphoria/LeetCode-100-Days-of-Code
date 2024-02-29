@@ -34,3 +34,8 @@ class Solution(object):
 
                 # Check conditions based on the level index
                 if level % 2 == 0:
+
+                    # For even-indexed levels: odd values in increasing order
+                    if node.val % 2 == 0 or (prev_value is not None and prev_value >= node.val):
+                        return False
+                else:
