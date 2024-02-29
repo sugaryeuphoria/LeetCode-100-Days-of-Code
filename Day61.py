@@ -54,3 +54,6 @@ class Solution(object):
 
                     # Move to the next level
             level += 1
+
+            # If all levels satisfy the conditions, return True
+        return True
