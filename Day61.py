@@ -7,3 +7,5 @@ For every odd-indexed level, all nodes at the level have even integer values in 
 Given the root of a binary tree, return true if the binary tree is Even-Odd, otherwise return false.
 """
 from collections import deque
+class Solution(object):
+    def isEvenOddTree(self, root):
