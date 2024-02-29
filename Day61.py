@@ -12,3 +12,5 @@ class Solution(object):
         # Check if the root is None
         if not root:
             return False
+         # Initialize a queue for level-order traversal
+        queue = deque([root])
