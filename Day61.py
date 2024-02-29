@@ -39,3 +39,6 @@ class Solution(object):
                     if node.val % 2 == 0 or (prev_value is not None and prev_value >= node.val):
                         return False
                 else:
+                     # For odd-indexed levels: even values in decreasing order
+                    if node.val % 2 != 0 or (prev_value is not None and prev_value <= node.val):
+                        return False
