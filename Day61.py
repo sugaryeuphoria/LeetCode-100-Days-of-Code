@@ -20,3 +20,5 @@ class Solution(object):
 
         # Perform level-order traversal
         while queue:
+            # Get the number of nodes in the current level
+            level_size = len(queue)
