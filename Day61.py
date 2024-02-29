@@ -14,3 +14,6 @@ class Solution(object):
             return False
          # Initialize a queue for level-order traversal
         queue = deque([root])
+
+        # Initialize the level index
+        level = 0
