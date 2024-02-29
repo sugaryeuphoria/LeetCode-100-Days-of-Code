@@ -9,3 +9,6 @@ Given the root of a binary tree, return true if the binary tree is Even-Odd, oth
 from collections import deque
 class Solution(object):
     def isEvenOddTree(self, root):
+        # Check if the root is None
+        if not root:
+            return False
