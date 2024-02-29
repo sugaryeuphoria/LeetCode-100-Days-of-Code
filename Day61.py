@@ -28,3 +28,6 @@ class Solution(object):
 
              # Iterate over all nodes in the current level
             for _ in range(level_size):
+
+                 # Dequeue the node from the left of the queue
+                node = queue.popleft()
