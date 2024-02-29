@@ -51,3 +51,6 @@ class Solution(object):
                     queue.append(node.left)
                 if node.right:
                     queue.append(node.right)
+
+                    # Move to the next level
+            level += 1
