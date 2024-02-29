@@ -31,3 +31,6 @@ class Solution(object):
 
                  # Dequeue the node from the left of the queue
                 node = queue.popleft()
+
+                # Check conditions based on the level index
+                if level % 2 == 0:
