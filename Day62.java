@@ -28,5 +28,9 @@ s contains at least one '1'.
 */
 // Class definition
 class Day62 {
+// Method definition
+    public String maximumOddBinaryNumber(String s) {
+
+    }
 
 }
