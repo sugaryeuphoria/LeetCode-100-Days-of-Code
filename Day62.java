@@ -30,7 +30,9 @@ s contains at least one '1'.
 class Day62 {
 // Method definition
     public String maximumOddBinaryNumber(String s) {
-
+// Count the number of '0's in the input string
+final int zeros = (int) s.chars().filter(c -> c == '0').count();
+    
     }
 
 }
