@@ -38,6 +38,7 @@ class Day62 {
 
          // Construct the output string:
         //  "1".repeat(ones - 1): Generate a string of '1's, one less than the count of '1's in the input string
+        // "0".repeat(zeros): Generate a string of '0's equal to the count of '0's in the input string
         
     }
 
