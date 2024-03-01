@@ -37,6 +37,7 @@ class Day62 {
         final int ones = s.length() - zeros;
 
          // Construct the output string:
+        //  "1".repeat(ones - 1): Generate a string of '1's, one less than the count of '1's in the input string
         
     }
 
