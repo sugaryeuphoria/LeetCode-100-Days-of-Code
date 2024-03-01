@@ -1,4 +1,4 @@
-"""
+/* 
 2864. Maximum Odd Binary Number
 
 You are given a binary string s that contains at least one '1'.
@@ -25,8 +25,8 @@ Constraints:
 1 <= s.length <= 100
 s consists only of '0' and '1'.
 s contains at least one '1'.
-"""
-#class definition
-class Solution {
+*/
+// Class definition
+class Day62 {
 
 }
