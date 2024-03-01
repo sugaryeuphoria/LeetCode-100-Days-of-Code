@@ -34,7 +34,9 @@ class Day62 {
         final int zeros = (int) s.chars().filter(c -> c == '0').count();
 
          // Calculate the number of '1's in the input string
-    final int ones = s.length() - zeros;
+        final int ones = s.length() - zeros;
+
+         // Construct the output string:
         
     }
 
