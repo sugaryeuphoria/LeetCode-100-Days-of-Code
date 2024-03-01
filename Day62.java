@@ -28,11 +28,14 @@ s contains at least one '1'.
 */
 // Class definition
 class Day62 {
-// Method definition
+    // Method definition
     public String maximumOddBinaryNumber(String s) {
-// Count the number of '0's in the input string
-final int zeros = (int) s.chars().filter(c -> c == '0').count();
-    
+        // Count the number of '0's in the input string
+        final int zeros = (int) s.chars().filter(c -> c == '0').count();
+
+         // Calculate the number of '1's in the input string
+    final int ones = s.length() - zeros;
+        
     }
 
 }
