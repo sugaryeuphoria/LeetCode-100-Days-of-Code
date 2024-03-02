@@ -49,3 +49,5 @@ class Solution(object):
 
                 # Move to the next index in the result array
             index -= 1
+            # Return the sorted squares array
+        return result
