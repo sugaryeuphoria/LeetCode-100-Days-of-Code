@@ -22,32 +22,42 @@ Follow up: Squaring each element and sorting the new array is very trivial, coul
 """
 class Solution(object):
     def sortedSquares(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: List[int]
+        """
         # Length of the input array
         n = len(nums)
+        
         # Initialize the result array with zeros
         result = [0] * n
-         # Pointers for the two ends of the array
+        
+        # Pointers for the two ends of the array
         left, right = 0, n - 1
+        
         # Index to fill in the result array
         index = n - 1
+
         # Loop until the pointers meet or cross each other
         while left <= right:
-              # Calculate the squares of the elements pointed by the pointers
+            # Calculate the squares of the elements pointed by the pointers
             left_sq = nums[left] * nums[left]
             right_sq = nums[right] * nums[right]
-             # Compare the squares of the elements
+            
+            # Compare the squares of the elements
             if left_sq > right_sq:
-                 # Fill in the result array with the square of the element pointed by the left pointer
+                # Fill in the result array with the square of the element pointed by the left pointer
                 result[index] = left_sq
-                 # Move the left pointer to the right
-                    left += 1
-                    else:
-                 # Fill in the result array with the square of the element pointed by the right pointer
+                # Move the left pointer to the right
+                left += 1
+            else:
+                # Fill in the result array with the square of the element pointed by the right pointer
                 result[index] = right_sq
-                 # Move the right pointer to the left
+                # Move the right pointer to the left
                 right -= 1
-
-                # Move to the next index in the result array
+            
+            # Move to the next index in the result array
             index -= 1
-            # Return the sorted squares array
+
+        # Return the sorted squares array
         return result
