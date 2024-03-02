@@ -20,3 +20,5 @@ nums is sorted in non-decreasing order.
 
 Follow up: Squaring each element and sorting the new array is very trivial, could you find an O(n) solution using a different approach?
 """
+class Solution(object):
+    def sortedSquares(self, nums):
