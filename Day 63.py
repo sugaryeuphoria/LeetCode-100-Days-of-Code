@@ -35,3 +35,5 @@ class Solution(object):
               # Calculate the squares of the elements pointed by the pointers
             left_sq = nums[left] * nums[left]
             right_sq = nums[right] * nums[right]
+             # Compare the squares of the elements
+            if left_sq > right_sq:
