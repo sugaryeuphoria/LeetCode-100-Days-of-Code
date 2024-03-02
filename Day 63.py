@@ -24,3 +24,6 @@ class Solution(object):
     def sortedSquares(self, nums):
         # Length of the input array
         n = len(nums)
+        # Initialize the result array with zeros
+        result = [0] * n
+        
