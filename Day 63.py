@@ -44,3 +44,5 @@ class Solution(object):
                     else:
                  # Fill in the result array with the square of the element pointed by the right pointer
                 result[index] = right_sq
+                 # Move the right pointer to the left
+                right -= 1
