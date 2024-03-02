@@ -46,3 +46,6 @@ class Solution(object):
                 result[index] = right_sq
                  # Move the right pointer to the left
                 right -= 1
+
+                # Move to the next index in the result array
+            index -= 1
