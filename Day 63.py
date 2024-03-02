@@ -32,3 +32,6 @@ class Solution(object):
         index = n - 1
         # Loop until the pointers meet or cross each other
         while left <= right:
+              # Calculate the squares of the elements pointed by the pointers
+            left_sq = nums[left] * nums[left]
+            right_sq = nums[right] * nums[right]
