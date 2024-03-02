@@ -28,3 +28,5 @@ class Solution(object):
         result = [0] * n
          # Pointers for the two ends of the array
         left, right = 0, n - 1
+        # Index to fill in the result array
+        index = n - 1
