@@ -39,3 +39,6 @@ class Solution(object):
             if left_sq > right_sq:
                  # Fill in the result array with the square of the element pointed by the left pointer
                 result[index] = left_sq
+                 # Move the left pointer to the right
+                    left += 1
+                    else:
