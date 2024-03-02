@@ -37,3 +37,5 @@ class Solution(object):
             right_sq = nums[right] * nums[right]
              # Compare the squares of the elements
             if left_sq > right_sq:
+                 # Fill in the result array with the square of the element pointed by the left pointer
+                result[index] = left_sq
