@@ -30,3 +30,5 @@ class Solution(object):
         left, right = 0, n - 1
         # Index to fill in the result array
         index = n - 1
+        # Loop until the pointers meet or cross each other
+        while left <= right:
