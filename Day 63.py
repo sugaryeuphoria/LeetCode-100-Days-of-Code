@@ -26,4 +26,5 @@ class Solution(object):
         n = len(nums)
         # Initialize the result array with zeros
         result = [0] * n
-        
+         # Pointers for the two ends of the array
+        left, right = 0, n - 1
