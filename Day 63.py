@@ -22,3 +22,5 @@ Follow up: Squaring each element and sorting the new array is very trivial, coul
 """
 class Solution(object):
     def sortedSquares(self, nums):
+        # Length of the input array
+        n = len(nums)
