@@ -37,3 +37,6 @@ class Solution(object):
         :type n: int
         :rtype: ListNode
         """
+        # Create a dummy node to handle edge cases
+        dummy = ListNode(0)
+        dummy.next = head
