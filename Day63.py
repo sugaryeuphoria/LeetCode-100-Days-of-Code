@@ -43,3 +43,7 @@ class Solution(object):
 
         first = dummy  # Initialize the first pointer to the dummy node
         second = dummy  # Initialize the second pointer to the dummy node
+
+         # Move the second pointer n+1 steps ahead
+        for i in range(n + 1):
+            second = second.next
