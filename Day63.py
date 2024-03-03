@@ -55,3 +55,5 @@ class Solution(object):
 
              # Remove the nth node from the end
         first.next = first.next.next
+
+         return dummy.next  # Return the updated head of the linked list
