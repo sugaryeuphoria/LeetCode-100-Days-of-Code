@@ -40,3 +40,5 @@ class Solution(object):
         # Create a dummy node to handle edge cases
         dummy = ListNode(0)
         dummy.next = head
+
+         first = dummy  # Initialize the first pointer to the dummy node
