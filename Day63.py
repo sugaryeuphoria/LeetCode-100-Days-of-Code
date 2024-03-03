@@ -52,3 +52,6 @@ class Solution(object):
         while second is not None:
             first = first.next
             second = second.next
+
+             # Remove the nth node from the end
+        first.next = first.next.next
