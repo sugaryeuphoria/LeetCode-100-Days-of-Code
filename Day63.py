@@ -41,4 +41,5 @@ class Solution(object):
         dummy = ListNode(0)
         dummy.next = head
 
-         first = dummy  # Initialize the first pointer to the dummy node
+        first = dummy  # Initialize the first pointer to the dummy node
+        second = dummy  # Initialize the second pointer to the dummy node
