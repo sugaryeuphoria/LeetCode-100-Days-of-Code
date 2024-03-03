@@ -40,20 +40,19 @@ class Solution(object):
         # Create a dummy node to handle edge cases
         dummy = ListNode(0)
         dummy.next = head
-
         first = dummy  # Initialize the first pointer to the dummy node
         second = dummy  # Initialize the second pointer to the dummy node
-
-         # Move the second pointer n+1 steps ahead
+        
+        # Move the second pointer n+1 steps ahead
         for i in range(n + 1):
             second = second.next
-
+            
         # Move both pointers simultaneously until second reaches the end
         while second is not None:
             first = first.next
             second = second.next
-
-             # Remove the nth node from the end
+        
+        # Remove the nth node from the end
         first.next = first.next.next
-
-         return dummy.next  # Return the updated head of the linked list
+        
+        return dummy.next  # Return the updated head of the linked list
