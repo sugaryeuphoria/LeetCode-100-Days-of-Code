@@ -47,3 +47,8 @@ class Solution(object):
          # Move the second pointer n+1 steps ahead
         for i in range(n + 1):
             second = second.next
+
+        # Move both pointers simultaneously until second reaches the end
+        while second is not None:
+            first = first.next
+            second = second.next
