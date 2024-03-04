@@ -59,3 +59,6 @@ class Solution(object):
 
         # Iterate through the tokens array using two-pointer technique
         while left <= right:
+
+             # If current power is enough to play face-up
+            if power >= tokens[left]:
