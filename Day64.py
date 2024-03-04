@@ -48,3 +48,5 @@ Constraints:
 # Class and method definition
 class Solution(object):
     def bagOfTokensScore(self, tokens, power):
+         # Sort the tokens array
+        tokens.sort()
