@@ -69,3 +69,6 @@ class Solution(object):
 
                 # Update max_score if necessary
                 max_score = max(max_score, score)
+
+                # If score is greater than 0 and playing face-down is possible
+            elif score > 0:
