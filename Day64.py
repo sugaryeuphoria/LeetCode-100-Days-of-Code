@@ -72,3 +72,7 @@ class Solution(object):
 
                 # If score is greater than 0 and playing face-down is possible
             elif score > 0:
+                # Play token face-down, update power, score, and right pointer
+                power += tokens[right]
+                score -= 1
+                right -= 1
