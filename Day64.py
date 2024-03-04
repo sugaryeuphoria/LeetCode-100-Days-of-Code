@@ -56,3 +56,6 @@ class Solution(object):
         max_score = 0
         left = 0
         right = len(tokens) - 1
+
+        # Iterate through the tokens array using two-pointer technique
+        while left <= right:
