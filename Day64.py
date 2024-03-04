@@ -79,3 +79,6 @@ class Solution(object):
              # If unable to play token, exit loop
             else:
                 break   
+
+            # Return the maximum score achieved
+        return max_score
