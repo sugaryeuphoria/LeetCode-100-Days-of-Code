@@ -45,3 +45,6 @@ Constraints:
 0 <= tokens.length <= 1000
 0 <= tokens[i], power < 104
 """
+# Class and method definition
+class Solution(object):
+    def bagOfTokensScore(self, tokens, power):
