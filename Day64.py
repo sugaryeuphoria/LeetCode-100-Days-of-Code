@@ -50,3 +50,9 @@ class Solution(object):
     def bagOfTokensScore(self, tokens, power):
          # Sort the tokens array
         tokens.sort()
+
+        # Initialize score, max_score, left, and right pointers
+        score = 0
+        max_score = 0
+        left = 0
+        right = len(tokens) - 1
