@@ -66,3 +66,6 @@ class Solution(object):
                 power -= tokens[left]
                 score += 1
                 left += 1
+
+                # Update max_score if necessary
+                max_score = max(max_score, score)
