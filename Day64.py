@@ -76,3 +76,6 @@ class Solution(object):
                 power += tokens[right]
                 score -= 1
                 right -= 1
+             # If unable to play token, exit loop
+            else:
+                break   
