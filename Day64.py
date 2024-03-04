@@ -62,3 +62,7 @@ class Solution(object):
 
              # If current power is enough to play face-up
             if power >= tokens[left]:
+                 # Play token face-up, update power, score, and left pointer
+                power -= tokens[left]
+                score += 1
+                left += 1
