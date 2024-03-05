@@ -39,5 +39,10 @@ class Day65 {
         // Initialize pointers i and j at the beginning and end of the string
         int i = 0;
         int j = s.length() - 1;
+
+         // Continue until the pointers meet or the characters at both pointers are different
+    while (i < j && s.charAt(i) == s.charAt(j)) {
+        
+    }
     }
 }
