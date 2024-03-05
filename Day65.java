@@ -34,3 +34,8 @@ Constraints:
 1 <= s.length <= 105
 s only consists of characters 'a', 'b', and 'c'.
 */
+class Day65 {
+    public int minimumLength(String s) {
+       
+    }
+}
