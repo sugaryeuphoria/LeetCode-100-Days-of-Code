@@ -45,6 +45,11 @@ class Day65 {
          // Store the common character
       final char c = s.charAt(i);
 
+      
+      // Move the left pointer to the right until a different character is encountered
+      while (i <= j && s.charAt(i) == c)
+        ++i;
+
     }
     }
 }
