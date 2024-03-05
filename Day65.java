@@ -36,6 +36,8 @@ s only consists of characters 'a', 'b', and 'c'.
 */
 class Day65 {
     public int minimumLength(String s) {
-       
+        // Initialize pointers i and j at the beginning and end of the string
+        int i = 0;
+        int j = s.length() - 1;
     }
 }
