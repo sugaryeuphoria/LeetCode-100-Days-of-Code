@@ -42,7 +42,9 @@ class Day65 {
 
          // Continue until the pointers meet or the characters at both pointers are different
     while (i < j && s.charAt(i) == s.charAt(j)) {
-        
+         // Store the common character
+      final char c = s.charAt(i);
+
     }
     }
 }
