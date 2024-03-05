@@ -48,6 +48,12 @@ class Day65 {
       
       // Move the left pointer to the right until a different character is encountered
       while (i <= j && s.charAt(i) == c)
+
+      // Move the right pointer to the left until a different character is encountered
+      while (i <= j && s.charAt(j) == c)
+        --j;
+    }
+
         ++i;
 
     }
