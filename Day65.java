@@ -29,5 +29,8 @@ Output: 3
 Explanation: An optimal sequence of operations is:
 - Take prefix = "aa" and suffix = "a" and remove them, s = "bccabb".
 - Take prefix = "b" and suffix = "bb" and remove them, s = "cca".
+Constraints:
 
+1 <= s.length <= 105
+s only consists of characters 'a', 'b', and 'c'.
 */
