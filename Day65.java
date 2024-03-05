@@ -53,7 +53,8 @@ class Day65 {
       while (i <= j && s.charAt(j) == c)
         --j;
     }
-
+ // Return the remaining length of the string
+ return j - i + 1;
         ++i;
 
     }
