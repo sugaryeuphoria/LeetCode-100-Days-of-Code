@@ -35,28 +35,29 @@ Constraints:
 s only consists of characters 'a', 'b', and 'c'.
 */
 class Day65 {
-    public int minimumLength(String s) {
-        // Initialize pointers i and j at the beginning and end of the string
-        int i = 0;
-        int j = s.length() - 1;
-
-         // Continue until the pointers meet or the characters at both pointers are different
-    while (i < j && s.charAt(i) == s.charAt(j)) {
-         // Store the common character
-      final char c = s.charAt(i);
-
+    class Solution {
+        public int minimumLength(String s) {
+          // Initialize pointers i and j at the beginning and end of the string
+          int i = 0;
+          int j = s.length() - 1;
       
-      // Move the left pointer to the right until a different character is encountered
-      while (i <= j && s.charAt(i) == c)
-
-      // Move the right pointer to the left until a different character is encountered
-      while (i <= j && s.charAt(j) == c)
-        --j;
-    }
- // Return the remaining length of the string
- return j - i + 1;
-        ++i;
-
-    }
+          // Continue until the pointers meet or the characters at both pointers are different
+          while (i < j && s.charAt(i) == s.charAt(j)) {
+            // Store the common character
+            final char c = s.charAt(i);
+            
+            // Move the left pointer to the right until a different character is encountered
+            while (i <= j && s.charAt(i) == c)
+              ++i;
+            
+            // Move the right pointer to the left until a different character is encountered
+            while (i <= j && s.charAt(j) == c)
+              --j;
+          }
+      
+          // Return the remaining length of the string
+          return j - i + 1;
+        }
     }
 }
+      
