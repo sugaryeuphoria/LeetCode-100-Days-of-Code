@@ -36,3 +36,6 @@ class Solution(object):
         # Initialize two pointers: slow and fast
         slow = head
         fast = head.next
+
+         # Traverse the linked list until fast pointer reaches the end or meets slow pointer
+        while slow != fast:
