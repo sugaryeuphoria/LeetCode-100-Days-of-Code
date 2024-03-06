@@ -28,3 +28,7 @@ pos is -1 or a valid index in the linked-list.
 # Class and method definition
 class Solution(object):
     def hasCycle(self, head):
+
+        # Check if the linked list is empty or has only one node
+        if not head or not head.next:
+            return False
