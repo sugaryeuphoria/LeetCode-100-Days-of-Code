@@ -46,4 +46,7 @@ class Solution(object):
             
             # Move slow pointer one step forward
             slow = slow.next
+
+            # Move fast pointer two steps forward
+            fast = fast.next.next
             
