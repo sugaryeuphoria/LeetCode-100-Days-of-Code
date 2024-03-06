@@ -32,3 +32,7 @@ class Solution(object):
         # Check if the linked list is empty or has only one node
         if not head or not head.next:
             return False
+        
+        # Initialize two pointers: slow and fast
+        slow = head
+        fast = head.next
