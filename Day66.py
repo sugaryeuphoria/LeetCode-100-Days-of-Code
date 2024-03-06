@@ -39,3 +39,9 @@ class Solution(object):
 
          # Traverse the linked list until fast pointer reaches the end or meets slow pointer
         while slow != fast:
+
+            # If fast pointer reaches the end, there is no cycle
+            if not fast or not fast.next:
+                return False
+            
+            
