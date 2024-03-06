@@ -49,4 +49,7 @@ class Solution(object):
 
             # Move fast pointer two steps forward
             fast = fast.next.next
+
+                # If fast pointer meets slow pointer, there is a cycle
+        return True
             
