@@ -44,4 +44,6 @@ class Solution(object):
             if not fast or not fast.next:
                 return False
             
+            # Move slow pointer one step forward
+            slow = slow.next
             
