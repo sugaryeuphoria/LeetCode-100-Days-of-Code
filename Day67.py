@@ -20,3 +20,6 @@ The number of nodes in the list is in the range [1, 100].
 # Method and class definition
 class Solution(object):
     def middleNode(self, head):
+        # Initialize two pointers: slow and fast
+        slow = head
+        fast = head
