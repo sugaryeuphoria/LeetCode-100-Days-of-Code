@@ -28,4 +28,7 @@ class Solution(object):
         while fast and fast.next:
             # Move slow pointer one step forward
             slow = slow.next
+
+            # Move fast pointer two steps forward
+            fast = fast.next.next
             
