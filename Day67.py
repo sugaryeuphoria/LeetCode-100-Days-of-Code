@@ -31,4 +31,7 @@ class Solution(object):
 
             # Move fast pointer two steps forward
             fast = fast.next.next
+
+             # At this point, slow pointer is at the middle node
+                return slow
             
