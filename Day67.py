@@ -33,5 +33,5 @@ class Solution(object):
             fast = fast.next.next
 
              # At this point, slow pointer is at the middle node
-                return slow
+            return slow
             
