@@ -26,3 +26,6 @@ class Solution(object):
 
         # Traverse the linked list until fast pointer reaches the end or the second to the end
         while fast and fast.next:
+            # Move slow pointer one step forward
+            slow = slow.next
+            
