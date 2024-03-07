@@ -23,3 +23,6 @@ class Solution(object):
         # Initialize two pointers: slow and fast
         slow = head
         fast = head
+
+        # Traverse the linked list until fast pointer reaches the end or the second to the end
+        while fast and fast.next:
