@@ -23,3 +23,4 @@ Constraints:
 class Solution(object):
     def maxFrequencyElements(self, nums):
                 kMax = 100  # Define the maximum possible value in nums
+                ans = 0  # Initialize the answer to 0
