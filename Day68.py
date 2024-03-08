@@ -25,4 +25,6 @@ class Solution(object):
                 kMax = 100  # Define the maximum possible value in nums
                 ans = 0  # Initialize the answer to 0
                 count = [0] * (kMax + 1)  # Initialize a list of zeros with length kMax + 1 to count the frequencies
+                 # Count the frequency of each number in nums
+                for num in nums:
 
