@@ -27,4 +27,6 @@ class Solution(object):
                 count = [0] * (kMax + 1)  # Initialize a list of zeros with length kMax + 1 to count the frequencies
                  # Count the frequency of each number in nums
                 for num in nums:
+                    count[num] += 1  # Increment the count of the current number
+
 
