@@ -29,9 +29,9 @@ class Solution(object):
                 for num in nums:
                     count[num] += 1  # Increment the count of the current number
                     maxFreq = max(count)  # Find the maximum frequency
- # Add the maximum frequency to the answer for each frequency that equals the maximum frequency
+                # Add the maximum frequency to the answer for each frequency that equals the maximum frequency
                 for freq in count:
                     if freq == maxFreq:  # If the current frequency equals the maximum frequency
                         ans += maxFreq  # Add the maximum frequency to the answer
-                        return ans  # Return the answer
+                return ans  # Return the answer
 
