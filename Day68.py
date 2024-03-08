@@ -28,5 +28,6 @@ class Solution(object):
                  # Count the frequency of each number in nums
                 for num in nums:
                     count[num] += 1  # Increment the count of the current number
+                    maxFreq = max(count)  # Find the maximum frequency
 
 
