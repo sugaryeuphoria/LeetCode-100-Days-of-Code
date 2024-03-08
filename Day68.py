@@ -15,4 +15,7 @@ Output: 5
 Explanation: All elements of the array have a frequency of 1 which is the maximum.
 So the number of elements in the array with maximum frequency is 5.
 
+Constraints:
+1 <= nums.length <= 100
+1 <= nums[i] <= 100
 """
