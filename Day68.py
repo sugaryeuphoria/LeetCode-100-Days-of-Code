@@ -31,4 +31,5 @@ class Solution(object):
                     maxFreq = max(count)  # Find the maximum frequency
  # Add the maximum frequency to the answer for each frequency that equals the maximum frequency
                 for freq in count:
+                        if freq == maxFreq:  # If the current frequency equals the maximum frequency
 
