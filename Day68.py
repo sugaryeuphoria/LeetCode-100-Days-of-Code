@@ -19,3 +19,6 @@ Constraints:
 1 <= nums.length <= 100
 1 <= nums[i] <= 100
 """
+# Method and class definition
+class Solution(object):
+    def maxFrequencyElements(self, nums):
