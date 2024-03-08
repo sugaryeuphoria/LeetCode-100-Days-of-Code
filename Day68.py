@@ -33,4 +33,5 @@ class Solution(object):
                 for freq in count:
                     if freq == maxFreq:  # If the current frequency equals the maximum frequency
                         ans += maxFreq  # Add the maximum frequency to the answer
+                        return ans  # Return the answer
 
