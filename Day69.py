@@ -12,4 +12,9 @@ Example 2:
 Input: nums1 = [1,2,3,6], nums2 = [2,3,4,5]
 Output: 2
 Explanation: There are two common elements in the array 2 and 3 out of which 2 is the smallest, so 2 is returned. 
+Constraints:
+
+1 <= nums1.length, nums2.length <= 105
+1 <= nums1[i], nums2[j] <= 109
+Both nums1 and nums2 are sorted in non-decreasing order.
 """
