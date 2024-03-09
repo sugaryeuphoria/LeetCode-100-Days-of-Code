@@ -35,3 +35,5 @@ class Solution(object):
                 pointer1 += 1
             else:
                 pointer2 += 1
+                 # If no common value is found, return -1
+        return -1
