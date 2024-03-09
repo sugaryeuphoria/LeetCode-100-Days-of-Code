@@ -18,3 +18,6 @@ Constraints:
 1 <= nums1[i], nums2[j] <= 109
 Both nums1 and nums2 are sorted in non-decreasing order.
 """
+# Class and method definition 
+class Solution(object):
+    def getCommon(self, nums1, nums2):
