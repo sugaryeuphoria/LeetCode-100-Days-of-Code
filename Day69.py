@@ -30,3 +30,8 @@ class Solution(object):
             # If the current elements are equal, return the common value
             if nums1[pointer1] == nums2[pointer2]:
                 return nums1[pointer1]
+             # Move the pointer for the array with the smaller element
+            elif nums1[pointer1] < nums2[pointer2]:
+                pointer1 += 1
+            else:
+                pointer2 += 1
