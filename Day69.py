@@ -24,3 +24,6 @@ class Solution(object):
          # Initialize pointers for both arrays
         pointer1 = 0
         pointer2 = 0
+
+        # Iterate through the arrays
+        while pointer1 < len(nums1) and pointer2 < len(nums2):
