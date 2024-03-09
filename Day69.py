@@ -27,3 +27,6 @@ class Solution(object):
 
         # Iterate through the arrays
         while pointer1 < len(nums1) and pointer2 < len(nums2):
+            # If the current elements are equal, return the common value
+            if nums1[pointer1] == nums2[pointer2]:
+                return nums1[pointer1]
