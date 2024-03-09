@@ -21,7 +21,7 @@ Both nums1 and nums2 are sorted in non-decreasing order.
 # Class and method definition 
 class Solution(object):
     def getCommon(self, nums1, nums2):
-         # Initialize pointers for both arrays
+        # Initialize pointers for both arrays
         pointer1 = 0
         pointer2 = 0
 
@@ -35,5 +35,5 @@ class Solution(object):
                 pointer1 += 1
             else:
                 pointer2 += 1
-                 # If no common value is found, return -1
+        # If no common value is found, return -1
         return -1
