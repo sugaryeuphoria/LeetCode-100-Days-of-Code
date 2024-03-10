@@ -26,3 +26,6 @@ class Solution(object):
 
         # Find the intersection of the two sets
         intersection_set = set1.intersection(set2)  # Find the common elements
+
+         # Convert the intersection set back to a list
+        intersection_list = list(intersection_set)  # Convert set to list
