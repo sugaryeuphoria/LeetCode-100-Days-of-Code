@@ -42,3 +42,8 @@ class Solution(object):
 
          # Initialize a min-heap
         heap = []
+
+         # Push the head of each linked list into the min-heap
+        for node in lists:
+            if node:
+                heapq.heappush(heap, (node.val, node))
