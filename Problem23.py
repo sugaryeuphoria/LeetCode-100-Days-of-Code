@@ -36,3 +36,6 @@ import heapq
 
 class Solution(object):
     def mergeKLists(self, lists):
+         # Define a dummy head for the result linked list
+        dummy = ListNode()
+        current = dummy
