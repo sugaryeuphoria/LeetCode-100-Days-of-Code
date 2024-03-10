@@ -29,3 +29,5 @@ class Solution(object):
 
          # Convert the intersection set back to a list
         intersection_list = list(intersection_set)  # Convert set to list
+
+        return intersection_list  # Return the list of common elements
