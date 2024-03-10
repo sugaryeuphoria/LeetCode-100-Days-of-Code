@@ -32,3 +32,7 @@ k == lists.length
 lists[i] is sorted in ascending order.
 The sum of lists[i].length will not exceed 104.
 """
+import heapq
+
+class Solution(object):
+    def mergeKLists(self, lists):
