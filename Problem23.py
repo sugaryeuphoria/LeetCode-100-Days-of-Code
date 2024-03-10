@@ -60,3 +60,6 @@ class Solution(object):
              # If the popped node has a next node, push it into the min-heap
             if node.next:
                 heapq.heappush(heap, (node.next.val, node.next))
+
+                # Return the merged linked list (skipping the dummy head)
+        return dummy.next
