@@ -48,7 +48,11 @@ class Solution(object):
             if node:
                 heapq.heappush(heap, (node.val, node))
 
-                 # Merge the linked lists
+        # Merge the linked lists
         while heap:
             # Pop the minimum node from the min-heap
             val, node = heapq.heappop(heap)
+
+             # Append the minimum node to the result linked list
+            current.next = node
+            current = current.next
