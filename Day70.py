@@ -20,3 +20,6 @@ Constraints:
 """
 class Solution(object):
     def intersection(self, nums1, nums2):
+         # Convert the arrays to sets
+        set1 = set(nums1)  # Convert nums1 to a set
+        set2 = set(nums2)  # Convert nums2 to a set
