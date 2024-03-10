@@ -47,3 +47,8 @@ class Solution(object):
         for node in lists:
             if node:
                 heapq.heappush(heap, (node.val, node))
+
+                 # Merge the linked lists
+        while heap:
+            # Pop the minimum node from the min-heap
+            val, node = heapq.heappop(heap)
