@@ -18,3 +18,5 @@ Constraints:
 0 <= nums1[i], nums2[i] <= 1000
  
 """
+class Solution(object):
+    def intersection(self, nums1, nums2):
