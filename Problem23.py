@@ -56,3 +56,7 @@ class Solution(object):
              # Append the minimum node to the result linked list
             current.next = node
             current = current.next
+
+             # If the popped node has a next node, push it into the min-heap
+            if node.next:
+                heapq.heappush(heap, (node.next.val, node.next))
