@@ -23,3 +23,6 @@ class Solution(object):
          # Convert the arrays to sets
         set1 = set(nums1)  # Convert nums1 to a set
         set2 = set(nums2)  # Convert nums2 to a set
+
+        # Find the intersection of the two sets
+        intersection_set = set1.intersection(set2)  # Find the common elements
