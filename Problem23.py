@@ -39,3 +39,6 @@ class Solution(object):
          # Define a dummy head for the result linked list
         dummy = ListNode()
         current = dummy
+
+         # Initialize a min-heap
+        heap = []
