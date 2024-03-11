@@ -53,5 +53,8 @@ class Solution(object):
         # Append remaining characters from s in any order
         for char in count:
             result += char * count[char]
+
+            # Return 
+            return result
         
         
