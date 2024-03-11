@@ -41,4 +41,9 @@ class Solution(object):
 
         # Initialize an empty string to store the result
         result = ''
+
+        # Append characters from order string in the order specified
+        for char in order:
+            if char in count:
+                result += char * count[char]
         
