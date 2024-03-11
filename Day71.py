@@ -38,3 +38,7 @@ class Solution(object):
         count = {}
         for char in s:
             count[char] = count.get(char, 0) + 1
+
+        # Initialize an empty string to store the result
+        result = ''
+        
