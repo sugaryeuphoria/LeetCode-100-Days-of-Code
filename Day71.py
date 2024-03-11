@@ -49,5 +49,9 @@ class Solution(object):
 
                  # Remove the character from count dictionary
                 del count[char]
+
+                 # Append remaining characters from s in any order
+        for char in count:
+            result += char * count[char]
         
         
