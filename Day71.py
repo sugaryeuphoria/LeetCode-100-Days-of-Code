@@ -39,7 +39,7 @@ class Solution(object):
             if char in count:
                 result += char * count[char]
 
-                 # Remove the character from count dictionary
+                # Remove the character from count dictionary
                 del count[char]
 
         # Append remaining characters from s in any order
