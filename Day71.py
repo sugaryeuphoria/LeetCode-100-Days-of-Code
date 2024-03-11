@@ -30,3 +30,6 @@ Constraints:
 order and s consist of lowercase English letters.
 All the characters of order are unique.
 """
+# Class and method definition
+class Solution(object):
+    def customSortString(self, order, s):
