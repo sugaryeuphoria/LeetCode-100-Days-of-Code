@@ -33,3 +33,8 @@ All the characters of order are unique.
 # Class and method definition
 class Solution(object):
     def customSortString(self, order, s):
+
+        # Create a dictionary to store the count of characters in string s
+        count = {}
+        for char in s:
+            count[char] = count.get(char, 0) + 1
