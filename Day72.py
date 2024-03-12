@@ -21,3 +21,5 @@ Constraints:
 The given linked list will contain between 1 and 1000 nodes.
 Each node in the linked list has -1000 <= node.val <= 1000.
 """
+class Solution(object):
+    def removeZeroSumSublists(self, head):
