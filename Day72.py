@@ -23,3 +23,8 @@ Each node in the linked list has -1000 <= node.val <= 1000.
 """
 class Solution(object):
     def removeZeroSumSublists(self, head):
+          # Create a dummy node to handle cases where the head is part of the zero-sum sequence
+        dummy = ListNode(0)
+        dummy.next = head
+        prefix_sum = 0
+        prefix_sum_map = {}
