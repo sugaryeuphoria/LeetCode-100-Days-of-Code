@@ -31,3 +31,5 @@ class Solution(object):
         prefix_sum_map[0] = dummy  # Initialize the prefix sum map with a sum of 0
         while head:
             prefix_sum += head.val
+            # If the prefix sum is found in the prefix_sum_map, it means we found a zero-sum sequence
+            if prefix_sum in prefix_sum_map:
