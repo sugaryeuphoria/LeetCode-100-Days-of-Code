@@ -43,3 +43,7 @@ class Solution(object):
                     curr_sum += node.val
                 prev.next = node.next
             else:
+                # Add the current prefix sum to the map
+                prefix_sum_map[prefix_sum] = head
+            head = head.next
+        return dummy.next
