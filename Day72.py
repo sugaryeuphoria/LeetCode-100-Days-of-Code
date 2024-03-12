@@ -29,3 +29,5 @@ class Solution(object):
         prefix_sum = 0
         prefix_sum_map = {}
         prefix_sum_map[0] = dummy  # Initialize the prefix sum map with a sum of 0
+        while head:
+            prefix_sum += head.val
