@@ -33,3 +33,13 @@ class Solution(object):
             prefix_sum += head.val
             # If the prefix sum is found in the prefix_sum_map, it means we found a zero-sum sequence
             if prefix_sum in prefix_sum_map:
+                # Remove all nodes between the two occurrences of the prefix sum
+                prev = prefix_sum_map[prefix_sum]
+                node = prev.next
+                curr_sum = prefix_sum + node.val
+                while curr_sum != prefix_sum:
+                    del prefix_sum_map[curr_sum]
+                    node = node.next
+                    curr_sum += node.val
+                prev.next = node.next
+            else:
