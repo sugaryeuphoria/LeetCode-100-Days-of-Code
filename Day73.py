@@ -28,3 +28,9 @@ class Solution(object):
         :type k: int
         :rtype: ListNode
         """
+         # Function to reverse a group of k nodes starting from the head
+        def reverse(head, k):
+            prev = None
+            curr = head
+            for _ in range(k):
+                if not curr:
