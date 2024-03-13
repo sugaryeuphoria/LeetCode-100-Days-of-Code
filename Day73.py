@@ -51,3 +51,4 @@ class Solution(object):
         new_head, new_tail = reverse(head, k)
         # Recursively reverse the remaining groups of k nodes
         new_tail.next = self.reverseKGroup(curr, k)
+        return new_head
