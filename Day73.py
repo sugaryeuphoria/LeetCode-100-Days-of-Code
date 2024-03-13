@@ -46,4 +46,6 @@ class Solution(object):
             curr = curr.next
             count += 1
         if count < k:
-            return head  # If less than k nodes are remaining, return the head as no reversal is possible
+            return head  # 
+        # Reverse the first group of k nodes
+        new_head, new_tail = reverse(head, k)
