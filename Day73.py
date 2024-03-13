@@ -46,3 +46,4 @@ class Solution(object):
             curr = curr.next
             count += 1
         if count < k:
+            return head  # If less than k nodes are remaining, return the head as no reversal is possible
