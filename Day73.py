@@ -21,3 +21,10 @@ The number of nodes in the list is n.
 
 Follow-up: Can you solve the problem in O(1) extra memory space?
 """
+class Solution(object):
+    def reverseKGroup(self, head, k):
+        """
+        :type head: ListNode
+        :type k: int
+        :rtype: ListNode
+        """
