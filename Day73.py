@@ -39,4 +39,4 @@ class Solution(object):
                 curr.next = prev
                 prev = curr
                 curr = next_node
-                 return prev, head  # Return the head and tail of the reversed group
+                return prev, head  # Return the head and tail of the reversed group
