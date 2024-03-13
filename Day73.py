@@ -40,3 +40,9 @@ class Solution(object):
                 prev = curr
                 curr = next_node
                 return prev, head  # Return the head and tail of the reversed group
+            count = 0
+        curr = head
+        while curr and count < k:
+            curr = curr.next
+            count += 1
+        if count < k:
