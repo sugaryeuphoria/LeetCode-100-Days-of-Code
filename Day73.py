@@ -34,3 +34,8 @@ class Solution(object):
             curr = head
             for _ in range(k):
                 if not curr:
+                      return head, None  # If less than k nodes are remaining, return the head of the current group and None
+                next_node = curr.next
+                curr.next = prev
+                prev = curr
+                curr = next_node
