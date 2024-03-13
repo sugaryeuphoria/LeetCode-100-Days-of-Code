@@ -49,3 +49,5 @@ class Solution(object):
             return head  # 
         # Reverse the first group of k nodes
         new_head, new_tail = reverse(head, k)
+        # Recursively reverse the remaining groups of k nodes
+        new_tail.next = self.reverseKGroup(curr, k)
