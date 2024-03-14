@@ -33,3 +33,5 @@ class Solution(object):
         count = defaultdict(int)
         # Initialize the count of prefix sum 0 to 1, as it is the starting point
         count[0] = 1
+          # Iterate through each number in the nums array
+        for num in nums:
