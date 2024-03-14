@@ -35,3 +35,5 @@ class Solution(object):
         count[0] = 1
           # Iterate through each number in the nums array
         for num in nums:
+              # Update the prefix sum
+            prefix += num
