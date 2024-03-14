@@ -41,3 +41,5 @@ class Solution(object):
             key = prefix - goal
             # Add the count of subarrays with the desired sum to the answer
             ans += count[key]
+            # Increment the count of occurrences of the current prefix sum
+            count[prefix] += 1
