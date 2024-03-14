@@ -22,3 +22,6 @@ nums[i] is either 0 or 1.
 0 <= goal <= nums.length
 """
 from collections import defaultdict
+
+class Solution(object):
+    def numSubarraysWithSum(self, nums, goal):
