@@ -37,3 +37,5 @@ class Solution(object):
         for num in nums:
               # Update the prefix sum
             prefix += num
+            # Calculate the key for the desired sum by subtracting the goal from the prefix sum
+            key = prefix - goal
