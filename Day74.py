@@ -21,3 +21,4 @@ Constraints:
 nums[i] is either 0 or 1.
 0 <= goal <= nums.length
 """
+from collections import defaultdict
