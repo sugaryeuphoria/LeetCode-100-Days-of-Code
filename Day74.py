@@ -25,17 +25,18 @@ from collections import defaultdict
 
 class Solution(object):
     def numSubarraysWithSum(self, nums, goal):
- # Initialize the answer variable to store the count of subarrays
+        # Initialize the answer variable to store the count of subarrays
         ans = 0
-         # Initialize the prefix sum variable
+        # Initialize the prefix sum variable
         prefix = 0
         # Create a defaultdict to store the count of occurrences of each prefix sum
         count = defaultdict(int)
         # Initialize the count of prefix sum 0 to 1, as it is the starting point
         count[0] = 1
-          # Iterate through each number in the nums array
+
+        # Iterate through each number in the nums array
         for num in nums:
-              # Update the prefix sum
+            # Update the prefix sum
             prefix += num
             # Calculate the key for the desired sum by subtracting the goal from the prefix sum
             key = prefix - goal
@@ -43,5 +44,7 @@ class Solution(object):
             ans += count[key]
             # Increment the count of occurrences of the current prefix sum
             count[prefix] += 1
-            # Return the total count of subarrays with the desired sum
+
+        # Return the total count of subarrays with the desired sum
         return ans
+
