@@ -31,3 +31,5 @@ class Solution(object):
         prefix = 0
         # Create a defaultdict to store the count of occurrences of each prefix sum
         count = defaultdict(int)
+        # Initialize the count of prefix sum 0 to 1, as it is the starting point
+        count[0] = 1
