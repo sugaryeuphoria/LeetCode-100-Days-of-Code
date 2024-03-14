@@ -39,3 +39,5 @@ class Solution(object):
             prefix += num
             # Calculate the key for the desired sum by subtracting the goal from the prefix sum
             key = prefix - goal
+            # Add the count of subarrays with the desired sum to the answer
+            ans += count[key]
