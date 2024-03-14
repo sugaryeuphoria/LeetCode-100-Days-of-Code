@@ -43,3 +43,5 @@ class Solution(object):
             ans += count[key]
             # Increment the count of occurrences of the current prefix sum
             count[prefix] += 1
+            # Return the total count of subarrays with the desired sum
+        return ans
