@@ -29,3 +29,5 @@ class Solution(object):
         ans = 0
          # Initialize the prefix sum variable
         prefix = 0
+        # Create a defaultdict to store the count of occurrences of each prefix sum
+        count = defaultdict(int)
