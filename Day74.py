@@ -27,3 +27,5 @@ class Solution(object):
     def numSubarraysWithSum(self, nums, goal):
  # Initialize the answer variable to store the count of subarrays
         ans = 0
+         # Initialize the prefix sum variable
+        prefix = 0
