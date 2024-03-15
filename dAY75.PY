@@ -25,4 +25,4 @@ class Solution(object):
         
     # Initialize arrays to store prefix and suffix products
     prefix_products = [1] * n
-    
+    suffix_products = [1] * n
