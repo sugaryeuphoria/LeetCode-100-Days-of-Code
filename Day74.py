@@ -1,6 +1,7 @@
 """
 930. Binary Subarrays With Sum
-Given a binary array nums and an integer goal, return the number of non-empty subarrays with a sum goal.
+Given a binary array nums and an integer goal, return the number of non-empty
+subarrays with a sum goal.
 A subarray is a contiguous part of the array.
 
 Example 1:
@@ -25,16 +26,16 @@ from collections import defaultdict
 
 class Solution(object):
     def numSubarraysWithSum(self, nums, goal):
-        # Initialize the answer variable to store the count of subarrays
+            # Initialize the answer variable to store the count of subarrays
         ans = 0
-        # Initialize the prefix sum variable
+            # Initialize the prefix sum variable
         prefix = 0
-        # Create a defaultdict to store the count of occurrences of each prefix sum
+            # Create a defaultdict to store the count of occurrences of each prefix sum
         count = defaultdict(int)
-        # Initialize the count of prefix sum 0 to 1, as it is the starting point
+            # Initialize the count of prefix sum 0 to 1, as it is the starting point
         count[0] = 1
 
-        # Iterate through each number in the nums array
+            # Iterate through each number in the nums array
         for num in nums:
             # Update the prefix sum
             prefix += num
