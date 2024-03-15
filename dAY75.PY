@@ -30,3 +30,5 @@ class Solution(object):
     # Calculate prefix products
     for i in range(1, n):
         prefix_products[i] = prefix_products[i - 1] * nums[i - 1]
+         # Combine prefix and suffix products to get the answer
+        result = []
