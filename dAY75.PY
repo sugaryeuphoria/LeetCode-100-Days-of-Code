@@ -21,3 +21,4 @@ Follow up: Can you solve the problem in O(1) extra space complexity? (The output
 """
 class Solution(object):
     def productExceptSelf(self, nums):
+          n = len(nums)
