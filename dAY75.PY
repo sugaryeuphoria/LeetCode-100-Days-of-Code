@@ -23,14 +23,16 @@ class Solution(object):
     def productExceptSelf(self, nums):
           n = len(nums)
         
-    # Initialize arrays to store prefix and suffix products
-    prefix_products = [1] * n
-    suffix_products = [1] * n
+         # Initialize arrays to store prefix and suffix products
+          prefix_products = [1] * n
+          suffix_products = [1] * n
 
-    # Calculate prefix products
-    for i in range(1, n):
-        prefix_products[i] = prefix_products[i - 1] * nums[i - 1]
-         # Combine prefix and suffix products to get the answer
-        result = []
-        for i in range(n):
+         # Calculate prefix products
+          for i in range(1, n):
+            prefix_products[i] = prefix_products[i - 1] * nums[i - 1]
+            # Combine prefix and suffix products to get the answer
+            result = []
+          for i in range(n):
             result.append(prefix_products[i] * suffix_products[i])
+        
+            return result
