@@ -33,3 +33,4 @@ class Solution(object):
          # Combine prefix and suffix products to get the answer
         result = []
         for i in range(n):
+            result.append(prefix_products[i] * suffix_products[i])
