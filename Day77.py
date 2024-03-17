@@ -29,3 +29,4 @@ class Solution:
         inserted = False  # Initialize a flag to track whether the new interval has been inserted
         for interval in intervals:  # Iterate through each interval in the given intervals list
             if interval[1] < newInterval[0]:  # If the end of the current interval is before the start of the new interval
+                result.append(interval)  # Append the current interval to the result list
