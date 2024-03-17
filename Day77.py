@@ -35,3 +35,4 @@ class Solution:
                     result.append(newInterval)  # Append the new interval to the result list
                     inserted = True  # Set the inserted flag to True
                 result.append(interval)  # Append the current interval to the result list
+            else:  # If there is an overlap between the current interval and the new interval
