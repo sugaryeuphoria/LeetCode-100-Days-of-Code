@@ -36,3 +36,4 @@ class Solution:
                     inserted = True  # Set the inserted flag to True
                 result.append(interval)  # Append the current interval to the result list
             else:  # If there is an overlap between the current interval and the new interval
+                newInterval[0] = min(newInterval[0], interval[0])  # Update the start of the new interval
