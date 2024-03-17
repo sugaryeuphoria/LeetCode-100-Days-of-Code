@@ -19,3 +19,4 @@ nums[i] is either 0 or 1.
 """
 class Solution(object):
     def findMaxLength(self, nums):
+                hashmap = {0: -1}  # Initialize a hashmap to store the cumulative count of 0s and 1s and their indices
