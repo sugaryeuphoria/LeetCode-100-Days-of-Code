@@ -37,3 +37,4 @@ class Solution:
                 result.append(interval)  # Append the current interval to the result list
             else:  # If there is an overlap between the current interval and the new interval
                 newInterval[0] = min(newInterval[0], interval[0])  # Update the start of the new interval
+                newInterval[1] = max(newInterval[1], interval[1])  # Update the end of the new interval
