@@ -25,3 +25,4 @@ newInterval.length == 2
 """
 class Solution:
     def insert(self, intervals, newInterval):
+        result = []  # Initialize an empty list to store the result
