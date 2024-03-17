@@ -25,22 +25,38 @@ newInterval.length == 2
 """
 class Solution:
     def insert(self, intervals, newInterval):
-        result = []  # Initialize an empty list to store the result
-        inserted = False  # Initialize a flag to track whether the new interval has been inserted
-        for interval in intervals:  # Iterate through each interval in the given intervals list
-            if interval[1] < newInterval[0]:  # If the end of the current interval is before the start of the new interval
-                result.append(interval)  # Append the current interval to the result list
-            elif interval[0] > newInterval[1]:  # If the start of the current interval is after the end of the new interval
-                if not inserted:  # Check if the new interval has not been inserted yet
-                    result.append(newInterval)  # Append the new interval to the result list
-                    inserted = True  # Set the inserted flag to True
-                result.append(interval)  # Append the current interval to the result list
-            else:  # If there is an overlap between the current interval and the new interval
-                newInterval[0] = min(newInterval[0], interval[0])  # Update the start of the new interval
-                newInterval[1] = max(newInterval[1], interval[1])  # Update the end of the new interval
-        if not inserted:  # If the new interval has not been inserted yet
-            result.append(newInterval)  # Append the new interval to the result list
-        return result  # Return the result list containing merged intervals
+        # Initialize an empty list to store the result
+        result = []  
+        # Initialize a flag to track whether the new interval has been inserted
+        inserted = False  
+         # Iterate through each interval in the given intervals list
+        for interval in intervals: 
+             # If the end of the current interval is before the start of the new interval
+            if interval[1] < newInterval[0]: 
+                # Append the current interval to the result list
+                result.append(interval) 
+                 # If the start of the current interval is after the end of the new interval 
+            elif interval[0] > newInterval[1]: 
+                # Check if the new interval has not been inserted yet
+                if not inserted:  
+                     # Append the new interval to the result list
+                    result.append(newInterval) 
+                    # Set the inserted flag to True
+                    inserted = True  
+                    # Append the current interval to the result list
+                result.append(interval)  
+                # If there is an overlap between the current interval and the new interval
+            else: 
+                  # Update the start of the new interval
+                newInterval[0] = min(newInterval[0], interval[0]) 
+                # Update the end of the new interval
+                newInterval[1] = max(newInterval[1], interval[1])  
+                # If the new interval has not been inserted yet
+        if not inserted:  
+             # Append the new interval to the result list
+            result.append(newInterval) 
+            # Return the result list containing merged intervals
+        return result  
 
 
 
