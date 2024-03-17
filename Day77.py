@@ -26,3 +26,4 @@ newInterval.length == 2
 class Solution:
     def insert(self, intervals, newInterval):
         result = []  # Initialize an empty list to store the result
+        inserted = False  # Initialize a flag to track whether the new interval has been inserted
