@@ -21,3 +21,4 @@ class Solution(object):
     def findMaxLength(self, nums):
         hashmap = {0: -1}  # Initialize a hashmap to store the cumulative count of 0s and 1s and their indices
         max_length = 0  # Initialize a variable to store the maximum length of contiguous subarray
+        count = 0  # Initialize a variable to store the cumulative count of 0s and 1s
