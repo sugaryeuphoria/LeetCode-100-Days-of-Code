@@ -31,3 +31,4 @@ class Solution:
             if interval[1] < newInterval[0]:  # If the end of the current interval is before the start of the new interval
                 result.append(interval)  # Append the current interval to the result list
             elif interval[0] > newInterval[1]:  # If the start of the current interval is after the end of the new interval
+                if not inserted:  # Check if the new interval has not been inserted yet
