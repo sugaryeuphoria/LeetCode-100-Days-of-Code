@@ -40,3 +40,8 @@ class Solution:
                 newInterval[1] = max(newInterval[1], interval[1])  # Update the end of the new interval
         if not inserted:  # If the new interval has not been inserted yet
             result.append(newInterval)  # Append the new interval to the result list
+        return result  # Return the result list containing merged intervals
+
+
+
+
