@@ -34,3 +34,4 @@ class Solution:
                 if not inserted:  # Check if the new interval has not been inserted yet
                     result.append(newInterval)  # Append the new interval to the result list
                     inserted = True  # Set the inserted flag to True
+                result.append(interval)  # Append the current interval to the result list
