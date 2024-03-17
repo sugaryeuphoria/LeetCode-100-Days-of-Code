@@ -39,3 +39,4 @@ class Solution:
                 newInterval[0] = min(newInterval[0], interval[0])  # Update the start of the new interval
                 newInterval[1] = max(newInterval[1], interval[1])  # Update the end of the new interval
         if not inserted:  # If the new interval has not been inserted yet
+            result.append(newInterval)  # Append the new interval to the result list
