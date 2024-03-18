@@ -31,3 +31,6 @@ points[i].length == 2
 """
 class Solution(object):
     def findMinArrowShots(self, points):
+         if not points:
+            return 0
+        
