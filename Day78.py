@@ -41,3 +41,5 @@ class Solution(object):
          end_point = points[0][1]
          # Iterate through each balloon
          for start, end in points[1:]:
+              # If the start point of the current balloon is greater than the end point of the current arrow
+            if start > end_point:
