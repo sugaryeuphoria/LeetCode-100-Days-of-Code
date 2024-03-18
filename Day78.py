@@ -33,5 +33,8 @@ class Solution(object):
     def findMinArrowShots(self, points):
          if not points:
             return 0
-        # Sort the balloons based on their end points
-        points.sort(key=lambda x: x[1])
+         # Sort the balloons based on their end points
+         points.sort(key=lambda x: x[1])
+         # Initialize the number of arrows needed
+         arrows = 1 
+        # Initialize the end point of the current arrow
