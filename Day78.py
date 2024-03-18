@@ -49,3 +49,7 @@ class Solution(object):
                 end_point = end
 
                 return arrows
+            
+# Test cases
+solution = Solution()
+print(solution.findMinArrowShots([[10,16],[2,8],[1,6],[7,12]]))  # Output: 2
