@@ -43,3 +43,7 @@ class Solution(object):
          for start, end in points[1:]:
               # If the start point of the current balloon is greater than the end point of the current arrow
             if start > end_point:
+              # Increment the number of arrows needed
+                arrows += 1 
+                # Update the end point of the current arrow
+                end_point = end
