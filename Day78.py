@@ -29,3 +29,5 @@ Constraints:
 points[i].length == 2
 -231 <= xstart < xend <= 231 - 1
 """
+class Solution(object):
+    def findMinArrowShots(self, points):
