@@ -39,3 +39,5 @@ class Solution(object):
          arrows = 1 
          # Initialize the end point of the current arrow
          end_point = points[0][1]
+         # Iterate through each balloon
+         for start, end in points[1:]:
