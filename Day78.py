@@ -53,3 +53,4 @@ class Solution(object):
 # Test cases
 solution = Solution()
 print(solution.findMinArrowShots([[10,16],[2,8],[1,6],[7,12]]))  # Output: 2
+print(solution.findMinArrowShots([[1,2],[3,4],[5,6],[7,8]]))    # Output: 4
