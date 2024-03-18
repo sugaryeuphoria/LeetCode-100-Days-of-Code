@@ -37,4 +37,5 @@ class Solution(object):
          points.sort(key=lambda x: x[1])
          # Initialize the number of arrows needed
          arrows = 1 
-        # Initialize the end point of the current arrow
+         # Initialize the end point of the current arrow
+         end_point = points[0][1]
