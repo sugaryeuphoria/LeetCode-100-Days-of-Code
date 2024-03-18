@@ -47,3 +47,5 @@ class Solution(object):
                 arrows += 1 
                 # Update the end point of the current arrow
                 end_point = end
+
+                return arrows
