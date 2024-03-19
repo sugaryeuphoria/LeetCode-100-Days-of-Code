@@ -33,3 +33,5 @@ class Solution(object):
     def leastInterval(self, tasks, n):
         # Step 1: Count the frequency of each task
         freq = Counter(tasks)
+        # Step 2: Sort the tasks based on their frequencies
+        sorted_tasks = sorted(freq.values(), reverse=True)
