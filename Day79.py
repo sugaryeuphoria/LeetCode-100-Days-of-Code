@@ -45,3 +45,6 @@ class Solution(object):
             # Step 6: Calculate the minimum intervals required
         idle_slots = max(0, idle_slots)  # Ensure idle_slots is non-negative
         return len(tasks) + idle_slots
+    
+solution = Solution()
+print(solution.leastInterval(["A","A","A","B","B","B"], 2))  # Output: 8
