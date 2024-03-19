@@ -42,3 +42,6 @@ class Solution(object):
         # Step 5: Iterate through the sorted tasks
         for task in sorted_tasks[1:]:
             idle_slots -= min(task, max_freq - 1)
+            # Step 6: Calculate the minimum intervals required
+        idle_slots = max(0, idle_slots)  # Ensure idle_slots is non-negative
+        return len(tasks) + idle_slots
