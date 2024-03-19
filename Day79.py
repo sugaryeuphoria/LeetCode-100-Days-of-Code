@@ -37,3 +37,8 @@ class Solution(object):
         sorted_tasks = sorted(freq.values(), reverse=True)
         # Step 3: Calculate the maximum frequency
         max_freq = sorted_tasks[0]
+        # Step 4: Determine the number of idle slots required
+        idle_slots = (max_freq - 1) * n
+        # Step 5: Iterate through the sorted tasks
+        for task in sorted_tasks[1:]:
+            idle_slots -= min(task, max_freq - 1)
