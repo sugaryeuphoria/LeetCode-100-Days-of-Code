@@ -48,3 +48,5 @@ class Solution(object):
     
 solution = Solution()
 print(solution.leastInterval(["A","A","A","B","B","B"], 2))  # Output: 8
+print(solution.leastInterval(["A","C","A","B","D","B"], 1))  # Output: 6
+
