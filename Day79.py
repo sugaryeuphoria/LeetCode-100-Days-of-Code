@@ -31,3 +31,5 @@ tasks[i] is an uppercase English letter.
 from collections import Counter
 class Solution(object):
     def leastInterval(self, tasks, n):
+        # Step 1: Count the frequency of each task
+        freq = Counter(tasks)
