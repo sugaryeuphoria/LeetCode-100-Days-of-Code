@@ -29,3 +29,5 @@ tasks[i] is an uppercase English letter.
 0 <= n <= 100
 """
 from collections import Counter
+class Solution(object):
+    def leastInterval(self, tasks, n):
