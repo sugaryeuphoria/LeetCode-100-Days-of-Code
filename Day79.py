@@ -35,3 +35,5 @@ class Solution(object):
         freq = Counter(tasks)
         # Step 2: Sort the tasks based on their frequencies
         sorted_tasks = sorted(freq.values(), reverse=True)
+        # Step 3: Calculate the maximum frequency
+        max_freq = sorted_tasks[0]
