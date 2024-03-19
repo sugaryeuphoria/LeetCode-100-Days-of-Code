@@ -22,4 +22,9 @@ Input: tasks = ["A","A","A", "B","B","B"], n = 3
 Output: 10
 Explanation: A possible sequence is: A -> B -> idle -> idle -> A -> B -> idle -> idle -> A -> B.
 There are only two types of tasks, A and B, which need to be separated by 3 intervals. This leads to idling twice between repetitions of these tasks.
+
+Constraints:
+1 <= tasks.length <= 104
+tasks[i] is an uppercase English letter.
+0 <= n <= 100
 """
