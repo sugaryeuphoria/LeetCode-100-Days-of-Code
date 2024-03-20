@@ -38,5 +38,8 @@ class Day80 {
      ListNode lastNodeInList2 = list2;
      while (lastNodeInList2.next != null)
        lastNodeInList2 = lastNodeInList2.next;
+
+       // Connect the last node in list2 to the node after B
+    lastNodeInList2.next = nodeB.next;
     }
 }
