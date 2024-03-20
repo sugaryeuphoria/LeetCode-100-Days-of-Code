@@ -26,5 +26,9 @@ class Day80 {
     ListNode nodeBeforeA = list1;
     for (int i = 0; i < a - 1; ++i)
         nodeBeforeA = nodeBeforeA.next;
+    // Find the bth node
+    ListNode nodeB = nodeBeforeA.next;
+    for (int i = 0; i < b - a; ++i)
+      nodeB = nodeB.next;
     }
 }
