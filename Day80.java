@@ -41,5 +41,8 @@ class Day80 {
 
        // Connect the last node in list2 to the node after B
     lastNodeInList2.next = nodeB.next;
+
+    // Disconnect the nodes from A to B
+    nodeB.next = null;
     }
 }
