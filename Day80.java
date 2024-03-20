@@ -44,5 +44,8 @@ class Day80 {
 
     // Disconnect the nodes from A to B
     nodeB.next = null;
+
+     // Return the modified list1
+     return list1;
     }
 }
