@@ -20,3 +20,8 @@ Constraints:
 1 <= a <= b < list1.length - 1
 1 <= list2.length <= 104
  */
+class Day80 {
+    public ListNode mergeInBetween(ListNode list1, int a, int b, ListNode list2) {
+
+    }
+}
