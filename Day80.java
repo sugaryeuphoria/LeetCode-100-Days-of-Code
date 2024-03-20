@@ -13,4 +13,10 @@ Example 2:
 Input: list1 = [0,1,2,3,4,5,6], a = 2, b = 5, list2 = [1000000,1000001,1000002,1000003,1000004]
 Output: [0,1,1000000,1000001,1000002,1000003,1000004,6]
 Explanation: The blue edges and nodes in the above figure indicate the result.
+
+Constraints:
+
+3 <= list1.length <= 104
+1 <= a <= b < list1.length - 1
+1 <= list2.length <= 104
  */
