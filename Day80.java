@@ -20,8 +20,15 @@ Constraints:
 1 <= a <= b < list1.length - 1
 1 <= list2.length <= 104
  */
-import java.util.ListNode;
+class ListNode {
+    int val;
+    ListNode next;
 
+    ListNode(int val) {
+        this.val = val;
+        this.next = null;
+    }
+}
 class Day80 {
     public ListNode mergeInBetween(ListNode list1, int a, int b, ListNode list2) {
         // Traverse list1 to find the node before the ath node
