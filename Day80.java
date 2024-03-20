@@ -30,5 +30,8 @@ class Day80 {
     ListNode nodeB = nodeBeforeA.next;
     for (int i = 0; i < b - a; ++i)
       nodeB = nodeB.next;
+    
+    // Connect the node before A to the head of list2
+    nodeBeforeA.next = list2;
     }
 }
