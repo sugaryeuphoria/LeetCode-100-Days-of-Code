@@ -22,6 +22,9 @@ Constraints:
  */
 class Day80 {
     public ListNode mergeInBetween(ListNode list1, int a, int b, ListNode list2) {
-
+ // Traverse list1 to find the node before the ath node
+ ListNode nodeBeforeA = list1;
+ for (int i = 0; i < a - 1; ++i)
+   nodeBeforeA = nodeBeforeA.next;
     }
 }
