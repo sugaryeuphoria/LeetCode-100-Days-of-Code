@@ -20,32 +20,35 @@ Constraints:
 1 <= a <= b < list1.length - 1
 1 <= list2.length <= 104
  */
+import java.util.ListNode;
+
 class Day80 {
     public ListNode mergeInBetween(ListNode list1, int a, int b, ListNode list2) {
-    // Traverse list1 to find the node before the ath node
-    ListNode nodeBeforeA = list1;
-    for (int i = 0; i < a - 1; ++i)
-        nodeBeforeA = nodeBeforeA.next;
-    // Find the bth node
-    ListNode nodeB = nodeBeforeA.next;
-    for (int i = 0; i < b - a; ++i)
-      nodeB = nodeB.next;
+        // Traverse list1 to find the node before the ath node
+        ListNode nodeBeforeA = list1;
+        for (int i = 0; i < a - 1; ++i)
+          nodeBeforeA = nodeBeforeA.next;
     
-    // Connect the node before A to the head of list2
-    nodeBeforeA.next = list2;
-
-     // Find the last node in list2
-     ListNode lastNodeInList2 = list2;
-     while (lastNodeInList2.next != null)
-       lastNodeInList2 = lastNodeInList2.next;
-
-       // Connect the last node in list2 to the node after B
-    lastNodeInList2.next = nodeB.next;
-
-    // Disconnect the nodes from A to B
-    nodeB.next = null;
-
-     // Return the modified list1
-     return list1;
+        // Find the bth node
+        ListNode nodeB = nodeBeforeA.next;
+        for (int i = 0; i < b - a; ++i)
+          nodeB = nodeB.next;
+    
+        // Connect the node before A to the head of list2
+        nodeBeforeA.next = list2;
+        
+        // Find the last node in list2
+        ListNode lastNodeInList2 = list2;
+        while (lastNodeInList2.next != null)
+          lastNodeInList2 = lastNodeInList2.next;
+    
+        // Connect the last node in list2 to the node after B
+        lastNodeInList2.next = nodeB.next;
+        
+        // Disconnect the nodes from A to B
+        nodeB.next = null;
+        
+        // Return the modified list1
+        return list1;
+      }
     }
-}
