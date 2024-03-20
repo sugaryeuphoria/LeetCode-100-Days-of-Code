@@ -33,5 +33,10 @@ class Day80 {
     
     // Connect the node before A to the head of list2
     nodeBeforeA.next = list2;
+
+     // Find the last node in list2
+     ListNode lastNodeInList2 = list2;
+     while (lastNodeInList2.next != null)
+       lastNodeInList2 = lastNodeInList2.next;
     }
 }
