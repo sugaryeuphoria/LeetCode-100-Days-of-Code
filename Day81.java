@@ -23,7 +23,7 @@ class Day81 {
     public ListNode reverseList(ListNode head) {
         // Check if the head is null or if it's the last node in the list
         if (head == null || head.next == null){
-            
+            return head; // If so, return the head as it is (base case)
         }
     }
 }
