@@ -33,7 +33,7 @@ class Day81 {
           head.next.next = head; 
           // Set the current node's next pointer to null to avoid cycles
           head.next = null; 
-      
+          
           // Return the new head of the reversed list
           return newHead;
         }
