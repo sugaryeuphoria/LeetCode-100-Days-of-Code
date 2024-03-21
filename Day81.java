@@ -19,9 +19,12 @@ The number of nodes in the list is the range [0, 5000].
 -5000 <= Node.val <= 5000
 */
 class Day81 {
- // Define a method to reverse a linked list
- public ListNode reverseList(ListNode head) {
-
- }
+    // Define a method to reverse a linked list
+    public ListNode reverseList(ListNode head) {
+        // Check if the head is null or if it's the last node in the list
+        if (head == null || head.next == null){
+            
+        }
+    }
 }
 
