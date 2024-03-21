@@ -19,8 +19,10 @@ The number of nodes in the list is the range [0, 5000].
 -5000 <= Node.val <= 5000
 */
 class Day81 {
+
         // Define a method to reverse a linked list
         public ListNode reverseList(ListNode head) {
+
           // Check if the head is null or if it's the last node in the list
           if (head == null || head.next == null)
             return head; // If so, return the head as it is (base case)
@@ -31,9 +33,10 @@ class Day81 {
           // Reverse the pointers to reverse the order of nodes
           // Make the next node's next pointer point back to the current node
           head.next.next = head; 
+          
           // Set the current node's next pointer to null to avoid cycles
           head.next = null; 
-          
+
           // Return the new head of the reversed list
           return newHead;
         }
