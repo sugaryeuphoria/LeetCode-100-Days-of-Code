@@ -31,7 +31,8 @@ class Day81 {
           // Reverse the pointers to reverse the order of nodes
           // Make the next node's next pointer point back to the current node
           head.next.next = head; 
-          head.next = null; // Set the current node's next pointer to null to avoid cycles
+          // Set the current node's next pointer to null to avoid cycles
+          head.next = null; 
       
           // Return the new head of the reversed list
           return newHead;
