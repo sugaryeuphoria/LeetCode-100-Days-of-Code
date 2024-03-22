@@ -14,3 +14,11 @@ Constraints:
 The number of nodes in the list is in the range [1, 105].
 0 <= Node.val <= 9
 """
+class Solution {
+    public boolean isPalindrome(ListNode head) {
+ // Check if the list is empty or contains only one node
+        if (head == null || head.next == null) {
+
+        }
+    }
+}
