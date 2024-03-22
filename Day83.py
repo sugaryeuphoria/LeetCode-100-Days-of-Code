@@ -24,3 +24,5 @@ It is guaranteed that the input board has only one solution.
 """
 class Solution(object):
     def solveSudoku(self, board):
+         # Function to solve the Sudoku puzzle
+        self.solve(board)
