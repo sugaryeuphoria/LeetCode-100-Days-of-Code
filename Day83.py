@@ -22,3 +22,5 @@ board[i].length == 9
 board[i][j] is a digit or '.'.
 It is guaranteed that the input board has only one solution.
 """
+class Solution(object):
+    def solveSudoku(self, board):
