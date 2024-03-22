@@ -40,3 +40,5 @@ class Solution(object):
                             board[row][col] = digit
                             if self.solve(board):
                                 return True
+                            # Backtrack if no solution found
+                            board[row][col] = '.'
