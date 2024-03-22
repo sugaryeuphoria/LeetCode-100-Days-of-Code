@@ -18,7 +18,7 @@ class Solution {
     public boolean isPalindrome(ListNode head) {
  // Check if the list is empty or contains only one node
         if (head == null || head.next == null) {
-
+return true; // An empty list or a single node is considered a palindrome
         }
     }
 }
