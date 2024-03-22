@@ -55,5 +55,6 @@ return true; // An empty list or a single node is considered a palindrome
             prev = current; // Move prev to current node
             current = nextNode; // Move current to next node
         }
+         return prev; // Return the new head of the reversed list
     }
 }
