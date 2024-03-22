@@ -41,5 +41,8 @@ return true; // An empty list or a single node is considered a palindrome
             }
             p1 = p1.next;
             p2 = p2.next;
+
+        }
+        return true; // If all values match, it's a palindrome
     }
 }
