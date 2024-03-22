@@ -23,5 +23,11 @@ return true; // An empty list or a single node is considered a palindrome
         // Step 1: Find the middle of the linked list
         ListNode slow = head; // Slow pointer
         ListNode fast = head; // Fast pointer
+
+        // Move the fast pointer two steps at a time and slow pointer one step at a time
+        while (fast.next != null && fast.next.next != null) {
+            slow = slow.next;
+            fast = fast.next.next;
+        }
     }
 }
