@@ -44,3 +44,5 @@ class Solution(object):
                             board[row][col] = '.'
                               # If no digit can be placed, return False
                     return False
+                  # If all cells are filled, return True
+        return True
