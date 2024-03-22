@@ -34,5 +34,8 @@ return true; // An empty list or a single node is considered a palindrome
     // Step 3: Compare the first half with the reversed second half
         ListNode p1 = head; // Pointer for the first half
         ListNode p2 = secondHalfHead; // Pointer for the reversed second half
+    // Traverse both halves and compare corresponding nodes
+        while (p2 != null) {
+            if (p1.val != p2.val) {
     }
 }
