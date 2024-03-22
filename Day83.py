@@ -46,3 +46,4 @@ class Solution(object):
                     return False
                   # If all cells are filled, return True
         return True
+    def is_valid(self, board, row, col, digit):
