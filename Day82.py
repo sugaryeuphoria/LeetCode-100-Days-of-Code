@@ -48,5 +48,12 @@ return true; // An empty list or a single node is considered a palindrome
     private ListNode reverseLinkedList(ListNode head) {
         ListNode prev = null; // Pointer to the previous node
         ListNode current = head; // Pointer to the current node
+    // Traverse the list, reversing the next pointers
+        while (current != null) {
+            ListNode nextNode = current.next; // Temporary pointer to the next node
+            current.next = prev; // Reverse the next pointer
+            prev = current; // Move prev to current node
+            current = nextNode; // Move current to next node
+        }
     }
 }
