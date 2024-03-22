@@ -29,5 +29,7 @@ return true; // An empty list or a single node is considered a palindrome
             slow = slow.next;
             fast = fast.next.next;
         }
+        // Step 2: Reverse the second half of the linked list
+        ListNode secondHalfHead = reverseLinkedList(slow.next);
     }
 }
