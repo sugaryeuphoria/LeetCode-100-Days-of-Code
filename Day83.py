@@ -47,3 +47,9 @@ class Solution(object):
                   # If all cells are filled, return True
         return True
     def is_valid(self, board, row, col, digit):
+          # Check if the digit is valid according to Sudoku rules
+        for i in range(9):
+            if board[row][i] == digit or board[i][col] == digit or \
+               board[3 * (row // 3) + i // 3][3 * (col // 3) + i % 3] == digit:
+                return False
+        return True
