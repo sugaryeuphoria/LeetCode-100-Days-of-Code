@@ -34,3 +34,5 @@ class Solution(object):
                 if board[row][col] == '.':
                     # Try placing digits from 1 to 9 in the cell
                     for digit in map(str, range(1, 10)):
+                         # Check if the placement of the digit is valid
+                        if self.is_valid(board, row, col, digit):
