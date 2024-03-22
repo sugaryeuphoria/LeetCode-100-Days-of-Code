@@ -30,3 +30,5 @@ class Solution(object):
               # Iterate through each cell of the board
         for row in range(9):
             for col in range(9):
+                # Check if the cell is empty
+                if board[row][col] == '.':
