@@ -15,4 +15,10 @@ Output: [["5","3","4","6","7","8","9","1","2"],["6","7","2","1","9","5","3","4",
 Explanation: The input board is shown above and the only valid solution is shown below:
 
 The '.' character indicates empty cells.
+Constraints:
+
+board.length == 9
+board[i].length == 9
+board[i][j] is a digit or '.'.
+It is guaranteed that the input board has only one solution.
 """
