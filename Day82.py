@@ -31,5 +31,8 @@ return true; // An empty list or a single node is considered a palindrome
         }
         // Step 2: Reverse the second half of the linked list
         ListNode secondHalfHead = reverseLinkedList(slow.next);
+    // Step 3: Compare the first half with the reversed second half
+        ListNode p1 = head; // Pointer for the first half
+        ListNode p2 = secondHalfHead; // Pointer for the reversed second half
     }
 }
