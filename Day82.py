@@ -37,5 +37,7 @@ return true; // An empty list or a single node is considered a palindrome
     // Traverse both halves and compare corresponding nodes
         while (p2 != null) {
             if (p1.val != p2.val) {
+                return false; // If values are not equal, it's not a palindrome
+            }
     }
 }
