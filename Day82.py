@@ -20,5 +20,8 @@ class Solution {
         if (head == null || head.next == null) {
 return true; // An empty list or a single node is considered a palindrome
         }
+        // Step 1: Find the middle of the linked list
+        ListNode slow = head; // Slow pointer
+        ListNode fast = head; // Fast pointer
     }
 }
