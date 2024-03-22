@@ -27,3 +27,6 @@ class Solution(object):
          # Function to solve the Sudoku puzzle
         self.solve(board)
         def solve(self, board):
+              # Iterate through each cell of the board
+        for row in range(9):
+            for col in range(9):
