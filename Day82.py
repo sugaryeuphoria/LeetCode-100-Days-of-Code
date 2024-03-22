@@ -39,5 +39,7 @@ return true; // An empty list or a single node is considered a palindrome
             if (p1.val != p2.val) {
                 return false; // If values are not equal, it's not a palindrome
             }
+            p1 = p1.next;
+            p2 = p2.next;
     }
 }
