@@ -36,3 +36,7 @@ class Solution(object):
                     for digit in map(str, range(1, 10)):
                          # Check if the placement of the digit is valid
                         if self.is_valid(board, row, col, digit):
+                             # Place the digit and recursively call the function
+                            board[row][col] = digit
+                            if self.solve(board):
+                                return True
