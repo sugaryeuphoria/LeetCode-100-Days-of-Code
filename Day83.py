@@ -24,30 +24,36 @@ It is guaranteed that the input board has only one solution.
 """
 class Solution(object):
     def solveSudoku(self, board):
-         # Function to solve the Sudoku puzzle
+        """
+        :type board: List[List[str]]
+        :rtype: None Do not return anything, modify board in-place instead.
+        """
+        # Function to solve the Sudoku puzzle
         self.solve(board)
-        def solve(self, board):
-              # Iterate through each cell of the board
+        
+    def solve(self, board):
+        # Iterate through each cell of the board
         for row in range(9):
             for col in range(9):
                 # Check if the cell is empty
                 if board[row][col] == '.':
                     # Try placing digits from 1 to 9 in the cell
                     for digit in map(str, range(1, 10)):
-                         # Check if the placement of the digit is valid
+                        # Check if the placement of the digit is valid
                         if self.is_valid(board, row, col, digit):
-                             # Place the digit and recursively call the function
+                            # Place the digit and recursively call the function
                             board[row][col] = digit
                             if self.solve(board):
                                 return True
                             # Backtrack if no solution found
                             board[row][col] = '.'
-                              # If no digit can be placed, return False
+                    # If no digit can be placed, return False
                     return False
-                  # If all cells are filled, return True
+        # If all cells are filled, return True
         return True
+    
     def is_valid(self, board, row, col, digit):
-          # Check if the digit is valid according to Sudoku rules
+        # Check if the digit is valid according to Sudoku rules
         for i in range(9):
             if board[row][i] == digit or board[i][col] == digit or \
                board[3 * (row // 3) + i // 3][3 * (col // 3) + i % 3] == digit:
