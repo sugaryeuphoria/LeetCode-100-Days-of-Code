@@ -16,45 +16,53 @@ The number of nodes in the list is in the range [1, 105].
 """
 class Solution {
     public boolean isPalindrome(ListNode head) {
- // Check if the list is empty or contains only one node
+        // Check if the list is empty or contains only one node
         if (head == null || head.next == null) {
-return true; // An empty list or a single node is considered a palindrome
+            return true; // An empty list or a single node is considered a palindrome
         }
+        
         // Step 1: Find the middle of the linked list
         ListNode slow = head; // Slow pointer
         ListNode fast = head; // Fast pointer
-
+        
         // Move the fast pointer two steps at a time and slow pointer one step at a time
         while (fast.next != null && fast.next.next != null) {
             slow = slow.next;
             fast = fast.next.next;
         }
+        
         // Step 2: Reverse the second half of the linked list
         ListNode secondHalfHead = reverseLinkedList(slow.next);
-    // Step 3: Compare the first half with the reversed second half
+        
+        // Step 3: Compare the first half with the reversed second half
         ListNode p1 = head; // Pointer for the first half
         ListNode p2 = secondHalfHead; // Pointer for the reversed second half
-    // Traverse both halves and compare corresponding nodes
+        
+        // Traverse both halves and compare corresponding nodes
         while (p2 != null) {
             if (p1.val != p2.val) {
                 return false; // If values are not equal, it's not a palindrome
             }
             p1 = p1.next;
             p2 = p2.next;
-
         }
+        
         return true; // If all values match, it's a palindrome
+    }
+    
     // Helper function to reverse a linked list
     private ListNode reverseLinkedList(ListNode head) {
         ListNode prev = null; // Pointer to the previous node
         ListNode current = head; // Pointer to the current node
-    // Traverse the list, reversing the next pointers
+        
+        // Traverse the list, reversing the next pointers
         while (current != null) {
             ListNode nextNode = current.next; // Temporary pointer to the next node
             current.next = prev; // Reverse the next pointer
             prev = current; // Move prev to current node
             current = nextNode; // Move current to next node
         }
-         return prev; // Return the new head of the reversed list
+        
+        return prev; // Return the new head of the reversed list
     }
 }
