@@ -42,3 +42,5 @@ class Solution(object):
                                 return True
                             # Backtrack if no solution found
                             board[row][col] = '.'
+                              # If no digit can be placed, return False
+                    return False
