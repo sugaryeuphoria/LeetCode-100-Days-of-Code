@@ -44,5 +44,9 @@ return true; // An empty list or a single node is considered a palindrome
 
         }
         return true; // If all values match, it's a palindrome
+    // Helper function to reverse a linked list
+    private ListNode reverseLinkedList(ListNode head) {
+        ListNode prev = null; // Pointer to the previous node
+        ListNode current = head; // Pointer to the current node
     }
 }
