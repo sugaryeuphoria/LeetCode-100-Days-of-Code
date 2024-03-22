@@ -26,3 +26,4 @@ class Solution(object):
     def solveSudoku(self, board):
          # Function to solve the Sudoku puzzle
         self.solve(board)
+        def solve(self, board):
