@@ -31,3 +31,5 @@ class Solution(object):
         while slow != fast:
             slow = nums[slow]
             fast = nums[nums[fast]]
+             # Reset slow pointer to the beginning
+        slow = 0
