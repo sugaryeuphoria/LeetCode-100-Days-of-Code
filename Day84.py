@@ -33,3 +33,7 @@ class Solution(object):
             fast = nums[nums[fast]]
              # Reset slow pointer to the beginning
         slow = 0
+        # Move both pointers one step at a time until they meet
+        while slow != fast:
+            slow = nums[slow]
+            fast = nums[fast]
