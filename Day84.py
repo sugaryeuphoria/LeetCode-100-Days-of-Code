@@ -37,3 +37,5 @@ class Solution(object):
         while slow != fast:
             slow = nums[slow]
             fast = nums[fast]
+               # The meeting point is the duplicate number
+        return slow
