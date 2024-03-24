@@ -27,3 +27,7 @@ class Solution(object):
           # Initialize slow and fast pointers
         slow = nums[0]
         fast = nums[nums[0]]
+          # Find the meeting point of slow and fast pointers
+        while slow != fast:
+            slow = nums[slow]
+            fast = nums[nums[fast]]
