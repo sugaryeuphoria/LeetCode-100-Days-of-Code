@@ -24,3 +24,6 @@ All the integers in nums appear only once except for precisely one integer which
 """
 class Solution(object):
     def findDuplicate(self, nums):
+          # Initialize slow and fast pointers
+        slow = nums[0]
+        fast = nums[nums[0]]
