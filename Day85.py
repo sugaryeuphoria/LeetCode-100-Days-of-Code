@@ -30,3 +30,4 @@ class Solution(object):
         for num in nums:
             # Get the index corresponding to the absolute value of the current number
             index = abs(num) - 1
+            # Check if the number at the calculated index is negative
