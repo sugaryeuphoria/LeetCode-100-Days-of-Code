@@ -22,3 +22,5 @@ n == nums.length
 1 <= nums[i] <= n
 Each element in nums appears once or twice.
 """
+class Solution(object):
+    def findDuplicates(self, nums):
