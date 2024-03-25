@@ -28,3 +28,5 @@ class Solution(object):
         duplicates = [] 
         # Iterate through each number in the input list
         for num in nums:
+            # Get the index corresponding to the absolute value of the current number
+            index = abs(num) - 1
