@@ -24,3 +24,5 @@ Each element in nums appears once or twice.
 """
 class Solution(object):
     def findDuplicates(self, nums):
+        # Initialize a list to store duplicate numbers
+        duplicates = [] 
