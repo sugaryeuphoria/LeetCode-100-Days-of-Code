@@ -34,3 +34,5 @@ class Solution(object):
             if nums[index] < 0:
                 # If it's negative, the number has appeared before, so add it to the duplicates list
                 duplicates.append(index + 1)
+                # Mark the number at the calculated index as negative
+                nums[index] = -nums[index]
