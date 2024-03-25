@@ -15,4 +15,10 @@ Output: [1]
 Example 3:
 Input: nums = [1]
 Output: []
+
+Constraints:
+n == nums.length
+1 <= n <= 105
+1 <= nums[i] <= n
+Each element in nums appears once or twice.
 """
