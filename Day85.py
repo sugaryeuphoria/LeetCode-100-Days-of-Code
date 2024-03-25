@@ -26,3 +26,5 @@ class Solution(object):
     def findDuplicates(self, nums):
         # Initialize a list to store duplicate numbers
         duplicates = [] 
+        # Iterate through each number in the input list
+        for num in nums:
