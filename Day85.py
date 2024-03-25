@@ -38,3 +38,4 @@ class Solution(object):
                 nums[index] = -nums[index]
                 # Return the list of duplicate numbers
                 return duplicates
+            
