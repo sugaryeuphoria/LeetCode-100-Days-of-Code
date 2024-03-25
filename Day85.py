@@ -36,3 +36,5 @@ class Solution(object):
                 duplicates.append(index + 1)
                 # Mark the number at the calculated index as negative
                 nums[index] = -nums[index]
+                # Return the list of duplicate numbers
+                return duplicates
