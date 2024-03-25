@@ -32,3 +32,5 @@ class Solution(object):
             index = abs(num) - 1
             # Check if the number at the calculated index is negative
             if nums[index] < 0:
+                # If it's negative, the number has appeared before, so add it to the duplicates list
+                duplicates.append(index + 1)
