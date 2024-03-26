@@ -40,3 +40,5 @@ class Solution(object):
         for i in range(k):
             if nums[i] > 0:
                 return i + 1
+             # If all integers from 1 to k are present, the missing integer is k + 1
+        return k + 1
