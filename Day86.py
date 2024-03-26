@@ -25,3 +25,10 @@ Constraints:
 class Solution(object):
     def firstMissingPositive(self, nums):
         n = len(nums)
+        # Move all non-positive integers to the end of the array
+        # Keep track of the count of positive integers
+        k = 0
+        for i in range(n):
+            if nums[i] > 0:
+                nums[k] = nums[i]
+                k += 1
