@@ -24,3 +24,4 @@ Constraints:
 """
 class Solution(object):
     def firstMissingPositive(self, nums):
+        n = len(nums)
