@@ -17,4 +17,8 @@ Example 3:
 Input: nums = [7,8,9,11,12]
 Output: 1
 Explanation: The smallest positive integer 1 is missing.
+
+Constraints:
+1 <= nums.length <= 105
+-231 <= nums[i] <= 231 - 1
 """
