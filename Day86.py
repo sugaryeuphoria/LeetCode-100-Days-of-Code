@@ -24,7 +24,12 @@ Constraints:
 """
 class Solution(object):
     def firstMissingPositive(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: int
+        """
         n = len(nums)
+        
         # Move all non-positive integers to the end of the array
         # Keep track of the count of positive integers
         k = 0
@@ -32,13 +37,16 @@ class Solution(object):
             if nums[i] > 0:
                 nums[k] = nums[i]
                 k += 1
-                 # Traverse the positive integers, marking their presence by negating the value at their corresponding index
+        
+        # Traverse the positive integers, marking their presence by negating the value at their corresponding index
         for i in range(k):
             if abs(nums[i]) <= k:
                 nums[abs(nums[i]) - 1] = -abs(nums[abs(nums[i]) - 1])
-                 # Find the first positive integer which is not marked (positive), indicating the missing positive integer
+        
+        # Find the first positive integer which is not marked (positive), indicating the missing positive integer
         for i in range(k):
             if nums[i] > 0:
                 return i + 1
-             # If all integers from 1 to k are present, the missing integer is k + 1
+        
+        # If all integers from 1 to k are present, the missing integer is k + 1
         return k + 1
