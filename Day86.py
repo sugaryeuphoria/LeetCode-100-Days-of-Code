@@ -36,3 +36,7 @@ class Solution(object):
         for i in range(k):
             if abs(nums[i]) <= k:
                 nums[abs(nums[i]) - 1] = -abs(nums[abs(nums[i]) - 1])
+                 # Find the first positive integer which is not marked (positive), indicating the missing positive integer
+        for i in range(k):
+            if nums[i] > 0:
+                return i + 1
