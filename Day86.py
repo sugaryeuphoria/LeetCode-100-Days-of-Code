@@ -32,3 +32,7 @@ class Solution(object):
             if nums[i] > 0:
                 nums[k] = nums[i]
                 k += 1
+                 # Traverse the positive integers, marking their presence by negating the value at their corresponding index
+        for i in range(k):
+            if abs(nums[i]) <= k:
+                nums[abs(nums[i]) - 1] = -abs(nums[abs(nums[i]) - 1])
