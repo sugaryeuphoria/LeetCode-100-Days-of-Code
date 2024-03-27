@@ -25,3 +25,5 @@ class Solution(object):
         # If k is less than or equal to 1, no subarray can have a product less than k.
         if k <= 1:
             return 0
+        # Initialize variables to keep track of product, count of valid subarrays, and left pointer.
+        product = 1  # Initialize product to 1, as we will be multiplying elements in the subarray.
