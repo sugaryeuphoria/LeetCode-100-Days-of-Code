@@ -28,3 +28,5 @@ class Solution(object):
         # Initialize variables to keep track of product, count of valid subarrays, and left pointer.
         # Initialize product to 1, as we will be multiplying elements in the subarray.
         product = 1  
+        # Initialize count and left pointer to 0.
+        count = left = 0  
