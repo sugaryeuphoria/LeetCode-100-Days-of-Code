@@ -20,3 +20,5 @@ Constraints:
 1 <= nums[i] <= 1000
 0 <= k <= 106
 """
+class Solution(object):
+    def numSubarrayProductLessThanK(self, nums, k):
