@@ -34,3 +34,5 @@ class Solution(object):
         for right, num in enumerate(nums):
             # Update product by multiplying with the current element.
             product *= num
+            # While product is greater than or equal to k, shrink the window from the left.
+            while product >= k:
