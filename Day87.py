@@ -41,3 +41,5 @@ class Solution(object):
                 left += 1
                  # Add the count of valid subarrays ending at the current index (right) to the total count.
             count += right - left + 1
+            # Return the total count of valid subarrays.
+        return count
