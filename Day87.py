@@ -22,3 +22,6 @@ Constraints:
 """
 class Solution(object):
     def numSubarrayProductLessThanK(self, nums, k):
+        # If k is less than or equal to 1, no subarray can have a product less than k.
+        if k <= 1:
+            return 0
