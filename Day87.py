@@ -26,4 +26,5 @@ class Solution(object):
         if k <= 1:
             return 0
         # Initialize variables to keep track of product, count of valid subarrays, and left pointer.
-        product = 1  # Initialize product to 1, as we will be multiplying elements in the subarray.
+        # Initialize product to 1, as we will be multiplying elements in the subarray.
+        product = 1  
