@@ -39,3 +39,5 @@ class Solution(object):
                 # Divide product by the element at the left pointer and move the left pointer forward.
                 product /= nums[left]
                 left += 1
+                 # Add the count of valid subarrays ending at the current index (right) to the total count.
+            count += right - left + 1
