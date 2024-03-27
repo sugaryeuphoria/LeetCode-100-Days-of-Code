@@ -36,3 +36,6 @@ class Solution(object):
             product *= num
             # While product is greater than or equal to k, shrink the window from the left.
             while product >= k:
+                # Divide product by the element at the left pointer and move the left pointer forward.
+                product /= nums[left]
+                left += 1
