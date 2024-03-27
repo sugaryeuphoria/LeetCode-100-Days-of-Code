@@ -32,3 +32,5 @@ class Solution(object):
         count = left = 0  
         # Iterate through the nums list using right pointer.
         for right, num in enumerate(nums):
+            # Update product by multiplying with the current element.
+            product *= num
