@@ -25,21 +25,24 @@ class Solution(object):
         # If k is less than or equal to 1, no subarray can have a product less than k.
         if k <= 1:
             return 0
+
         # Initialize variables to keep track of product, count of valid subarrays, and left pointer.
-        # Initialize product to 1, as we will be multiplying elements in the subarray.
-        product = 1  
-        # Initialize count and left pointer to 0.
-        count = left = 0  
+        product = 1  # Initialize product to 1, as we will be multiplying elements in the subarray.
+        count = left = 0  # Initialize count and left pointer to 0.
+
         # Iterate through the nums list using right pointer.
         for right, num in enumerate(nums):
             # Update product by multiplying with the current element.
             product *= num
+            
             # While product is greater than or equal to k, shrink the window from the left.
             while product >= k:
                 # Divide product by the element at the left pointer and move the left pointer forward.
                 product /= nums[left]
                 left += 1
-                 # Add the count of valid subarrays ending at the current index (right) to the total count.
+            
+            # Add the count of valid subarrays ending at the current index (right) to the total count.
             count += right - left + 1
-            # Return the total count of valid subarrays.
+
+        # Return the total count of valid subarrays.
         return count
