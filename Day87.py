@@ -30,3 +30,5 @@ class Solution(object):
         product = 1  
         # Initialize count and left pointer to 0.
         count = left = 0  
+        # Iterate through the nums list using right pointer.
+        for right, num in enumerate(nums):
