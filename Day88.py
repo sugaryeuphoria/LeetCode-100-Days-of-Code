@@ -48,3 +48,5 @@ class Solution(object):
                 # Remove the element from the dictionary if its count becomes zero
                 if count[nums[l]] == 0:
                     del count[nums[l]]
+                     # Move the left pointer to the right
+                l += 1
