@@ -43,3 +43,5 @@ class Solution(object):
             count[nums[r]] = count.get(nums[r], 0) + 1
              # Shrink the window if the frequency of any element exceeds k
             while count.get(nums[r], 0) == k + 1:
+                 # Decrement the count of the element at the left pointer
+                count[nums[l]] -= 1
