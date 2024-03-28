@@ -37,3 +37,5 @@ class Solution(object):
         count = {}
         # Initialize the left pointer of the sliding window
         l = 0
+        # Iterate through the array with the right pointer
+        for r in range(len(nums)):
