@@ -31,3 +31,5 @@ Constraints:
 """
 class Solution(object):
     def maxSubarrayLength(self, nums, k):
+        # Initialize the variable to store the maximum length of the subarray
+        ans = 0
