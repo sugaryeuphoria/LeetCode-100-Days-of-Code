@@ -37,20 +37,22 @@ class Solution(object):
         count = {}
         # Initialize the left pointer of the sliding window
         l = 0
+
         # Iterate through the array with the right pointer
         for r in range(len(nums)):
             # Update the count of the current element in the dictionary
             count[nums[r]] = count.get(nums[r], 0) + 1
-             # Shrink the window if the frequency of any element exceeds k
+            # Shrink the window if the frequency of any element exceeds k
             while count.get(nums[r], 0) == k + 1:
-                 # Decrement the count of the element at the left pointer
+                # Decrement the count of the element at the left pointer
                 count[nums[l]] -= 1
                 # Remove the element from the dictionary if its count becomes zero
                 if count[nums[l]] == 0:
                     del count[nums[l]]
-                     # Move the left pointer to the right
+                # Move the left pointer to the right
                 l += 1
-                # Update the maximum length of the subarray
+            # Update the maximum length of the subarray
             ans = max(ans, r - l + 1)
-              # Return the maximum length of the subarray
+
+        # Return the maximum length of the subarray
         return ans
