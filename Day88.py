@@ -23,4 +23,9 @@ Input: nums = [5,5,5,5,5,5,5], k = 4
 Output: 4
 Explanation: The longest possible good subarray is [5,5,5,5] since the value 5 occurs 4 times in this subarray.
 It can be shown that there are no good subarrays with length more than 4.
+
+Constraints:
+1 <= nums.length <= 105
+1 <= nums[i] <= 109
+1 <= k <= nums.length
 """
