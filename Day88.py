@@ -41,3 +41,5 @@ class Solution(object):
         for r in range(len(nums)):
             # Update the count of the current element in the dictionary
             count[nums[r]] = count.get(nums[r], 0) + 1
+             # Shrink the window if the frequency of any element exceeds k
+            while count.get(nums[r], 0) == k + 1:
