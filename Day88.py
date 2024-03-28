@@ -35,3 +35,5 @@ class Solution(object):
         ans = 0
         # Initialize a dictionary to store the count of each element in the current window
         count = {}
+        # Initialize the left pointer of the sliding window
+        l = 0
