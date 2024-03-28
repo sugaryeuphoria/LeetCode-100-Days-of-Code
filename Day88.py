@@ -39,3 +39,5 @@ class Solution(object):
         l = 0
         # Iterate through the array with the right pointer
         for r in range(len(nums)):
+            # Update the count of the current element in the dictionary
+            count[nums[r]] = count.get(nums[r], 0) + 1
