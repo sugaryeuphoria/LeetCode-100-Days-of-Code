@@ -50,3 +50,5 @@ class Solution(object):
                     del count[nums[l]]
                      # Move the left pointer to the right
                 l += 1
+                # Update the maximum length of the subarray
+            ans = max(ans, r - l + 1)
