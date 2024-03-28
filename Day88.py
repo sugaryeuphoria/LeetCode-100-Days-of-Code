@@ -52,3 +52,5 @@ class Solution(object):
                 l += 1
                 # Update the maximum length of the subarray
             ans = max(ans, r - l + 1)
+              # Return the maximum length of the subarray
+        return ans
