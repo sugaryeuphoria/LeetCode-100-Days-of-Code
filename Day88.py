@@ -45,3 +45,6 @@ class Solution(object):
             while count.get(nums[r], 0) == k + 1:
                  # Decrement the count of the element at the left pointer
                 count[nums[l]] -= 1
+                # Remove the element from the dictionary if its count becomes zero
+                if count[nums[l]] == 0:
+                    del count[nums[l]]
