@@ -29,3 +29,5 @@ Constraints:
 1 <= nums[i] <= 109
 1 <= k <= nums.length
 """
+class Solution(object):
+    def maxSubarrayLength(self, nums, k):
