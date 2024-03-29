@@ -23,3 +23,5 @@ Constraints:
 """
 class Solution(object):
     def countSubarrays(self, nums, k):
+         # Find the maximum number in the array.
+        maxNum = max(nums)
