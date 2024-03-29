@@ -15,5 +15,9 @@ Example 2:
 Input: nums = [1,4,2,1], k = 3
 Output: 0
 Explanation: No subarray contains the element 4 at least 3 times.
- 
+
+Constraints:
+1 <= nums.length <= 105
+1 <= nums[i] <= 106
+1 <= k <= 105
 """
