@@ -47,3 +47,9 @@ class Solution(object):
             ans += l
              # Return the total count of subarrays meeting the condition.
         return ans
+    
+# Example usage:
+solution = Solution()
+nums1 = [1, 3, 2, 3, 3]
+k1 = 2
+print(solution.countSubarrays(nums1, k1))  # Output: 6
