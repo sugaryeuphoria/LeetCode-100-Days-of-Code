@@ -41,3 +41,7 @@ class Solution(object):
                 if nums[l] == maxNum:
                     count -= 1
                 l += 1
+            # If l > 0, nums[l:r+1] has k - 1 occurrences of the maximum number. For any
+            # subarray nums[i:r+1], where i < l, it will have at least k occurrences of the
+            # maximum number, since nums[l - 1] equals the maximum number.
+            ans += l
