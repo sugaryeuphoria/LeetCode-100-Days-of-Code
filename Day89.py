@@ -37,3 +37,7 @@ class Solution(object):
                 count += 1
                  # Keep the window to include k - 1 occurrences of the maximum number.
             while count == k:
+                 # Shrink the window by moving the left pointer if the current number is equal to the maximum number.
+                if nums[l] == maxNum:
+                    count -= 1
+                l += 1
