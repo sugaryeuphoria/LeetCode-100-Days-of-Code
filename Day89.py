@@ -23,23 +23,22 @@ Constraints:
 """
 class Solution(object):
     def countSubarrays(self, nums, k):
-         # Find the maximum number in the array.
+        # Find the maximum number in the array.
         maxNum = max(nums)
-        # Initialize variables to keep track of the count of subarrays and the
-        # current count of the maximum number.
+        # Initialize variables to keep track of the count of subarrays and the current count of the maximum number.
         ans = 0
         count = 0
-         # Initialize the left pointer of the sliding window.
+        # Initialize the left pointer of the sliding window.
         l = 0
-         # Iterate through the array using a sliding window approach.
+        
+        # Iterate through the array using a sliding window approach.
         for r, num in enumerate(nums):
-             # Increase the count if the current number is equal to the maximum number.
+            # Increase the count if the current number is equal to the maximum number.
             if num == maxNum:
                 count += 1
-                 # Keep the window to include k - 1 occurrences of the maximum number.
+            # Keep the window to include k - 1 occurrences of the maximum number.
             while count == k:
-                 # Shrink the window by moving the left pointer if the current number is
-                 # equal to the maximum number.
+                # Shrink the window by moving the left pointer if the current number is equal to the maximum number.
                 if nums[l] == maxNum:
                     count -= 1
                 l += 1
@@ -47,9 +46,9 @@ class Solution(object):
             # subarray nums[i:r+1], where i < l, it will have at least k occurrences of the
             # maximum number, since nums[l - 1] equals the maximum number.
             ans += l
-             # Return the total count of subarrays meeting the condition.
+        # Return the total count of subarrays meeting the condition.
         return ans
-    
+
 # Example usage:
 solution = Solution()
 nums1 = [1, 3, 2, 3, 3]
