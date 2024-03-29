@@ -25,7 +25,8 @@ class Solution(object):
     def countSubarrays(self, nums, k):
          # Find the maximum number in the array.
         maxNum = max(nums)
-        # Initialize variables to keep track of the count of subarrays and the current count of the maximum number.
+        # Initialize variables to keep track of the count of subarrays and the
+        # current count of the maximum number.
         ans = 0
         count = 0
          # Initialize the left pointer of the sliding window.
@@ -37,7 +38,8 @@ class Solution(object):
                 count += 1
                  # Keep the window to include k - 1 occurrences of the maximum number.
             while count == k:
-                 # Shrink the window by moving the left pointer if the current number is equal to the maximum number.
+                 # Shrink the window by moving the left pointer if the current number is
+                 # equal to the maximum number.
                 if nums[l] == maxNum:
                     count -= 1
                 l += 1
