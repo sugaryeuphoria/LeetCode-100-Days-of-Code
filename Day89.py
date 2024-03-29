@@ -45,3 +45,5 @@ class Solution(object):
             # subarray nums[i:r+1], where i < l, it will have at least k occurrences of the
             # maximum number, since nums[l - 1] equals the maximum number.
             ans += l
+             # Return the total count of subarrays meeting the condition.
+        return ans
