@@ -25,3 +25,6 @@ class Solution(object):
     def countSubarrays(self, nums, k):
          # Find the maximum number in the array.
         maxNum = max(nums)
+        # Initialize variables to keep track of the count of subarrays and the current count of the maximum number.
+        ans = 0
+        count = 0
