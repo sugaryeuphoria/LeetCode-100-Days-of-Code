@@ -28,3 +28,5 @@ class Solution(object):
         # Initialize variables to keep track of the count of subarrays and the current count of the maximum number.
         ans = 0
         count = 0
+         # Initialize the left pointer of the sliding window.
+        l = 0
