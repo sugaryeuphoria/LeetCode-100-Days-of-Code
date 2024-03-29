@@ -30,3 +30,5 @@ class Solution(object):
         count = 0
          # Initialize the left pointer of the sliding window.
         l = 0
+         # Iterate through the array using a sliding window approach.
+        for r, num in enumerate(nums):
