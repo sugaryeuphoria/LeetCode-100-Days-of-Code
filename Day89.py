@@ -32,3 +32,6 @@ class Solution(object):
         l = 0
          # Iterate through the array using a sliding window approach.
         for r, num in enumerate(nums):
+             # Increase the count if the current number is equal to the maximum number.
+            if num == maxNum:
+                count += 1
