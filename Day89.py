@@ -53,3 +53,7 @@ solution = Solution()
 nums1 = [1, 3, 2, 3, 3]
 k1 = 2
 print(solution.countSubarrays(nums1, k1))  # Output: 6
+
+nums2 = [1, 4, 2, 1]
+k2 = 3
+print(solution.countSubarrays(nums2, k2))  # Output: 0
