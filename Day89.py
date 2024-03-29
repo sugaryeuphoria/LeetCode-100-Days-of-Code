@@ -35,3 +35,5 @@ class Solution(object):
              # Increase the count if the current number is equal to the maximum number.
             if num == maxNum:
                 count += 1
+                 # Keep the window to include k - 1 occurrences of the maximum number.
+            while count == k:
