@@ -21,3 +21,5 @@ Constraints:
 1 <= nums[i] <= 106
 1 <= k <= 105
 """
+class Solution(object):
+    def countSubarrays(self, nums, k):
