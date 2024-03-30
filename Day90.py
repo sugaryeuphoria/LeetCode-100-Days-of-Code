@@ -48,3 +48,6 @@ class Solution(object):
                 result += right - left + 1
                 # Return the result.
             return result
+        # Return the difference between the number of subarrays with at most k
+        # distinct elements and the number of subarrays with at most (k - 1) distinct elements.
+        return atMostK(nums, k) - atMostK(nums, k - 1)
