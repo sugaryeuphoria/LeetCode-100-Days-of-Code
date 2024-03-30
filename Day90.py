@@ -28,3 +28,5 @@ class Solution(object):
             freq = {}
             # Initialize a variable to count the number of distinct elements.
             count = 0
+            # Initialize the variable to store the result.
+            result = 0
