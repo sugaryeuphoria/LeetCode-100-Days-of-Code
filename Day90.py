@@ -32,3 +32,5 @@ class Solution(object):
             result = 0
              # Iterate over the array with the right pointer.
             for right in range(len(nums)):
+                 # Update the frequency of the current element.
+                freq[nums[right]] = freq.get(nums[right], 0) + 1
