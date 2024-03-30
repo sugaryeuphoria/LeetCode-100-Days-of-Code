@@ -26,3 +26,5 @@ class Solution(object):
         def atMostK(nums, k):
             # Initialize a dictionary to keep track of the frequency of each element.
             freq = {}
+            # Initialize a variable to count the number of distinct elements.
+            count = 0
