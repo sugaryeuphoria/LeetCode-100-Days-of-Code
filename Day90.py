@@ -55,3 +55,4 @@ class Solution(object):
 solution = Solution()
 print(solution.subarraysWithKDistinct([1,2,1,2,3], 2))  # Output: 7
 print(solution.subarraysWithKDistinct([1,2,1,3,4], 3))  # Output: 3
+
