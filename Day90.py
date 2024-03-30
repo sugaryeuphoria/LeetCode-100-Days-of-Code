@@ -51,3 +51,7 @@ class Solution(object):
         # Return the difference between the number of subarrays with at most k
         # distinct elements and the number of subarrays with at most (k - 1) distinct elements.
         return atMostK(nums, k) - atMostK(nums, k - 1)
+    # Example usage:
+solution = Solution()
+print(solution.subarraysWithKDistinct([1,2,1,2,3], 2))  # Output: 7
+print(solution.subarraysWithKDistinct([1,2,1,3,4], 3))  # Output: 3
