@@ -30,3 +30,5 @@ class Solution(object):
             count = 0
             # Initialize the variable to store the result.
             result = 0
+             # Iterate over the array with the right pointer.
+            for right in range(len(nums)):
