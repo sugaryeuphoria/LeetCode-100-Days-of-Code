@@ -37,3 +37,10 @@ class Solution(object):
                  # If the frequency becomes 1, increment the count of distinct elements.
                 if freq[nums[right]] == 1:
                     count += 1
+                # If the count of distinct elements exceeds k, move the left pointer
+                # forward and update the frequency and count accordingly.
+                while count > k:
+                    freq[nums[left]] -= 1
+                    if freq[nums[left]] == 0:
+                        count -= 1
+                    left += 1
