@@ -34,3 +34,6 @@ class Solution(object):
             for right in range(len(nums)):
                  # Update the frequency of the current element.
                 freq[nums[right]] = freq.get(nums[right], 0) + 1
+                 # If the frequency becomes 1, increment the count of distinct elements.
+                if freq[nums[right]] == 1:
+                    count += 1
