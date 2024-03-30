@@ -19,3 +19,5 @@ Constraints:
 1 <= nums.length <= 2 * 104
 1 <= nums[i], k <= nums.length
 """
+class Solution(object):
+    def subarraysWithKDistinct(self, nums, k):
