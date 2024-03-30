@@ -46,3 +46,5 @@ class Solution(object):
                     left += 1
                      # Update the result by the difference in right and left pointers.
                 result += right - left + 1
+                # Return the result.
+            return result
