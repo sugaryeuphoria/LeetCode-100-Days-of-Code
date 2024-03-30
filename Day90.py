@@ -44,3 +44,5 @@ class Solution(object):
                     if freq[nums[left]] == 0:
                         count -= 1
                     left += 1
+                     # Update the result by the difference in right and left pointers.
+                result += right - left + 1
