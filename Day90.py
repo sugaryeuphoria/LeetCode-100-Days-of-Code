@@ -21,3 +21,6 @@ Constraints:
 """
 class Solution(object):
     def subarraysWithKDistinct(self, nums, k):
+        # Define a helper function to calculate the number of subarrays
+        # with at most k distinct elements.
+        def atMostK(nums, k):
