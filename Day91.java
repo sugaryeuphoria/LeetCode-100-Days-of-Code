@@ -29,4 +29,6 @@ class Day91 {
         int j = -1;
         // Pointer to track the last index where nums[i] is equal to minK
         int prevMinKIndex = -1;
+        // Pointer to track the last index where nums[i] is equal to maxK
+        int prevMaxKIndex = -1;
 }
