@@ -31,4 +31,6 @@ class Day91 {
         int prevMinKIndex = -1;
         // Pointer to track the last index where nums[i] is equal to maxK
         int prevMaxKIndex = -1;
+        // Iterate through the array nums
+    for (int i = 0; i < nums.length; ++i) {
 }
