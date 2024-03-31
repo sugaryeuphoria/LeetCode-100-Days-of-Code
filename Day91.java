@@ -16,4 +16,8 @@ Example 2:
 Input: nums = [1,1,1,1], minK = 1, maxK = 1
 Output: 10
 Explanation: Every subarray of nums is a fixed-bound subarray. There are 10 possible subarrays.
+
+Constraints:
+2 <= nums.length <= 105
+1 <= nums[i], minK, maxK <= 106
  */
