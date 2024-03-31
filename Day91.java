@@ -25,6 +25,7 @@ class Day91 {
     public long countSubarrays(int[] nums, int minK, int maxK) {
         // Variable to store the count of subarrays
         long ans = 0;
-
+        // Pointer to track the last index where nums[i] is outside the range [minK, maxK]
+        int j = -1;
     }
 }
