@@ -27,5 +27,6 @@ class Day91 {
         long ans = 0;
         // Pointer to track the last index where nums[i] is outside the range [minK, maxK]
         int j = -1;
-    }
+        // Pointer to track the last index where nums[i] is equal to minK
+        int prevMinKIndex = -1;
 }
