@@ -21,8 +21,10 @@ Constraints:
 2 <= nums.length <= 105
 1 <= nums[i], minK, maxK <= 106
  */
-class Solution {
+class Day91 {
     public long countSubarrays(int[] nums, int minK, int maxK) {
+        // Variable to store the count of subarrays
+        long ans = 0;
 
     }
 }
