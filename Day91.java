@@ -35,6 +35,9 @@ class Day91 {
     for (int i = 0; i < nums.length; ++i) {
         // If nums[i] is outside the range [minK, maxK], update j to the current index i
         if (nums[i] < minK || nums[i] > maxK)
+        // If nums[i] is equal to minK, update prevMinKIndex to the current index i
+      if (nums[i] == minK)
+      prevMinKIndex = i;
 j = i;
     }
 }
