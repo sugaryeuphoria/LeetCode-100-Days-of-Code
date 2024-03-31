@@ -33,4 +33,8 @@ class Day91 {
         int prevMaxKIndex = -1;
         // Iterate through the array nums
     for (int i = 0; i < nums.length; ++i) {
+        // If nums[i] is outside the range [minK, maxK], update j to the current index i
+        if (nums[i] < minK || nums[i] > maxK)
+j = i;
+    }
 }
