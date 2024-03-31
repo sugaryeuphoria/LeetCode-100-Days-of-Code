@@ -23,29 +23,32 @@ Constraints:
  */
 class Day91 {
     public long countSubarrays(int[] nums, int minK, int maxK) {
-        // Variable to store the count of subarrays
-        long ans = 0;
-        // Pointer to track the last index where nums[i] is outside the range [minK, maxK]
-        int j = -1;
-        // Pointer to track the last index where nums[i] is equal to minK
-        int prevMinKIndex = -1;
-        // Pointer to track the last index where nums[i] is equal to maxK
-        int prevMaxKIndex = -1;
+        // Initialize variables
+        long ans = 0; // Variable to store the count of subarrays
+        int j = -1; // Pointer to track the last index where nums[i] is outside the range [minK,
+                    // maxK]
+        int prevMinKIndex = -1; // Pointer to track the last index where nums[i] is equal to minK
+        int prevMaxKIndex = -1; // Pointer to track the last index where nums[i] is equal to maxK
+
         // Iterate through the array nums
-    for (int i = 0; i < nums.length; ++i) {
-        // If nums[i] is outside the range [minK, maxK], update j to the current index i
-        if (nums[i] < minK || nums[i] > maxK)
-        // If nums[i] is equal to minK, update prevMinKIndex to the current index i
-      if (nums[i] == minK)
-      prevMinKIndex = i;
-j = i;
-// If nums[i] is equal to maxK, update prevMaxKIndex to the current index i
-if (nums[i] == maxK)
-prevMaxKIndex = i;
-// Calculate the number of subarrays satisfying the conditions and update ans
-ans += Math.max(0, Math.min(prevMinKIndex, prevMaxKIndex) - j);
-// Return the total count of subarrays
-return ans;
-}
+        for (int i = 0; i < nums.length; ++i) {
+            // If nums[i] is outside the range [minK, maxK], update j to the current index i
+            if (nums[i] < minK || nums[i] > maxK)
+                j = i;
+
+            // If nums[i] is equal to minK, update prevMinKIndex to the current index i
+            if (nums[i] == minK)
+                prevMinKIndex = i;
+
+            // If nums[i] is equal to maxK, update prevMaxKIndex to the current index i
+            if (nums[i] == maxK)
+                prevMaxKIndex = i;
+
+            // Calculate the number of subarrays satisfying the conditions and update ans
+            ans += Math.max(0, Math.min(prevMinKIndex, prevMaxKIndex) - j);
+        }
+
+        // Return the total count of subarrays
+        return ans;
     }
 }
