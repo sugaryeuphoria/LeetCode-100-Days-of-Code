@@ -39,5 +39,8 @@ class Day91 {
       if (nums[i] == minK)
       prevMinKIndex = i;
 j = i;
+// If nums[i] is equal to maxK, update prevMaxKIndex to the current index i
+if (nums[i] == maxK)
+prevMaxKIndex = i;
     }
 }
