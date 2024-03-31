@@ -44,6 +44,8 @@ if (nums[i] == maxK)
 prevMaxKIndex = i;
 // Calculate the number of subarrays satisfying the conditions and update ans
 ans += Math.max(0, Math.min(prevMinKIndex, prevMaxKIndex) - j);
+// Return the total count of subarrays
+return ans;
 }
     }
 }
