@@ -44,3 +44,6 @@ class Solution(object):
         
         # Test cases
 sol = Solution()  # Create an instance of the Solution class
+print(sol.lengthOfLastWord("Hello World"))  # Output: 5
+print(sol.lengthOfLastWord("   fly me   to   the moon  "))  # Output: 4
+print(sol.lengthOfLastWord("luffy is still joyboy"))  # Output: 6
