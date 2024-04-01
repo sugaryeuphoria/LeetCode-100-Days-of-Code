@@ -36,3 +36,4 @@ class Solution(object):
         for i in range(len(s) - 1, -1, -1):
             # If a space is encountered, it's the end of the last word
             if s[i] == ' ':
+                 break  # Exit the loop
