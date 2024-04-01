@@ -39,3 +39,5 @@ class Solution(object):
                  break  # Exit the loop
              # Increment the length for each non-space character encountered
             length += 1
+             # Return the length of the last word
+            return length
