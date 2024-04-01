@@ -41,3 +41,6 @@ class Solution(object):
             length += 1
              # Return the length of the last word
             return length
+        
+        # Test cases
+sol = Solution()  # Create an instance of the Solution class
