@@ -32,3 +32,5 @@ class Solution(object):
         s = s.rstrip()  
         # Initialize the length of the last word to 0
         length = 0 
+        # Iterate through the string from the end towards the beginning
+        for i in range(len(s) - 1, -1, -1):
