@@ -34,3 +34,5 @@ class Solution(object):
         length = 0 
         # Iterate through the string from the end towards the beginning
         for i in range(len(s) - 1, -1, -1):
+            # If a space is encountered, it's the end of the last word
+            if s[i] == ' ':
