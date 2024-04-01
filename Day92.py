@@ -27,3 +27,5 @@ There will be at least one word in s.
 """
 class Solution(object):
     def lengthOfLastWord(self, s):
+        # Trim trailing spaces
+        s = s.rstrip()  # Remove any trailing spaces at the end of the string
