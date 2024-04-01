@@ -37,3 +37,5 @@ class Solution(object):
             # If a space is encountered, it's the end of the last word
             if s[i] == ' ':
                  break  # Exit the loop
+             # Increment the length for each non-space character encountered
+            length += 1
