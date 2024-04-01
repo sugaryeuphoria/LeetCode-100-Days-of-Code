@@ -25,3 +25,5 @@ Constraints:
 s consists of only English letters and spaces ' '.
 There will be at least one word in s.
 """
+class Solution(object):
+    def lengthOfLastWord(self, s):
