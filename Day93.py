@@ -28,3 +28,5 @@ class Solution(object):
          # Create dictionaries to store mappings
         map_s_t = {}
         map_t_s = {}
+        # Iterate through characters in s and t
+        for char_s, char_t in zip(s, t):
