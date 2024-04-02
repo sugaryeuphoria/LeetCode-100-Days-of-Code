@@ -37,3 +37,5 @@ class Solution(object):
                 # If mappings don't match, return False
             elif map_s_t.get(char_s) != char_t or map_t_s.get(char_t) != char_s:
                 return False
+             # All mappings are valid, return True
+        return True
