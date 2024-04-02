@@ -25,3 +25,6 @@ s and t consist of any valid ascii character.
 """
 class Solution(object):
     def isIsomorphic(self, s, t):
+         # Create dictionaries to store mappings
+        map_s_t = {}
+        map_t_s = {}
