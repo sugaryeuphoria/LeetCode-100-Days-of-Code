@@ -34,3 +34,6 @@ class Solution(object):
             if (char_s not in map_s_t) and (char_t not in map_t_s):
                 map_s_t[char_s] = char_t
                 map_t_s[char_t] = char_s
+                # If mappings don't match, return False
+            elif map_s_t.get(char_s) != char_t or map_t_s.get(char_t) != char_s:
+                return False
