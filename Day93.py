@@ -30,3 +30,7 @@ class Solution(object):
         map_t_s = {}
         # Iterate through characters in s and t
         for char_s, char_t in zip(s, t):
+             # If both characters are new, create mappings
+            if (char_s not in map_s_t) and (char_t not in map_t_s):
+                map_s_t[char_s] = char_t
+                map_t_s[char_t] = char_s
