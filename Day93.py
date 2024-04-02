@@ -23,3 +23,5 @@ Constraints:
 t.length == s.length
 s and t consist of any valid ascii character.
 """
+class Solution(object):
+    def isIsomorphic(self, s, t):
