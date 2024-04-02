@@ -39,3 +39,4 @@ class Solution(object):
                 return False
              # All mappings are valid, return True
         return True
+
