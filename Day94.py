@@ -42,4 +42,6 @@ class Solution(object):
             # Restore the original value of the current cell
             board[i][j] = temp
             return res
-        
+         # Iterate through each cell in the board
+        for i in range(len(board)):
+            for j in range(len(board[0])):
