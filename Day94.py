@@ -33,3 +33,5 @@ class Solution(object):
             # Check if the current cell is out of bounds or doesn't match the current character
             if i < 0 or i >= len(board) or j < 0 or j >= len(board[0]) or board[i][j] != word[k]:
                 return False
+            # Temporarily mark the current cell as visited
+            temp, board[i][j] = board[i][j], '/'
