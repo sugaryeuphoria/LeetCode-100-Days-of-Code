@@ -48,3 +48,5 @@ class Solution(object):
                 # If the backtracking function returns True, the word is found
                 if backtrack(i, j, 0):
                     return True
+                 # If no match is found after exploring all cells, return False
+        return False
