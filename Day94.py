@@ -27,6 +27,9 @@ class Solution(object):
     def exist(self, board, word):
         # Define a recursive backtracking function
         def backtrack(i, j, k):
-             # If we've matched all characters in the word, return True
+            # If we've matched all characters in the word, return True
             if k == len(word):
                 return True
+            # Check if the current cell is out of bounds or doesn't match the current character
+            if i < 0 or i >= len(board) or j < 0 or j >= len(board[0]) or board[i][j] != word[k]:
+                return False
