@@ -25,3 +25,5 @@ board and word consists of only lowercase and uppercase English letters.
 """
 class Solution(object):
     def exist(self, board, word):
+        # Define a recursive backtracking function
+        def backtrack(i, j, k):
