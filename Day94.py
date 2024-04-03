@@ -45,3 +45,6 @@ class Solution(object):
          # Iterate through each cell in the board
         for i in range(len(board)):
             for j in range(len(board[0])):
+                # If the backtracking function returns True, the word is found
+                if backtrack(i, j, 0):
+                    return True
