@@ -25,6 +25,11 @@ board and word consists of only lowercase and uppercase English letters.
 """
 class Solution(object):
     def exist(self, board, word):
+        """
+        :type board: List[List[str]]
+        :type word: str
+        :rtype: bool
+        """
         # Define a recursive backtracking function
         def backtrack(i, j, k):
             # If we've matched all characters in the word, return True
@@ -35,18 +40,18 @@ class Solution(object):
                 return False
             # Temporarily mark the current cell as visited
             temp, board[i][j] = board[i][j], '/'
-             # Recursively explore neighboring cells in all directions
+            # Recursively explore neighboring cells in all directions
             res = backtrack(i + 1, j, k + 1) or backtrack(i - 1, j, k + 1) or \
                   backtrack(i, j + 1, k + 1) or backtrack(i, j - 1, k + 1)
-            
             # Restore the original value of the current cell
             board[i][j] = temp
             return res
-         # Iterate through each cell in the board
+        
+        # Iterate through each cell in the board
         for i in range(len(board)):
             for j in range(len(board[0])):
                 # If the backtracking function returns True, the word is found
                 if backtrack(i, j, 0):
                     return True
-                 # If no match is found after exploring all cells, return False
+        # If no match is found after exploring all cells, return False
         return False
