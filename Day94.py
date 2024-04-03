@@ -23,3 +23,5 @@ n = board[i].length
 1 <= word.length <= 15
 board and word consists of only lowercase and uppercase English letters.
 """
+class Solution(object):
+    def exist(self, board, word):
