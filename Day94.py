@@ -35,3 +35,6 @@ class Solution(object):
                 return False
             # Temporarily mark the current cell as visited
             temp, board[i][j] = board[i][j], '/'
+             # Recursively explore neighboring cells in all directions
+            res = backtrack(i + 1, j, k + 1) or backtrack(i - 1, j, k + 1) or \
+                  backtrack(i, j + 1, k + 1) or backtrack(i, j - 1, k + 1)
