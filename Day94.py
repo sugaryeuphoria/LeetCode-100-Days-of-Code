@@ -38,3 +38,8 @@ class Solution(object):
              # Recursively explore neighboring cells in all directions
             res = backtrack(i + 1, j, k + 1) or backtrack(i - 1, j, k + 1) or \
                   backtrack(i, j + 1, k + 1) or backtrack(i, j - 1, k + 1)
+            
+            # Restore the original value of the current cell
+            board[i][j] = temp
+            return res
+        
