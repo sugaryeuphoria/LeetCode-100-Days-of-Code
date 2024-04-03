@@ -27,3 +27,6 @@ class Solution(object):
     def exist(self, board, word):
         # Define a recursive backtracking function
         def backtrack(i, j, k):
+             # If we've matched all characters in the word, return True
+            if k == len(word):
+                return True
