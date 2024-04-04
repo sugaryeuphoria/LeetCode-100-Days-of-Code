@@ -43,3 +43,6 @@ class Solution(object):
                 current_depth += 1
                 # Update the maximum depth if the current depth is greater
                 max_depth = max(max_depth, current_depth)
+                # If the character is a closing parenthesis, decrease the current depth
+            elif char == ')':
+                current_depth -= 1
