@@ -36,3 +36,5 @@ class Solution(object):
         # Initialize variables to track maximum depth and current depth
         max_depth = 0
         current_depth = 0
+         # Iterate through each character in the string
+        for char in s:
