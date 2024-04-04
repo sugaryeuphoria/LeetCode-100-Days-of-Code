@@ -41,3 +41,5 @@ class Solution(object):
             # If the character is an opening parenthesis, increase the current depth
             if char == '(':
                 current_depth += 1
+                # Update the maximum depth if the current depth is greater
+                max_depth = max(max_depth, current_depth)
