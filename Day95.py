@@ -33,3 +33,6 @@ It is guaranteed that parentheses expression s is a VPS.
 """
 class Solution(object):
     def maxDepth(self, s):
+        # Initialize variables to track maximum depth and current depth
+        max_depth = 0
+        current_depth = 0
