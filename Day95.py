@@ -48,3 +48,4 @@ class Solution(object):
                 current_depth -= 1
                 # Return the maximum depth encountered
         return max_depth
+    
