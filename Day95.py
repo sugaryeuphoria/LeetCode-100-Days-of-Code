@@ -31,3 +31,5 @@ s consists of digits 0-9 and characters '+', '-', '*', '/', '(', and ')'.
 It is guaranteed that parentheses expression s is a VPS.
  
 """
+class Solution(object):
+    def maxDepth(self, s):
