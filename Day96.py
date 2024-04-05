@@ -46,3 +46,5 @@ class Solution(object):
                 stack.append(char)
                  # Join the characters remaining in the stack and return as a string
         return ''.join(stack)
+    # Test the solution
+solution = Solution()
