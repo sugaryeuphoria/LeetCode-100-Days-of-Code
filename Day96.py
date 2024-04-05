@@ -33,3 +33,5 @@ s contains only lower and upper case English letters.
 """
 class Solution(object):
     def makeGood(self, s):
+        # Initialize an empty stack to store characters
+        stack = []
