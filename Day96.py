@@ -37,3 +37,5 @@ class Solution(object):
         stack = []
          # Iterate through each character in the string
         for char in s:
+             # If the stack is not empty and the current character can be removed with the top character in the stack
+            if stack and abs(ord(stack[-1]) - ord(char)) == 32:
