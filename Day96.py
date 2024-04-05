@@ -42,3 +42,5 @@ class Solution(object):
                 # Pop the top character from the stack
                 stack.pop()
             else:
+                # Otherwise, push the current character onto the stack
+                stack.append(char)
