@@ -39,3 +39,6 @@ class Solution(object):
         for char in s:
              # If the stack is not empty and the current character can be removed with the top character in the stack
             if stack and abs(ord(stack[-1]) - ord(char)) == 32:
+                # Pop the top character from the stack
+                stack.pop()
+            else:
