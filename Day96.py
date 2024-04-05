@@ -44,3 +44,5 @@ class Solution(object):
             else:
                 # Otherwise, push the current character onto the stack
                 stack.append(char)
+                 # Join the characters remaining in the stack and return as a string
+        return ''.join(stack)
