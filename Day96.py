@@ -31,3 +31,5 @@ Constraints:
 1 <= s.length <= 100
 s contains only lower and upper case English letters.
 """
+class Solution(object):
+    def makeGood(self, s):
