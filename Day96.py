@@ -35,3 +35,5 @@ class Solution(object):
     def makeGood(self, s):
         # Initialize an empty stack to store characters
         stack = []
+         # Iterate through each character in the string
+        for char in s:
