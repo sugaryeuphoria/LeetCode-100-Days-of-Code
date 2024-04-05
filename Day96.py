@@ -50,3 +50,4 @@ class Solution(object):
 solution = Solution()
 print(solution.makeGood("leEeetcode"))  # Output: "leetcode"
 print(solution.makeGood("abBAcC"))      # Output: ""
+print(solution.makeGood("s"))           # Output: "s"
