@@ -49,3 +49,4 @@ class Solution(object):
     # Test the solution
 solution = Solution()
 print(solution.makeGood("leEeetcode"))  # Output: "leetcode"
+print(solution.makeGood("abBAcC"))      # Output: ""
