@@ -11,7 +11,7 @@ It can be written as (A), where A is a valid string.
 
 Example 1:
 Input: s = "lee(t(c)o)de)"
-Output: "lee(t(c)o)de"
+Output: "lee(t(c)o)de"k
 Explanation: "lee(t(co)de)" , "lee(t(c)ode)" would also be accepted.
 
 Example 2:
@@ -47,3 +47,5 @@ class Solution(object):
                 current_depth -= 1
                 # Return the maximum depth encountered
         return max_depth
+    
+    
