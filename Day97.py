@@ -32,3 +32,6 @@ class Solution(object):
     # Define a class Solution
     def maxDepth(self, s):
         # Define a method maxDepth that takes a string s as input
+          # Initialize variables to track maximum depth and current depth
+        max_depth = 0
+        current_depth = 0
