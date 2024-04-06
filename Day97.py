@@ -22,4 +22,9 @@ Example 3:
 Input: s = "))(("
 Output: ""
 Explanation: An empty string is also valid.
+
+Constraints:
+
+1 <= s.length <= 105
+s[i] is either'(' , ')', or lowercase English letter.
 """
