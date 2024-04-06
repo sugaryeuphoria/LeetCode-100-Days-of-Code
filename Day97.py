@@ -37,3 +37,6 @@ class Solution(object):
         current_depth = 0
          # Iterate through each character in the string
         for char in s:
+             # If the character is an opening parenthesis, increase the current depth
+            if char == '(':
+                current_depth += 1
