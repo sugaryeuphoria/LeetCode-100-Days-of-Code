@@ -45,3 +45,5 @@ class Solution(object):
                 # If the character is a closing parenthesis, decrease the current depth
             elif char == ')':
                 current_depth -= 1
+                # Return the maximum depth encountered
+        return max_depth
