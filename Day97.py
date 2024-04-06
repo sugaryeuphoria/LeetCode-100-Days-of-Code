@@ -28,3 +28,7 @@ Constraints:
 1 <= s.length <= 105
 s[i] is either'(' , ')', or lowercase English letter.
 """
+class Solution(object):
+    # Define a class Solution
+    def maxDepth(self, s):
+        # Define a method maxDepth that takes a string s as input
