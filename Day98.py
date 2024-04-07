@@ -43,3 +43,7 @@ class Solution(object):
                 # If maximum count becomes negative, it means ')' cannot be balanced, return False
                 if max_open < 0:
                     return False
+                 # If the character is '*', decrement minimum count and increment maximum count
+            else:  # char == '*'
+                min_open = max(min_open - 1, 0)
+                max_open += 1
