@@ -30,3 +30,5 @@ class Solution(object):
     def checkValidString(self, s):
          # Initialize counts for minimum and maximum open parentheses
         min_open = max_open = 0
+        # Iterate through each character in the string
+        for char in s:
