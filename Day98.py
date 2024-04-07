@@ -47,3 +47,5 @@ class Solution(object):
             else:  # char == '*'
                 min_open = max(min_open - 1, 0)
                 max_open += 1
+                 # Check if minimum count of open parentheses is 0, indicating a valid string
+        return min_open == 0
