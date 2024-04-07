@@ -36,3 +36,7 @@ class Solution(object):
             if char == '(':
                 min_open += 1
                 max_open += 1
+                # If the character is ')', decrement minimum count and decrement maximum count if possible
+            elif char == ')':
+                min_open = max(min_open - 1, 0)
+                max_open -= 1
