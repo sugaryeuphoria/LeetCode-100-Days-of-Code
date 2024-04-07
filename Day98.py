@@ -40,3 +40,6 @@ class Solution(object):
             elif char == ')':
                 min_open = max(min_open - 1, 0)
                 max_open -= 1
+                # If maximum count becomes negative, it means ')' cannot be balanced, return False
+                if max_open < 0:
+                    return False
