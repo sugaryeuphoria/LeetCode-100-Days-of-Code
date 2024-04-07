@@ -28,3 +28,5 @@ s[i] is '(', ')' or '*'.
 """
 class Solution(object):
     def checkValidString(self, s):
+         # Initialize counts for minimum and maximum open parentheses
+        min_open = max_open = 0
