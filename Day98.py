@@ -32,3 +32,7 @@ class Solution(object):
         min_open = max_open = 0
         # Iterate through each character in the string
         for char in s:
+             # If the character is '(', increment both minimum and maximum counts
+            if char == '(':
+                min_open += 1
+                max_open += 1
