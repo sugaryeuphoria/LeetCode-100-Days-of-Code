@@ -20,4 +20,9 @@ Output: true
 Example 3:
 Input: s = "(*))"
 Output: true
+
+Constraints:
+
+1 <= s.length <= 100
+s[i] is '(', ')' or '*'.
 """
