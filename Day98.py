@@ -26,3 +26,5 @@ Constraints:
 1 <= s.length <= 100
 s[i] is '(', ')' or '*'.
 """
+class Solution(object):
+    def checkValidString(self, s):
