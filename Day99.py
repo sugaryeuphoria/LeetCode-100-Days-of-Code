@@ -40,3 +40,5 @@ students[i] is 0 or 1.
 """
 class Solution(object):
     def countStudents(self, students, sandwiches):
+         # Initialize counters for each preference
+        preference_count = [0, 0] # [square, circular]
