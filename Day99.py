@@ -46,3 +46,7 @@ class Solution(object):
         # Count the number of each preference
         for student in students:
             preference_count[student] += 1
+             # Loop through sandwiches until no student can eat
+        for sandwich in sandwiches:
+            if preference_count[sandwich] == 0:
+                break  # No more students can eat, exit loop
