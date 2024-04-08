@@ -50,3 +50,6 @@ class Solution(object):
         for sandwich in sandwiches:
             if preference_count[sandwich] == 0:
                 break  # No more students can eat, exit loop
+
+            # Find the next student who prefers the current sandwich
+            while students and students[0] != sandwich:
