@@ -60,3 +60,7 @@ class Solution(object):
                  # If no match found after rotating, no more students can eat
             if students[0] != sandwich:
                 break
+
+            # Remove the student who ate and update preference count
+            students.pop(0)
+            preference_count[sandwich] -= 1
