@@ -64,3 +64,6 @@ class Solution(object):
             # Remove the student who ate and update preference count
             students.pop(0)
             preference_count[sandwich] -= 1
+
+              # Return the count of students who couldn't eat
+        return len(students)
