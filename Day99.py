@@ -53,3 +53,6 @@ class Solution(object):
 
             # Find the next student who prefers the current sandwich
             while students and students[0] != sandwich:
+
+                # Rotate students until a match is found
+                students.append(students.pop(0))
