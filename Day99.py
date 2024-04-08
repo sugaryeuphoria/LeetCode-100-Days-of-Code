@@ -56,3 +56,7 @@ class Solution(object):
 
                 # Rotate students until a match is found
                 students.append(students.pop(0))
+
+                 # If no match found after rotating, no more students can eat
+            if students[0] != sandwich:
+                break
