@@ -42,3 +42,7 @@ class Solution(object):
     def countStudents(self, students, sandwiches):
          # Initialize counters for each preference
         preference_count = [0, 0] # [square, circular]
+
+        # Count the number of each preference
+        for student in students:
+            preference_count[student] += 1
