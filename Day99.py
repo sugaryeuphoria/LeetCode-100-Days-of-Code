@@ -40,30 +40,31 @@ students[i] is 0 or 1.
 """
 class Solution(object):
     def countStudents(self, students, sandwiches):
-         # Initialize counters for each preference
+      
+        # Initialize counters for each preference
         preference_count = [0, 0] # [square, circular]
-
+        
         # Count the number of each preference
         for student in students:
             preference_count[student] += 1
-             # Loop through sandwiches until no student can eat
+        
+        # Loop through sandwiches until no student can eat
         for sandwich in sandwiches:
             if preference_count[sandwich] == 0:
                 break  # No more students can eat, exit loop
-
+            
             # Find the next student who prefers the current sandwich
             while students and students[0] != sandwich:
-
                 # Rotate students until a match is found
                 students.append(students.pop(0))
-
-                 # If no match found after rotating, no more students can eat
+            
+            # If no match found after rotating, no more students can eat
             if students[0] != sandwich:
                 break
-
+            
             # Remove the student who ate and update preference count
             students.pop(0)
             preference_count[sandwich] -= 1
-
-              # Return the count of students who couldn't eat
+        
+        # Return the count of students who couldn't eat
         return len(students)
