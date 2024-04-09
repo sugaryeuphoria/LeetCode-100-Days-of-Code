@@ -30,3 +30,5 @@ n == tickets.length
 """
 class Solution(object):
     def timeRequiredToBuy(self, tickets, k):
+        # Get the total number of people in the queue
+        n = len(tickets)
