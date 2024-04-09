@@ -44,3 +44,5 @@ class Solution(object):
             time_taken += buy_count
             # Update the total number of tickets left to buy
             total_tickets -= buy_count
+            # Reduce the number of tickets for the person at position k
+            tickets[k] -= buy_count
