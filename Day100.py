@@ -46,3 +46,5 @@ class Solution(object):
             total_tickets -= buy_count
             # Reduce the number of tickets for the person at position k
             tickets[k] -= buy_count
+            # Move to the next person in the queue (circular queue)
+            k = (k + 1) % n
