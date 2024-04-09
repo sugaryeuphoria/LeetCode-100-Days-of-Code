@@ -42,3 +42,5 @@ class Solution(object):
             buy_count = min(tickets[k], total_tickets)
             # Update the total time taken by the number of tickets bought
             time_taken += buy_count
+            # Update the total number of tickets left to buy
+            total_tickets -= buy_count
