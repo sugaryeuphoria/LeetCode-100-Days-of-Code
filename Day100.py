@@ -28,3 +28,5 @@ n == tickets.length
 1 <= tickets[i] <= 100
 0 <= k < n
 """
+class Solution(object):
+    def timeRequiredToBuy(self, tickets, k):
