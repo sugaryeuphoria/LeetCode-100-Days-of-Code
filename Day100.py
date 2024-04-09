@@ -21,4 +21,10 @@ Explanation:
 - In the first pass, everyone in the line buys a ticket and the line becomes [4, 0, 0, 0].
 - In the next 4 passes, only the person in position 0 is buying tickets.
 The person at position 0 has successfully bought 5 tickets and it took 4 + 1 + 1 + 1 + 1 = 8 seconds.
+
+Constraints:
+n == tickets.length
+1 <= n <= 100
+1 <= tickets[i] <= 100
+0 <= k < n
 """
