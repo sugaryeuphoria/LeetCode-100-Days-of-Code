@@ -32,3 +32,5 @@ class Solution(object):
     def timeRequiredToBuy(self, tickets, k):
         # Get the total number of people in the queue
         n = len(tickets)
+        # Calculate the total number of tickets needed to be bought
+        total_tickets = sum(tickets)
