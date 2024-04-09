@@ -40,3 +40,5 @@ class Solution(object):
         while total_tickets > 0:
             # Determine the number of tickets to buy for the person at position k
             buy_count = min(tickets[k], total_tickets)
+            # Update the total time taken by the number of tickets bought
+            time_taken += buy_count
