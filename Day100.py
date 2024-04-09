@@ -48,3 +48,6 @@ class Solution(object):
             tickets[k] -= buy_count
             # Move to the next person in the queue (circular queue)
             k = (k + 1) % n
+
+            # Return the total time taken to buy all tickets
+        return time_taken
