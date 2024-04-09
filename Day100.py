@@ -51,3 +51,9 @@ class Solution(object):
 
             # Return the total time taken to buy all tickets
         return time_taken
+    
+# Example usage:
+solution = Solution()
+print(solution.timeRequiredToBuy([2, 3, 2], 2))  # Output: 6
+print(solution.timeRequiredToBuy([5, 1, 1, 1], 0))  # Output: 8
+
