@@ -34,5 +34,7 @@ class Solution(object):
         n = len(tickets)
         # Calculate the total number of tickets needed to be bought
         total_tickets = sum(tickets)
-         # Initialize the variable to track the total time taken
+        # Initialize the variable to track the total time taken
         time_taken = 0
+        # Continue looping until all tickets are bought
+        while total_tickets > 0:
