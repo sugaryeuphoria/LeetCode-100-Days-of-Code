@@ -43,3 +43,4 @@ class Solution(object):
     def deckRevealedIncreasing(self, deck):
          n = len(deck)
         deck.sort()  # Sort the deck in ascending order
+    queue = deque(range(n))  # Initialize queue with indices from 0 to n-1
