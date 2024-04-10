@@ -39,3 +39,5 @@ Constraints:
 All the values of deck are unique.
 """
 from collections import deque
+class Solution(object):
+    def deckRevealedIncreasing(self, deck):
