@@ -38,3 +38,4 @@ Constraints:
 1 <= deck[i] <= 106
 All the values of deck are unique.
 """
+from collections import deque
