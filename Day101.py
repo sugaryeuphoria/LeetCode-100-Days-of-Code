@@ -39,14 +39,21 @@ Constraints:
 All the values of deck are unique.
 """
 from collections import deque
+
 class Solution(object):
     def deckRevealedIncreasing(self, deck):
-         n = len(deck)
+        """
+        :type deck: List[int]
+        :rtype: List[int]
+        """
+        n = len(deck)
         deck.sort()  # Sort the deck in ascending order
-    queue = deque(range(n))  # Initialize queue with indices from 0 to n-1
-     result = [0] * n  # Initialize result list
-    for card in deck:
-       # Pop an index from the front of the queue and reveal the card at that index
+        
+        queue = deque(range(n))  # Initialize queue with indices from 0 to n-1
+        result = [0] * n  # Initialize result list
+        
+        for card in deck:
+            # Pop an index from the front of the queue and reveal the card at that index
             front_index = queue.popleft()
             result[front_index] = card
             
