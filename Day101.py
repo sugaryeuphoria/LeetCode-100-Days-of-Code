@@ -41,3 +41,5 @@ All the values of deck are unique.
 from collections import deque
 class Solution(object):
     def deckRevealedIncreasing(self, deck):
+         n = len(deck)
+        deck.sort()  # Sort the deck in ascending order
