@@ -31,4 +31,10 @@ Example 2:
 
 Input: deck = [1,1000]
 Output: [1,1000]
+
+Constraints:
+
+1 <= deck.length <= 1000
+1 <= deck[i] <= 106
+All the values of deck are unique.
 """
