@@ -45,3 +45,14 @@ class Solution(object):
         deck.sort()  # Sort the deck in ascending order
     queue = deque(range(n))  # Initialize queue with indices from 0 to n-1
      result = [0] * n  # Initialize result list
+    for card in deck:
+       # Pop an index from the front of the queue and reveal the card at that index
+            front_index = queue.popleft()
+            result[front_index] = card
+            
+            # If there are still unrevealed cards, put the next index at the back of the queue
+            if queue:
+                next_index = queue.popleft()
+                queue.append(next_index)
+        
+        return result
