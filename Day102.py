@@ -45,6 +45,6 @@ class Solution(object):
         if not result:
             return '0'
         
-         return result
+        return result
 
 
