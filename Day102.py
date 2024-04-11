@@ -33,3 +33,8 @@ class Solution(object):
                 stack.pop()
                 k -= 1
             stack.append(digit)
+
+            # If there are still removals (k) to be made, remove the remaining digits from the end.
+        while k > 0:
+            stack.pop()
+            k -= 1
