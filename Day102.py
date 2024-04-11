@@ -44,4 +44,7 @@ class Solution(object):
             # If the result is empty, return '0'.
         if not result:
             return '0'
+        
+         return result
+
 
