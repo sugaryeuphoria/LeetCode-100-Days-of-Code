@@ -38,3 +38,6 @@ class Solution(object):
         while k > 0:
             stack.pop()
             k -= 1
+
+            result = ''.join(stack).lstrip('0')
+
