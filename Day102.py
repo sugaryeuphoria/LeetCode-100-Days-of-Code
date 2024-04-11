@@ -27,3 +27,9 @@ class Solution(object):
     def removeKdigits(self, num, k):
         stack = []
         for digit in num:
+            # While there are digits in the stack, the current digit is less than the top digit,
+            # and there are still removals (k) to be made, pop the top digit from the stack.
+            while k > 0 and stack and stack[-1] > digit:
+                stack.pop()
+                k -= 1
+            stack.append(digit)
