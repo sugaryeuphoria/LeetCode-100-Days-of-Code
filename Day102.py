@@ -41,3 +41,7 @@ class Solution(object):
 
             result = ''.join(stack).lstrip('0')
 
+            # If the result is empty, return '0'.
+        if not result:
+            return '0'
+
