@@ -26,3 +26,4 @@ num does not have any leading zeros except for the zero itself.
 class Solution(object):
     def removeKdigits(self, num, k):
         stack = []
+        for digit in num:
