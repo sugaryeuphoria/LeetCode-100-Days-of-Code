@@ -25,7 +25,13 @@ num does not have any leading zeros except for the zero itself.
 """
 class Solution(object):
     def removeKdigits(self, num, k):
+        """
+        :type num: str
+        :type k: int
+        :rtype: str
+        """
         stack = []
+
         for digit in num:
             # While there are digits in the stack, the current digit is less than the top digit,
             # and there are still removals (k) to be made, pop the top digit from the stack.
@@ -34,17 +40,18 @@ class Solution(object):
                 k -= 1
             stack.append(digit)
 
-            # If there are still removals (k) to be made, remove the remaining digits from the end.
+        # If there are still removals (k) to be made, remove the remaining digits from the end.
         while k > 0:
             stack.pop()
             k -= 1
 
-            result = ''.join(stack).lstrip('0')
+        # Remove leading zeroes.
+        result = ''.join(stack).lstrip('0')
 
-            # If the result is empty, return '0'.
+        # If the result is empty, return '0'.
         if not result:
             return '0'
-        
+
         return result
 
 
