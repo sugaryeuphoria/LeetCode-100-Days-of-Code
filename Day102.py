@@ -17,4 +17,9 @@ Example 3:
 Input: num = "10", k = 2
 Output: "0"
 Explanation: Remove all the digits from the number and it is left with nothing which is 0.
+
+Constraints:
+1 <= k <= num.length <= 105
+num consists of only digits.
+num does not have any leading zeros except for the zero itself.
 """
