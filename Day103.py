@@ -52,3 +52,5 @@ class Solution(object):
                     water_trapped += right_max - height[right]
                     # Move the right pointer to the left
                 right -= 1
+                # Return the total water trapped
+        return water_trapped
