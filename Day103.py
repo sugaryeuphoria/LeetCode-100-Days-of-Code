@@ -22,3 +22,6 @@ n == height.length
 """
 class Solution(object):
     def trap(self, height):
+        # Check if the height list is empty
+        if not height:
+            return 0
