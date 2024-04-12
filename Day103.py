@@ -35,3 +35,7 @@ class Solution(object):
         while left < right:
              # Check if the height at the left pointer is less than the height at the right pointer
             if height[left] < height[right]:
+                # Update the left_max if the current height is greater than or equal to left_max
+                if height[left] >= left_max:
+                    left_max = height[left]
+                else:
