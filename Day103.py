@@ -33,3 +33,5 @@ class Solution(object):
         water_trapped = 0
         # Iterate until the left pointer is less than the right pointer
         while left < right:
+             # Check if the height at the left pointer is less than the height at the right pointer
+            if height[left] < height[right]:
