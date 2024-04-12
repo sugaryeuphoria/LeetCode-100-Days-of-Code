@@ -41,3 +41,6 @@ class Solution(object):
                 else:
                      # Add the difference between left_max and the current height to water_trapped
                     water_trapped += left_max - height[left]
+                    # Move the left pointer to the right
+                left += 1
+            else:
