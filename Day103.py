@@ -48,3 +48,5 @@ class Solution(object):
                 if height[right] >= right_max:
                     right_max = height[right]
                 else:
+                    # Add the difference between right_max and the current height to water_trapped
+                    water_trapped += right_max - height[right]
