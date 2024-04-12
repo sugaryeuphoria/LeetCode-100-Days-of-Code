@@ -29,3 +29,5 @@ class Solution(object):
         left, right = 0, len(height) - 1
         # Initialize variables to store the maximum height encountered from the left and right directions
         left_max, right_max = 0, 0
+         # Initialize variable to store the total water trapped
+        water_trapped = 0
