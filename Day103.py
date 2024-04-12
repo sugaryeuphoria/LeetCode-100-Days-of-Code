@@ -27,3 +27,5 @@ class Solution(object):
             return 0
          # Initialize two pointers at the beginning and end of the height list
         left, right = 0, len(height) - 1
+        # Initialize variables to store the maximum height encountered from the left and right directions
+        left_max, right_max = 0, 0
