@@ -44,3 +44,7 @@ class Solution(object):
                     # Move the left pointer to the right
                 left += 1
             else:
+                # Update the right_max if the current height is greater than or equal to right_max
+                if height[right] >= right_max:
+                    right_max = height[right]
+                else:
