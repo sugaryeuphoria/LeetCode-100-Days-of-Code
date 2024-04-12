@@ -31,3 +31,5 @@ class Solution(object):
         left_max, right_max = 0, 0
          # Initialize variable to store the total water trapped
         water_trapped = 0
+        # Iterate until the left pointer is less than the right pointer
+        while left < right:
