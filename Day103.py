@@ -25,3 +25,5 @@ class Solution(object):
         # Check if the height list is empty
         if not height:
             return 0
+         # Initialize two pointers at the beginning and end of the height list
+        left, right = 0, len(height) - 1
