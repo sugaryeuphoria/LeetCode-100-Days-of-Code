@@ -42,3 +42,5 @@ class Solution(object):
             return max_area
         # Get the number of rows and columns in the matrix
         rows, cols = len(matrix), len(matrix[0])
+        # Initialize the heights array to store the histogram heights
+        heights = [0] * cols
