@@ -15,4 +15,9 @@ Example 3:
 Input: matrix = [["1"]]
 Output: 1
  
+Constraints:
+rows == matrix.length
+cols == matrix[i].length
+1 <= row, cols <= 200
+matrix[i][j] is '0' or '1'.
 """
