@@ -26,3 +26,7 @@ class Solution(object):
          # Check if the matrix is empty
         if not matrix:
             return 0
+         # Function to calculate the largest rectangle area in histogram
+        def maximalRectangleHistogram(heights):
+            stack = []
+            max_area = 0
