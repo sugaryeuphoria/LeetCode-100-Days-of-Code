@@ -44,3 +44,5 @@ class Solution(object):
         rows, cols = len(matrix), len(matrix[0])
         # Initialize the heights array to store the histogram heights
         heights = [0] * cols
+        # Initialize the maximum rectangle area
+        max_area = 0
