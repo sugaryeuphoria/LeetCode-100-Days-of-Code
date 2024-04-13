@@ -40,3 +40,5 @@ class Solution(object):
                     max_area = max(max_area, height * width)
                 stack.append(i)
             return max_area
+        # Get the number of rows and columns in the matrix
+        rows, cols = len(matrix), len(matrix[0])
