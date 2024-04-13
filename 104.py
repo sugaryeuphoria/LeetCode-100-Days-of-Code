@@ -48,3 +48,6 @@ class Solution(object):
         max_area = 0
          # Iterate through each row in the matrix
         for row in matrix:
+            # Update the heights array based on the current row
+            for i in range(cols):
+                heights[i] = heights[i] + 1 if row[i] == '1' else 0
