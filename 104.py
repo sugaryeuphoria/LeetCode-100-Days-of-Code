@@ -30,4 +30,7 @@ class Solution(object):
         def maximalRectangleHistogram(heights):
             stack = []
             max_area = 0
-             heights.append(0)  # Append a 0 to handle the case when heights end with non-zero elements
+            heights.append(0)  
+            # Append a 0 to handle the case when heights end with non-zero elements
+            for i in range(len(heights)):
+                while stack and heights[i] < heights[stack[-1]]:
