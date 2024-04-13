@@ -51,3 +51,7 @@ class Solution(object):
             # Update the heights array based on the current row
             for i in range(cols):
                 heights[i] = heights[i] + 1 if row[i] == '1' else 0
+                # Calculate the maximum rectangle area using the histogram heights
+            max_area = max(max_area, maximalRectangleHistogram(heights))
+
+        return max_area
