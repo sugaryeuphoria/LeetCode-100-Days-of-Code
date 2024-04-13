@@ -46,3 +46,5 @@ class Solution(object):
         heights = [0] * cols
         # Initialize the maximum rectangle area
         max_area = 0
+         # Iterate through each row in the matrix
+        for row in matrix:
