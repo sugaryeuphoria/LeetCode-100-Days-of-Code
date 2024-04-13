@@ -23,15 +23,15 @@ matrix[i][j] is '0' or '1'.
 """
 class Solution(object):
     def maximalRectangle(self, matrix):
-         # Check if the matrix is empty
+        # Check if the matrix is empty
         if not matrix:
             return 0
-         # Function to calculate the largest rectangle area in histogram
+
+        # Function to calculate the largest rectangle area in histogram
         def maximalRectangleHistogram(heights):
             stack = []
             max_area = 0
-            heights.append(0)  
-            # Append a 0 to handle the case when heights end with non-zero elements
+            heights.append(0)  # Append a 0 to handle the case when heights end with non-zero elements
             for i in range(len(heights)):
                 while stack and heights[i] < heights[stack[-1]]:
                     # Pop the stack and calculate the rectangle area
@@ -40,18 +40,20 @@ class Solution(object):
                     max_area = max(max_area, height * width)
                 stack.append(i)
             return max_area
+
         # Get the number of rows and columns in the matrix
         rows, cols = len(matrix), len(matrix[0])
         # Initialize the heights array to store the histogram heights
         heights = [0] * cols
         # Initialize the maximum rectangle area
         max_area = 0
-         # Iterate through each row in the matrix
+
+        # Iterate through each row in the matrix
         for row in matrix:
             # Update the heights array based on the current row
             for i in range(cols):
                 heights[i] = heights[i] + 1 if row[i] == '1' else 0
-                # Calculate the maximum rectangle area using the histogram heights
+            # Calculate the maximum rectangle area using the histogram heights
             max_area = max(max_area, maximalRectangleHistogram(heights))
 
         return max_area
