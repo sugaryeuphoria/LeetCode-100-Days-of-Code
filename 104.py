@@ -23,3 +23,6 @@ matrix[i][j] is '0' or '1'.
 """
 class Solution(object):
     def maximalRectangle(self, matrix):
+         # Check if the matrix is empty
+        if not matrix:
+            return 0
