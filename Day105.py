@@ -19,3 +19,5 @@ The number of nodes in the tree is in the range [1, 1000].
 """
 class Solution(object):
     def sumOfLeftLeaves(self, root):
+         # Define a recursive function for depth-first search (DFS)
+        def dfs(node, is_left):
