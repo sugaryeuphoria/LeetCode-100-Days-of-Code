@@ -29,3 +29,5 @@ class Solution(object):
                 return node.val
             # Recursively traverse left and right subtrees, updating is_left accordingly
             return dfs(node.left, True) + dfs(node.right, False)
+        # Start DFS from the root with is_left initially set to False
+        return dfs(root, False)
