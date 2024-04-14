@@ -27,3 +27,5 @@ class Solution(object):
             # If the node has no children and is a left child, return its value
             if not node.left and not node.right and is_left:
                 return node.val
+            # Recursively traverse left and right subtrees, updating is_left accordingly
+            return dfs(node.left, True) + dfs(node.right, False)
