@@ -24,3 +24,6 @@ class Solution(object):
              # If node is None, return 0
             if not node:
                 return 0
+            # If the node has no children and is a left child, return its value
+            if not node.left and not node.right and is_left:
+                return node.val
