@@ -11,4 +11,9 @@ Explanation: There are two left leaves in the binary tree, with values 9 and 15 
 Example 2:
 Input: root = [1]
 Output: 0
+
+Constraints:
+
+The number of nodes in the tree is in the range [1, 1000].
+-1000 <= Node.val <= 1000
 """
