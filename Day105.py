@@ -17,11 +17,21 @@ Constraints:
 The number of nodes in the tree is in the range [1, 1000].
 -1000 <= Node.val <= 1000
 """
+# Definition for a binary tree node.
+# class TreeNode(object):
+#     def __init__(self, val=0, left=None, right=None):
+#         self.val = val
+#         self.left = left
+#         self.right = right
 class Solution(object):
     def sumOfLeftLeaves(self, root):
+        """
+        :type root: TreeNode
+        :rtype: int
+        """
         # Define a recursive function for depth-first search (DFS)
         def dfs(node, is_left):
-             # If node is None, return 0
+            # If node is None, return 0
             if not node:
                 return 0
             # If the node has no children and is a left child, return its value
@@ -29,5 +39,6 @@ class Solution(object):
                 return node.val
             # Recursively traverse left and right subtrees, updating is_left accordingly
             return dfs(node.left, True) + dfs(node.right, False)
+        
         # Start DFS from the root with is_left initially set to False
         return dfs(root, False)
