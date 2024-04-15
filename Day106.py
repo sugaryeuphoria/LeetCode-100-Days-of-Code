@@ -32,22 +32,29 @@ The depth of the tree will not exceed 10.
 """
 class Solution(object):
     def sumNumbers(self, root):
-         # Define a depth-first search helper function
+        """
+        :type root: TreeNode
+        :rtype: int
+        """
+        # Define a depth-first search helper function
         def dfs(node, path_sum):
             # If the current node is None, return 0
             if not node:
                 return 0
+            
             # Update the path sum by appending the current node's value
             path_sum = path_sum * 10 + node.val
+            
             # If the current node is a leaf node, return the accumulated path sum
             if not node.left and not node.right:  # If leaf node
                 return path_sum
+            
             # Recursively explore the left and right subtrees
             left_sum = dfs(node.left, path_sum)
             right_sum = dfs(node.right, path_sum)
-
+            
             # Return the sum of path sums from left and right subtrees
             return left_sum + right_sum
         
-         # Start the depth-first search from the root with initial path sum 0
+        # Start the depth-first search from the root with initial path sum 0
         return dfs(root, 0)
