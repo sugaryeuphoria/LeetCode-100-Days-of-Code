@@ -32,3 +32,5 @@ The depth of the tree will not exceed 10.
 """
 class Solution(object):
     def sumNumbers(self, root):
+         # Define a depth-first search helper function
+        def dfs(node, path_sum):
