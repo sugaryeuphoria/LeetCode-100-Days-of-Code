@@ -34,3 +34,6 @@ class Solution(object):
     def sumNumbers(self, root):
          # Define a depth-first search helper function
         def dfs(node, path_sum):
+            # If the current node is None, return 0
+            if not node:
+                return 0
