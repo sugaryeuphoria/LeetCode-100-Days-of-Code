@@ -37,3 +37,5 @@ class Solution(object):
             # If the current node is None, return 0
             if not node:
                 return 0
+            # Update the path sum by appending the current node's value
+            path_sum = path_sum * 10 + node.val
