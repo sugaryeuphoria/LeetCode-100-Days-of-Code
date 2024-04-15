@@ -42,3 +42,6 @@ class Solution(object):
             # If the current node is a leaf node, return the accumulated path sum
             if not node.left and not node.right:  # If leaf node
                 return path_sum
+            # Recursively explore the left and right subtrees
+            left_sum = dfs(node.left, path_sum)
+            right_sum = dfs(node.right, path_sum)
