@@ -48,3 +48,6 @@ class Solution(object):
 
             # Return the sum of path sums from left and right subtrees
             return left_sum + right_sum
+        
+         # Start the depth-first search from the root with initial path sum 0
+        return dfs(root, 0)
