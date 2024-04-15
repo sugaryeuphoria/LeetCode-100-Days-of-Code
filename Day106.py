@@ -45,3 +45,6 @@ class Solution(object):
             # Recursively explore the left and right subtrees
             left_sum = dfs(node.left, path_sum)
             right_sum = dfs(node.right, path_sum)
+
+            # Return the sum of path sums from left and right subtrees
+            return left_sum + right_sum
