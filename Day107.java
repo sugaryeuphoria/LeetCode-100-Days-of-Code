@@ -40,6 +40,8 @@ class Day107 {
     ++depth;
      // Process nodes at the current level
      for (int sz = q.size(); sz > 0; --sz) {
+         // Dequeue a node from the queue
+         TreeNode node = q.poll();
     }
 
 }
