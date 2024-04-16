@@ -55,6 +55,11 @@ class Day107 {
           // Create new nodes with the given value
           node.left = new TreeNode(v);
           node.right = new TreeNode(v);
+          // Reassign the original left and right child nodes to the new nodes
+          node.left.left = cachedLeft;
+          node.right.right = cachedRight;
+        }
+      }
     }
 
 }
