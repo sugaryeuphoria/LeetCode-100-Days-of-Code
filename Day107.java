@@ -33,6 +33,8 @@ class Day107 {
   }
   // Initialize depth counter
   int depth = 0;
+  // Create a queue for BFS traversal, starting with the root node
+  Queue<TreeNode> q = new ArrayDeque<>(Arrays.asList(root));
     }
 
 }
