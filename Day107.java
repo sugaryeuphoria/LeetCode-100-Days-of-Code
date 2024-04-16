@@ -25,7 +25,12 @@ The depth of the tree is in the range [1, 104].
 */
 class Day107 {
     public TreeNode addOneRow(TreeNode root, int v, int d) {
-
+ // If the target depth is 1, create a new root node with the given value
+ if (d == 1) {
+    TreeNode newRoot = new TreeNode(v);
+    newRoot.left = root;
+    return newRoot;
+  }
     }
 
 }
