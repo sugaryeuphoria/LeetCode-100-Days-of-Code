@@ -60,6 +60,10 @@ class Day107 {
           node.right.right = cachedRight;
         }
       }
+       // If we've reached the level just before the target depth, stop traversal
+       if (depth == d - 1)
+       break;
+   }
     }
 
 }
