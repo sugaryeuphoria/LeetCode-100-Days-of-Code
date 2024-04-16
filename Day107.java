@@ -64,6 +64,8 @@ class Day107 {
        if (depth == d - 1)
        break;
    }
+   // Return the modified root of the tree
+   return root;
     }
 
 }
