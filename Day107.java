@@ -31,6 +31,8 @@ class Day107 {
     newRoot.left = root;
     return newRoot;
   }
+  // Initialize depth counter
+  int depth = 0;
     }
 
 }
