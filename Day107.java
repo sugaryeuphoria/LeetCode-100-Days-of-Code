@@ -42,6 +42,11 @@ class Day107 {
      for (int sz = q.size(); sz > 0; --sz) {
          // Dequeue a node from the queue
          TreeNode node = q.poll();
+         // Enqueue its left and right child nodes if they exist
+        if (node.left != null)
+        q.offer(node.left);
+      if (node.right != null)
+        q.offer(node.right);
     }
 
 }
