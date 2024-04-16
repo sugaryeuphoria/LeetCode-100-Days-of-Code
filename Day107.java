@@ -47,6 +47,8 @@ class Day107 {
         q.offer(node.left);
       if (node.right != null)
         q.offer(node.right);
+         // If the current level is one level above the target depth
+         if (depth == d - 1) {
     }
 
 }
