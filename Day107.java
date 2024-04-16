@@ -38,6 +38,8 @@ class Day107 {
   // Perform BFS traversal until reaching the level just before the target depth
   while (!q.isEmpty()) {
     ++depth;
+     // Process nodes at the current level
+     for (int sz = q.size(); sz > 0; --sz) {
     }
 
 }
