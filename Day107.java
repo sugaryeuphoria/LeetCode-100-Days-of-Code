@@ -49,6 +49,9 @@ class Day107 {
         q.offer(node.right);
          // If the current level is one level above the target depth
          if (depth == d - 1) {
+               // Cache the original left and right child nodes
+          TreeNode cachedLeft = node.left;
+          TreeNode cachedRight = node.right;
     }
 
 }
