@@ -23,49 +23,47 @@ The depth of the tree is in the range [1, 104].
 -105 <= val <= 105
 1 <= depth <= the depth of tree + 1
 */
-class Day107 {
-    public TreeNode addOneRow(TreeNode root, int v, int d) {
- // If the target depth is 1, create a new root node with the given value
- if (d == 1) {
-    TreeNode newRoot = new TreeNode(v);
-    newRoot.left = root;
-    return newRoot;
-  }
-  // Initialize depth counter
-  int depth = 0;
-  // Create a queue for BFS traversal, starting with the root node
-  Queue<TreeNode> q = new ArrayDeque<>(Arrays.asList(root));
-  // Perform BFS traversal until reaching the level just before the target depth
-  while (!q.isEmpty()) {
-    ++depth;
-     // Process nodes at the current level
-     for (int sz = q.size(); sz > 0; --sz) {
-         // Dequeue a node from the queue
-         TreeNode node = q.poll();
-         // Enqueue its left and right child nodes if they exist
-        if (node.left != null)
-        q.offer(node.left);
-      if (node.right != null)
-        q.offer(node.right);
-         // If the current level is one level above the target depth
-         if (depth == d - 1) {
-               // Cache the original left and right child nodes
-          TreeNode cachedLeft = node.left;
-          TreeNode cachedRight = node.right;
-          // Create new nodes with the given value
-          node.left = new TreeNode(v);
-          node.right = new TreeNode(v);
-          // Reassign the original left and right child nodes to the new nodes
-          node.left.left = cachedLeft;
-          node.right.right = cachedRight;
-        }
-      }
-       // If we've reached the level just before the target depth, stop traversal
-       if (depth == d - 1)
-       break;
-   }
-   // Return the modified root of the tree
-   return root;
-    }
+import java.util.*;
 
+class TreeNode {
+    int val;
+    TreeNode left;
+    TreeNode right;
+    TreeNode(int x) { val = x; }
+}
+
+public class Day107 {
+    public TreeNode addOneRow(TreeNode root, int v, int d) {
+        if (d == 1) {
+            TreeNode newRoot = new TreeNode(v);
+            newRoot.left = root;
+            return newRoot;
+        }
+
+        int depth = 0;
+        Queue<TreeNode> q = new ArrayDeque<>(Arrays.asList(root));
+
+        while (!q.isEmpty()) {
+            ++depth;
+            for (int sz = q.size(); sz > 0; --sz) {
+                TreeNode node = q.poll();
+                if (node.left != null)
+                    q.offer(node.left);
+                if (node.right != null)
+                    q.offer(node.right);
+                if (depth == d - 1) {
+                    TreeNode cachedLeft = node.left;
+                    TreeNode cachedRight = node.right;
+                    node.left = new TreeNode(v);
+                    node.right = new TreeNode(v);
+                    node.left.left = cachedLeft;
+                    node.right.right = cachedRight;
+                }
+            }
+            if (depth == d - 1)
+                break;
+        }
+
+        return root;
+    }
 }
