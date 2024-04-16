@@ -35,6 +35,9 @@ class Day107 {
   int depth = 0;
   // Create a queue for BFS traversal, starting with the root node
   Queue<TreeNode> q = new ArrayDeque<>(Arrays.asList(root));
+  // Perform BFS traversal until reaching the level just before the target depth
+  while (!q.isEmpty()) {
+    ++depth;
     }
 
 }
