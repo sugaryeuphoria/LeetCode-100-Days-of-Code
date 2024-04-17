@@ -1,3 +1,7 @@
+"""
+988. Smallest String Starting From Leaf
+"""
+
 class Solution(object):
     def smallestFromLeaf(self, root):
         def dfs(node, path):
