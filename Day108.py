@@ -8,3 +8,4 @@ class Solution(object):
                 return ''.join(path[::-1])
             left_path = dfs(node.left, path)
             right_path = dfs(node.right, path)
+            smallest_path = min(left_path, right_path)
