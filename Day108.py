@@ -17,6 +17,11 @@ Output: "adz"
 Example 3:
 Input: root = [2,2,1,null,1,0,null,0]
 Output: "abc"
+
+Constraints:
+
+The number of nodes in the tree is in the range [1, 8500].
+0 <= Node.val <= 25
 """
 
 class Solution(object):
@@ -33,3 +38,4 @@ class Solution(object):
             path.pop()
             return smallest_path
         return dfs(root, [])
+    
