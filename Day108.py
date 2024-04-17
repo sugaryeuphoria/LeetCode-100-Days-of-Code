@@ -4,3 +4,5 @@ class Solution(object):
             if not node:
                 return "|"
             path.append(chr(ord('a') + node.val))
+            if not node.left and not node.right:
+                return ''.join(path[::-1])
