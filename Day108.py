@@ -11,3 +11,4 @@ class Solution(object):
             smallest_path = min(left_path, right_path)
             path.pop()
             return smallest_path
+        return dfs(root, [])
