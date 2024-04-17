@@ -23,19 +23,23 @@ Constraints:
 The number of nodes in the tree is in the range [1, 8500].
 0 <= Node.val <= 25
 """
-
-class Solution(object):
+class Solution:
     def smallestFromLeaf(self, root):
-        def dfs(node, path):
-            if not node:
-                return "|"
-            path.append(chr(ord('a') + node.val))
-            if not node.left and not node.right:
-                return ''.join(path[::-1])
-            left_path = dfs(node.left, path)
-            right_path = dfs(node.right, path)
-            smallest_path = min(left_path, right_path)
-            path.pop()
-            return smallest_path
-        return dfs(root, [])
-    
+        self.ans = None
+        self.dfs(root, [])
+        return self.ans
+
+    def dfs(self, root, path):
+        if not root:
+            return
+        
+        path.append(chr(root.val + ord('a')))
+        
+        if not root.left and not root.right:
+            rev_path = ''.join(reversed(path))
+            if self.ans is None or self.ans > rev_path:
+                self.ans = rev_path
+        
+        self.dfs(root.left, path)
+        self.dfs(root.right, path)
+        path.pop()
