@@ -6,3 +6,5 @@ class Solution(object):
             path.append(chr(ord('a') + node.val))
             if not node.left and not node.right:
                 return ''.join(path[::-1])
+            left_path = dfs(node.left, path)
+            right_path = dfs(node.right, path)
