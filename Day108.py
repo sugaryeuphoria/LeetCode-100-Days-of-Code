@@ -9,3 +9,5 @@ class Solution(object):
             left_path = dfs(node.left, path)
             right_path = dfs(node.right, path)
             smallest_path = min(left_path, right_path)
+            path.pop()
+            return smallest_path
