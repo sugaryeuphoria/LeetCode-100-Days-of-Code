@@ -3,3 +3,4 @@ class Solution(object):
         def dfs(node, path):
             if not node:
                 return "|"
+            path.append(chr(ord('a') + node.val))
