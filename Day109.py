@@ -31,3 +31,5 @@ There is exactly one island in grid.
 """
 class Solution(object):
     def islandPerimeter(self, grid):
+        # Initialize perimeter variable to keep track of the total perimeter
+        perimeter = 0
