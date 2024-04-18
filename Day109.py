@@ -39,3 +39,5 @@ class Solution(object):
             for j in range(len(grid[0])):
                  # Check if the current cell is land
                 if grid[i][j] == 1:
+                    # If the current cell is land, add 4 to the perimeter
+                    perimeter += 4  # Each land cell contributes 4 edges to the perimeter
