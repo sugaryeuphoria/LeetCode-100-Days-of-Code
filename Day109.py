@@ -35,3 +35,5 @@ class Solution(object):
         perimeter = 0
         # Iterate through each row in the grid
         for i in range(len(grid)):
+            # Iterate through each column in the grid
+            for j in range(len(grid[0])):
