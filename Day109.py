@@ -33,3 +33,5 @@ class Solution(object):
     def islandPerimeter(self, grid):
         # Initialize perimeter variable to keep track of the total perimeter
         perimeter = 0
+        # Iterate through each row in the grid
+        for i in range(len(grid)):
