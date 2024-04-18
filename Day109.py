@@ -41,3 +41,5 @@ class Solution(object):
                 if grid[i][j] == 1:
                     # If the current cell is land, add 4 to the perimeter
                     perimeter += 4  # Each land cell contributes 4 edges to the perimeter
+                    # Check if the neighboring cell to the top is also land
+                    if i > 0 and grid[i - 1][j] == 1:
