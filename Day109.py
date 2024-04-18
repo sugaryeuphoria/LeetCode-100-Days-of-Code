@@ -29,3 +29,5 @@ col == grid[i].length
 grid[i][j] is 0 or 1.
 There is exactly one island in grid.
 """
+class Solution(object):
+    def islandPerimeter(self, grid):
