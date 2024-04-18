@@ -45,3 +45,5 @@ class Solution(object):
                     if i > 0 and grid[i - 1][j] == 1:
                         # If neighboring cell to the top is land, subtract 2 from the perimeter
                         perimeter -= 2  # Reduce perimeter by 2 if neighbor is land
+                        # Check if the neighboring cell to the left is also land
+                    if j > 0 and grid[i][j - 1] == 1:
