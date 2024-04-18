@@ -37,3 +37,5 @@ class Solution(object):
         for i in range(len(grid)):
             # Iterate through each column in the grid
             for j in range(len(grid[0])):
+                 # Check if the current cell is land
+                if grid[i][j] == 1:
