@@ -49,3 +49,5 @@ class Solution(object):
                     if j > 0 and grid[i][j - 1] == 1:
                          # If neighboring cell to the left is land, subtract 2 from the perimeter
                         perimeter -= 2  # Reduce perimeter by 2 if neighbor is land
+                         # Return the total perimeter of the island
+        return perimeter
