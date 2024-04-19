@@ -35,3 +35,6 @@ class Solution(object):
         def dfs(i, j):
             # DFS function to explore the grid starting from cell (i, j)
             if i < 0 or i >= len(grid) or j < 0 or j >= len(grid[0]) or grid[i][j] == '0':
+                 # If the current cell is out of bounds or it's water ('0'), return
+                return
+            grid[i][j] = '0'  # Mark the current cell as visited
