@@ -44,3 +44,4 @@ class Solution(object):
             dfs(i, j+1)
             dfs(i, j-1)
             count = 0  # Initialize a variable to count the number of islands
+            for i in range(len(grid)):  # Iterate over rows of the grid
