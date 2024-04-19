@@ -47,3 +47,4 @@ class Solution(object):
             for i in range(len(grid)):
                             for j in range(len(grid[0])):  # Iterate over columns of the grid
                                 if grid[i][j] == '1':  # If the current cell is land ('1')
+  count += 1  # Increment the island count
