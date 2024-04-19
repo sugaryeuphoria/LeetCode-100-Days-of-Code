@@ -49,3 +49,4 @@ class Solution(object):
                                 if grid[i][j] == '1':  # If the current cell is land ('1')
   count += 1  # Increment the island count
 dfs(i, j)  # Explore the island using DFS
+        return count  # Return the total number of islands
