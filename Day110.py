@@ -46,4 +46,4 @@ class Solution(object):
             count = 0  # Initialize a variable to count the number of islands
             for i in range(len(grid)):
                             for j in range(len(grid[0])):  # Iterate over columns of the grid
-  # Iterate over rows of the grid
+                                if grid[i][j] == '1':  # If the current cell is land ('1')
