@@ -33,3 +33,5 @@ grid[i][j] is '0' or '1'.
 class Solution(object):
     def numIslands(self, grid):
         def dfs(i, j):
+            # DFS function to explore the grid starting from cell (i, j)
+            if i < 0 or i >= len(grid) or j < 0 or j >= len(grid[0]) or grid[i][j] == '0':
