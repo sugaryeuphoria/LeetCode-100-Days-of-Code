@@ -38,3 +38,8 @@ class Solution(object):
                  # If the current cell is out of bounds or it's water ('0'), return
                 return
             grid[i][j] = '0'  # Mark the current cell as visited
+             # Explore adjacent cells in all four directions
+            dfs(i+1, j)
+            dfs(i-1, j)
+            dfs(i, j+1)
+            dfs(i, j-1)
