@@ -32,3 +32,4 @@ grid[i][j] is '0' or '1'.
 """
 class Solution(object):
     def numIslands(self, grid):
+        def dfs(i, j):
