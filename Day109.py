@@ -51,3 +51,4 @@ class Solution(object):
                         perimeter -= 2  # Reduce perimeter by 2 if neighbor is land
                          # Return the total perimeter of the island
         return perimeter
+    
