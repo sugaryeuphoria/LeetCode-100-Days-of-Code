@@ -58,3 +58,7 @@ class Solution(object):
         for i in range(len(land)):
             for j in range(len(land[0])):
                 if land[i][j] == 1:
+                     if land[i][j] == 1:
+                    cell = [i, j]  # Initialize top-left coordinates of farmland group.
+                    dfs(i, j, cell)  # Perform DFS to find boundaries of farmland group.
+                    ans.append([i, j, cell[0], cell[1]])
