@@ -54,3 +54,6 @@ class Solution(object):
             cell[1] = max(cell[1], j)  # Update max column index of farmland group.
             dfs(i + 1, j, cell)
             dfs(i, j + 1, cell)
+            # Iterate through each cell in the matrix.
+        for i in range(len(land)):
+            for j in range(len(land[0])):
