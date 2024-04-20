@@ -43,4 +43,6 @@ class Solution(object):
     # Method to find farmland groups in the binary matrix.
     def findFarmland(self, land):
         # Initialize an empty list to store farmland group coordinates.
-          ans = []
+        ans = []
+        # DFS function to traverse farmland groups and update their boundaries.
+        def dfs(i, j, cell):
