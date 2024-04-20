@@ -48,3 +48,4 @@ class Solution(object):
         def dfs(i, j, cell):
               # Base case: if current cell is out of bounds or not farmland, return.
             if i < 0 or i == len(land) or j < 0 or j == len(land[0]) or land[i][j] != 1:
+                return
