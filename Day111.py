@@ -39,3 +39,6 @@ n == land[i].length
 land consists of only 0's and 1's.
 Groups of farmland are rectangular in shape.
 """
+class Solution(object):
+    # Method to find farmland groups in the binary matrix.
+    def findFarmland(self, land):
