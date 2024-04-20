@@ -50,4 +50,5 @@ class Solution(object):
             if i < 0 or i == len(land) or j < 0 or j == len(land[0]) or land[i][j] != 1:
                 return
             land[i][j] = 2  #
-            cell[0] = max(cell[0], i)  # Update max row index of farmland group.
+            cell[0] = max(cell[0], i) 
+            cell[1] = max(cell[1], j)  # Update max column index of farmland group.
