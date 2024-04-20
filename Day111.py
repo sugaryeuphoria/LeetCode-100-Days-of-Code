@@ -62,3 +62,4 @@ class Solution(object):
                     cell = [i, j]  # Initialize top-left coordinates of farmland group.
                     dfs(i, j, cell)  # Perform DFS to find boundaries of farmland group.
                     ans.append([i, j, cell[0], cell[1]])
+                return ans  # Return the list of farmland groups.
