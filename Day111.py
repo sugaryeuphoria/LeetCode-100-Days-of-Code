@@ -42,24 +42,26 @@ Groups of farmland are rectangular in shape.
 class Solution(object):
     # Method to find farmland groups in the binary matrix.
     def findFarmland(self, land):
-        # Initialize an empty list to store farmland group coordinates.
-        ans = []
+        ans = []  # Initialize an empty list to store farmland group coordinates.
+
         # DFS function to traverse farmland groups and update their boundaries.
         def dfs(i, j, cell):
-              # Base case: if current cell is out of bounds or not farmland, return.
+            # Base case: if current cell is out of bounds or not farmland, return.
             if i < 0 or i == len(land) or j < 0 or j == len(land[0]) or land[i][j] != 1:
                 return
-            land[i][j] = 2  #
-            cell[0] = max(cell[0], i) 
+            land[i][j] = 2  # Mark current cell as visited.
+            cell[0] = max(cell[0], i)  # Update max row index of farmland group.
             cell[1] = max(cell[1], j)  # Update max column index of farmland group.
-            dfs(i + 1, j, cell)
-            dfs(i, j + 1, cell)
-            # Iterate through each cell in the matrix.
+            dfs(i + 1, j, cell)  # Explore down direction.
+            dfs(i, j + 1, cell)  # Explore right direction.
+
+        # Iterate through each cell in the matrix.
         for i in range(len(land)):
             for j in range(len(land[0])):
+                # If current cell is farmland (1), initiate DFS search.
                 if land[i][j] == 1:
-                     if land[i][j] == 1:
                     cell = [i, j]  # Initialize top-left coordinates of farmland group.
                     dfs(i, j, cell)  # Perform DFS to find boundaries of farmland group.
-                    ans.append([i, j, cell[0], cell[1]])
-                return ans  # Return the list of farmland groups.
+                    ans.append([i, j, cell[0], cell[1]])  # Append group coordinates to ans.
+
+        return ans  # Return the list of farmland groups.
