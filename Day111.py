@@ -57,3 +57,4 @@ class Solution(object):
             # Iterate through each cell in the matrix.
         for i in range(len(land)):
             for j in range(len(land[0])):
+                if land[i][j] == 1:
