@@ -42,3 +42,5 @@ Groups of farmland are rectangular in shape.
 class Solution(object):
     # Method to find farmland groups in the binary matrix.
     def findFarmland(self, land):
+        # Initialize an empty list to store farmland group coordinates.
+          ans = []
