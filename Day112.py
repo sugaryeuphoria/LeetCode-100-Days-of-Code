@@ -30,3 +30,5 @@ The given input is guaranteed to be a tree and there will be no repeated edges.
 from collections import defaultdict, deque
 class Solution:
     def findMinHeightTrees(self, n, edges):
+        if n == 1:
+            return [0]  # Special case: single node
