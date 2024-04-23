@@ -40,3 +40,5 @@ class Solution:
             graph[v].append(u)
             degrees[u] += 1
             degrees[v] += 1
+            # Initialize queue with leaf nodes (degree == 1)
+        leaves = deque([node for node in range(n) if degrees[node] == 1])
