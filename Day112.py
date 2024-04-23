@@ -42,3 +42,14 @@ class Solution:
             degrees[v] += 1
             # Initialize queue with leaf nodes (degree == 1)
         leaves = deque([node for node in range(n) if degrees[node] == 1])
+         # Iterate until we have 1 or 2 nodes left
+        remaining_nodes = n
+        while remaining_nodes > 2:
+            num_leaves = len(leaves)
+            remaining_nodes -= num_leaves
+            for _ in range(num_leaves):
+                leaf = leaves.popleft()
+                for neighbor in graph[leaf]:
+                    degrees[neighbor] -= 1
+                    if degrees[neighbor] == 1:
+                        leaves.append(neighbor)
