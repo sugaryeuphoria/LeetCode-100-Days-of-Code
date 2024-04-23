@@ -32,3 +32,11 @@ class Solution:
     def findMinHeightTrees(self, n, edges):
         if n == 1:
             return [0]  # Special case: single node
+        # Construct adjacency list representation of the tree
+        graph = defaultdict(list)
+        degrees = [0] * n
+        for u, v in edges:
+            graph[u].append(v)
+            graph[v].append(u)
+            degrees[u] += 1
+            degrees[v] += 1
