@@ -55,3 +55,4 @@ class Solution:
                         leaves.append(neighbor)
         # At this point, remaining_nodes == 1 or 2, leaves contains the central nodes
         return list(leaves)
+    
