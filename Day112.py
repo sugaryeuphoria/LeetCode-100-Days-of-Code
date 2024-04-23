@@ -28,3 +28,5 @@ All the pairs (ai, bi) are distinct.
 The given input is guaranteed to be a tree and there will be no repeated edges.
 """
 from collections import defaultdict, deque
+class Solution:
+    def findMinHeightTrees(self, n, edges):
