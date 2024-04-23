@@ -53,3 +53,5 @@ class Solution:
                     degrees[neighbor] -= 1
                     if degrees[neighbor] == 1:
                         leaves.append(neighbor)
+        # At this point, remaining_nodes == 1 or 2, leaves contains the central nodes
+        return list(leaves)
