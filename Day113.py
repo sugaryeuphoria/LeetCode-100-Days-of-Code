@@ -28,4 +28,8 @@ The answer is guaranteed to fit within a 32-bit integer, ie. answer <= 2^31 - 1.
 class Solution(object):
     def tribonacci(self, n):  # Define a method tribonacci that takes an integer n as input.
 # If n equals 0, return 0.
-if n == 0:
+        if n == 0:
+            return 0
+        # If n equals 1 or 2, return 1.
+        if n == 1 or n == 2:
+            return 1
