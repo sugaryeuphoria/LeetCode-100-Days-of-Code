@@ -24,3 +24,5 @@ Constraints:
 0 <= n <= 37
 The answer is guaranteed to fit within a 32-bit integer, ie. answer <= 2^31 - 1.
 """
+# Define a class named Solution.
+class Solution(object):
