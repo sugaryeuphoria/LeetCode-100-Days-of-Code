@@ -27,3 +27,5 @@ The answer is guaranteed to fit within a 32-bit integer, ie. answer <= 2^31 - 1.
 # Define a class named Solution.
 class Solution(object):
     def tribonacci(self, n):  # Define a method tribonacci that takes an integer n as input.
+# If n equals 0, return 0.
+if n == 0:
