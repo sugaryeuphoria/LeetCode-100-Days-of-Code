@@ -26,14 +26,15 @@ The answer is guaranteed to fit within a 32-bit integer, ie. answer <= 2^31 - 1.
 """
 # Define a class named Solution.
 class Solution(object):
-    def tribonacci(self, n):  # Define a method tribonacci that takes an integer n as input.
-# If n equals 0, return 0.
+    # Define a method tribonacci that takes an integer n as input.
+    def tribonacci(self, n):  
+        # If n equals 0, return 0.
         if n == 0:
             return 0
         # If n equals 1 or 2, return 1.
         if n == 1 or n == 2:
             return 1
-         #Create a list tribonacci_nums with (n + 1) elements, initialized with 0.
+        #Create a list tribonacci_nums with (n + 1) elements, initialized with 0.
         tribonacci_nums = [0] * (n + 1)
         #Set the second element of tribonacci_nums to 1.
         tribonacci_nums[1] = 1
