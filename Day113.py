@@ -33,3 +33,5 @@ class Solution(object):
         # If n equals 1 or 2, return 1.
         if n == 1 or n == 2:
             return 1
+         #Create a list tribonacci_nums with (n + 1) elements, initialized with 0.
+          tribonacci_nums = [0] * (n + 1)
