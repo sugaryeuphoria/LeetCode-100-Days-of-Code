@@ -42,3 +42,8 @@ class Solution(object):
         # Iterate over the range from 3 to n (inclusive).
         for i in range(3, n + 1):  
             tribonacci_nums[i] = tribonacci_nums[i - 1] + tribonacci_nums[i - 2] + tribonacci_nums[i - 3]  # Calculate the tribonacci number for index i.
+
+        return tribonacci_nums[n]  # Return the tribonacci number at index n.
+
+
+
