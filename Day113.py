@@ -34,6 +34,9 @@ class Solution(object):
         if n == 1 or n == 2:
             return 1
          #Create a list tribonacci_nums with (n + 1) elements, initialized with 0.
-          tribonacci_nums = [0] * (n + 1)
+        tribonacci_nums = [0] * (n + 1)
         #Set the second element of tribonacci_nums to 1.
+        tribonacci_nums[1] = 1
+        #Set the third element of tribonacci_nums to 1.
+        tribonacci_nums[2] = 1
         
