@@ -28,3 +28,6 @@ Constraints:
 0 <= k <= 25
 s consists of lowercase English letters.
 */
+class Solution {
+
+}
