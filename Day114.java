@@ -30,6 +30,7 @@ s consists of lowercase English letters.
 */
 class Solution {
     public int longestIdealString(String s, int k) {
-
+        // dp[i] := the longest subsequence that ends in ('a' + i)
+        int[] dp = new int[26];
     }
 }
