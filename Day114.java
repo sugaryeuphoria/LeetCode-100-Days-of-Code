@@ -21,4 +21,10 @@ Example 2:
 Input: s = "abcd", k = 3
 Output: 4
 Explanation: The longest ideal string is "abcd". The length of this string is 4, so 4 is returned.
+
+Constraints:
+
+1 <= s.length <= 105
+0 <= k <= 25
+s consists of lowercase English letters.
 */
