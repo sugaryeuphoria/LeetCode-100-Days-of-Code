@@ -29,5 +29,7 @@ Constraints:
 s consists of lowercase English letters.
 */
 class Solution {
+    public int longestIdealString(String s, int k) {
 
+    }
 }
