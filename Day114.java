@@ -35,6 +35,8 @@ class Solution {
         for (final char c : s.toCharArray()) {
             final int i = c - 'a';
             dp[i] = 1 + getMaxReachable(dp, i, k);
-          }
-    }
+        }
+            return Arrays.stream(dp).max().getAsInt();
+        }  
+        
 }
