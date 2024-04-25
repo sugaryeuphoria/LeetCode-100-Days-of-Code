@@ -39,7 +39,12 @@ class Solution {
             return Arrays.stream(dp).max().getAsInt();
         }  
         private int getMaxReachable(int[] dp, int i, int k) {
-
+            final int first = Math.max(0, i - k);
+            final int last = Math.min(25, i + k);
+            int maxReachable = 0;
+            for (int j = first; j <= last; ++j)
+              maxReachable = Math.max(maxReachable, dp[j]);
+            return maxReachable;
         }
         
 }
