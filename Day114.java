@@ -32,5 +32,9 @@ class Solution {
     public int longestIdealString(String s, int k) {
         // dp[i] := the longest subsequence that ends in ('a' + i)
         int[] dp = new int[26];
+        for (final char c : s.toCharArray()) {
+            final int i = c - 'a';
+            dp[i] = 1 + getMaxReachable(dp, i, k);
+          }
     }
 }
