@@ -38,5 +38,8 @@ class Solution {
         }
             return Arrays.stream(dp).max().getAsInt();
         }  
+        private int getMaxReachable(int[] dp, int i, int k) {
+
+        }
         
 }
