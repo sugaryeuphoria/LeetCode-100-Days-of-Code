@@ -30,3 +30,5 @@ class Solution(object):
     def minFallingPathSum(self, grid):
         # Get the size of the grid (assuming it's a square grid)
         n = len(grid)
+        # Loop through the grid starting from the second row
+        for i in range(1, n):
