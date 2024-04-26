@@ -19,4 +19,10 @@ Example 2:
 
 Input: grid = [[7]]
 Output: 7
+
+Constraints:
+
+n == grid.length == grid[i].length
+1 <= n <= 200
+-99 <= grid[i][j] <= 99
 """
