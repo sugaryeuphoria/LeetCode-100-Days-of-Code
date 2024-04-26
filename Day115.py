@@ -36,3 +36,8 @@ class Solution(object):
             (firstMinNum, firstMinIndex), (secondMinNum, _) = sorted({(a, i) for i, a in enumerate(grid[i - 1])})[:2]
             # Loop through each element in the current row
             for j in range(n):
+                 # Update the current cell's value by adding the minimum of the previous row
+                if j == firstMinIndex:
+                    grid[i][j] += secondMinNum
+                else:
+                    grid[i][j] += firstMinNum
