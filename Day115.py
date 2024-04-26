@@ -28,3 +28,5 @@ n == grid.length == grid[i].length
 """
 class Solution(object):
     def minFallingPathSum(self, grid):
+        # Get the size of the grid (assuming it's a square grid)
+        n = len(grid)
