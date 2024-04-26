@@ -26,3 +26,5 @@ n == grid.length == grid[i].length
 1 <= n <= 200
 -99 <= grid[i][j] <= 99
 """
+class Solution(object):
+    def minFallingPathSum(self, grid):
