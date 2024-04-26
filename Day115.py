@@ -28,22 +28,29 @@ n == grid.length == grid[i].length
 """
 class Solution(object):
     def minFallingPathSum(self, grid):
+        """
+        :type grid: List[List[int]]
+        :rtype: int
+        """
         # Get the size of the grid (assuming it's a square grid)
         n = len(grid)
+        
         # Loop through the grid starting from the second row
         for i in range(1, n):
             # Find the indices of the two smallest elements in the previous row
             (firstMinNum, firstMinIndex), (secondMinNum, _) = sorted({(a, i) for i, a in enumerate(grid[i - 1])})[:2]
             # Loop through each element in the current row
             for j in range(n):
-                 # Update the current cell's value by adding the minimum of the previous row
+                # Update the current cell's value by adding the minimum of the previous row
                 if j == firstMinIndex:
                     grid[i][j] += secondMinNum
                 else:
                     grid[i][j] += firstMinNum
-                     # Return the minimum value in the last row, which represents the minimum falling path sum
+        
+        # Return the minimum value in the last row, which represents the minimum falling path sum
         return min(grid[-1])
-    # Example usage:
+
+# Example usage:
 solution = Solution()
 grid = [
     [2, 1, 3],
