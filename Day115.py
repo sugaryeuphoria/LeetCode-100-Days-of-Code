@@ -41,3 +41,5 @@ class Solution(object):
                     grid[i][j] += secondMinNum
                 else:
                     grid[i][j] += firstMinNum
+                     # Return the minimum value in the last row, which represents the minimum falling path sum
+        return min(grid[-1])
