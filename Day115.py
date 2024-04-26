@@ -50,3 +50,4 @@ grid = [
     [6, 5, 4],
     [7, 8, 9]
 ]
+print(solution.minFallingPathSum(grid))  # Output should be 13
