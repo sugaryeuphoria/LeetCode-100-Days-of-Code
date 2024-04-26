@@ -32,3 +32,5 @@ class Solution(object):
         n = len(grid)
         # Loop through the grid starting from the second row
         for i in range(1, n):
+            # Find the indices of the two smallest elements in the previous row
+            (firstMinNum, firstMinIndex), (secondMinNum, _) = sorted({(a, i) for i, a in enumerate(grid[i - 1])})[:2]
