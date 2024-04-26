@@ -43,3 +43,10 @@ class Solution(object):
                     grid[i][j] += firstMinNum
                      # Return the minimum value in the last row, which represents the minimum falling path sum
         return min(grid[-1])
+    # Example usage:
+solution = Solution()
+grid = [
+    [2, 1, 3],
+    [6, 5, 4],
+    [7, 8, 9]
+]
