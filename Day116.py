@@ -35,3 +35,7 @@ It is guaranteed that key could always be spelled by rotating ring.
 class Solution(object):
     def findRotateSteps(self, ring, key):
         from collections import defaultdict
+        # Create a dictionary to store the index positions of each character in the ring
+        char_index = defaultdict(list)
+        for i, char in enumerate(ring):
+            char_index[char].append(i)
