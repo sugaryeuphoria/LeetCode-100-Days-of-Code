@@ -59,3 +59,5 @@ class Solution(object):
                 min_steps = min(min_steps, steps + next_steps + 1)  # Add 1 for pressing the center button
                  memo[(i, j)] = min_steps
             return min_steps
+         # Start from the first character in key and the initial position of the ring
+        return dp(0, 0)
