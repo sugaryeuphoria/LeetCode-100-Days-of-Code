@@ -60,4 +60,7 @@ class Solution(object):
                  memo[(i, j)] = min_steps
             return min_steps
          # Start from the first character in key and the initial position of the ring
-        return dp(0, 0)
+        return dp(0, 0)# Test cases
+solution = Solution()
+print(solution.findRotateSteps("godding", "gd"))  # Output: 4
+print(solution.findRotateSteps("godding", "godding"))  # Output: 13
