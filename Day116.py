@@ -53,3 +53,5 @@ class Solution(object):
                 # Calculate the steps needed to rotate the ring to position index
                 steps = abs(j - index)
                 steps = min(steps, len(ring) - steps)  # Choose the minimum steps considering both clockwise and anticlockwise rotations
+                # Recursively calculate the minimum steps for the next character in key
+                next_steps = dp(i + 1, index)
