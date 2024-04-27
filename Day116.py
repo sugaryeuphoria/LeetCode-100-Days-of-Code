@@ -50,3 +50,6 @@ class Solution(object):
             
             min_steps = float('inf')
             for index in char_index[key[i]]:
+                # Calculate the steps needed to rotate the ring to position index
+                steps = abs(j - index)
+                steps = min(steps, len(ring) - steps)  # Choose the minimum steps considering both clockwise and anticlockwise rotations
