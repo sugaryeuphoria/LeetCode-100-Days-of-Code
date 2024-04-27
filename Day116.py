@@ -34,3 +34,4 @@ It is guaranteed that key could always be spelled by rotating ring.
 """
 class Solution(object):
     def findRotateSteps(self, ring, key):
+        from collections import defaultdict
