@@ -57,3 +57,5 @@ class Solution(object):
                 next_steps = dp(i + 1, index)
                 # Total steps required is the steps to rotate to the current character + steps required for the next characters
                 min_steps = min(min_steps, steps + next_steps + 1)  # Add 1 for pressing the center button
+                 memo[(i, j)] = min_steps
+            return min_steps
