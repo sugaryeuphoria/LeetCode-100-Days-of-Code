@@ -55,3 +55,5 @@ class Solution(object):
                 steps = min(steps, len(ring) - steps)  # Choose the minimum steps considering both clockwise and anticlockwise rotations
                 # Recursively calculate the minimum steps for the next character in key
                 next_steps = dp(i + 1, index)
+                # Total steps required is the steps to rotate to the current character + steps required for the next characters
+                min_steps = min(min_steps, steps + next_steps + 1)  # Add 1 for pressing the center button
