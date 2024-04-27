@@ -25,4 +25,10 @@ Example 2:
 
 Input: ring = "godding", key = "godding"
 Output: 13
+
+Constraints:
+
+1 <= ring.length, key.length <= 100
+ring and key consist of only lower case English letters.
+It is guaranteed that key could always be spelled by rotating ring.
 """
