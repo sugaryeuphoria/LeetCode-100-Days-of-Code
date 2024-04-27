@@ -39,3 +39,5 @@ class Solution(object):
         char_index = defaultdict(list)
         for i, char in enumerate(ring):
             char_index[char].append(i)
+            # Create a memoization dictionary to store the minimum steps required to spell the substring starting from index i with the ring at position j
+        memo = {}
