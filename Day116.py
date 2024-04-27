@@ -41,3 +41,12 @@ class Solution(object):
             char_index[char].append(i)
             # Create a memoization dictionary to store the minimum steps required to spell the substring starting from index i with the ring at position j
         memo = {}
+         # Helper function to calculate the minimum steps
+        def dp(i, j):
+            if i == len(key):
+                return 0
+            if (i, j) in memo:
+                return memo[(i, j)]
+            
+            min_steps = float('inf')
+            for index in char_index[key[i]]:
