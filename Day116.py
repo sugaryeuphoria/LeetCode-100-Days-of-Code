@@ -34,14 +34,22 @@ It is guaranteed that key could always be spelled by rotating ring.
 """
 class Solution(object):
     def findRotateSteps(self, ring, key):
+        """
+        :type ring: str
+        :type key: str
+        :rtype: int
+        """
         from collections import defaultdict
+        
         # Create a dictionary to store the index positions of each character in the ring
         char_index = defaultdict(list)
         for i, char in enumerate(ring):
             char_index[char].append(i)
-            # Create a memoization dictionary to store the minimum steps required to spell the substring starting from index i with the ring at position j
+        
+        # Create a memoization dictionary to store the minimum steps required to spell the substring starting from index i with the ring at position j
         memo = {}
-         # Helper function to calculate the minimum steps
+        
+        # Helper function to calculate the minimum steps
         def dp(i, j):
             if i == len(key):
                 return 0
@@ -53,14 +61,20 @@ class Solution(object):
                 # Calculate the steps needed to rotate the ring to position index
                 steps = abs(j - index)
                 steps = min(steps, len(ring) - steps)  # Choose the minimum steps considering both clockwise and anticlockwise rotations
+                
                 # Recursively calculate the minimum steps for the next character in key
                 next_steps = dp(i + 1, index)
+                
                 # Total steps required is the steps to rotate to the current character + steps required for the next characters
                 min_steps = min(min_steps, steps + next_steps + 1)  # Add 1 for pressing the center button
-                 memo[(i, j)] = min_steps
+                
+            memo[(i, j)] = min_steps
             return min_steps
-         # Start from the first character in key and the initial position of the ring
-        return dp(0, 0)# Test cases
+        
+        # Start from the first character in key and the initial position of the ring
+        return dp(0, 0)
+
+# Test cases
 solution = Solution()
 print(solution.findRotateSteps("godding", "gd"))  # Output: 4
 print(solution.findRotateSteps("godding", "godding"))  # Output: 13
