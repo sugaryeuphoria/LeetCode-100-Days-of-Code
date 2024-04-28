@@ -43,3 +43,7 @@ class Solution(object):
         for u, v in edges:
             adj_list[u].append(v)
             adj_list[v].append(u)
+
+             # Arrays to store the answer and subtree sizes
+        ans = [0] * n
+        subtree_sizes = [0] * n
