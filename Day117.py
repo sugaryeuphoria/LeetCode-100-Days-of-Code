@@ -56,4 +56,15 @@ class Solution(object):
                     dfs1(child, node)
                     subtree_sizes[node] += subtree_sizes[child]
                     ans[node] += ans[child] + subtree_sizes[child]
+        # Second DFS to update answers
+        def dfs2(node, parent):
+            for child in adj_list[node]:
+                if child != parent:
+                    ans[child] = ans[node] - subtree_sizes[child] + (n - subtree_sizes[child])
+                    dfs2(child, node)
         
+        dfs1(0, -1)
+        dfs2(0, -1)
+        return ans
+    
+    
