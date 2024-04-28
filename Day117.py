@@ -66,5 +66,9 @@ class Solution(object):
         dfs1(0, -1)
         dfs2(0, -1)
         return ans
-    
+    # Example usage:
+n = 6
+edges = [[0,1],[0,2],[2,3],[2,4],[2,5]]
+solution = Solution()
+print(solution.sumOfDistancesInTree(n, edges))  # Output: [8,12,6,10,10,10]
     
