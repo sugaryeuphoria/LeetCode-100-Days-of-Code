@@ -47,3 +47,13 @@ class Solution(object):
              # Arrays to store the answer and subtree sizes
         ans = [0] * n
         subtree_sizes = [0] * n
+
+        # First DFS to compute subtree sizes and sum of distances
+        def dfs1(node, parent):
+            subtree_sizes[node] = 1
+            for child in adj_list[node]:
+                if child != parent:
+                    dfs1(child, node)
+                    subtree_sizes[node] += subtree_sizes[child]
+                    ans[node] += ans[child] + subtree_sizes[child]
+        
