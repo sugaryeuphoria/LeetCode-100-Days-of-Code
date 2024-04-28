@@ -37,3 +37,9 @@ The given input represents a valid tree.
 """
 class Solution(object):
     def sumOfDistancesInTree(self, n, edges):
+
+         # Build adjacency list
+        adj_list = [[] for _ in range(n)]
+        for u, v in edges:
+            adj_list[u].append(v)
+            adj_list[v].append(u)
