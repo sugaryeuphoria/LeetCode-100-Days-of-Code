@@ -35,3 +35,5 @@ edges[i].length == 2
 ai != bi
 The given input represents a valid tree.
 """
+class Solution(object):
+    def sumOfDistancesInTree(self, n, edges):
