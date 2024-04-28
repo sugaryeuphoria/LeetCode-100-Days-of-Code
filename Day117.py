@@ -25,4 +25,13 @@ Example 3:
 
 Input: n = 2, edges = [[1,0]]
 Output: [1,1]
+
+Constraints:
+
+1 <= n <= 3 * 104
+edges.length == n - 1
+edges[i].length == 2
+0 <= ai, bi < n
+ai != bi
+The given input represents a valid tree.
 """
