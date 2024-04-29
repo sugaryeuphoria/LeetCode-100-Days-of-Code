@@ -35,3 +35,6 @@ Constraints:
 from functools import reduce 
 # Importing xor operator from operator module
 from operator import xor
+
+# Define the Solution class
+class Solution(object):
