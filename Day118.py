@@ -31,3 +31,5 @@ Constraints:
 0 <= nums[i] <= 106
 0 <= k <= 106
 """
+ # Importing functools module to use reduce function
+from functools import reduce 
