@@ -38,3 +38,5 @@ from operator import xor
 
 # Define the Solution class
 class Solution(object):
+    # Define the minOperations method
+    def minOperations(self, nums, k):
