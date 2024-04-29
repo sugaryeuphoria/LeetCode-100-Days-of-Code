@@ -40,3 +40,5 @@ from operator import xor
 class Solution(object):
     # Define the minOperations method
     def minOperations(self, nums, k):
+        # Calculate the XOR of all elements in nums using reduce
+        xors = reduce(xor, nums, 0)
