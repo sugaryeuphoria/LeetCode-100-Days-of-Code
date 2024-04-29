@@ -24,4 +24,10 @@ Example 2:
 Input: nums = [2,0,2,0], k = 0
 Output: 0
 Explanation: The XOR of elements of the array is (2 XOR 0 XOR 2 XOR 0) == 0 == k. So no operation is needed.
+
+Constraints:
+
+1 <= nums.length <= 105
+0 <= nums[i] <= 106
+0 <= k <= 106
 """
