@@ -31,5 +31,7 @@ Constraints:
 0 <= nums[i] <= 106
 0 <= k <= 106
 """
- # Importing functools module to use reduce function
+# Importing functools module to use reduce function
 from functools import reduce 
+# Importing xor operator from operator module
+from operator import xor
