@@ -42,3 +42,6 @@ class Solution(object):
     def minOperations(self, nums, k):
         # Calculate the XOR of all elements in nums using reduce
         xors = reduce(xor, nums, 0)
+        # Calculate the XOR between k and xors, and convert the result to binary representation.
+        # Then, count the number of '1's in the binary representation, which represents the number of operations needed.
+        return bin(k ^ xors).count('1')
