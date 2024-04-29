@@ -45,3 +45,7 @@ class Solution(object):
         # Calculate the XOR between k and xors, and convert the result to binary representation.
         # Then, count the number of '1's in the binary representation, which represents the number of operations needed.
         return bin(k ^ xors).count('1')
+# Example usage:
+solution = Solution()  # Create an instance of the Solution class
+print(solution.minOperations([2,1,3,4], 1))  # Output: 2
+print(solution.minOperations([2,0,2,0], 0))  # Output: 0
