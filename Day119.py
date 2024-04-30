@@ -57,4 +57,6 @@ class Solution:
         for c in word:
             # Update the binary prefix by toggling the bit corresponding to the current character
             prefix ^= 1 << (ord(c) - ord('a'))
+            # Add the count of the current binary prefix to the total number of wonderful substrings
+            ans += count[prefix]
 
