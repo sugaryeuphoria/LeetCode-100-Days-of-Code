@@ -53,4 +53,6 @@ class Solution:
         count = [0] * 1024  # the binary prefix count
         # The count of the empty string is 1
         count[0] = 1  # the empty string ""
+        # Loop through each character in the input word
+        for c in word:
 
