@@ -47,3 +47,5 @@ class Solution:
     def wonderfulSubstrings(self, word: str) -> int:
         # Initialize the count of wonderful substrings to 0
         ans = 0
+        # Initialize the binary prefix to 0
+        prefix = 0  # the binary prefix
