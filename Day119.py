@@ -36,4 +36,9 @@ Output: 2
 Explanation: The two wonderful substrings are underlined below:
 - "he" -> "h"
 - "he" -> "e"
+
+Constraints:
+
+1 <= word.length <= 105
+word consists of lowercase English letters from 'a' to 'j'.
 """
