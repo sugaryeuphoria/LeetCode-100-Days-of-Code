@@ -51,3 +51,6 @@ class Solution:
         prefix = 0  # the binary prefix
         # Initialize a list to store the count of each binary prefix
         count = [0] * 1024  # the binary prefix count
+        # The count of the empty string is 1
+        count[0] = 1  # the empty string ""
+
