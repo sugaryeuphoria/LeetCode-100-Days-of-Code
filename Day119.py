@@ -62,7 +62,9 @@ class Solution:
             # Add the counts of all binary prefixes obtained by toggling one bit of the current prefix
             for i in range(10):
                 ans += count[prefix ^ (1 << i)]
-                 # Increment the count of the current binary prefix
+                # Increment the count of the current binary prefix
             count[prefix] += 1
             # Return the total count of wonderful substrings
         return ans
+    # Main function to test the solution
+if __name__ == "__main__":
