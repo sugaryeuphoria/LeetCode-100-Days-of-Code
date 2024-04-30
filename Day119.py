@@ -68,3 +68,5 @@ class Solution:
         return ans
     # Main function to test the solution
 if __name__ == "__main__":
+    # Create an instance of the Solution class
+    solution = Solution()
