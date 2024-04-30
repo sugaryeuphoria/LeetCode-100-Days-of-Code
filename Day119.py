@@ -43,7 +43,7 @@ Constraints:
 word consists of lowercase English letters from 'a' to 'j'.
 """
 class Solution:
-     # Method to calculate the number of wonderful substrings in a given string
+    # Method to calculate the number of wonderful substrings in a given string
     def wonderfulSubstrings(self, word: str) -> int:
         # Initialize the count of wonderful substrings to 0
         ans = 0
@@ -53,6 +53,7 @@ class Solution:
         count = [0] * 1024  # the binary prefix count
         # The count of the empty string is 1
         count[0] = 1  # the empty string ""
+
         # Loop through each character in the input word
         for c in word:
             # Update the binary prefix by toggling the bit corresponding to the current character
@@ -62,15 +63,18 @@ class Solution:
             # Add the counts of all binary prefixes obtained by toggling one bit of the current prefix
             for i in range(10):
                 ans += count[prefix ^ (1 << i)]
-                # Increment the count of the current binary prefix
+            # Increment the count of the current binary prefix
             count[prefix] += 1
-            # Return the total count of wonderful substrings
+
+        # Return the total count of wonderful substrings
         return ans
-    # Main function to test the solution
+
+# Main function to test the solution
 if __name__ == "__main__":
     # Create an instance of the Solution class
     solution = Solution()
-     #Test cases 
+
+    # Test cases
     print(solution.wonderfulSubstrings("aba"))   # Output: 4
     print(solution.wonderfulSubstrings("aabb"))  # Output: 9
     print(solution.wonderfulSubstrings("he"))    # Output: 2
