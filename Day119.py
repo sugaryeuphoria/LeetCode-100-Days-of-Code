@@ -59,4 +59,6 @@ class Solution:
             prefix ^= 1 << (ord(c) - ord('a'))
             # Add the count of the current binary prefix to the total number of wonderful substrings
             ans += count[prefix]
-
+            # Add the counts of all binary prefixes obtained by toggling one bit of the current prefix
+            for i in range(10):
+                ans += count[prefix ^ (1 << i)]
