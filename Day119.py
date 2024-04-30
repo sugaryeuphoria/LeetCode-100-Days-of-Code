@@ -70,3 +70,7 @@ class Solution:
 if __name__ == "__main__":
     # Create an instance of the Solution class
     solution = Solution()
+     #Test cases 
+    print(solution.wonderfulSubstrings("aba"))   # Output: 4
+    print(solution.wonderfulSubstrings("aabb"))  # Output: 9
+    print(solution.wonderfulSubstrings("he"))    # Output: 2
