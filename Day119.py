@@ -49,3 +49,5 @@ class Solution:
         ans = 0
         # Initialize the binary prefix to 0
         prefix = 0  # the binary prefix
+        # Initialize a list to store the count of each binary prefix
+        count = [0] * 1024  # the binary prefix count
