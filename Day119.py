@@ -43,3 +43,5 @@ Constraints:
 word consists of lowercase English letters from 'a' to 'j'.
 """
 class Solution:
+     # Method to calculate the number of wonderful substrings in a given string
+    def wonderfulSubstrings(self, word: str) -> int:
