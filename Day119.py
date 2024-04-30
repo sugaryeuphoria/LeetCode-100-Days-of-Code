@@ -55,4 +55,6 @@ class Solution:
         count[0] = 1  # the empty string ""
         # Loop through each character in the input word
         for c in word:
+            # Update the binary prefix by toggling the bit corresponding to the current character
+            prefix ^= 1 << (ord(c) - ord('a'))
 
