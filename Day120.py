@@ -37,3 +37,6 @@ class Solution(object):
         # Find the index of the first occurrence of ch
         index = word.find(ch)  
         if index != -1:
+             # Reverse the substring from the beginning of the word up to index
+            return word[:index + 1][::-1] + word[index + 1:]
+        else:
