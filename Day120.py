@@ -42,3 +42,8 @@ class Solution(object):
         else:
              # ch does not exist in word, so return the original word
             return word  
+        # Example usage:
+solution = Solution()
+print(solution.reversePrefix("abcdefd", "d"))  # Output: "dcbaefd"
+print(solution.reversePrefix("xyxzxe", "z"))   # Output: "zxyxxe"
+print(solution.reversePrefix("abcd", "z"))     # Output: "abcd"
