@@ -34,3 +34,5 @@ ch is a lowercase English letter.
 """
 class Solution(object):
     def reversePrefix(self, word, ch):
+        # Find the index of the first occurrence of ch
+        index = word.find(ch)  
