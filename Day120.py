@@ -25,4 +25,10 @@ Input: word = "abcd", ch = "z"
 Output: "abcd"
 Explanation: "z" does not exist in word.
 You should not do any reverse operation, the resulting string is "abcd".
+
+Constraints:
+
+1 <= word.length <= 250
+word consists of lowercase English letters.
+ch is a lowercase English letter.
 """
