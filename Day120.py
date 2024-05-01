@@ -40,3 +40,5 @@ class Solution(object):
              # Reverse the substring from the beginning of the word up to index
             return word[:index + 1][::-1] + word[index + 1:]
         else:
+             # ch does not exist in word, so return the original word
+            return word  
