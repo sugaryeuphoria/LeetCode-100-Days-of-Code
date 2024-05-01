@@ -32,3 +32,5 @@ Constraints:
 word consists of lowercase English letters.
 ch is a lowercase English letter.
 """
+class Solution(object):
+    def reversePrefix(self, word, ch):
