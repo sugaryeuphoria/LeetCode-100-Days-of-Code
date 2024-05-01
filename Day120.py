@@ -36,13 +36,15 @@ class Solution(object):
     def reversePrefix(self, word, ch):
         # Find the index of the first occurrence of ch
         index = word.find(ch)  
+        
         if index != -1:
-             # Reverse the substring from the beginning of the word up to index
+            # Reverse the substring from the beginning of the word up to index
             return word[:index + 1][::-1] + word[index + 1:]
         else:
-             # ch does not exist in word, so return the original word
+            # ch does not exist in word, so return the original word
             return word  
-        # Example usage:
+
+# Example usage:
 solution = Solution()
 print(solution.reversePrefix("abcdefd", "d"))  # Output: "dcbaefd"
 print(solution.reversePrefix("xyxzxe", "z"))   # Output: "zxyxxe"
