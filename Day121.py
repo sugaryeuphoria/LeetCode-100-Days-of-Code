@@ -39,3 +39,5 @@ class Solution(object):
             if -num in unique_nums:
                 # Update the maximum value of k encountered so far
                 max_k = max(max_k, abs(num))
+                # Return the maximum value of k found, or -1 if none exists
+                return max_k if max_k != -1 else -1
