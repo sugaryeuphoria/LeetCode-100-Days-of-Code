@@ -21,4 +21,9 @@ Input: nums = [-10,8,6,7,-2,-3]
 Output: -1
 Explanation: There is no a single valid k, we return -1.
 
+Constraints:
+
+1 <= nums.length <= 1000
+-1000 <= nums[i] <= 1000
+nums[i] != 0
 """
