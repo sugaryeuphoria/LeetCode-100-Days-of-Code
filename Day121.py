@@ -27,3 +27,5 @@ Constraints:
 -1000 <= nums[i] <= 1000
 nums[i] != 0
 """
+class Solution(object):
+    def findMaxK(self, nums):
