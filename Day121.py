@@ -29,3 +29,5 @@ nums[i] != 0
 """
 class Solution(object):
     def findMaxK(self, nums):
+        # Create a set of unique integers from the input list
+        unique_nums = set(nums) 
