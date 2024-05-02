@@ -37,3 +37,5 @@ class Solution(object):
         for num in nums:
             # If the negative of the current number exists in the set
             if -num in unique_nums:
+                # Update the maximum value of k encountered so far
+                max_k = max(max_k, abs(num))
