@@ -35,3 +35,5 @@ class Solution(object):
         max_k = -1
         # Iterate through each number in the input list
         for num in nums:
+            # If the negative of the current number exists in the set
+            if -num in unique_nums:
