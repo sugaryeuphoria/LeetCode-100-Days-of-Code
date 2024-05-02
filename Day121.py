@@ -33,3 +33,5 @@ class Solution(object):
         unique_nums = set(nums) 
         # Initialize the maximum value of k to -1
         max_k = -1
+        # Iterate through each number in the input list
+        for num in nums:
