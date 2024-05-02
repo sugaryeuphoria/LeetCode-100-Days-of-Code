@@ -29,15 +29,19 @@ nums[i] != 0
 """
 class Solution(object):
     def findMaxK(self, nums):
+        """
+        :type nums: List[int]  # Input parameter: list of integers
+        :rtype: int  # Return type: integer
+        """
         # Create a set of unique integers from the input list
-        unique_nums = set(nums) 
+        unique_nums = set(nums)
         # Initialize the maximum value of k to -1
-        max_k = -1
+        max_k = -1  
         # Iterate through each number in the input list
-        for num in nums:
+        for num in nums:  
             # If the negative of the current number exists in the set
-            if -num in unique_nums:
+            if -num in unique_nums:  
                 # Update the maximum value of k encountered so far
-                max_k = max(max_k, abs(num))
+                max_k = max(max_k, abs(num))  
                 # Return the maximum value of k found, or -1 if none exists
-                return max_k if max_k != -1 else -1
+        return max_k if max_k != -1 else -1  
