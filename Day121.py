@@ -31,3 +31,5 @@ class Solution(object):
     def findMaxK(self, nums):
         # Create a set of unique integers from the input list
         unique_nums = set(nums) 
+        # Initialize the maximum value of k to -1
+        max_k = -1
