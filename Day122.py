@@ -35,3 +35,5 @@ class Solution(object):
         left, right = 0, len(people) - 1
         # Initialize boat count
         boats = 0
+        # Iterate until left pointer crosses right pointer
+        while left <= right:
