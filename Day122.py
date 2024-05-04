@@ -42,3 +42,4 @@ class Solution(object):
                 # Move left pointer to next person
                 left += 1
                 # Always move right pointer to next person, as one person will be in the boat
+                right -= 1
