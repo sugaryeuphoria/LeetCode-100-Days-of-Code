@@ -41,3 +41,4 @@ class Solution(object):
             if people[left] + people[right] <= limit:
                 # Move left pointer to next person
                 left += 1
+                # Always move right pointer to next person, as one person will be in the boat
