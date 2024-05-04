@@ -21,4 +21,9 @@ Example 3:
 Input: people = [3,5,3,4], limit = 5
 Output: 4
 Explanation: 4 boats (3), (3), (4), (5)
+
+Constraints:
+
+1 <= people.length <= 5 * 104
+1 <= people[i] <= limit <= 3 * 104
 """
