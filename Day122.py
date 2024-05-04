@@ -33,3 +33,5 @@ class Solution(object):
         people.sort()
         # Initialize pointers
         left, right = 0, len(people) - 1
+        # Initialize boat count
+        boats = 0
