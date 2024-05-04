@@ -43,3 +43,7 @@ class Solution(object):
                 left += 1
                 # Always move right pointer to next person, as one person will be in the boat
                 right -= 1
+                # Increment boat count
+            boats += 1
+        
+        return boats
