@@ -37,3 +37,5 @@ class Solution(object):
         boats = 0
         # Iterate until left pointer crosses right pointer
         while left <= right:
+            # Check if two heaviest people can fit in the boat
+            if people[left] + people[right] <= limit:
