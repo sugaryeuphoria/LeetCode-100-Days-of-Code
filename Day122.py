@@ -31,3 +31,5 @@ class Solution(object):
     def numRescueBoats(self, people, limit):
         # Sort people in ascending order
         people.sort()
+        # Initialize pointers
+        left, right = 0, len(people) - 1
