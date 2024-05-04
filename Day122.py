@@ -29,3 +29,5 @@ Constraints:
 """
 class Solution(object):
     def numRescueBoats(self, people, limit):
+        # Sort people in ascending order
+        people.sort()
