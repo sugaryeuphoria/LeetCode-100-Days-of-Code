@@ -27,3 +27,5 @@ Constraints:
 1 <= people.length <= 5 * 104
 1 <= people[i] <= limit <= 3 * 104
 """
+class Solution(object):
+    def numRescueBoats(self, people, limit):
