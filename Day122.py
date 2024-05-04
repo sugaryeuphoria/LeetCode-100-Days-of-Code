@@ -39,3 +39,5 @@ class Solution(object):
         while left <= right:
             # Check if two heaviest people can fit in the boat
             if people[left] + people[right] <= limit:
+                # Move left pointer to next person
+                left += 1
