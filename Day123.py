@@ -41,3 +41,6 @@ The node to be deleted is in the list and is not a tail node.
 """
 class Solution(object):
     def deleteNode(self, node):
+         # Copy the value of the next node to the current node
+        node.val = node.next.val
+        
