@@ -31,3 +31,4 @@ class Solution:
                  node.val = val % 10
                  return val // 10
                  if getCarry(head) == 1:
+                     return ListNode(1, head)
