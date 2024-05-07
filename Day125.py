@@ -27,3 +27,4 @@ class Solution:
         def getCarry(node: Optional[ListNode]) -> Optional[ListNode]:
              val = node.val * 2
              if node.next:
+                 val += getCarry(node.next)
