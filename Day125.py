@@ -28,3 +28,4 @@ class Solution:
              val = node.val * 2
              if node.next:
                  val += getCarry(node.next)
+                 node.val = val % 10
