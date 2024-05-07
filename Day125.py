@@ -24,3 +24,4 @@ The input is generated such that the list represents a number that does not have
 """
 class Solution:
     def doubleIt(self, head: Optional[ListNode]) -> Optional[ListNode]:
+        def getCarry(node: Optional[ListNode]) -> Optional[ListNode]:
