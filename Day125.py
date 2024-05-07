@@ -26,3 +26,4 @@ class Solution:
     def doubleIt(self, head: Optional[ListNode]) -> Optional[ListNode]:
         def getCarry(node: Optional[ListNode]) -> Optional[ListNode]:
              val = node.val * 2
+             if node.next:
