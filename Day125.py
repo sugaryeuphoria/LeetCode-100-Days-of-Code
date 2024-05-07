@@ -29,3 +29,4 @@ class Solution:
              if node.next:
                  val += getCarry(node.next)
                  node.val = val % 10
+                 return val // 10
