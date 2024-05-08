@@ -36,3 +36,27 @@ class Solution {
     public String[] findRelativeRanks(int[] score) {
         int n = score.length;
         String[] result = new String[n];
+        // Map to store each athlete's score and index
+        Map<Integer, Integer> map = new HashMap<>();
+        for (int i = 0; i < n; i++) {
+            map.put(score[i], i);
+        }
+        // Sort the scores in descending order
+        Arrays.sort(score);
+        int rank = 1;
+        for (int i = n - 1; i >= 0; i--) {
+            int index = map.get(score[i]);
+            if (rank == 1)
+                result[index] = "Gold Medal";
+            else if (rank == 2)
+                result[index] = "Silver Medal";
+            else if (rank == 3)
+                result[index] = "Bronze Medal";
+            else
+                result[index] = String.valueOf(rank);
+            rank++;
+        }
+        
+        return result;
+    }
+}
