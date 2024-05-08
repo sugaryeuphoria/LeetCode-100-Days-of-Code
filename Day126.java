@@ -32,15 +32,18 @@ n == score.length
 All the values in score are unique.
 */
 import java.util.*;
+
 class Solution {
     public String[] findRelativeRanks(int[] score) {
         int n = score.length;
         String[] result = new String[n];
+        
         // Map to store each athlete's score and index
         Map<Integer, Integer> map = new HashMap<>();
         for (int i = 0; i < n; i++) {
             map.put(score[i], i);
         }
+        
         // Sort the scores in descending order
         Arrays.sort(score);
         int rank = 1;
