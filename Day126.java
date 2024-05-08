@@ -32,3 +32,7 @@ n == score.length
 All the values in score are unique.
 */
 import java.util.*;
+class Solution {
+    public String[] findRelativeRanks(int[] score) {
+        int n = score.length;
+        String[] result = new String[n];
