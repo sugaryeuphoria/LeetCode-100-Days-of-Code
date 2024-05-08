@@ -31,3 +31,4 @@ n == score.length
 0 <= score[i] <= 106
 All the values in score are unique.
 */
+import java.util.*;
