@@ -40,14 +40,21 @@ Constraints:
 """
 class Solution:
     def maximumHappinessSum(self, happiness, k):
+        """
+        :type happiness: List[int]
+        :type k: int
+        :rtype: int
+        """
         # Get the length of the happiness array
         n = len(happiness)
         # Initialize the answer variable
         ans = 0
         # Initialize a variable to keep track of decremented values
         decremented = 0
+
         # Sort the happiness array in ascending order
         happiness.sort()
+
         # Iterate through the last k elements of the sorted array
         for i in range(n - 1, n - k - 1, -1):
             # Calculate the maximum happiness sum by subtracting the decremented value
@@ -55,5 +62,6 @@ class Solution:
             ans += max(0, happiness[i] - decremented)
             # Increment the decremented value
             decremented += 1
-            # Return the total maximum happiness sum
+
+        # Return the total maximum happiness sum
         return ans
