@@ -48,3 +48,5 @@ class Solution:
         decremented = 0
         # Sort the happiness array in ascending order
         happiness.sort()
+        # Iterate through the last k elements of the sorted array
+        for i in range(n - 1, n - k - 1, -1):
