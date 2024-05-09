@@ -44,3 +44,5 @@ class Solution:
         n = len(happiness)
         # Initialize the answer variable
         ans = 0
+        # Initialize a variable to keep track of decremented values
+        decremented = 0
