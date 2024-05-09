@@ -40,5 +40,7 @@ Constraints:
 """
 class Solution:
     def maximumHappinessSum(self, happiness, k):
-         # Get the length of the happiness array
+        # Get the length of the happiness array
         n = len(happiness)
+        # Initialize the answer variable
+        ans = 0
