@@ -46,3 +46,5 @@ class Solution:
         ans = 0
         # Initialize a variable to keep track of decremented values
         decremented = 0
+        # Sort the happiness array in ascending order
+        happiness.sort()
