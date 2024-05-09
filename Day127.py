@@ -53,3 +53,5 @@ class Solution:
             # Calculate the maximum happiness sum by subtracting the decremented value
             # from each happiness value and summing up the positive differences
             ans += max(0, happiness[i] - decremented)
+            # Increment the decremented value
+            decremented += 1
