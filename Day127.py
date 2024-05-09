@@ -50,3 +50,6 @@ class Solution:
         happiness.sort()
         # Iterate through the last k elements of the sorted array
         for i in range(n - 1, n - k - 1, -1):
+            # Calculate the maximum happiness sum by subtracting the decremented value
+            # from each happiness value and summing up the positive differences
+            ans += max(0, happiness[i] - decremented)
