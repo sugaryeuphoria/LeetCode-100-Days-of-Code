@@ -55,3 +55,5 @@ class Solution:
             ans += max(0, happiness[i] - decremented)
             # Increment the decremented value
             decremented += 1
+            # Return the total maximum happiness sum
+        return ans
