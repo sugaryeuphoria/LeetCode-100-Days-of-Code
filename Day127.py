@@ -38,3 +38,5 @@ Constraints:
 1 <= happiness[i] <= 108
 1 <= k <= n
 """
+class Solution:
+    def maximumHappinessSum(self, happiness, k):
