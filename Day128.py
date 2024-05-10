@@ -36,3 +36,5 @@ class Solution(object):
         ans = [0, 1]
         # Set the initial left boundary of the search space
         l = 0
+        # Set the initial right boundary of the search space
+        r = 1
