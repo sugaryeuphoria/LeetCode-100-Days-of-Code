@@ -55,3 +55,7 @@ class Solution(object):
                     j += 1
                     # Count the number of fractions less than or equal to the current guess
                 count += n - j
+                # Update the answer fraction if needed
+                if j < n and ans[0] * arr[j] < ans[1] * arr[i]:
+                    ans[0] = arr[i]
+                    ans[1] = arr[j]
