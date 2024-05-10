@@ -32,3 +32,5 @@ class Solution(object):
     def kthSmallestPrimeFraction(self, arr, k):
         # Get the length of the array
         n = len(arr)
+        # Initialize the answer array with [0, 1]
+        ans = [0, 1]
