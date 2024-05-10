@@ -38,3 +38,5 @@ class Solution(object):
         l = 0
         # Set the initial right boundary of the search space
         r = 1
+        # Start binary search
+        while True:
