@@ -30,3 +30,5 @@ All the numbers of arr are unique and sorted in strictly increasing order.
 """
 class Solution(object):
     def kthSmallestPrimeFraction(self, arr, k):
+        # Get the length of the array
+        n = len(arr)
