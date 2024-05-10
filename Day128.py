@@ -44,3 +44,5 @@ class Solution(object):
             m = (l + r) / 2
             # Reset the numerator of the answer fraction
             ans[0] = 0
+            # Initialize a counter for the number of fractions less than or equal to the current guess
+            count = 0
