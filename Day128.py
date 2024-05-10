@@ -59,3 +59,10 @@ class Solution(object):
                 if j < n and ans[0] * arr[j] < ans[1] * arr[i]:
                     ans[0] = arr[i]
                     ans[1] = arr[j]
+                    # Update the boundaries of the search space based on the count
+            if count < k:
+                l = m
+            elif count > k:
+                r = m
+            else:
+                return ans  # Return the answer if kth fraction is found
