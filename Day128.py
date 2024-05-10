@@ -34,3 +34,5 @@ class Solution(object):
         n = len(arr)
         # Initialize the answer array with [0, 1]
         ans = [0, 1]
+        # Set the initial left boundary of the search space
+        l = 0
