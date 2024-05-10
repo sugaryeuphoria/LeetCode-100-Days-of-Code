@@ -28,3 +28,5 @@ arr[i] is a prime number for i > 0.
 All the numbers of arr are unique and sorted in strictly increasing order.
 1 <= k <= arr.length * (arr.length - 1) / 2
 """
+class Solution(object):
+    def kthSmallestPrimeFraction(self, arr, k):
