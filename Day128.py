@@ -40,3 +40,5 @@ class Solution(object):
         r = 1
         # Start binary search
         while True:
+            # Calculate the midpoint of the current interval
+            m = (l + r) / 2
