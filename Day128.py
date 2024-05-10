@@ -38,6 +38,7 @@ class Solution(object):
         l = 0
         # Set the initial right boundary of the search space
         r = 1
+
         # Start binary search
         while True:
             # Calculate the midpoint of the current interval
@@ -48,18 +49,20 @@ class Solution(object):
             count = 0
             # Initialize the second pointer
             j = 0
+
             # Iterate through the array
             for i in range(n):
                 # Move the second pointer until the fraction satisfies the condition
                 while j < n and arr[i] >= m * arr[j]:
                     j += 1
-                    # Count the number of fractions less than or equal to the current guess
+                # Count the number of fractions less than or equal to the current guess
                 count += n - j
                 # Update the answer fraction if needed
                 if j < n and ans[0] * arr[j] < ans[1] * arr[i]:
                     ans[0] = arr[i]
                     ans[1] = arr[j]
-                    # Update the boundaries of the search space based on the count
+
+            # Update the boundaries of the search space based on the count
             if count < k:
                 l = m
             elif count > k:
