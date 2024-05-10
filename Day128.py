@@ -46,3 +46,5 @@ class Solution(object):
             ans[0] = 0
             # Initialize a counter for the number of fractions less than or equal to the current guess
             count = 0
+            # Initialize the second pointer
+            j = 0
