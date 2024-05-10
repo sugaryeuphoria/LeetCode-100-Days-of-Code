@@ -48,3 +48,5 @@ class Solution(object):
             count = 0
             # Initialize the second pointer
             j = 0
+            # Iterate through the array
+            for i in range(n):
