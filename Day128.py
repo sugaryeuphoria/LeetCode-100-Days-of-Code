@@ -42,3 +42,5 @@ class Solution(object):
         while True:
             # Calculate the midpoint of the current interval
             m = (l + r) / 2
+            # Reset the numerator of the answer fraction
+            ans[0] = 0
