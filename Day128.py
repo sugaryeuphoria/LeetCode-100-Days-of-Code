@@ -53,3 +53,5 @@ class Solution(object):
                 # Move the second pointer until the fraction satisfies the condition
                 while j < n and arr[i] >= m * arr[j]:
                     j += 1
+                    # Count the number of fractions less than or equal to the current guess
+                count += n - j
