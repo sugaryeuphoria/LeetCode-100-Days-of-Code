@@ -50,3 +50,6 @@ class Solution(object):
             j = 0
             # Iterate through the array
             for i in range(n):
+                # Move the second pointer until the fraction satisfies the condition
+                while j < n and arr[i] >= m * arr[j]:
+                    j += 1
