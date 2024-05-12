@@ -47,3 +47,5 @@ class Solution:
                 maxVal = max(grid[i-1][j-1], grid[i-1][j], grid[i-1][j+1],
                              grid[i][j-1], grid[i][j], grid[i][j+1],
                              grid[i+1][j-1], grid[i+1][j], grid[i+1][j+1])
+                 # Append the maximum value to the current row
+                maxLocalRow.append(maxVal)
