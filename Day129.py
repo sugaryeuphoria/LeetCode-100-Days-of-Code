@@ -33,3 +33,5 @@ n == grid.length == grid[i].length
 """
 class Solution:
     def largestLocal(self, grid):
+         # Get the dimensions of the grid
+        n = len(grid)
