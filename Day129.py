@@ -43,3 +43,7 @@ class Solution:
             maxLocalRow = []
             # Iterate through the columns of the grid excluding the boundary columns
             for j in range(1, n - 1):
+                 # Find the maximum value in the 3x3 submatrix centered at (i, j)
+                maxVal = max(grid[i-1][j-1], grid[i-1][j], grid[i-1][j+1],
+                             grid[i][j-1], grid[i][j], grid[i][j+1],
+                             grid[i+1][j-1], grid[i+1][j], grid[i+1][j+1])
