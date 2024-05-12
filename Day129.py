@@ -41,3 +41,5 @@ class Solution:
         for i in range(1, n - 1):
              # Initialize the current row of the resulting matrix
             maxLocalRow = []
+            # Iterate through the columns of the grid excluding the boundary columns
+            for j in range(1, n - 1):
