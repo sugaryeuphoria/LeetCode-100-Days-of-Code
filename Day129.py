@@ -49,3 +49,7 @@ class Solution:
                              grid[i+1][j-1], grid[i+1][j], grid[i+1][j+1])
                  # Append the maximum value to the current row
                 maxLocalRow.append(maxVal)
+                # Append the current row to the resulting matrix
+            maxLocal.append(maxLocalRow)
+        
+        return maxLocal
