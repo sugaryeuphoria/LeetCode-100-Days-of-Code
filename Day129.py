@@ -37,3 +37,5 @@ class Solution:
         n = len(grid)
          # Initialize the resulting matrix
         maxLocal = []
+         # Iterate through the rows of the grid excluding the boundary rows
+        for i in range(1, n - 1):
