@@ -31,3 +31,5 @@ n == grid.length == grid[i].length
 3 <= n <= 100
 1 <= grid[i][j] <= 100
 """
+class Solution:
+    def largestLocal(self, grid):
