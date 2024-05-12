@@ -10,4 +10,18 @@ maxLocal[i][j] is equal to the largest value of the 3 x 3 matrix in grid centere
 In other words, we want to find the largest value in every contiguous 3 x 3 matrix in grid.
 
 Return the generated matrix.
+
+Example 1:
+
+
+Input: grid = [[9,9,8,1],[5,6,2,6],[8,2,6,4],[6,2,2,2]]
+Output: [[9,9],[8,6]]
+Explanation: The diagram above shows the original matrix and the generated matrix.
+Notice that each value in the generated matrix corresponds to the largest value of a contiguous 3 x 3 matrix in grid.
+Example 2:
+
+
+Input: grid = [[1,1,1,1,1],[1,1,1,1,1],[1,1,2,1,1],[1,1,1,1,1],[1,1,1,1,1]]
+Output: [[2,2,2],[2,2,2],[2,2,2]]
+Explanation: Notice that the 2 is contained within every contiguous 3 x 3 matrix in grid.
 """
