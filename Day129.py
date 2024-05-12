@@ -35,3 +35,5 @@ class Solution:
     def largestLocal(self, grid):
          # Get the dimensions of the grid
         n = len(grid)
+         # Initialize the resulting matrix
+        maxLocal = []
