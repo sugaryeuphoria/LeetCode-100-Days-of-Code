@@ -24,4 +24,10 @@ Example 2:
 Input: grid = [[1,1,1,1,1],[1,1,1,1,1],[1,1,2,1,1],[1,1,1,1,1],[1,1,1,1,1]]
 Output: [[2,2,2],[2,2,2],[2,2,2]]
 Explanation: Notice that the 2 is contained within every contiguous 3 x 3 matrix in grid.
+
+Constraints:
+
+n == grid.length == grid[i].length
+3 <= n <= 100
+1 <= grid[i][j] <= 100
 """
