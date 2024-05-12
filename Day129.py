@@ -39,3 +39,5 @@ class Solution:
         maxLocal = []
          # Iterate through the rows of the grid excluding the boundary rows
         for i in range(1, n - 1):
+             # Initialize the current row of the resulting matrix
+            maxLocalRow = []
