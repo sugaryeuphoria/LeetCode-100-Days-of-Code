@@ -46,3 +46,6 @@ class Solution:
         directions = [(0, -1), (0, 1), (-1, 0), (1, 0)]
         # Function to perform DFS to find maximum gold starting from a cell
         def dfs(row, col):
+            # Check if out of grid or cell has no gold
+            if row < 0 or row >= len(grid) or col < 0 or col >= len(grid[0]) or grid[row][col] == 0:
+                return 0
