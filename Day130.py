@@ -56,3 +56,6 @@ class Solution:
             maxGold = 0
             for dr, dc in directions:
                 maxGold = max(maxGold, dfs(row + dr, col + dc))
+                # Restore gold value of current cell and return maximum gold found
+            grid[row][col] = gold
+            return gold + maxGold
