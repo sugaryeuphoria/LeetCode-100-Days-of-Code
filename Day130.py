@@ -52,3 +52,7 @@ class Solution:
             # Save current cell's gold and set it to 0 to mark as visited
             gold = grid[row][col]
             grid[row][col] = 0
+            # Recursively explore neighboring cells
+            maxGold = 0
+            for dr, dc in directions:
+                maxGold = max(maxGold, dfs(row + dr, col + dc))
