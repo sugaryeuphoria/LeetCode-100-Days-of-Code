@@ -59,3 +59,11 @@ class Solution:
                 # Restore gold value of current cell and return maximum gold found
             grid[row][col] = gold
             return gold + maxGold
+        # Iterate over each cell to start DFS and find maximum gold
+        maxGold = 0
+        for i in range(len(grid)):
+            for j in range(len(grid[0])):
+                if grid[i][j] != 0:
+                    maxGold = max(maxGold, dfs(i, j))
+        
+        return maxGold
