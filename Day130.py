@@ -42,3 +42,5 @@ There are at most 25 cells containing gold.
 """
 class Solution:
     def getMaximumGold(self, grid):
+        # Define directions: left, right, up, down
+        directions = [(0, -1), (0, 1), (-1, 0), (1, 0)]
