@@ -40,3 +40,5 @@ n == grid[i].length
 0 <= grid[i][j] <= 100
 There are at most 25 cells containing gold.
 """
+class Solution:
+    def getMaximumGold(self, grid):
