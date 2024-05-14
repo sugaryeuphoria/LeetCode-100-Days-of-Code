@@ -44,3 +44,5 @@ class Solution:
     def getMaximumGold(self, grid):
         # Define directions: left, right, up, down
         directions = [(0, -1), (0, 1), (-1, 0), (1, 0)]
+        # Function to perform DFS to find maximum gold starting from a cell
+        def dfs(row, col):
