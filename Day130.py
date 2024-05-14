@@ -32,4 +32,11 @@ Explanation:
  [9,0,20]]
 Path to get the maximum gold, 1 -> 2 -> 3 -> 4 -> 5 -> 6 -> 7.
 
+Constraints:
+
+m == grid.length
+n == grid[i].length
+1 <= m, n <= 15
+0 <= grid[i][j] <= 100
+There are at most 25 cells containing gold.
 """
