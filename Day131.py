@@ -47,5 +47,8 @@ class Solution(object):
         # If the node is a leaf node, return its value
         if not root.left and not root.right:
             return root.val
+         # Otherwise, recursively evaluate left and right subtrees and apply operation
+        left_val = self.evaluateTree(root.left)
+        right_val = self.evaluateTree(root.right)
         
         
