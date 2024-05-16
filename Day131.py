@@ -53,4 +53,7 @@ class Solution(object):
         # If node value is 2 (OR), return True if either child evaluates to True
         if root.val == 2:
             return left_val or right_val
+        # If node value is 3 (AND), return True only if both children evaluate to True
+        elif root.val == 3:
+            return left_val and right_val
         
