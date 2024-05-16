@@ -39,21 +39,35 @@ Every node has either 0 or 2 children.
 Leaf nodes have a value of 0 or 1.
 Non-leaf nodes have a value of 2 or 3.
 """
+# Definition for a binary tree node.
+# class TreeNode(object):
+#     def __init__(self, val=0, left=None, right=None):
+#         self.val = val
+#         self.left = left
+#         self.right = right
+
 class Solution(object):
     def evaluateTree(self, root):
-# Base case: if root is None, return False
+        """
+        :type root: Optional[TreeNode]
+        :rtype: bool
+        """
+        # Base case: if root is None, return False
         if not root:
             return False
+        
         # If the node is a leaf node, return its value
         if not root.left and not root.right:
             return root.val
-         # Otherwise, recursively evaluate left and right subtrees and apply operation
+        
+        # Otherwise, recursively evaluate left and right subtrees and apply operation
         left_val = self.evaluateTree(root.left)
         right_val = self.evaluateTree(root.right)
+        
         # If node value is 2 (OR), return True if either child evaluates to True
         if root.val == 2:
             return left_val or right_val
+        
         # If node value is 3 (AND), return True only if both children evaluate to True
         elif root.val == 3:
             return left_val and right_val
-        
