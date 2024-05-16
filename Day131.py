@@ -44,5 +44,8 @@ class Solution(object):
 # Base case: if root is None, return False
         if not root:
             return False
+        # If the node is a leaf node, return its value
+        if not root.left and not root.right:
+            return root.val
         
         
