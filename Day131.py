@@ -39,3 +39,8 @@ Every node has either 0 or 2 children.
 Leaf nodes have a value of 0 or 1.
 Non-leaf nodes have a value of 2 or 3.
 """
+class Solution(object):
+    def evaluateTree(self, root):
+# Base case: if root is None, return False
+        if not root:
+            return False
