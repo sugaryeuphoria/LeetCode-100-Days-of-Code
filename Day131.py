@@ -50,5 +50,7 @@ class Solution(object):
          # Otherwise, recursively evaluate left and right subtrees and apply operation
         left_val = self.evaluateTree(root.left)
         right_val = self.evaluateTree(root.right)
-        
+        # If node value is 2 (OR), return True if either child evaluates to True
+        if root.val == 2:
+            return left_val or right_val
         
