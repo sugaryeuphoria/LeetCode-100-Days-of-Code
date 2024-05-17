@@ -21,4 +21,9 @@ Example 3:
 Input: root = [1,2,null,2,null,2], target = 2
 Output: [1]
 Explanation: Leaf nodes in green with value (target = 2) are removed at each step.
+
+Constraints:
+
+The number of nodes in the tree is in the range [1, 3000].
+1 <= Node.val, target <= 1000
 """
