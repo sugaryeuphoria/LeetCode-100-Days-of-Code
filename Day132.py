@@ -39,3 +39,7 @@ class TreeNode(object):
                 def remove_leaves(node):
                     if not node:
                         return None
+                    
+                    # Recursively call remove_leaves on left and right children
+            node.left = remove_leaves(node.left)
+            node.right = remove_leaves(node.right)
