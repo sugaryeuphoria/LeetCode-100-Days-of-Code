@@ -34,17 +34,24 @@ class TreeNode(object):
         self.left = left
         self.right = right
 
-        class Solution(object):
-            def removeLeafNodes(self, root, target):
-                def remove_leaves(node):
-                    if not node:
-                        return None
-                    
-                    # Recursively call remove_leaves on left and right children
+class Solution(object):
+    def removeLeafNodes(self, root, target):
+        """
+        :type root: TreeNode
+        :type target: int
+        :rtype: TreeNode
+        """
+        def remove_leaves(node):
+            if not node:
+                return None
+            # Recursively call remove_leaves on left and right children
             node.left = remove_leaves(node.left)
             node.right = remove_leaves(node.right)
-
             # Check if the current node is a leaf and its value equals target
             if not node.left and not node.right and node.val == target:
                 return None
             return node
+        
+        # Call the helper function with the root node
+        return remove_leaves(root)
+
