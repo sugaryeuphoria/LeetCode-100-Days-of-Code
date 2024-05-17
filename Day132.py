@@ -43,3 +43,8 @@ class TreeNode(object):
                     # Recursively call remove_leaves on left and right children
             node.left = remove_leaves(node.left)
             node.right = remove_leaves(node.right)
+
+            # Check if the current node is a leaf and its value equals target
+            if not node.left and not node.right and node.val == target:
+                return None
+            return node
