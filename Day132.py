@@ -33,3 +33,6 @@ class TreeNode(object):
         self.val = val
         self.left = left
         self.right = right
+
+        class Solution(object):
+        def removeLeafNodes(self, root, target):
