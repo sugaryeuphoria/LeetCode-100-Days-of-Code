@@ -35,4 +35,7 @@ class TreeNode(object):
         self.right = right
 
         class Solution(object):
-        def removeLeafNodes(self, root, target):
+            def removeLeafNodes(self, root, target):
+                def remove_leaves(node):
+                    if not node:
+                        return None
