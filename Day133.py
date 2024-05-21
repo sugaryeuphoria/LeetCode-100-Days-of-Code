@@ -31,3 +31,5 @@ class Solution(object):
             for i in range(start, len(nums)):
                 # Include nums[i] in the current subset
                 path.append(nums[i])
+                # Recur with the next starting index
+                backtrack(i + 1, path)
