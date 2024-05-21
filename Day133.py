@@ -24,3 +24,4 @@ class Solution(object):
     def subsets(self, nums):
         # This will hold all the subsets
         res = []
+         def backtrack(start, path):
