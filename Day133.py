@@ -29,3 +29,5 @@ class Solution(object):
             res.append(path[:])
             # Try including each element starting from 'start'
             for i in range(start, len(nums)):
+                # Include nums[i] in the current subset
+                path.append(nums[i])
