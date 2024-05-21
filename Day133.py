@@ -35,3 +35,7 @@ class Solution(object):
                 backtrack(i + 1, path)
                 # Backtrack: remove nums[i] from the current subset
                 path.pop()
+                 # Start backtracking from the first index with an empty path
+        backtrack(0, [])
+        
+        return res
