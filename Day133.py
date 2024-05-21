@@ -27,3 +27,5 @@ class Solution(object):
         def backtrack(start, path):
             # Add the current subset (path) to the result
             res.append(path[:])
+            # Try including each element starting from 'start'
+            for i in range(start, len(nums)):
