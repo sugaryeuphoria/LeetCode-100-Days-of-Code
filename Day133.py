@@ -22,3 +22,5 @@ All the numbers of nums are unique.
 """
 class Solution(object):
     def subsets(self, nums):
+        # This will hold all the subsets
+        res = []
