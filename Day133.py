@@ -24,4 +24,6 @@ class Solution(object):
     def subsets(self, nums):
         # This will hold all the subsets
         res = []
-         def backtrack(start, path):
+        def backtrack(start, path):
+            # Add the current subset (path) to the result
+            res.append(path[:])
