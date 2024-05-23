@@ -45,3 +45,5 @@ class Solution:
         pick = 0
         # Iterate over each subset (group of elements with the same modulo k value)
         for subset in modToSubset.values():
+            # Sort the subset to handle elements in order
+            for num in sorted(subset):
