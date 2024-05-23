@@ -47,3 +47,5 @@ class Solution:
         for subset in modToSubset.values():
             # Sort the subset to handle elements in order
             for num in sorted(subset):
+                # Calculate the number of non-empty subsets for the current number
+                nonEmptyCount = 2**count[num] - 1
