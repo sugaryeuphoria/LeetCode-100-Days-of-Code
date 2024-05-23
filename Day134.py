@@ -21,4 +21,9 @@ Input: nums = [1], k = 1
 Output: 1
 Explanation: The beautiful subset of the array nums is [1].
 It can be proved that there is only 1 beautiful subset in the array [1].
+
+Constraints:
+
+1 <= nums.length <= 20
+1 <= nums[i], k <= 1000
 """
