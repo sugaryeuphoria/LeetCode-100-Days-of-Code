@@ -56,3 +56,5 @@ class Solution:
                 else:
                     # Update skip and pick without restriction
                     skip, pick = skip + pick, nonEmptyCount * (1 + skip + pick)
+                    # Update prevNum to the current number for the next iteration
+                prevNum = num
