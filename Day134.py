@@ -33,3 +33,5 @@ class Solution:
     def beautifulSubsets(self, nums, k):
         # Count the frequency of each element in nums
         count = collections.Counter(nums)
+        # Create a dictionary to group elements by their modulo k values
+        modToSubset = collections.defaultdict(set)
