@@ -60,3 +60,11 @@ class Solution:
                 prevNum = num
                  # Return the total number of beautiful subsets
         return skip + pick
+    # Example usage:
+solution = Solution()
+# Print the number of beautiful subsets for the input [2, 4, 6] with k = 2
+print(solution.beautifulSubsets([2, 4, 6], 2))  # Output: 4
+# Print the number of beautiful subsets for the input [1] with k = 1
+print(solution.beautifulSubsets([1], 1))        # Output: 1
+# Print the number of beautiful subsets for the input [2, 3, 4, 4] with k = 2
+print(solution.beautifulSubsets([2, 3, 4, 4], 2))  # Output: 9
