@@ -43,3 +43,5 @@ class Solution:
         # Initialize skip and pick to 0
         skip = 0
         pick = 0
+        # Iterate over each subset (group of elements with the same modulo k value)
+        for subset in modToSubset.values():
