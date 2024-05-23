@@ -35,3 +35,6 @@ class Solution:
         count = collections.Counter(nums)
         # Create a dictionary to group elements by their modulo k values
         modToSubset = collections.defaultdict(set)
+        # Populate the dictionary with elements grouped by their modulo k value
+        for num in nums:
+            modToSubset[num % k].add(num)
