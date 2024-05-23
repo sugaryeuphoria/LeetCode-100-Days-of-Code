@@ -31,3 +31,5 @@ import collections
 
 class Solution:
     def beautifulSubsets(self, nums, k):
+        # Count the frequency of each element in nums
+        count = collections.Counter(nums)
