@@ -27,3 +27,7 @@ Constraints:
 1 <= nums.length <= 20
 1 <= nums[i], k <= 1000
 """
+import collections
+
+class Solution:
+    def beautifulSubsets(self, nums, k):
