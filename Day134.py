@@ -38,3 +38,5 @@ class Solution:
         # Populate the dictionary with elements grouped by their modulo k value
         for num in nums:
             modToSubset[num % k].add(num)
+            # Initialize prevNum to -k to handle the first comparison correctly
+        prevNum = -k
