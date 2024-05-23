@@ -33,16 +33,20 @@ class Solution:
     def beautifulSubsets(self, nums, k):
         # Count the frequency of each element in nums
         count = collections.Counter(nums)
+        
         # Create a dictionary to group elements by their modulo k values
         modToSubset = collections.defaultdict(set)
+
         # Populate the dictionary with elements grouped by their modulo k value
         for num in nums:
             modToSubset[num % k].add(num)
-            # Initialize prevNum to -k to handle the first comparison correctly
+
+        # Initialize prevNum to -k to handle the first comparison correctly
         prevNum = -k
         # Initialize skip and pick to 0
         skip = 0
         pick = 0
+
         # Iterate over each subset (group of elements with the same modulo k value)
         for subset in modToSubset.values():
             # Sort the subset to handle elements in order
@@ -56,11 +60,13 @@ class Solution:
                 else:
                     # Update skip and pick without restriction
                     skip, pick = skip + pick, nonEmptyCount * (1 + skip + pick)
-                    # Update prevNum to the current number for the next iteration
+                # Update prevNum to the current number for the next iteration
                 prevNum = num
-                 # Return the total number of beautiful subsets
+
+        # Return the total number of beautiful subsets
         return skip + pick
-    # Example usage:
+
+# Example usage:
 solution = Solution()
 # Print the number of beautiful subsets for the input [2, 4, 6] with k = 2
 print(solution.beautifulSubsets([2, 4, 6], 2))  # Output: 4
