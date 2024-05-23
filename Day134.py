@@ -51,3 +51,6 @@ class Solution:
                 nonEmptyCount = 2**count[num] - 1
                 # If the current number and the previous number are k apart
                 if num - prevNum == k:
+                    # Update skip and pick considering the restriction
+                    skip, pick = skip + pick, nonEmptyCount * (1 + skip)
+                else:
