@@ -54,3 +54,5 @@ class Solution:
                     # Update skip and pick considering the restriction
                     skip, pick = skip + pick, nonEmptyCount * (1 + skip)
                 else:
+                    # Update skip and pick without restriction
+                    skip, pick = skip + pick, nonEmptyCount * (1 + skip + pick)
