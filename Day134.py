@@ -49,3 +49,5 @@ class Solution:
             for num in sorted(subset):
                 # Calculate the number of non-empty subsets for the current number
                 nonEmptyCount = 2**count[num] - 1
+                # If the current number and the previous number are k apart
+                if num - prevNum == k:
