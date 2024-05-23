@@ -40,3 +40,6 @@ class Solution:
             modToSubset[num % k].add(num)
             # Initialize prevNum to -k to handle the first comparison correctly
         prevNum = -k
+        # Initialize skip and pick to 0
+        skip = 0
+        pick = 0
