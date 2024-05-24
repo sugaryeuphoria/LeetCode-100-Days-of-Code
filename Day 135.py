@@ -63,5 +63,8 @@ class Solution {
         // Backtrack: restore the count of letters after trying the current word
       unuseWord(words, i, count);
     }
+    // Return the maximum score obtained
+    return ans;
+  }
 
   }
