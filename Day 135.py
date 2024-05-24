@@ -47,6 +47,9 @@ class Solution {
     int[] count = new int[26];
     for (final char c : letters)
       ++count[c - 'a'];
+      // Start the depth-first search (DFS) from the first word
+    return dfs(words, 0, count, score);
+  }
     
 
-  }}
+  }
