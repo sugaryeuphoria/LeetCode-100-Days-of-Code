@@ -43,29 +43,32 @@ words[i], letters[i] contains only lower case English letters.
 """
 class Solution {
   public int maxScoreWords(String[] words, char[] letters, int[] score) {
-      // Create an array to count the occurrences of each letter in the input letters array
+    // Create an array to count the occurrences of each letter in the input letters array
     int[] count = new int[26];
     for (final char c : letters)
       ++count[c - 'a'];
-      // Start the depth-first search (DFS) from the first word
+    
+    // Start the depth-first search (DFS) from the first word
     return dfs(words, 0, count, score);
   }
-    // Returns the maximum score you can get from words[s..n)
+
+  // Returns the maximum score you can get from words[s..n)
   private int dfs(String[] words, int s, int[] count, int[] score) {
     int ans = 0;
     // Iterate through each word starting from index s
     for (int i = s; i < words.length; ++i) {
-        // Try to use the current word and calculate the earned score
+      // Try to use the current word and calculate the earned score
       final int earned = useWord(words, i, count, score);
       // If the word can be used (earned > 0), explore further by including this word
       if (earned > 0)
         ans = Math.max(ans, earned + dfs(words, i + 1, count, score));
-        // Backtrack: restore the count of letters after trying the current word
+      // Backtrack: restore the count of letters after trying the current word
       unuseWord(words, i, count);
     }
     // Return the maximum score obtained
     return ans;
   }
+
   // Tries to use words[i], updates the count, and returns the earned score.
   // If the word cannot be used due to lack of letters, returns -1 and resets count.
   int useWord(String[] words, int i, int[] count, int[] score) {
@@ -73,11 +76,20 @@ class Solution {
     int earned = 0;
     // Iterate through each character in the word
     for (final char c : words[i].toCharArray()) {
-        // Decrement the count of the character
+      // Decrement the count of the character
       if (--count[c - 'a'] < 0)
-       isValid = false;  // Mark as invalid if count goes below 0
+        isValid = false;  // Mark as invalid if count goes below 0
       // Add the character's score to earned
       earned += score[c - 'a'];
     }
-
+    // Return the earned score if valid, otherwise -1
+    return isValid ? earned : -1;
   }
+
+  // Resets the count after trying to use words[i]
+  void unuseWord(String[] words, int i, int[] count) {
+    // Increment the count of each character in the word
+    for (final char c : words[i].toCharArray())
+      ++count[c - 'a'];
+  }
+}
