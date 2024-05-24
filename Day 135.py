@@ -43,6 +43,10 @@ words[i], letters[i] contains only lower case English letters.
 """
 class Solution {
   public int maxScoreWords(String[] words, char[] letters, int[] score) {
-      
+      // Create an array to count the occurrences of each letter in the input letters array
+    int[] count = new int[26];
+    for (final char c : letters)
+      ++count[c - 'a'];
+    
 
   }}
