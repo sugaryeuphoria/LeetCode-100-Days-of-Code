@@ -73,5 +73,7 @@ class Solution {
     int earned = 0;
     // Iterate through each character in the word
     for (final char c : words[i].toCharArray()) {
+        // Decrement the count of the character
+      if (--count[c - 'a'] < 0)
 
   }
