@@ -53,5 +53,7 @@ class Solution {
     // Returns the maximum score you can get from words[s..n)
   private int dfs(String[] words, int s, int[] count, int[] score) {
     int ans = 0;
+    // Iterate through each word starting from index s
+    for (int i = s; i < words.length; ++i) {
 
   }
