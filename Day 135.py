@@ -71,5 +71,7 @@ class Solution {
   int useWord(String[] words, int i, int[] count, int[] score) {
     boolean isValid = true;
     int earned = 0;
+    // Iterate through each character in the word
+    for (final char c : words[i].toCharArray()) {
 
   }
