@@ -50,6 +50,8 @@ class Solution {
       // Start the depth-first search (DFS) from the first word
     return dfs(words, 0, count, score);
   }
-    
+    // Returns the maximum score you can get from words[s..n)
+  private int dfs(String[] words, int s, int[] count, int[] score) {
+    int ans = 0;
 
   }
