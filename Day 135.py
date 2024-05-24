@@ -55,5 +55,7 @@ class Solution {
     int ans = 0;
     // Iterate through each word starting from index s
     for (int i = s; i < words.length; ++i) {
+        // Try to use the current word and calculate the earned score
+      final int earned = useWord(words, i, count, score);
 
   }
