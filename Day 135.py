@@ -57,5 +57,8 @@ class Solution {
     for (int i = s; i < words.length; ++i) {
         // Try to use the current word and calculate the earned score
       final int earned = useWord(words, i, count, score);
+      // If the word can be used (earned > 0), explore further by including this word
+      if (earned > 0)
+        ans = Math.max(ans, earned + dfs(words, i + 1, count, score));
 
   }
