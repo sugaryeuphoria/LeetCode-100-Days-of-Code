@@ -66,5 +66,10 @@ class Solution {
     // Return the maximum score obtained
     return ans;
   }
+  // Tries to use words[i], updates the count, and returns the earned score.
+  // If the word cannot be used due to lack of letters, returns -1 and resets count.
+  int useWord(String[] words, int i, int[] count, int[] score) {
+    boolean isValid = true;
+    int earned = 0;
 
   }
