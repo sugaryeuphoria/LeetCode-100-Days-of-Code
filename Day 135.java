@@ -1,4 +1,4 @@
-"""
+/*
 1255. Maximum Score Words Formed by Letters
 Given a list of words, list of  single letters (might be repeating) and score of every character.
 
@@ -40,7 +40,7 @@ letters[i].length == 1
 score.length == 26
 0 <= score[i] <= 10
 words[i], letters[i] contains only lower case English letters.
-"""
+*/
 class Solution {
   public int maxScoreWords(String[] words, char[] letters, int[] score) {
     // Create an array to count the occurrences of each letter in the input letters array
