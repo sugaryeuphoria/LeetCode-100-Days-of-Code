@@ -75,5 +75,9 @@ class Solution {
     for (final char c : words[i].toCharArray()) {
         // Decrement the count of the character
       if (--count[c - 'a'] < 0)
+       isValid = false;  // Mark as invalid if count goes below 0
+      // Add the character's score to earned
+      earned += score[c - 'a'];
+    }
 
   }
