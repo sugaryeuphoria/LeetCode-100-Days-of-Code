@@ -29,10 +29,14 @@ All the strings of wordDict are unique.
 Input is generated in a way that the length of the answer doesn't exceed 105.
  */
 
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 public class Day136 {
     // Function to find all possible sentences from string 's' using words from 'wordDict'
   public List<String> wordBreak(String s, List<String> wordDict) {
+    // Convert wordDict to a set for O(1) lookups
+    Set<String> wordSet = new HashSet<>(wordDict);
 
   }
     
