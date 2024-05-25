@@ -34,16 +34,27 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
-public class Day136 {
-    // Function to find all possible sentences from string 's' using words from 'wordDict'
-  public List<String> wordBreak(String s, List<String> wordDict) {
-    // Convert wordDict to a set for O(1) lookups
-    Set<String> wordSet = new HashSet<>(wordDict);
-    // Create a memoization map to store results for substrings
-    Map<String, List<String>> mem = new HashMap<>();
-    // Call the helper function with the initial string 's'
-    return wordBreak(s, wordSet, mem);
 
-  }
-    
+public class Day136 {
+    // Function to find all possible sentences from string 's' using words from
+    // 'wordDict'
+    public List<String> wordBreak(String s, List<String> wordDict) {
+        // Convert wordDict to a set for O(1) lookups
+        Set<String> wordSet = new HashSet<>(wordDict);
+        // Create a memoization map to store results for substrings
+        Map<String, List<String>> mem = new HashMap<>();
+        // Call the helper function with the initial string 's'
+        return wordBreak(s, wordSet, mem);
+
+    }
+
+    // Helper function for the recursive word break process
+    private List<String> wordBreak(final String s, Set<String> wordSet,
+            Map<String, List<String>> mem) {
+        // If the result for the current string 's' is already computed, return it
+        if (mem.containsKey(s))
+            return mem.get(s);
+
+    }
+
 }
