@@ -36,28 +36,49 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-public class Day136 {
-    // Function to find all possible sentences from string 's' using words from
-    // 'wordDict'
+class Day136 {
+    // Function to find all possible sentences from string 's' using words from 'wordDict'
     public List<String> wordBreak(String s, List<String> wordDict) {
-        // Convert wordDict to a set for O(1) lookups
-        Set<String> wordSet = new HashSet<>(wordDict);
-        // Create a memoization map to store results for substrings
-        Map<String, List<String>> mem = new HashMap<>();
-        // Call the helper function with the initial string 's'
-        return wordBreak(s, wordSet, mem);
-
+      // Convert wordDict to a set for O(1) lookups
+      Set<String> wordSet = new HashSet<>(wordDict);
+      // Create a memoization map to store results for substrings
+      Map<String, List<String>> mem = new HashMap<>();
+      // Call the helper function with the initial string 's'
+      return wordBreak(s, wordSet, mem);
     }
-
+  
     // Helper function for the recursive word break process
     private List<String> wordBreak(final String s, Set<String> wordSet,
-            Map<String, List<String>> mem) {
-        // If the result for the current string 's' is already computed, return it
-        if (mem.containsKey(s))
-            return mem.get(s);
-        // Initialize a list to store possible sentences
-        List<String> ans = new ArrayList<>();
-
+                                   Map<String, List<String>> mem) {
+      // If the result for the current string 's' is already computed, return it
+      if (mem.containsKey(s))
+        return mem.get(s);
+  
+      // Initialize a list to store possible sentences
+      List<String> ans = new ArrayList<>();
+  
+      // Loop through all possible prefixes of 's'
+      // 1 <= prefix.length() < s.length() ensures that prefix is not empty and not the whole string
+      for (int i = 1; i < s.length(); ++i) {
+        // Extract the prefix from the start to the current index 'i'
+        final String prefix = s.substring(0, i);
+        // Extract the suffix from the current index 'i' to the end
+        final String suffix = s.substring(i);
+        // If the prefix is a valid word, recursively process the suffix
+        if (wordSet.contains(prefix))
+          // Concatenate prefix with each valid sentence from the suffix and add to the result
+          for (final String word : wordBreak(suffix, wordSet, mem))
+            ans.add(prefix + " " + word);
+      }
+  
+      // If the whole string 's' is a valid word, add it to the result
+      if (wordSet.contains(s))
+        ans.add(s);
+  
+      // Memoize the result for the current string 's'
+      mem.put(s, ans);
+      // Return the list of possible sentences for the current string 's'
+      return ans;
     }
-
-}
+  }
+  
