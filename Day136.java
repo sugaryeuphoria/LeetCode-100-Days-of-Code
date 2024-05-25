@@ -41,6 +41,8 @@ public class Day136 {
     Set<String> wordSet = new HashSet<>(wordDict);
     // Create a memoization map to store results for substrings
     Map<String, List<String>> mem = new HashMap<>();
+    // Call the helper function with the initial string 's'
+    return wordBreak(s, wordSet, mem);
 
   }
     
