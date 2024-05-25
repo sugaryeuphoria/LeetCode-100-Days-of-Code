@@ -29,6 +29,7 @@ All the strings of wordDict are unique.
 Input is generated in a way that the length of the answer doesn't exceed 105.
  */
 
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
@@ -54,6 +55,8 @@ public class Day136 {
         // If the result for the current string 's' is already computed, return it
         if (mem.containsKey(s))
             return mem.get(s);
+        // Initialize a list to store possible sentences
+        List<String> ans = new ArrayList<>();
 
     }
 
