@@ -56,6 +56,11 @@ public class Day137 {
       // Append an L.
       dp[0][2] = prev[0][1];
 
+       // Append an A or append a P.
+       dp[1][0] =
+       (prev[0][0] + prev[0][1] + prev[0][2] + prev[1][0] + prev[1][1] + prev[1][2]) % kMod;
+
+
     }
     
 
