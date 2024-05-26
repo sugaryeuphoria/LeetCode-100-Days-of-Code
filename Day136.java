@@ -49,7 +49,7 @@ class Day136 {
   
     // Helper function for the recursive word break process
     private List<String> wordBreak(final String s, Set<String> wordSet,
-                                   Map<String, List<String>> mem) {
+                                  Map<String, List<String>> mem) {
       // If the result for the current string 's' is already computed, return it
       if (mem.containsKey(s))
         return mem.get(s);
