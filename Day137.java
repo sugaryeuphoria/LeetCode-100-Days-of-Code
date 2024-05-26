@@ -34,5 +34,8 @@ Constraints:
 */
 
 public class Day137 {
+    public int checkRecord(int n) {
+
+    }
     
 }
