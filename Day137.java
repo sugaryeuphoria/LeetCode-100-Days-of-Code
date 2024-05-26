@@ -35,7 +35,7 @@ Constraints:
 
 public class Day137 {
     public int checkRecord(int n) {
-
+        final int kMod = 1_000_000_007;
     }
     
 }
