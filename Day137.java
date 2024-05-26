@@ -33,9 +33,19 @@ Constraints:
 1 <= n <= 105
 */
 
+import java.util.Arrays;
+
 public class Day137 {
     public int checkRecord(int n) {
         final int kMod = 1_000_000_007;
+        // dp[i][j] := the length so far with i A's and the last letters are j L's
+    long[][] dp = new long[2][3];
+    dp[0][0] = 1;
+
+    while (n-- > 0) {
+      long[][] prev = Arrays.stream(dp)
+                          .map((long[] A) -> A.clone())
+                          .toArray((int length) -> new long[length][]);
     }
     
 }
