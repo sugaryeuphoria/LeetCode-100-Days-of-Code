@@ -46,6 +46,11 @@ public class Day137 {
       long[][] prev = Arrays.stream(dp)
                           .map((long[] A) -> A.clone())
                           .toArray((int length) -> new long[length][]);
+
+      // Append a P.
+      dp[0][0] = (prev[0][0] + prev[0][1] + prev[0][2]) % kMod;
     }
     
+
+}
 }
