@@ -27,6 +27,10 @@ Example 3:
 
 Input: n = 10101
 Output: 183236316
+
+Constraints:
+
+1 <= n <= 105
 */
 
 public class Day137 {
