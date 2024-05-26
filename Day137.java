@@ -63,6 +63,9 @@ public class Day137 {
        // Append an L.
       dp[1][1] = prev[1][0];
 
+      // Append an L.
+      dp[1][2] = prev[1][1];
+
     }
     
 
