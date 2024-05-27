@@ -33,3 +33,5 @@ Constraints:
 */
 class Solution {
     public int specialArray(int[] nums) {
+        // Step 1: Sort the array
+        Arrays.sort(nums);
