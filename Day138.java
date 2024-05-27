@@ -31,3 +31,5 @@ Constraints:
 1 <= nums.length <= 100
 0 <= nums[i] <= 1000
 */
+class Solution {
+    public int specialArray(int[] nums) {
