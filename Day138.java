@@ -37,3 +37,7 @@ class Solution {
         Arrays.sort(nums);
         // Step 2: Iterate through possible values of x
         for (int x = 0; x <= nums.length; x++) {
+            // Step 3: Check if there are exactly x elements >= x
+            int count = 0;
+            for (int i = 0; i < nums.length; i++) {
+                if (nums[i] >= x) {
