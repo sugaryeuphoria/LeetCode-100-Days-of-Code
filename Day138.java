@@ -47,10 +47,10 @@ class Solution {
                 }
             }
             if (count == x) {
-                return x;  // Found the special x
+                return x; // Found the special x
             }
         }
-        
-        return -1;  // No special x found
+
+        return -1; // No special x found
     }
 }
