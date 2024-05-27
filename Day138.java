@@ -26,4 +26,8 @@ Input: nums = [0,4,3,0,4]
 Output: 3
 Explanation: There are 3 values that are greater than or equal to 3.
 
+Constraints:
+
+1 <= nums.length <= 100
+0 <= nums[i] <= 1000
 */
