@@ -35,3 +35,5 @@ class Solution {
     public int specialArray(int[] nums) {
         // Step 1: Sort the array
         Arrays.sort(nums);
+        // Step 2: Iterate through possible values of x
+        for (int x = 0; x <= nums.length; x++) {
