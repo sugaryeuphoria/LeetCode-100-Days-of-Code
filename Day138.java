@@ -43,3 +43,14 @@ class Solution {
                 if (nums[i] >= x) {
                     // All elements from i to the end are >= x
                     count = nums.length - i;
+                    break;
+                }
+            }
+            if (count == x) {
+                return x;  // Found the special x
+            }
+        }
+        
+        return -1;  // No special x found
+    }
+}
