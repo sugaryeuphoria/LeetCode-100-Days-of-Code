@@ -42,3 +42,10 @@ class Solution:
   def numSteps(self, s: str) -> int:
     ans = 0
     chars = [c for c in s]
+    # All the trailing 0s can be popped by 1 step.
+    while chars[-1] == '0':
+      chars.pop()
+      ans += 1
+
+    if ''.join(chars) == '1':
+      return ans
