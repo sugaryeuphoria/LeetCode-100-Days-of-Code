@@ -38,3 +38,7 @@ Constraints:
 s consists of characters '0' or '1'
 s[0] == '1'
 """
+class Solution:
+  def numSteps(self, s: str) -> int:
+    ans = 0
+    chars = [c for c in s]
