@@ -49,3 +49,9 @@ class Solution:
 
     if ''.join(chars) == '1':
       return ans
+    
+    # `s` is now odd, so add 1 to `s` and cost 1 step.
+    # All the 1s will become 0s and can be popped by 1 step.
+    # All the 0s will become 1s and can be popped by 2 steps (adding 1 then
+    # dividing by 2).
+    return ans + 1 + sum(1 if c == '1' else 2 for c in chars)
