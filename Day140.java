@@ -31,3 +31,8 @@ t.length == s.length
 0 <= maxCost <= 106
 s and t consist of only lowercase English letters.
 */
+class Solution {
+    public int equalSubstring(String s, String t, int maxCost) {
+      
+    }
+  }
