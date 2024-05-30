@@ -22,4 +22,12 @@ Example 3:
 
 Input: s = "abcd", t = "acde", maxCost = 0
 Output: 1
-Explanation: You cannot make any change, so the maximum length is 1.*/
+Explanation: You cannot make any change, so the maximum length is 1.
+
+Constraints:
+
+1 <= s.length <= 105
+t.length == s.length
+0 <= maxCost <= 106
+s and t consist of only lowercase English letters.
+*/
