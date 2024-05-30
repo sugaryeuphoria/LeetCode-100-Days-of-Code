@@ -36,6 +36,7 @@ class Solution {
         int j = 0;
         for (int i = 0; i < s.length(); ++i) {
             maxCost -= Math.abs(s.charAt(i) - t.charAt(i));
+            if (maxCost < 0)
             
     }
   }
