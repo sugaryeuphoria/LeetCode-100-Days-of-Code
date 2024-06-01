@@ -29,5 +29,8 @@ s consists only of lowercase English letters.
 */
 
 public class Day141 {
+    public int scoreOfString(String s) {
+
+    }
     
 }
