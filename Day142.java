@@ -19,5 +19,9 @@ s[i] is a printable ascii character.
 */
 
 public class Day142 {
+    public void reverseString(char[] s) {
+        // Initialize the left pointer to the start of the array
+        int l = 0;
+    }
     
 }
