@@ -24,6 +24,8 @@ public class Day142 {
         int l = 0;
         // Loop until the two pointers meet in the middle
         while (l < r) {
+            // Store the character at the left pointer in a temporary variable
+            char temp = s[l];
 
         }
     }
