@@ -28,6 +28,8 @@ public class Day142 {
             char temp = s[l];
             // Copy the character from the right pointer to the left pointer and increment the left pointer
             s[l++] = s[r];
+            // Copy the character from the temporary variable to the right pointer and decrement the right pointer
+            s[r--] = temp;
 
         }
     }
