@@ -22,16 +22,22 @@ public class Day142 {
     public void reverseString(char[] s) {
         // Initialize the left pointer to the start of the array
         int l = 0;
+        // Initialize the right pointer to the end of the array
+        int r = s.length - 1;
+    
         // Loop until the two pointers meet in the middle
         while (l < r) {
-            // Store the character at the left pointer in a temporary variable
-            char temp = s[l];
-            // Copy the character from the right pointer to the left pointer and increment the left pointer
-            s[l++] = s[r];
-            // Copy the character from the temporary variable to the right pointer and decrement the right pointer
-            s[r--] = temp;
-
+          // Store the character at the left pointer in a temporary variable
+          char temp = s[l];
+          // Copy the character from the right pointer to the left pointer and increment the left pointer
+          s[l++] = s[r];
+          // Copy the character from the temporary variable to the right pointer and decrement the right pointer
+          s[r--] = temp;
         }
+      }
     }
     
-}
+    
+    
+    
+    
