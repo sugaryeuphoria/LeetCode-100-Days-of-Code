@@ -22,6 +22,10 @@ public class Day142 {
     public void reverseString(char[] s) {
         // Initialize the left pointer to the start of the array
         int l = 0;
+        // Loop until the two pointers meet in the middle
+        while (l < r) {
+
+        }
     }
     
 }
