@@ -26,6 +26,8 @@ public class Day142 {
         while (l < r) {
             // Store the character at the left pointer in a temporary variable
             char temp = s[l];
+            // Copy the character from the right pointer to the left pointer and increment the left pointer
+            s[l++] = s[r];
 
         }
     }
