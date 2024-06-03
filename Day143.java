@@ -35,5 +35,7 @@ class Day143{
     public int appendCharacters(String s, String t) {
         // t's index
         int i = 0;
+        for (final char c : s.toCharArray())
+        
     }
 }
