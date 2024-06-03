@@ -31,3 +31,9 @@ Constraints:
 1 <= s.length, t.length <= 105
 s and t consist only of lowercase English letters.
   */
+class Day143{
+    public int appendCharacters(String s, String t) {
+        // t's index
+        int i = 0;
+    }
+}
