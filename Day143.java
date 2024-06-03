@@ -36,6 +36,6 @@ class Day143{
         // t's index
         int i = 0;
         for (final char c : s.toCharArray())
-        
+            if (c == t.charAt(i))
     }
 }
