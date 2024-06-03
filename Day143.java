@@ -25,4 +25,9 @@ Output: 5
 Explanation: Append the characters "abcde" to the end of s so that s = "zabcde".
 Now, t is a subsequence of s ("zabcde").
 It can be shown that appending any 4 characters to the end of s will never make t a subsequence.
+
+Constraints:
+
+1 <= s.length, t.length <= 105
+s and t consist only of lowercase English letters.
   */
