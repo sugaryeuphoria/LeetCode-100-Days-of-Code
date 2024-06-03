@@ -37,5 +37,6 @@ class Day143{
         int i = 0;
         for (final char c : s.toCharArray())
             if (c == t.charAt(i))
+                if (++i == t.length())
     }
 }
