@@ -39,5 +39,7 @@ class Day143{
             if (c == t.charAt(i))
                 if (++i == t.length())
                     return 0;
+                    
+        return t.length() - i;
     }
 }
