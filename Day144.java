@@ -28,6 +28,8 @@ class Solution {
         int[] count = new int[128]; 
         // Loop through each character in the string
         for (final char c : s.toCharArray())
+        // Increment the frequency count for the character
+        ++count[c]; 
 
 
     }
