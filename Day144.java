@@ -23,24 +23,21 @@ s consists of lowercase and/or uppercase English letters only.
 class Solution {
     public int longestPalindrome(String s) {
         // Initialize the variable to store the length of the longest palindrome
-        int ans = 0; 
+        int ans = 0;
         // Create an array to count the frequency of each character (assuming ASCII)
-        int[] count = new int[128]; 
+        int[] count = new int[128];
         // Loop through each character in the string
         for (final char c : s.toCharArray())
-        // Increment the frequency count for the character
-        ++count[c]; 
+            // Increment the frequency count for the character
+            ++count[c];
         // Loop through the frequency counts of all characters
         for (final int freq : count)
-        // If the frequency is even, add it to the answer, otherwise add the largest even number less than the frequency
-        ans += freq % 2 == 0 ? freq : freq - 1; 
+            // If the frequency is even, add it to the answer, otherwise add the largest even number less than the frequency
+            ans += freq % 2 == 0 ? freq : freq - 1;
         // Check if there is at least one character with an odd frequency
         final boolean hasOddCount = Arrays.stream(count).anyMatch(freq -> freq % 2 == 1);
-        // If there is an odd frequency, add 1 to the result (for the center character in the palindrome)
-        return ans + (hasOddCount ? 1 : 0); 
-
-
-
+        // If there is an odd frequency, add 1 to the result (for the center characterin the palindrome)
+        return ans + (hasOddCount ? 1 : 0);
 
     }
 }
