@@ -34,6 +34,8 @@ class Solution {
         for (final int freq : count)
         // If the frequency is even, add it to the answer, otherwise add the largest even number less than the frequency
         ans += freq % 2 == 0 ? freq : freq - 1; 
+        // Check if there is at least one character with an odd frequency
+        final boolean hasOddCount = Arrays.stream(count).anyMatch(freq -> freq % 2 == 1);
 
 
 
