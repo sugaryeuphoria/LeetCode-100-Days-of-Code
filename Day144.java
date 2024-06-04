@@ -36,6 +36,9 @@ class Solution {
         ans += freq % 2 == 0 ? freq : freq - 1; 
         // Check if there is at least one character with an odd frequency
         final boolean hasOddCount = Arrays.stream(count).anyMatch(freq -> freq % 2 == 1);
+        // If there is an odd frequency, add 1 to the result (for the center character in the palindrome)
+        return ans + (hasOddCount ? 1 : 0); 
+
 
 
 
