@@ -22,6 +22,8 @@ s consists of lowercase and/or uppercase English letters only.
  */
 class Solution {
 public int longestPalindrome(String s) {
+    // Initialize the variable to store the length of the longest palindrome
+    int ans = 0; 
 
 }
 }
