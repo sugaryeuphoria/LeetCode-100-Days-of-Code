@@ -30,6 +30,8 @@ class Solution {
         for (final char c : s.toCharArray())
         // Increment the frequency count for the character
         ++count[c]; 
+        // Loop through the frequency counts of all characters
+        for (final int freq : count)
 
 
     }
