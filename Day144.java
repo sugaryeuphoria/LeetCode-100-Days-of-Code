@@ -32,6 +32,9 @@ class Solution {
         ++count[c]; 
         // Loop through the frequency counts of all characters
         for (final int freq : count)
+        // If the frequency is even, add it to the answer, otherwise add the largest even number less than the frequency
+        ans += freq % 2 == 0 ? freq : freq - 1; 
+
 
 
     }
