@@ -26,6 +26,8 @@ class Solution {
         int ans = 0; 
         // Create an array to count the frequency of each character (assuming ASCII)
         int[] count = new int[128]; 
+        // Loop through each character in the string
+        for (final char c : s.toCharArray())
 
 
     }
