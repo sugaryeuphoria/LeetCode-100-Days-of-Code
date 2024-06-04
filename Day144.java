@@ -20,3 +20,8 @@ Constraints:
 s consists of lowercase and/or uppercase English letters only.
  
  */
+class Solution {
+public int longestPalindrome(String s) {
+
+}
+}
