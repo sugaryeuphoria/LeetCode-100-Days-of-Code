@@ -42,7 +42,8 @@ class Day146 {
          else // If the right line is shorter or both are equal, move the right pointer to the left
             --r;
     }
-
+    // Return the maximum area found
+    return ans;
 
     }
 
