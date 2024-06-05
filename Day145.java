@@ -41,8 +41,11 @@ public class Day145 {
             // Update the commonCount array to hold the minimum frequency of each character seen so far
             for (int i = 0; i < 26; ++i)
             commonCount[i] = Math.min(commonCount[i], count[i]);
-  }
-  // Loop through each character from 'a' to 'z'
-  for (char c = 'a'; c <= 'z'; ++c)
+        }
+        // Loop through each character from 'a' to 'z'
+        for (char c = 'a'; c <= 'z'; ++c)
+            // Add the character to the result list the number of times it appears in all strings
+            for (int i = 0; i < commonCount[c - 'a']; ++i)
+            ans.add(String.valueOf(c));
         }
     }
