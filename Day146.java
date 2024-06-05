@@ -26,6 +26,8 @@ class Day146 {
     public int maxArea(int[] height) {
         // Initialize the maximum area to 0
         int ans = 0;
+        // Initialize the left pointer to the beginning of the array
+        int l = 0;
     }
 
 }
