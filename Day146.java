@@ -28,22 +28,23 @@ class Day146 {
         int ans = 0;
         // Initialize the left pointer to the beginning of the array
         int l = 0;
-         // Initialize the right pointer to the end of the array
-         int r = height.length - 1;
-         // Loop until the two pointers meet
-    while (l < r) {
-        // Find the shorter of the two lines
-        final int minHeight = Math.min(height[l], height[r]);
-         // Calculate the area and update the maximum area if the current one is larger
-         ans = Math.max(ans, minHeight * (r - l));
-         // If the left line is shorter, move the left pointer to the right
-         if (height[l] < height[r]) 
-            ++l;
-         else // If the right line is shorter or both are equal, move the right pointer to the left
-            --r;
-    }
-    // Return the maximum area found
-    return ans;
+        // Initialize the right pointer to the end of the array
+        int r = height.length - 1;
+        // Loop until the two pointers meet
+        while (l < r) {
+            // Find the shorter of the two lines
+            final int minHeight = Math.min(height[l], height[r]);
+            // Calculate the area and update the maximum area if the current one is larger
+            ans = Math.max(ans, minHeight * (r - l));
+            // If the left line is shorter, move the left pointer to the right
+            if (height[l] < height[r])
+                ++l;
+            else // If the right line is shorter or both are equal, move the right pointer to the
+                 // left
+                --r;
+        }
+        // Return the maximum area found
+        return ans;
 
     }
 
