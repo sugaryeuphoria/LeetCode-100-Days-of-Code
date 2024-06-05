@@ -39,8 +39,7 @@ class Day146 {
             // If the left line is shorter, move the left pointer to the right
             if (height[l] < height[r])
                 ++l;
-            else // If the right line is shorter or both are equal, move the right pointer to the
-                 // left
+            else // If the right line is shorter or both are equal, move the right pointer to the left
                 --r;
         }
         // Return the maximum area found
