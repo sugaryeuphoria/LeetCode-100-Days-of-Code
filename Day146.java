@@ -30,6 +30,9 @@ class Day146 {
         int l = 0;
          // Initialize the right pointer to the end of the array
          int r = height.length - 1;
+         // Loop until the two pointers meet
+    while (l < r) {
+        
     }
 
 }
