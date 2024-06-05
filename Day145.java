@@ -34,6 +34,8 @@ public class Day145 {
         for (String a : A) {
             // Initialize an array to count the frequency of each character in the current string
             int[] count = new int[26];
+            // Loop through each character in the current string
+            for (char c : a.toCharArray())
         }
     }
 }
