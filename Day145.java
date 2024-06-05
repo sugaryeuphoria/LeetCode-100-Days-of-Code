@@ -32,7 +32,8 @@ public class Day145 {
         Arrays.fill(commonCount, Integer.MAX_VALUE);
         // Loop through each string in the input array
         for (String a : A) {
-
+            // Initialize an array to count the frequency of each character in the current string
+            int[] count = new int[26];
         }
     }
 }
