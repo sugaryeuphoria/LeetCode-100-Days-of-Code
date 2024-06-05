@@ -18,6 +18,10 @@ Constraints:
 words[i] consists of lowercase English letters.
 */
 
+import java.util.List;
+
 public class Day145 {
-    
+    public List<String> commonChars(String[] A) {
+        
+    }
 }
