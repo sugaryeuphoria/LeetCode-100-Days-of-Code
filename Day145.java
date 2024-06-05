@@ -30,5 +30,9 @@ public class Day145 {
         int[] commonCount = new int[26];
         // Fill the array with the maximum integer value
         Arrays.fill(commonCount, Integer.MAX_VALUE);
+        // Loop through each string in the input array
+        for (String a : A) {
+
+        }
     }
 }
