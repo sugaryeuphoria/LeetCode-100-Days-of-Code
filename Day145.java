@@ -42,6 +42,7 @@ public class Day145 {
             for (int i = 0; i < 26; ++i)
             commonCount[i] = Math.min(commonCount[i], count[i]);
   }
+  // Loop through each character from 'a' to 'z'
+  for (char c = 'a'; c <= 'z'; ++c)
         }
     }
-}
