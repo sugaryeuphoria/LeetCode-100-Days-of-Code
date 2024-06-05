@@ -25,5 +25,7 @@ public class Day145 {
     public List<String> commonChars(String[] A) {
          // Initialize the result list to store common characters
         List<String> ans = new ArrayList<>();
+        // Initialize an array to keep track of the minimum frequency of each character
+        int[] commonCount = new int[26];
     }
 }
