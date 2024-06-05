@@ -36,6 +36,8 @@ public class Day145 {
             int[] count = new int[26];
             // Loop through each character in the current string
             for (char c : a.toCharArray())
+                // Increment the count for the character
+                ++count[c - 'a'];
         }
     }
 }
