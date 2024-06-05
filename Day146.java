@@ -34,6 +34,8 @@ class Day146 {
     while (l < r) {
         // Find the shorter of the two lines
         final int minHeight = Math.min(height[l], height[r]);
+         // Calculate the area and update the maximum area if the current one is larger
+         ans = Math.max(ans, minHeight * (r - l));
 
 
     }
