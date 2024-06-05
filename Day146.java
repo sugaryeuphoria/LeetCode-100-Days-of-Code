@@ -24,7 +24,8 @@ n == height.length
  */
 class Day146 {
     public int maxArea(int[] height) {
-
+        // Initialize the maximum area to 0
+        int ans = 0;
     }
 
 }
