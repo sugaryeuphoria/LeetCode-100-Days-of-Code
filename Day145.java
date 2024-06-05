@@ -18,10 +18,12 @@ Constraints:
 words[i] consists of lowercase English letters.
 */
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Day145 {
     public List<String> commonChars(String[] A) {
-        
+         // Initialize the result list to store common characters
+        List<String> ans = new ArrayList<>();
     }
 }
