@@ -21,7 +21,7 @@ Constraints:
 n == height.length
 2 <= n <= 105
 0 <= height[i] <= 104
- */
+*/
 class Day146 {
     public int maxArea(int[] height) {
         // Initialize the maximum area to 0
