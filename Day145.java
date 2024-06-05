@@ -38,6 +38,10 @@ public class Day145 {
             for (char c : a.toCharArray())
                 // Increment the count for the character
                 ++count[c - 'a'];
+            // Update the commonCount array to hold the minimum frequency of each character seen so far
+            for (int i = 0; i < 26; ++i)
+            commonCount[i] = Math.min(commonCount[i], count[i]);
+  }
         }
     }
 }
