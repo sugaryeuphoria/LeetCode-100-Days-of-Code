@@ -38,7 +38,10 @@ class Day146 {
          ans = Math.max(ans, minHeight * (r - l));
          // If the left line is shorter, move the left pointer to the right
          if (height[l] < height[r]) 
-        ++l;
+            ++l;
+         else // If the right line is shorter or both are equal, move the right pointer to the left
+            --r;
+    }
 
 
     }
