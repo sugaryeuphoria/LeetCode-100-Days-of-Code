@@ -36,6 +36,9 @@ class Day146 {
         final int minHeight = Math.min(height[l], height[r]);
          // Calculate the area and update the maximum area if the current one is larger
          ans = Math.max(ans, minHeight * (r - l));
+         // If the left line is shorter, move the left pointer to the right
+         if (height[l] < height[r]) 
+        ++l;
 
 
     }
