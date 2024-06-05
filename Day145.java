@@ -19,6 +19,7 @@ words[i] consists of lowercase English letters.
 */
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class Day145 {
@@ -27,5 +28,7 @@ public class Day145 {
         List<String> ans = new ArrayList<>();
         // Initialize an array to keep track of the minimum frequency of each character
         int[] commonCount = new int[26];
+        // Fill the array with the maximum integer value
+        Arrays.fill(commonCount, Integer.MAX_VALUE);
     }
 }
