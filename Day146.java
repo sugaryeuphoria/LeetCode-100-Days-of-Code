@@ -32,7 +32,10 @@ class Day146 {
          int r = height.length - 1;
          // Loop until the two pointers meet
     while (l < r) {
-        
+        // Find the shorter of the two lines
+        final int minHeight = Math.min(height[l], height[r]);
+
+
     }
 
 }
