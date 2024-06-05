@@ -47,5 +47,7 @@ public class Day145 {
             // Add the character to the result list the number of times it appears in all strings
             for (int i = 0; i < commonCount[c - 'a']; ++i)
             ans.add(String.valueOf(c));
+            // Return the result list containing common characters
+        return ans;
         }
     }
