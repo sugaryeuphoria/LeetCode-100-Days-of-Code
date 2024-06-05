@@ -28,6 +28,8 @@ class Day146 {
         int ans = 0;
         // Initialize the left pointer to the beginning of the array
         int l = 0;
+         // Initialize the right pointer to the end of the array
+         int r = height.length - 1;
     }
 
 }
