@@ -43,3 +43,15 @@ class Solution:
         # Insert each word from the dictionary into the Trie
         for word in dictionary:
             self.insert(word)
+
+        # List to store the resulting words
+        ans = []
+        # Split the sentence into individual words
+        words = sentence.split()
+
+        # For each word in the sentence, search for its replacement
+        for word in words:
+            ans.append(self.search(word))
+
+        # Join the words back into a single string and return
+        return ' '.join(ans)
