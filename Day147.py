@@ -28,3 +28,9 @@ The length of each word in sentence is in the range [1, 1000]
 Every two consecutive words in sentence will be separated by exactly one space.
 sentence does not have leading or trailing spaces.
 """
+class TrieNode:
+    def __init__(self):
+        # Initialize the children list with 26 None values (for each letter a-z)
+        self.children = [None] * 26
+        # Initialize the word attribute to None
+        self.word = None
