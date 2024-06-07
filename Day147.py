@@ -69,3 +69,21 @@ class Solution:
             node = node.children[i]
         # Mark the end of the word
         node.word = word
+
+        def search(self, word):
+            # Start from the root of the Trie
+            node = self.root
+            # For each character in the word
+            for c in word:
+                # If a word is found, return it
+                if node.word:
+                    return node.word
+                # Calculate the index for the character
+                i = ord(c) - ord('a')
+                # If the corresponding child node doesn't exist, return the original word
+                if node.children[i] is None:
+                    return word
+                # Move to the next node
+                node = node.children[i]
+            # If no replacement is found, return the original word
+            return word
