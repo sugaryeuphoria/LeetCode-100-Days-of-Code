@@ -55,3 +55,17 @@ class Solution:
 
         # Join the words back into a single string and return
         return ' '.join(ans)
+    def insert(self, word):
+        # Start from the root of the Trie
+        node = self.root
+        # For each character in the word
+        for c in word:
+            # Calculate the index for the character
+            i = ord(c) - ord('a')
+            # If the corresponding child node doesn't exist, create it
+            if node.children[i] is None:
+                node.children[i] = TrieNode()
+            # Move to the next node
+            node = node.children[i]
+        # Mark the end of the word
+        node.word = word
