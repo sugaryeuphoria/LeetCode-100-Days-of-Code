@@ -34,3 +34,12 @@ class TrieNode:
         self.children = [None] * 26
         # Initialize the word attribute to None
         self.word = None
+class Solution:
+    def __init__(self):
+        # Initialize the root of the Trie
+        self.root = TrieNode()
+
+    def replaceWords(self, dictionary, sentence):
+        # Insert each word from the dictionary into the Trie
+        for word in dictionary:
+            self.insert(word)
