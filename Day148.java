@@ -53,3 +53,7 @@ class Solution {
         prefix %= k;
         // Check if this remainder has been seen before
       if (prefixToIndex.containsKey(prefix)) {
+         // If the previous occurrence of this remainder is more than one index ago, return true
+         if (i - prefixToIndex.get(prefix) > 1)
+         return true;
+     } else {
