@@ -27,4 +27,11 @@ Example 3:
 
 Input: nums = [23,2,6,4,7], k = 13
 Output: false
+
+Constraints:
+
+1 <= nums.length <= 105
+0 <= nums[i] <= 109
+0 <= sum(nums[i]) <= 231 - 1
+1 <= k <= 231 - 1
  */
