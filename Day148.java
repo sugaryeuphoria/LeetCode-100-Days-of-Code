@@ -44,3 +44,5 @@ class Solution {
     Map<Integer, Integer> prefixToIndex = new HashMap<>();
      // Initialize the map with 0 remainder at index -1 to handle edge cases
      prefixToIndex.put(0, -1);
+     // Loop through each element in the array
+    for (int i = 0; i < nums.length; ++i) {
