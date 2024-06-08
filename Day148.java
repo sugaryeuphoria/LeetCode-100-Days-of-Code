@@ -42,3 +42,5 @@ class Solution {
     int prefix = 0;
     // Map to store the remainder of the prefix sum and the index where it occurred
     Map<Integer, Integer> prefixToIndex = new HashMap<>();
+     // Initialize the map with 0 remainder at index -1 to handle edge cases
+     prefixToIndex.put(0, -1);
