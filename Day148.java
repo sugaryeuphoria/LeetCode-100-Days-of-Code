@@ -38,3 +38,5 @@ Constraints:
 class Solution {
  // Method to check if the array has a subarray whose sum is a multiple of k
  public boolean checkSubarraySum(int[] nums, int k) {
+    // Variable to store the prefix sum
+    int prefix = 0;
