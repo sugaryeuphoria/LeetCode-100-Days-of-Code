@@ -48,3 +48,6 @@ class Solution {
     for (int i = 0; i < nums.length; ++i) {
         // Add the current element to the prefix sum
       prefix += nums[i];
+      // If k is not 0, take the remainder of the prefix sum divided by k
+      if (k != 0)
+        prefix %= k;
