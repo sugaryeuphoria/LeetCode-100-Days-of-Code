@@ -51,3 +51,5 @@ class Solution {
       // If k is not 0, take the remainder of the prefix sum divided by k
       if (k != 0)
         prefix %= k;
+        // Check if this remainder has been seen before
+      if (prefixToIndex.containsKey(prefix)) {
