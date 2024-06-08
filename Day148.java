@@ -36,32 +36,36 @@ Constraints:
 1 <= k <= 231 - 1
  */
 class Solution {
- // Method to check if the array has a subarray whose sum is a multiple of k
- public boolean checkSubarraySum(int[] nums, int k) {
-    // Variable to store the prefix sum
-    int prefix = 0;
-    // Map to store the remainder of the prefix sum and the index where it occurred
-    Map<Integer, Integer> prefixToIndex = new HashMap<>();
-     // Initialize the map with 0 remainder at index -1 to handle edge cases
-     prefixToIndex.put(0, -1);
-     // Loop through each element in the array
-    for (int i = 0; i < nums.length; ++i) {
-        // Add the current element to the prefix sum
-      prefix += nums[i];
-      // If k is not 0, take the remainder of the prefix sum divided by k
-      if (k != 0)
-        prefix %= k;
-        // Check if this remainder has been seen before
-      if (prefixToIndex.containsKey(prefix)) {
-         // If the previous occurrence of this remainder is more than one index ago, return true
-         if (i - prefixToIndex.get(prefix) > 1)
-         return true;
-     } else {
-        // If this remainder hasn't been seen before, add it to the map with the current index
-        prefixToIndex.put(prefix, i);
-      }
+    // Method to check if the array has a subarray whose sum is a multiple of k
+    public boolean checkSubarraySum(int[] nums, int k) {
+        // Variable to store the prefix sum
+        int prefix = 0;
+        // Map to store the remainder of the prefix sum and the index where it occurred
+        Map<Integer, Integer> prefixToIndex = new HashMap<>();
+        // Initialize the map with 0 remainder at index -1 to handle edge cases
+        prefixToIndex.put(0, -1);
+
+        // Loop through each element in the array
+        for (int i = 0; i < nums.length; ++i) {
+            // Add the current element to the prefix sum
+            prefix += nums[i];
+            // If k is not 0, take the remainder of the prefix sum divided by k
+            if (k != 0)
+                prefix %= k;
+            // Check if this remainder has been seen before
+            if (prefixToIndex.containsKey(prefix)) {
+                // If the previous occurrence of this remainder is more than one index ago,
+                // return true
+                if (i - prefixToIndex.get(prefix) > 1)
+                    return true;
+            } else {
+                // If this remainder hasn't been seen before, add it to the map with the current
+                // index
+                prefixToIndex.put(prefix, i);
+            }
+        }
+
+        // If no valid subarray is found, return false
+        return false;
     }
-    // If no valid subarray is found, return false
-    return false;
-  }
 }
