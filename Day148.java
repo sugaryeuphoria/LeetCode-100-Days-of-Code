@@ -61,3 +61,7 @@ class Solution {
         prefixToIndex.put(prefix, i);
       }
     }
+    // If no valid subarray is found, return false
+    return false;
+  }
+}
