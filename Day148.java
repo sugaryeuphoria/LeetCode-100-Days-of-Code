@@ -40,3 +40,5 @@ class Solution {
  public boolean checkSubarraySum(int[] nums, int k) {
     // Variable to store the prefix sum
     int prefix = 0;
+    // Map to store the remainder of the prefix sum and the index where it occurred
+    Map<Integer, Integer> prefixToIndex = new HashMap<>();
