@@ -46,3 +46,5 @@ class Solution {
      prefixToIndex.put(0, -1);
      // Loop through each element in the array
     for (int i = 0; i < nums.length; ++i) {
+        // Add the current element to the prefix sum
+      prefix += nums[i];
