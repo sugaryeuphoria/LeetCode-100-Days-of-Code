@@ -35,3 +35,6 @@ Constraints:
 0 <= sum(nums[i]) <= 231 - 1
 1 <= k <= 231 - 1
  */
+class Solution {
+ // Method to check if the array has a subarray whose sum is a multiple of k
+ public boolean checkSubarraySum(int[] nums, int k) {
