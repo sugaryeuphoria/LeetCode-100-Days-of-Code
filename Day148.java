@@ -57,3 +57,7 @@ class Solution {
          if (i - prefixToIndex.get(prefix) > 1)
          return true;
      } else {
+        // If this remainder hasn't been seen before, add it to the map with the current index
+        prefixToIndex.put(prefix, i);
+      }
+    }
