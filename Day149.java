@@ -32,5 +32,8 @@ public class Day149 {
             ans += count[prefix];
             ++count[prefix];
           }
+          return ans;
+        }
+    
     }
-}
+
