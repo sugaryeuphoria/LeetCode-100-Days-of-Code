@@ -13,6 +13,12 @@ Example 2:
 
 Input: nums = [5], k = 9
 Output: 0
+
+Constraints:
+
+1 <= nums.length <= 3 * 104
+-104 <= nums[i] <= 104
+2 <= k <= 104
  */
 
 public class Day149 {
