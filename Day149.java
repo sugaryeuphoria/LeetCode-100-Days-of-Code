@@ -23,6 +23,9 @@ Constraints:
 
 public class Day149 {
     public int subarraysDivByK(int[] nums, int k) {
-        
+        int ans = 0;
+        int prefix = 0;
+        int[] count = new int[k];
+        count[0] = 1;
     }
 }
