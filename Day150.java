@@ -56,3 +56,6 @@ class Solution {
       // If the current height in the input array does not match the currentHeight, increment ans
       if (height != currentHeight)
         ++ans;
+         // Decrement the count of the currentHeight as it has been used
+      --count[currentHeight];
+    }
