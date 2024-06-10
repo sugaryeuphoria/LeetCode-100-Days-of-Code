@@ -50,3 +50,6 @@ class Solution {
       ++count[height];
       // Iterate over the input array to check each height
     for (int height : heights) {
+        // Find the next non-zero height in the count array
+      while (count[currentHeight] == 0)
+      ++currentHeight;
