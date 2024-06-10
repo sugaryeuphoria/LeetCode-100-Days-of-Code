@@ -40,4 +40,6 @@ Constraints:
 class Solution {
     public int heightChecker(int[] heights) {
         // Initialize a variable to keep track of the number of out-of-order heights
-    int ans = 0;
+        int ans = 0;
+        // Initialize a variable to keep track of the current height being checked
+    int currentHeight = 1;
