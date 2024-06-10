@@ -45,3 +45,6 @@ class Solution {
         int currentHeight = 1;
         // Create an array to count the frequency of each height (heights range from 1 to 100)
     int[] count = new int[101];
+    // Count the occurrences of each height in the input array
+    for (int height : heights)
+      ++count[height];
