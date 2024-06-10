@@ -48,3 +48,5 @@ class Solution {
     // Count the occurrences of each height in the input array
     for (int height : heights)
       ++count[height];
+      // Iterate over the input array to check each height
+    for (int height : heights) {
