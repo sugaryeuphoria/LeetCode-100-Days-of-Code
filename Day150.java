@@ -53,3 +53,6 @@ class Solution {
         // Find the next non-zero height in the count array
       while (count[currentHeight] == 0)
       ++currentHeight;
+      // If the current height in the input array does not match the currentHeight, increment ans
+      if (height != currentHeight)
+        ++ans;
