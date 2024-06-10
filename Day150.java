@@ -43,23 +43,25 @@ class Solution {
         int ans = 0;
         // Initialize a variable to keep track of the current height being checked
         int currentHeight = 1;
-        // Create an array to count the frequency of each height (heights range from 1 to 100)
-    int[] count = new int[101];
-    // Count the occurrences of each height in the input array
-    for (int height : heights)
-      ++count[height];
-      // Iterate over the input array to check each height
-    for (int height : heights) {
-        // Find the next non-zero height in the count array
-      while (count[currentHeight] == 0)
-      ++currentHeight;
-      // If the current height in the input array does not match the currentHeight, increment ans
-      if (height != currentHeight)
-        ++ans;
-         // Decrement the count of the currentHeight as it has been used
-      --count[currentHeight];
+        // Create an array to count the frequency of each height (heights range from 1
+        // to 100)
+        int[] count = new int[101];
+        // Count the occurrences of each height in the input array
+        for (int height : heights)
+            ++count[height];
+        // Iterate over the input array to check each height
+        for (int height : heights) {
+            // Find the next non-zero height in the count array
+            while (count[currentHeight] == 0)
+                ++currentHeight;
+            // If the current height in the input array does not match the currentHeight,
+            // increment ans
+            if (height != currentHeight)
+                ++ans;
+            // Decrement the count of the currentHeight as it has been used
+            --count[currentHeight];
+        }
+        // Return the total number of heights that are out of order
+        return ans;
     }
-     // Return the total number of heights that are out of order
-     return ans;
-    }
-  }
+}
