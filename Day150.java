@@ -42,4 +42,6 @@ class Solution {
         // Initialize a variable to keep track of the number of out-of-order heights
         int ans = 0;
         // Initialize a variable to keep track of the current height being checked
-    int currentHeight = 1;
+        int currentHeight = 1;
+        // Create an array to count the frequency of each height (heights range from 1 to 100)
+    int[] count = new int[101];
