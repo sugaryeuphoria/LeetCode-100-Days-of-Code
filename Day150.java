@@ -59,3 +59,7 @@ class Solution {
          // Decrement the count of the currentHeight as it has been used
       --count[currentHeight];
     }
+     // Return the total number of heights that are out of order
+     return ans;
+    }
+  }
