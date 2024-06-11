@@ -26,5 +26,7 @@ public class Day151 {
     int[] ans = new int[arr1.length];
     // Create a count array to store the frequency of each number in arr1
     int[] count = new int[1001];
+    // Initialize the index for the result array
+    int i = 0;
     
 }
