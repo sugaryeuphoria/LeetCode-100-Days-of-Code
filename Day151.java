@@ -22,26 +22,25 @@ Each arr2[i] is in arr1.
  */
 public class Day151 {
     public int[] relativeSortArray(int[] arr1, int[] arr2) {
-         // Create an array to hold the result
-    int[] ans = new int[arr1.length];
-    // Create a count array to store the frequency of each number in arr1
-    int[] count = new int[1001];
-    // Initialize the index for the result array
-    int i = 0;
-      // Count the frequency of each number in arr1
-      for (int a : arr1)
-      ++count[a];
-      // Place elements of arr2 into the result array in the order they appear in arr2
-    for (int a : arr2)
-    while (count[a]-- > 0)
-      ans[i++] = a;
-       // Place the remaining elements (not in arr2) into the result array in ascending order
-    for (int num = 0; num < 1001; ++num)
-    while (count[num]-- > 0)
-      ans[i++] = num;
-  // Return the result array
-  return ans;
+        // Create an array to hold the result
+        int[] ans = new int[arr1.length];
+        // Create a count array to store the frequency of each number in arr1
+        int[] count = new int[1001];
+        // Initialize the index for the result array
+        int i = 0;
+        // Count the frequency of each number in arr1
+        for (int a : arr1)
+            ++count[a];
+        // Place elements of arr2 into the result array in the order they appear in arr2
+        for (int a : arr2)
+            while (count[a]-- > 0)
+                ans[i++] = a;
+        // Place the remaining elements (not in arr2) into the result array in ascending
+        // order
+        for (int num = 0; num < 1001; ++num)
+            while (count[num]-- > 0)
+                ans[i++] = num;
+        // Return the result array
+        return ans;
+    }
 }
-}
-    
-
