@@ -39,6 +39,9 @@ public class Day151 {
     for (int num = 0; num < 1001; ++num)
     while (count[num]-- > 0)
       ans[i++] = num;
-
-    
+  // Return the result array
+  return ans;
 }
+}
+    
+
