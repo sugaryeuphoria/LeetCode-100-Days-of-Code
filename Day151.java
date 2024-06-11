@@ -28,5 +28,9 @@ public class Day151 {
     int[] count = new int[1001];
     // Initialize the index for the result array
     int i = 0;
+      // Count the frequency of each number in arr1
+      for (int a : arr1)
+      ++count[a];
+
     
 }
