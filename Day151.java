@@ -22,5 +22,7 @@ Each arr2[i] is in arr1.
  */
 public class Day151 {
     public int[] relativeSortArray(int[] arr1, int[] arr2) {
+         // Create an array to hold the result
+    int[] ans = new int[arr1.length];
     
 }
