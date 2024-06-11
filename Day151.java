@@ -35,6 +35,10 @@ public class Day151 {
     for (int a : arr2)
     while (count[a]-- > 0)
       ans[i++] = a;
+       // Place the remaining elements (not in arr2) into the result array in ascending order
+    for (int num = 0; num < 1001; ++num)
+    while (count[num]-- > 0)
+      ans[i++] = num;
 
     
 }
