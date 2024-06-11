@@ -12,6 +12,13 @@ Example 2:
 
 Input: arr1 = [28,6,22,8,44,17], arr2 = [22,28,8,6]
 Output: [22,28,8,6,17,44]
+
+Constraints:
+
+1 <= arr1.length, arr2.length <= 1000
+0 <= arr1[i], arr2[i] <= 1000
+All the elements of arr2 are distinct.
+Each arr2[i] is in arr1.
  */
 public class Day151 {
     
