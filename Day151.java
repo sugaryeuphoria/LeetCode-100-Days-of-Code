@@ -31,6 +31,10 @@ public class Day151 {
       // Count the frequency of each number in arr1
       for (int a : arr1)
       ++count[a];
+      // Place elements of arr2 into the result array in the order they appear in arr2
+    for (int a : arr2)
+    while (count[a]-- > 0)
+      ans[i++] = a;
 
     
 }
