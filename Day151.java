@@ -21,5 +21,6 @@ All the elements of arr2 are distinct.
 Each arr2[i] is in arr1.
  */
 public class Day151 {
+    public int[] relativeSortArray(int[] arr1, int[] arr2) {
     
 }
