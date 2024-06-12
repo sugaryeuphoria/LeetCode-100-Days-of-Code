@@ -24,5 +24,8 @@ nums[i] is either 0, 1, or 2.
  */
 
 public class Day152 {
+    public void sortColors(int[] nums) {
+
+    }
     
 }
