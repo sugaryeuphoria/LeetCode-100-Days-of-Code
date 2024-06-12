@@ -38,6 +38,11 @@ public class Day152 {
         nums[++one] = 1;  // Place 1 at the next position
         nums[++zero] = 0; // Place 0 at the next position
       } 
+      // If the number is 1, place 1 in its new position and place 2 in its new position
+      else if (num == 1) {
+        nums[++two] = 2;  // Place 2 at the next position
+        nums[++one] = 1;  // Place 1 at the next position
+      } 
     }
 
 }
