@@ -43,6 +43,10 @@ public class Day152 {
         nums[++two] = 2;  // Place 2 at the next position
         nums[++one] = 1;  // Place 1 at the next position
       } 
+       // If the number is 2, just place 2 in its new position
+       else {
+        nums[++two] = 2;  // Place 2 at the next position
+      }
     }
 
 }
