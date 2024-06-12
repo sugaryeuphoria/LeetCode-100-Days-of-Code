@@ -25,7 +25,10 @@ nums[i] is either 0, 1, or 2.
 
 public class Day152 {
     public void sortColors(int[] nums) {
-
+        // Initialize pointers for tracking positions of 0s, 1s, and 2s
+    int zero = -1;
+    int one = -1;
+    int two = -1;
     }
     
 }
