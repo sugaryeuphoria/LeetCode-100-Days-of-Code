@@ -46,6 +46,8 @@ n == seats.length == students.length
  */
 public class Day153 {
     public int minMovesToSeat(int[] seats, int[] students) {
+        // Initialize the result variable to store the total number of moves required
+        int res = 0;
 
     }
     
