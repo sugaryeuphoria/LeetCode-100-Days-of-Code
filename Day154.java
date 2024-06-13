@@ -76,6 +76,10 @@ public class Day154 {
       while (num >= values[i]) {
         // Subtract the value from the number
         num -= values[i];
+        // Append the corresponding symbol to the result
+        sb.append(symbols[i]);
+      }
+    }
 
 
 
