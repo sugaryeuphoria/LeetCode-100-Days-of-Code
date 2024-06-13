@@ -53,6 +53,8 @@ public class Day153 {
         int res = 0;
         // Sort the seats array in ascending order
         Arrays.sort(seats);
+        // Sort the students array in ascending order
+        Arrays.sort(students);
 
     }
     
