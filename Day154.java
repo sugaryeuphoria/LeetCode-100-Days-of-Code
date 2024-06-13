@@ -65,6 +65,9 @@ public class Day154 {
     // Array of corresponding Roman numeral symbols for the above values
     final String[] symbols = {"M",  "CM", "D",  "CD", "C",  "XC", "L",
                               "XL", "X",  "IX", "V",  "IV", "I"};
+    // StringBuilder to construct the resulting Roman numeral string
+    StringBuilder sb = new StringBuilder();
+
 
 
     }
