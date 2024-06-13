@@ -45,5 +45,8 @@ n == seats.length == students.length
 1 <= seats[i], students[j] <= 100
  */
 public class Day153 {
+    public int minMovesToSeat(int[] seats, int[] students) {
+
+    }
     
 }
