@@ -57,6 +57,8 @@ public class Day153 {
         Arrays.sort(students);
         // Loop through each seat and corresponding student
         for (int i = 0; i < seats.length; ++i)
+        // Calculate the absolute difference between the seat and the student, and add it to the result
+        res += Math.abs(seats[i] - students[i]);
 
     }
     
