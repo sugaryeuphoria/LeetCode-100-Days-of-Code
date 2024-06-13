@@ -69,6 +69,9 @@ public class Day154 {
     StringBuilder sb = new StringBuilder();
      // Iterate through each value and corresponding symbol
      for (int i = 0; i < values.length; ++i) {
+         // If the number has been completely converted, exit the loop
+      if (num == 0)
+      break;
 
 
 
