@@ -59,8 +59,8 @@ public class Day153 {
         for (int i = 0; i < seats.length; ++i)
         // Calculate the absolute difference between the seat and the student, and add it to the result
         res += Math.abs(seats[i] - students[i]);
-        return res;  // Return the total number of moves required
-
+        // Return the total number of moves required
+        return res;  
     }
     
 }
