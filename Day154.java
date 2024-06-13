@@ -52,6 +52,9 @@ Explanation:
   90 = XC
    4 = IV
  
+Constraints:
+
+1 <= num <= 3999
  */
 
 public class Day154 {
