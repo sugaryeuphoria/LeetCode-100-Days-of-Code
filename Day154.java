@@ -67,6 +67,8 @@ public class Day154 {
                               "XL", "X",  "IX", "V",  "IV", "I"};
     // StringBuilder to construct the resulting Roman numeral string
     StringBuilder sb = new StringBuilder();
+     // Iterate through each value and corresponding symbol
+     for (int i = 0; i < values.length; ++i) {
 
 
 
