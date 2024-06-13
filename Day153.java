@@ -55,6 +55,8 @@ public class Day153 {
         Arrays.sort(seats);
         // Sort the students array in ascending order
         Arrays.sort(students);
+        // Loop through each seat and corresponding student
+        for (int i = 0; i < seats.length; ++i)
 
     }
     
