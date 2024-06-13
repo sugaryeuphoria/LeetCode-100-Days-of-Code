@@ -38,6 +38,11 @@ The students are moved as follows:
 - The third student is not moved.
 - The fourth student is not moved.
 In total, 1 + 3 + 0 + 0 = 4 moves were used.
+Constraints:
+
+n == seats.length == students.length
+1 <= n <= 100
+1 <= seats[i], students[j] <= 100
  */
 public class Day153 {
     
