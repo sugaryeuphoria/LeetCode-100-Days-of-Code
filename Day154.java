@@ -74,6 +74,8 @@ public class Day154 {
       break;
       // While the number is greater than or equal to the current value
       while (num >= values[i]) {
+        // Subtract the value from the number
+        num -= values[i];
 
 
 
