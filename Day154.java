@@ -72,6 +72,8 @@ public class Day154 {
          // If the number has been completely converted, exit the loop
       if (num == 0)
       break;
+      // While the number is greater than or equal to the current value
+      while (num >= values[i]) {
 
 
 
