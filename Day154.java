@@ -80,7 +80,8 @@ public class Day154 {
         sb.append(symbols[i]);
       }
     }
-
+// Return the constructed Roman numeral string
+return sb.toString();
 
 
     }
