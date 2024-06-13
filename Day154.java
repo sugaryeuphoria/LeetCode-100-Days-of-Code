@@ -62,6 +62,9 @@ public class Day154 {
     public String intToRoman(int num) {
         // Array of integer values representing the different Roman numeral denominations
     final int[] values = {1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1};
+    // Array of corresponding Roman numeral symbols for the above values
+    final String[] symbols = {"M",  "CM", "D",  "CD", "C",  "XC", "L",
+                              "XL", "X",  "IX", "V",  "IV", "I"};
 
 
     }
