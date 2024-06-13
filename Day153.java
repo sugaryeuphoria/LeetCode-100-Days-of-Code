@@ -44,10 +44,15 @@ n == seats.length == students.length
 1 <= n <= 100
 1 <= seats[i], students[j] <= 100
  */
+
+import java.util.Arrays;
+
 public class Day153 {
     public int minMovesToSeat(int[] seats, int[] students) {
         // Initialize the result variable to store the total number of moves required
         int res = 0;
+        // Sort the seats array in ascending order
+        Arrays.sort(seats);
 
     }
     
