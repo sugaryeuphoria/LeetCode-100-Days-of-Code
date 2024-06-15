@@ -61,5 +61,9 @@ class Solution {
       minHeap.offer(new T(Profits[i], Capital[i]));
       // Select up to k projects
     while (k-- > 0) {
+        // Move all projects that can be afforded with current capital to the max-heap
+      while (!minHeap.isEmpty() && minHeap.peek().cap <= W)
+      maxHeap.offer(minHeap.poll());
+
 
 }
