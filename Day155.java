@@ -36,6 +36,7 @@ n == capital.length
  */
 // Class representing a project with profit and capital requirements
 class Day155 {
-
+    // Profit of the project
+    public int pro;
 
 }
