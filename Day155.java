@@ -40,5 +40,10 @@ class Day155 {
     public int pro;
     // Capital required for the project
     public int cap;
+    // Constructor to initialize profit and capital
+    public T(int pro, int cap) {
+        this.pro = pro;
+        this.cap = cap;
+  }
 
 }
