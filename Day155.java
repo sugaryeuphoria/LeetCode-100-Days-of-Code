@@ -69,6 +69,10 @@ class Solution {
        break;
          // Select the project with the maximum profit and add its profit to the capital
       W += maxHeap.poll().pro;
+       // Return the final capital after selecting up to k projects
+    return W;
+}
+}
     }
 
 
