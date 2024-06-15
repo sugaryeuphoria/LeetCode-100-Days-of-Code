@@ -40,10 +40,17 @@ class Day155 {
     public int pro;
     // Capital required for the project
     public int cap;
+
     // Constructor to initialize profit and capital
     public T(int pro, int cap) {
         this.pro = pro;
         this.cap = cap;
   }
+
+}
+
+class Solution {
+    // Function to find the maximum capital after selecting up to k projects
+    public int findMaximizedCapital(int k, int W, int[] Profits, int[] Capital) {
 
 }
