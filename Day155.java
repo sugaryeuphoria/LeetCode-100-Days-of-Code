@@ -38,5 +38,7 @@ n == capital.length
 class Day155 {
     // Profit of the project
     public int pro;
+    // Capital required for the project
+    public int cap;
 
 }
