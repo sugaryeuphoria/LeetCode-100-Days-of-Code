@@ -59,5 +59,7 @@ class Solution {
     // Populate the min-heap with all projects
     for (int i = 0; i < Capital.length; ++i)
       minHeap.offer(new T(Profits[i], Capital[i]));
+      // Select up to k projects
+    while (k-- > 0) {
 
 }
