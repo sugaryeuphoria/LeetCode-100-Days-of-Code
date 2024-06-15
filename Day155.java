@@ -34,3 +34,8 @@ n == capital.length
 0 <= profits[i] <= 104
 0 <= capital[i] <= 109
  */
+// Class representing a project with profit and capital requirements
+class Day155 {
+
+
+}
