@@ -23,4 +23,14 @@ Example 2:
 
 Input: k = 3, w = 0, profits = [1,2,3], capital = [0,1,2]
 Output: 6
+
+Constraints:
+
+1 <= k <= 105
+0 <= w <= 109
+n == profits.length
+n == capital.length
+1 <= n <= 105
+0 <= profits[i] <= 104
+0 <= capital[i] <= 109
  */
