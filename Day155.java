@@ -52,5 +52,7 @@ class Day155 {
 class Solution {
     // Function to find the maximum capital after selecting up to k projects
     public int findMaximizedCapital(int k, int W, int[] Profits, int[] Capital) {
+        // Min-heap based on the capital required for projects
+    Queue<T> minHeap = new PriorityQueue<>((a, b) -> a.cap - b.cap);
 
 }
