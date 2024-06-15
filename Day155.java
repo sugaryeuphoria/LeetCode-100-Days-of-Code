@@ -56,5 +56,8 @@ class Solution {
     Queue<T> minHeap = new PriorityQueue<>((a, b) -> a.cap - b.cap);
     // Max-heap based on the profit of projects
     Queue<T> maxHeap = new PriorityQueue<>((a, b) -> b.pro - a.pro);
+    // Populate the min-heap with all projects
+    for (int i = 0; i < Capital.length; ++i)
+      minHeap.offer(new T(Profits[i], Capital[i]));
 
 }
