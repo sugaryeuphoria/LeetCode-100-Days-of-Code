@@ -67,6 +67,10 @@ class Solution {
        // If there are no affordable projects, break the loop
        if (maxHeap.isEmpty())
        break;
+         // Select the project with the maximum profit and add its profit to the capital
+      W += maxHeap.poll().pro;
+    }
+
 
 
 }
