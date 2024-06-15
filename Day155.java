@@ -64,6 +64,9 @@ class Solution {
         // Move all projects that can be afforded with current capital to the max-heap
       while (!minHeap.isEmpty() && minHeap.peek().cap <= W)
       maxHeap.offer(minHeap.poll());
+       // If there are no affordable projects, break the loop
+       if (maxHeap.isEmpty())
+       break;
 
 
 }
