@@ -54,5 +54,7 @@ class Solution {
     public int findMaximizedCapital(int k, int W, int[] Profits, int[] Capital) {
         // Min-heap based on the capital required for projects
     Queue<T> minHeap = new PriorityQueue<>((a, b) -> a.cap - b.cap);
+    // Max-heap based on the profit of projects
+    Queue<T> maxHeap = new PriorityQueue<>((a, b) -> b.pro - a.pro);
 
 }
