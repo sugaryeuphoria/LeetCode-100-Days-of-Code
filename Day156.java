@@ -39,24 +39,21 @@ public class Day156 {
         int i = 0;
         // The smallest number that we cannot form using the given numbers
         long miss = 1;
-         // Continue until the smallest number we cannot form is greater than n
-    while (miss <= n) {
-        // If there are elements left in nums and the current element is less than or equal to miss
-      if (i < nums.length && nums[i] <= miss) {
-        // Use nums[i] to cover the number miss, and move to the next element
-        miss += nums[i++];
-    } else {
-        // Otherwise, add miss itself to the array to cover the gap,
-        // effectively doubling the range we can cover
-        miss += miss;
-        ++ans; // Increment the number of patches
-      }
+        // Continue until the smallest number we cannot form is greater than n
+        while (miss <= n) {
+            // If there are elements left in nums and the current element is less than or
+            // equal to miss
+            if (i < nums.length && nums[i] <= miss) {
+                // Use nums[i] to cover the number miss, and move to the next element
+                miss += nums[i++];
+            } else {
+                // Otherwise, add miss itself to the array to cover the gap,
+                // effectively doubling the range we can cover
+                miss += miss;
+                ++ans; // Increment the number of patches
+            }
+        }
+        return ans; // Return the total number of patches required
     }
-    return ans; // Return the total number of patches required
-      }
 
-    }
-
-    }
-    
 }
