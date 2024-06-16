@@ -39,7 +39,11 @@ public class Day156 {
         int i = 0;
         // The smallest number that we cannot form using the given numbers
         long miss = 1;
-        
+         // Continue until the smallest number we cannot form is greater than n
+    while (miss <= n) {
+
+    }
+
     }
     
 }
