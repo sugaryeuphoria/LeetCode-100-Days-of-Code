@@ -32,5 +32,8 @@ nums is sorted in ascending order.
 1 <= n <= 231 - 1
  */
 public class Day156 {
+    public int minPatches(int[] nums, int n) {
+
+    }
     
 }
