@@ -33,7 +33,8 @@ nums is sorted in ascending order.
  */
 public class Day156 {
     public int minPatches(int[] nums, int n) {
-
+        // Initialize the number of patches required to 0
+        int ans = 0;
     }
     
 }
