@@ -37,6 +37,9 @@ public class Day156 {
         int ans = 0;
         // Index for traversing the nums array
         int i = 0;
+        // The smallest number that we cannot form using the given numbers
+        long miss = 1;
+        
     }
     
 }
