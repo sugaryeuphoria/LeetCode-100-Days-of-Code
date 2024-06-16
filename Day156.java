@@ -45,7 +45,13 @@ public class Day156 {
       if (i < nums.length && nums[i] <= miss) {
         // Use nums[i] to cover the number miss, and move to the next element
         miss += nums[i++];
-
+    } else {
+        // Otherwise, add miss itself to the array to cover the gap,
+        // effectively doubling the range we can cover
+        miss += miss;
+        ++ans; // Increment the number of patches
+      }
+    }
       }
 
     }
