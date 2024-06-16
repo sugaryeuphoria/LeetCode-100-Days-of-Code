@@ -52,6 +52,7 @@ public class Day156 {
         ++ans; // Increment the number of patches
       }
     }
+    return ans; // Return the total number of patches required
       }
 
     }
