@@ -35,6 +35,8 @@ public class Day156 {
     public int minPatches(int[] nums, int n) {
         // Initialize the number of patches required to 0
         int ans = 0;
+        // Index for traversing the nums array
+        int i = 0;
     }
     
 }
