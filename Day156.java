@@ -41,6 +41,10 @@ public class Day156 {
         long miss = 1;
          // Continue until the smallest number we cannot form is greater than n
     while (miss <= n) {
+        // If there are elements left in nums and the current element is less than or equal to miss
+      if (i < nums.length && nums[i] <= miss) {
+
+      }
 
     }
 
