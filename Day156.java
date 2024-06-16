@@ -43,6 +43,8 @@ public class Day156 {
     while (miss <= n) {
         // If there are elements left in nums and the current element is less than or equal to miss
       if (i < nums.length && nums[i] <= miss) {
+        // Use nums[i] to cover the number miss, and move to the next element
+        miss += nums[i++];
 
       }
 
