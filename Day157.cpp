@@ -37,5 +37,10 @@ class Solution {
         // If the sum is less than c, increment the left pointer
       if (sum < c)
         ++l;
+        // If the sum is greater than c, decrement the right pointer
+      else
+        --r;
+    }
+
 
 }
