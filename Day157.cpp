@@ -22,5 +22,7 @@ class Solution {
  public:
   // Function to determine if there are two integers a and b such that a^2 + b^2 = c
   bool judgeSquareSum(int c) {
+    // Initialize left pointer (l) to 0
+    unsigned l = 0;
 
 }
