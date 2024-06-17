@@ -31,5 +31,8 @@ class Solution {
     while (l <= r) {
         // Calculate the sum of the squares of l and r
       const unsigned sum = l * l + r * r;
+      // If the sum is equal to c, return true
+      if (sum == c)
+        return true;
 
 }
