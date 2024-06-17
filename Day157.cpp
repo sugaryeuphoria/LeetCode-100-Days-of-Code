@@ -18,3 +18,9 @@ Constraints:
 */
 // Include cmath library for the sqrt function
 #include <cmath>
+class Solution {
+ public:
+  // Function to determine if there are two integers a and b such that a^2 + b^2 = c
+  bool judgeSquareSum(int c) {
+
+}
