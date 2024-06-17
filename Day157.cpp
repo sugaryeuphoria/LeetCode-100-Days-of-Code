@@ -27,4 +27,7 @@ class Solution {
     // Initialize right pointer (r) to the square root of c
     unsigned r = sqrt(c);
 
+    // Continue loop while left pointer is less than or equal to right pointer
+    while (l <= r) {
+
 }
