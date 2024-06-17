@@ -18,30 +18,33 @@ Constraints:
 */
 // Include cmath library for the sqrt function
 #include <cmath>
-class Solution {
- public:
-  // Function to determine if there are two integers a and b such that a^2 + b^2 = c
-  bool judgeSquareSum(int c) {
-    // Initialize left pointer (l) to 0
-    unsigned l = 0;
-    // Initialize right pointer (r) to the square root of c
-    unsigned r = sqrt(c);
+class Solution
+{
+public:
+    // Function to determine if there are two integers a and b such that a^2 + b^2 = c
+    bool judgeSquareSum(int c)
+    {
+        // Initialize left pointer (l) to 0
+        unsigned l = 0;
+        // Initialize right pointer (r) to the square root of c
+        unsigned r = sqrt(c);
 
-    // Continue loop while left pointer is less than or equal to right pointer
-    while (l <= r) {
-        // Calculate the sum of the squares of l and r
-      const unsigned sum = l * l + r * r;
-      // If the sum is equal to c, return true
-      if (sum == c)
-        return true;
-        // If the sum is less than c, increment the left pointer
-      if (sum < c)
-        ++l;
-        // If the sum is greater than c, decrement the right pointer
-      else
-        --r;
+        // Continue loop while left pointer is less than or equal to right pointer
+        while (l <= r)
+        {
+            // Calculate the sum of the squares of l and r
+            const unsigned sum = l * l + r * r;
+            // If the sum is equal to c, return true
+            if (sum == c)
+                return true;
+            // If the sum is less than c, increment the left pointer
+            if (sum < c)
+                ++l;
+            // If the sum is greater than c, decrement the right pointer
+            else
+                --r;
+        }
+        // If no such pair is found, return false
+        return false;
     }
-// If no such pair is found, return false
-    return false;
-  }
 };
