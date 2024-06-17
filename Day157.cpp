@@ -24,5 +24,7 @@ class Solution {
   bool judgeSquareSum(int c) {
     // Initialize left pointer (l) to 0
     unsigned l = 0;
+    // Initialize right pointer (r) to the square root of c
+    unsigned r = sqrt(c);
 
 }
