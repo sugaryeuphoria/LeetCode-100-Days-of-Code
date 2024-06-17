@@ -16,3 +16,5 @@ Constraints:
 
 0 <= c <= 231 - 1
 */
+// Include cmath library for the sqrt function
+#include <cmath>
