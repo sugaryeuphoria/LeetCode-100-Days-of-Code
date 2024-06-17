@@ -34,5 +34,8 @@ class Solution {
       // If the sum is equal to c, return true
       if (sum == c)
         return true;
+        // If the sum is less than c, increment the left pointer
+      if (sum < c)
+        ++l;
 
 }
