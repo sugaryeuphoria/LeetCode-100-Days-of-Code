@@ -41,6 +41,7 @@ class Solution {
       else
         --r;
     }
-
-
-}
+// If no such pair is found, return false
+    return false;
+  }
+};
