@@ -48,3 +48,5 @@ class Solution:
                 max_profit = max(max_profit, jobs[j][1])
                  # Move to the next job
                 j += 1
+                # Add the best available profit for the current worker to total_profit
+            total_profit += max_profit
