@@ -34,3 +34,5 @@ class Solution:
         jobs = sorted(zip(difficulty, profit))
          # Sort workers by their ability
         workers = sorted(worker)
+         # Initialize max_profit to track the best profit seen so far
+        max_profit = 0
