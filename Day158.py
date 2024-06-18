@@ -44,3 +44,5 @@ class Solution:
         for ability in workers:
             # Update max_profit to the best available job for the worker's ability
             while j < len(jobs) and jobs[j][0] <= ability:
+                 # Update max_profit if the current job's profit is higher
+                max_profit = max(max_profit, jobs[j][1])
