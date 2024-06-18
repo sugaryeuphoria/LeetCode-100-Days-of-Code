@@ -38,3 +38,5 @@ class Solution:
         max_profit = 0
          # Initialize total_profit to accumulate the total profit
         total_profit = 0
+         # Initialize j to iterate through the sorted jobs list
+        j = 0
