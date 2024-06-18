@@ -50,3 +50,5 @@ class Solution:
                 j += 1
                 # Add the best available profit for the current worker to total_profit
             total_profit += max_profit
+             # Return the accumulated total profit
+        return total_profit
