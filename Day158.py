@@ -32,3 +32,5 @@ class Solution:
     def maxProfitAssignment(self, difficulty, profit, worker):
          # Pair jobs by (difficulty, profit) and sort by difficulty
         jobs = sorted(zip(difficulty, profit))
+         # Sort workers by their ability
+        workers = sorted(worker)
