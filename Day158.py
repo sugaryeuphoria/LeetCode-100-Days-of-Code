@@ -42,3 +42,5 @@ class Solution:
         j = 0
         # For each worker, find the most profitable job they can do
         for ability in workers:
+            # Update max_profit to the best available job for the worker's ability
+            while j < len(jobs) and jobs[j][0] <= ability:
