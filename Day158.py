@@ -40,3 +40,5 @@ class Solution:
         total_profit = 0
          # Initialize j to iterate through the sorted jobs list
         j = 0
+        # For each worker, find the most profitable job they can do
+        for ability in workers:
