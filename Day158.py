@@ -36,3 +36,5 @@ class Solution:
         workers = sorted(worker)
          # Initialize max_profit to track the best profit seen so far
         max_profit = 0
+         # Initialize total_profit to accumulate the total profit
+        total_profit = 0
