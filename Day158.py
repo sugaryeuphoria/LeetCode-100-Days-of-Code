@@ -46,3 +46,5 @@ class Solution:
             while j < len(jobs) and jobs[j][0] <= ability:
                  # Update max_profit if the current job's profit is higher
                 max_profit = max(max_profit, jobs[j][1])
+                 # Move to the next job
+                j += 1
