@@ -19,4 +19,16 @@ Example 2:
 
 Input: difficulty = [85,47,57], profit = [24,66,99], worker = [40,25,25]
 Output: 0
+
+Constraints:
+
+n == difficulty.length
+n == profit.length
+m == worker.length
+1 <= n, m <= 104
+1 <= difficulty[i], profit[i], worker[i] <= 105
 """
+class Solution:
+    def maxProfitAssignment(self, difficulty, profit, worker):
+         # Pair jobs by (difficulty, profit) and sort by difficulty
+        jobs = sorted(zip(difficulty, profit))
