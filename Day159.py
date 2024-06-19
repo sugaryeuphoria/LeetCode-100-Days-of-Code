@@ -61,3 +61,5 @@ class Solution(object):
                         flowers = 0  # Reset the count of adjacent flowers
                 else:
                     flowers = 0  # Reset the count of adjacent flowers if the current one hasn't bloomed
+                    # If we have already made enough bouquets
+                if bouquets >= m:
