@@ -52,3 +52,6 @@ class Solution(object):
             flowers = 0
             # Iterate through each bloom day in the bloomDay array
             for bloom in bloomDay:
+                # If the current flower blooms by the given day
+                if bloom <= day:
+                    flowers += 1  # Increment the count of adjacent flowers
