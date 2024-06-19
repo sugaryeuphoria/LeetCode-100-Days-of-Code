@@ -34,4 +34,12 @@ After day 7: [x, x, x, x, _, x, x]
 We can make one bouquet of the first three flowers that bloomed. We cannot make another bouquet from the last three flowers that bloomed because they are not adjacent.
 After day 12: [x, x, x, x, x, x, x]
 It is obvious that we can make two bouquets in different ways.
+
+Constraints:
+
+bloomDay.length == n
+1 <= n <= 105
+1 <= bloomDay[i] <= 109
+1 <= m <= 106
+1 <= k <= n
 """
