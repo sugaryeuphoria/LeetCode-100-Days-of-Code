@@ -50,3 +50,5 @@ class Solution(object):
             # Initialize the number of bouquets and the current count of adjacent flowers
             bouquets = 0
             flowers = 0
+            # Iterate through each bloom day in the bloomDay array
+            for bloom in bloomDay:
