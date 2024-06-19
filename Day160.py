@@ -66,3 +66,5 @@ class Solution(object):
         for value, symbol in val_to_roman:
              # While num is greater than or equal to the value
             while num >= value:
+                # Append the symbol to the result
+                roman_numeral += symbol
