@@ -41,10 +41,14 @@ Explanation:
 
 50 = L
  8 = VIII
- 
+
 Example 3:
 
 Input: num = 1994
 
 Output: "MCMXCIV"
+
+Constraints:
+
+1 <= num <= 3999
 """
