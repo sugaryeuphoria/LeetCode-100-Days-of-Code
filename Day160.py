@@ -62,3 +62,5 @@ class Solution(object):
         ]
         # Initialize the result string
         roman_numeral = ""
+         # Loop through each value-symbol pair
+        for value, symbol in val_to_roman:
