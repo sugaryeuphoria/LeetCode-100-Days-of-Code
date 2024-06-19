@@ -64,3 +64,5 @@ class Solution(object):
         roman_numeral = ""
          # Loop through each value-symbol pair
         for value, symbol in val_to_roman:
+             # While num is greater than or equal to the value
+            while num >= value:
