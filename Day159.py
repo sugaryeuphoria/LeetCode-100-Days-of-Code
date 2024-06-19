@@ -43,3 +43,5 @@ bloomDay.length == n
 1 <= m <= 106
 1 <= k <= n
 """
+class Solution(object):
+    def minDays(self, bloomDay, m, k):
