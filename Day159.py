@@ -64,3 +64,4 @@ class Solution(object):
                     # If we have already made enough bouquets
                 if bouquets >= m:
                     return True  # Return True as it's possible to make m bouquets
+                return False  # Return False if we can't make m bouquets
