@@ -68,3 +68,5 @@ class Solution(object):
              # If the total number of flowers needed is more than available, return -1
         if m * k > len(bloomDay):
             return -1
+         # Initialize the binary search range
+        left, right = min(bloomDay), max(bloomDay)
