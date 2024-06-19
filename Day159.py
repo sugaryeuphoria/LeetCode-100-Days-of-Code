@@ -57,3 +57,6 @@ class Solution(object):
                     flowers += 1  # Increment the count of adjacent flowers
                      # If we have enough flowers to make a bouquet
                     if flowers == k:
+                        bouquets += 1  # Increment the count of bouquets
+                        flowers = 0  # Reset the count of adjacent flowers
+                else:
