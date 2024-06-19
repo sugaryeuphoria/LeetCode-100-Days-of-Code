@@ -72,3 +72,4 @@ class Solution(object):
         left, right = min(bloomDay), max(bloomDay)
          # Perform binary search
         while left < right:
+            mid = (left + right) // 2  # Compute the mid point
