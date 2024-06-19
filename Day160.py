@@ -52,3 +52,5 @@ Constraints:
 
 1 <= num <= 3999
 """
+class Solution(object):
+    def intToRoman(self, num):
