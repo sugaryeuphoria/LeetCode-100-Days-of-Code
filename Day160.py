@@ -68,3 +68,7 @@ class Solution(object):
             while num >= value:
                 # Append the symbol to the result
                 roman_numeral += symbol
+                # Subtract the value from num
+                num -= value
+        
+        return roman_numeral
