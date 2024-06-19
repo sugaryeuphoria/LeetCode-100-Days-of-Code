@@ -55,3 +55,5 @@ class Solution(object):
                 # If the current flower blooms by the given day
                 if bloom <= day:
                     flowers += 1  # Increment the count of adjacent flowers
+                     # If we have enough flowers to make a bouquet
+                    if flowers == k:
