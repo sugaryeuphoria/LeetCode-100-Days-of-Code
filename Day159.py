@@ -65,3 +65,6 @@ class Solution(object):
                 if bouquets >= m:
                     return True  # Return True as it's possible to make m bouquets
                 return False  # Return False if we can't make m bouquets
+             # If the total number of flowers needed is more than available, return -1
+        if m * k > len(bloomDay):
+            return -1
