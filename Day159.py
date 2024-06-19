@@ -70,3 +70,5 @@ class Solution(object):
             return -1
          # Initialize the binary search range
         left, right = min(bloomDay), max(bloomDay)
+         # Perform binary search
+        while left < right:
