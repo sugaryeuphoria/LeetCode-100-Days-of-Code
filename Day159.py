@@ -74,3 +74,9 @@ class Solution(object):
         while left < right:
             mid = (left + right) // 2  # Compute the mid point
             if canMakeBouquets(mid):  # If we can make m bouquets by mid day
+                  right = mid  # Try a smaller day by adjusting the right bound
+            else:
+                left = mid + 1  # Otherwise, adjust the left bound to mid + 1
+
+        # After binary search, check if it's possible to make m bouquets by the final left day
+        return left if canMakeBouquets(left) else -1
