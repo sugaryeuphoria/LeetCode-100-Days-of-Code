@@ -45,36 +45,49 @@ bloomDay.length == n
 """
 class Solution(object):
     def minDays(self, bloomDay, m, k):
+        """
+        :type bloomDay: List[int]
+        :type m: int
+        :type k: int
+        :rtype: int
+        """
+
         # Helper function to check if we can make m bouquets by `day`
         def canMakeBouquets(day):
             # Initialize the number of bouquets and the current count of adjacent flowers
             bouquets = 0
             flowers = 0
+
             # Iterate through each bloom day in the bloomDay array
             for bloom in bloomDay:
                 # If the current flower blooms by the given day
                 if bloom <= day:
                     flowers += 1  # Increment the count of adjacent flowers
-                     # If we have enough flowers to make a bouquet
+                    # If we have enough flowers to make a bouquet
                     if flowers == k:
                         bouquets += 1  # Increment the count of bouquets
                         flowers = 0  # Reset the count of adjacent flowers
                 else:
                     flowers = 0  # Reset the count of adjacent flowers if the current one hasn't bloomed
-                    # If we have already made enough bouquets
+
+                # If we have already made enough bouquets
                 if bouquets >= m:
                     return True  # Return True as it's possible to make m bouquets
-                return False  # Return False if we can't make m bouquets
-             # If the total number of flowers needed is more than available, return -1
+
+            return False  # Return False if we can't make m bouquets
+
+        # If the total number of flowers needed is more than available, return -1
         if m * k > len(bloomDay):
             return -1
-         # Initialize the binary search range
+
+        # Initialize the binary search range
         left, right = min(bloomDay), max(bloomDay)
-         # Perform binary search
+
+        # Perform binary search
         while left < right:
             mid = (left + right) // 2  # Compute the mid point
             if canMakeBouquets(mid):  # If we can make m bouquets by mid day
-                  right = mid  # Try a smaller day by adjusting the right bound
+                right = mid  # Try a smaller day by adjusting the right bound
             else:
                 left = mid + 1  # Otherwise, adjust the left bound to mid + 1
 
