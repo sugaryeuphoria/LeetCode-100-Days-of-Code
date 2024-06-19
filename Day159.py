@@ -73,3 +73,4 @@ class Solution(object):
          # Perform binary search
         while left < right:
             mid = (left + right) // 2  # Compute the mid point
+            if canMakeBouquets(mid):  # If we can make m bouquets by mid day
