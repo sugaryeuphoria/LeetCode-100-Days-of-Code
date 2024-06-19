@@ -60,3 +60,4 @@ class Solution(object):
                         bouquets += 1  # Increment the count of bouquets
                         flowers = 0  # Reset the count of adjacent flowers
                 else:
+                    flowers = 0  # Reset the count of adjacent flowers if the current one hasn't bloomed
