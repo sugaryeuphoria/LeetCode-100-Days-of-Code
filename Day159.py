@@ -45,3 +45,5 @@ bloomDay.length == n
 """
 class Solution(object):
     def minDays(self, bloomDay, m, k):
+        # Helper function to check if we can make m bouquets by `day`
+        def canMakeBouquets(day):
