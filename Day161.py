@@ -31,3 +31,4 @@ grumpy[i] is either 0 or 1.
 """
 class Solution(object):
     def maxSatisfied(self, customers, grumpy, minutes):
+          n = len(customers)
