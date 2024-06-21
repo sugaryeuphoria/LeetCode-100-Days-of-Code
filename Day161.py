@@ -52,3 +52,6 @@ class Solution(object):
             if grumpy[i] == 1:
                 current_increase += customers[i]
             max_increase = max(max_increase, current_increase)
+              # The maximum number of satisfied customers is the initial satisfied customers
+        # plus the maximum potential increase
+        return initial_satisfied + max_increase
