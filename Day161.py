@@ -32,3 +32,8 @@ grumpy[i] is either 0 or 1.
 class Solution(object):
     def maxSatisfied(self, customers, grumpy, minutes):
           n = len(customers)
+        # Step 1: Calculate initial satisfied customers
+        initial_satisfied = 0
+        for i in range(n):
+            if grumpy[i] == 0:
+                initial_satisfied += customers[i]
