@@ -40,3 +40,8 @@ class Solution(object):
                 # Step 2: Calculate the potential increase using a sliding window
         max_increase = 0
         current_increase = 0
+         # Initialize the first window
+        for i in range(minutes):
+            if grumpy[i] == 1:
+                current_increase += customers[i]
+        max_increase = current_increase
