@@ -45,3 +45,10 @@ class Solution(object):
             if grumpy[i] == 1:
                 current_increase += customers[i]
         max_increase = current_increase
+          # Slide the window across the rest of the array
+        for i in range(minutes, n):
+            if grumpy[i - minutes] == 1:
+                current_increase -= customers[i - minutes]
+            if grumpy[i] == 1:
+                current_increase += customers[i]
+            max_increase = max(max_increase, current_increase)
