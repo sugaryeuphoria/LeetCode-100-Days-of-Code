@@ -21,4 +21,11 @@ Example 2:
 
 Input: customers = [1], grumpy = [0], minutes = 1
 Output: 1
+
+Constraints:
+
+n == customers.length == grumpy.length
+1 <= minutes <= n <= 2 * 104
+0 <= customers[i] <= 1000
+grumpy[i] is either 0 or 1.
 """
