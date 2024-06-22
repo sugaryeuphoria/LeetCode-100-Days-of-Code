@@ -28,3 +28,9 @@ Constraints:
 """
 class Solution(object):
     def numberOfSubarrays(self, nums, k):
+         # This will store the count of prefix sums
+        prefix_counts = {0: 1}
+        current_prefix_sum = 0
+        nice_subarrays_count = 0
+        
+        for num in nums:
