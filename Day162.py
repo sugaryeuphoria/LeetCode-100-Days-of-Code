@@ -40,3 +40,10 @@ class Solution(object):
             # ending at the current element which has exactly k odd numbers
             if (current_prefix_sum - k) in prefix_counts:
                 nice_subarrays_count += prefix_counts[current_prefix_sum - k]
+                 # Update the prefix_counts map
+            if current_prefix_sum in prefix_counts:
+                prefix_counts[current_prefix_sum] += 1
+            else:
+                prefix_counts[current_prefix_sum] = 1
+        
+        return nice_subarrays_count
