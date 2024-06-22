@@ -20,5 +20,9 @@ Example 3:
 Input: nums = [2,2,2,1,2,2,1,2,2,2], k = 2
 Output: 16
 
- 
+Constraints:
+
+1 <= nums.length <= 50000
+1 <= nums[i] <= 10^5
+1 <= k <= nums.length
 """
