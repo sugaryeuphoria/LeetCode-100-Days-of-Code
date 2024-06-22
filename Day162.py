@@ -36,3 +36,7 @@ class Solution(object):
         for num in nums:
              # Increment the prefix sum if the number is odd
             current_prefix_sum += num % 2
+            # If (current_prefix_sum - k) is in prefix_counts, it means there is a subarray
+            # ending at the current element which has exactly k odd numbers
+            if (current_prefix_sum - k) in prefix_counts:
+                nice_subarrays_count += prefix_counts[current_prefix_sum - k]
