@@ -49,3 +49,4 @@ class Solution(object):
         return nice_subarrays_count
 # Example usage:
 solution = Solution()
+print(solution.numberOfSubarrays([1,1,2,1,1], 3))  # Output: 2
