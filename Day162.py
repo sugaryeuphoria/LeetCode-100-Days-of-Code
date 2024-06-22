@@ -50,3 +50,5 @@ class Solution(object):
 # Example usage:
 solution = Solution()
 print(solution.numberOfSubarrays([1,1,2,1,1], 3))  # Output: 2
+print(solution.numberOfSubarrays([2,4,6], 1))      # Output: 0
+print(solution.numberOfSubarrays([2,2,2,1,2,2,1,2,2,2], 2))  # Output: 16
