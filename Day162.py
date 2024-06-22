@@ -47,3 +47,5 @@ class Solution(object):
                 prefix_counts[current_prefix_sum] = 1
         
         return nice_subarrays_count
+# Example usage:
+solution = Solution()
