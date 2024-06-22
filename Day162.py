@@ -34,3 +34,5 @@ class Solution(object):
         nice_subarrays_count = 0
         
         for num in nums:
+             # Increment the prefix sum if the number is odd
+            current_prefix_sum += num % 2
