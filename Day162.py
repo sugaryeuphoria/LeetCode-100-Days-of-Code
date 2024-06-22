@@ -26,3 +26,5 @@ Constraints:
 1 <= nums[i] <= 10^5
 1 <= k <= nums.length
 """
+class Solution(object):
+    def numberOfSubarrays(self, nums, k):
