@@ -45,3 +45,7 @@ class Solution(object):
         left = 0
         result = 0
         for right in range(len(nums)):
+          # Maintain the max deque
+            while max_deque and nums[max_deque[-1]] <= nums[right]:
+                max_deque.pop()
+            max_deque.append(right)
