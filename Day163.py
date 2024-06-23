@@ -36,3 +36,7 @@ Constraints:
 1 <= nums[i] <= 109
 0 <= limit <= 109
 """
+from collections import deque
+
+class Solution(object):
+    def longestSubarray(self, nums, limit):
