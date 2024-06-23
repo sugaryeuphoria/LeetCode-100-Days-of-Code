@@ -44,3 +44,4 @@ class Solution(object):
         max_deque = deque()
         left = 0
         result = 0
+        for right in range(len(nums)):
