@@ -40,27 +40,36 @@ from collections import deque
 
 class Solution(object):
     def longestSubarray(self, nums, limit):
-         min_deque = deque()
+        """
+        :type nums: List[int]
+        :type limit: int
+        :rtype: int
+        """
+        min_deque = deque()
         max_deque = deque()
         left = 0
         result = 0
+        
         for right in range(len(nums)):
-          # Maintain the max deque
+            # Maintain the max deque
             while max_deque and nums[max_deque[-1]] <= nums[right]:
                 max_deque.pop()
             max_deque.append(right)
+            
             # Maintain the min deque
             while min_deque and nums[min_deque[-1]] >= nums[right]:
                 min_deque.pop()
             min_deque.append(right)
-             # Shrink the window from the left if the current window is invalid
+            
+            # Shrink the window from the left if the current window is invalid
             while nums[max_deque[0]] - nums[min_deque[0]] > limit:
                 left += 1
                 if max_deque[0] < left:
                     max_deque.popleft()
                 if min_deque[0] < left:
                     min_deque.popleft()
-                     # Update the result
+            
+            # Update the result
             result = max(result, right - left + 1)
         
         return result
