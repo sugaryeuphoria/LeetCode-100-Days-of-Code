@@ -29,4 +29,10 @@ Example 3:
 
 Input: nums = [4,2,2,2,4,4,2,2], limit = 0
 Output: 3
+
+Constraints:
+
+1 <= nums.length <= 105
+1 <= nums[i] <= 109
+0 <= limit <= 109
 """
