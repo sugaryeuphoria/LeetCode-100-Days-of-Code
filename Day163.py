@@ -40,3 +40,7 @@ from collections import deque
 
 class Solution(object):
     def longestSubarray(self, nums, limit):
+         min_deque = deque()
+        max_deque = deque()
+        left = 0
+        result = 0
