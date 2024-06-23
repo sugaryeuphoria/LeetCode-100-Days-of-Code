@@ -60,3 +60,7 @@ class Solution(object):
                     max_deque.popleft()
                 if min_deque[0] < left:
                     min_deque.popleft()
+                     # Update the result
+            result = max(result, right - left + 1)
+        
+        return result
