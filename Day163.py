@@ -53,3 +53,10 @@ class Solution(object):
             while min_deque and nums[min_deque[-1]] >= nums[right]:
                 min_deque.pop()
             min_deque.append(right)
+             # Shrink the window from the left if the current window is invalid
+            while nums[max_deque[0]] - nums[min_deque[0]] > limit:
+                left += 1
+                if max_deque[0] < left:
+                    max_deque.popleft()
+                if min_deque[0] < left:
+                    min_deque.popleft()
