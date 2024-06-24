@@ -45,6 +45,8 @@ Constraints:
         int ans = 0, s = 0;
         // Iterate through each element in nums
         for (int i = 0; i < n; ++i) {
+            // Add the current flip effect to s
+            s += d[i];
 
     }
 }
