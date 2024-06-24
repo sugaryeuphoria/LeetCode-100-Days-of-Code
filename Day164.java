@@ -35,7 +35,7 @@ Constraints:
 1 <= k <= nums.length
  */
 
- class Solution {
+class Solution {
     public int minKBitFlips(int[] nums, int k) {
         // Get the length of the input array
         int n = nums.length;
@@ -62,5 +62,8 @@ Constraints:
                 // Increment the flip count
                 ++ans;
 
+            }
+        }
+        return ans; // Return the total number of flips performed
     }
 }
