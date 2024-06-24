@@ -41,6 +41,8 @@ Constraints:
         int n = nums.length;
         // Initialize an array to track the difference array for flips
         int[] d = new int[n + 1];
+        // ans keeps the count of flips, s is the cumulative sum of flips
+        int ans = 0, s = 0;
 
     }
 }
