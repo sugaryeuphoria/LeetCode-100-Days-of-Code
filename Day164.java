@@ -55,6 +55,10 @@ Constraints:
                 }
                 // Mark the start of a flip at position i
                 ++d[i];
+                // Mark the end of a flip at position i + k
+                --d[i + k];
+                // Update the cumulative sum to reflect the new flip
+                ++s;
 
     }
 }
