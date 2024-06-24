@@ -47,6 +47,8 @@ Constraints:
         for (int i = 0; i < n; ++i) {
             // Add the current flip effect to s
             s += d[i];
+            // Check if the current bit needs to be flipped
+            if (nums[i] % 2 == s % 2) {
 
     }
 }
