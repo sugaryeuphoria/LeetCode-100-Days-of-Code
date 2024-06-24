@@ -37,3 +37,8 @@ Constraints:
 
  class Solution {
     public int minKBitFlips(int[] nums, int k) {
+        // Get the length of the input array
+        int n = nums.length;
+
+    }
+}
