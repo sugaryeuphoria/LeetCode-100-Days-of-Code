@@ -34,3 +34,6 @@ Constraints:
 1 <= nums.length <= 105
 1 <= k <= nums.length
  */
+
+ class Solution {
+    public int minKBitFlips(int[] nums, int k) {
