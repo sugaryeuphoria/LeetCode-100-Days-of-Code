@@ -39,6 +39,8 @@ Constraints:
     public int minKBitFlips(int[] nums, int k) {
         // Get the length of the input array
         int n = nums.length;
+        // Initialize an array to track the difference array for flips
+        int[] d = new int[n + 1];
 
     }
 }
