@@ -59,6 +59,8 @@ Constraints:
                 --d[i + k];
                 // Update the cumulative sum to reflect the new flip
                 ++s;
+                // Increment the flip count
+                ++ans;
 
     }
 }
