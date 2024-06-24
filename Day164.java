@@ -43,6 +43,8 @@ Constraints:
         int[] d = new int[n + 1];
         // ans keeps the count of flips, s is the cumulative sum of flips
         int ans = 0, s = 0;
+        // Iterate through each element in nums
+        for (int i = 0; i < n; ++i) {
 
     }
 }
