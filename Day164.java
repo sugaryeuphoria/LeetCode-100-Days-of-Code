@@ -53,6 +53,8 @@ Constraints:
                 if (i + k > n) {
                     return -1;
                 }
+                // Mark the start of a flip at position i
+                ++d[i];
 
     }
 }
