@@ -51,6 +51,8 @@ Constraints:
             if (nums[i] % 2 == s % 2) {
                 // If flipping k bits starting from i exceeds array length, return -1
                 if (i + k > n) {
+                    return -1;
+                }
 
     }
 }
