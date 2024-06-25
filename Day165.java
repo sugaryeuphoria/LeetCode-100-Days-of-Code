@@ -35,4 +35,6 @@ public class Day165 {
         if (node == null) {
             return sum;
         }
+         // Traverse the right subtree first
+         sum = bstToGstHelper(node.right, sum);
 }
