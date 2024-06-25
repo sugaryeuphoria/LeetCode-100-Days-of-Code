@@ -27,7 +27,8 @@ All the values in the tree are unique.
  */
 public class Day165 {
     public TreeNode bstToGst(TreeNode root) {
-
+        // Helper function to perform reverse in-order traversal
+        bstToGstHelper(root, 0);
+        return root;
     }
-    
 }
