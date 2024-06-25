@@ -31,17 +31,19 @@ public class Day165 {
         bstToGstHelper(root, 0);
         return root;
     }
+
     private int bstToGstHelper(TreeNode node, int sum) {
         if (node == null) {
             return sum;
         }
-         // Traverse the right subtree first
-         sum = bstToGstHelper(node.right, sum);
-         // Update the current node's value
+        // Traverse the right subtree first
+        sum = bstToGstHelper(node.right, sum);
+        // Update the current node's value
         sum += node.val;
         node.val = sum;
         // Traverse the left subtree
         sum = bstToGstHelper(node.left, sum);
 
         return sum;
+    }
 }
