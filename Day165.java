@@ -37,4 +37,7 @@ public class Day165 {
         }
          // Traverse the right subtree first
          sum = bstToGstHelper(node.right, sum);
+         // Update the current node's value
+        sum += node.val;
+        node.val = sum;
 }
