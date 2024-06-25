@@ -25,7 +25,9 @@ The number of nodes in the tree is in the range [1, 100].
 All the values in the tree are unique.
  
  */
-
 public class Day165 {
+    public TreeNode bstToGst(TreeNode root) {
+
+    }
     
 }
