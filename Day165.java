@@ -17,6 +17,13 @@ Example 2:
 
 Input: root = [0,null,1]
 Output: [1,null,1]
+
+Constraints:
+
+The number of nodes in the tree is in the range [1, 100].
+0 <= Node.val <= 100
+All the values in the tree are unique.
+ 
  */
 
 public class Day165 {
