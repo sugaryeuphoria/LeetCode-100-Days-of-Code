@@ -31,4 +31,8 @@ public class Day165 {
         bstToGstHelper(root, 0);
         return root;
     }
+    private int bstToGstHelper(TreeNode node, int sum) {
+        if (node == null) {
+            return sum;
+        }
 }
