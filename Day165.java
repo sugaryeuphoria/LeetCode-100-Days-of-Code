@@ -40,4 +40,8 @@ public class Day165 {
          // Update the current node's value
         sum += node.val;
         node.val = sum;
+        // Traverse the left subtree
+        sum = bstToGstHelper(node.left, sum);
+
+        return sum;
 }
