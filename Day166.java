@@ -42,6 +42,8 @@ class TreeNode {
 
 public class Day166 {
     public TreeNode balanceBST(TreeNode root) {
-        
+        // Step 1: Get sorted values via in-order traversal
+        List<Integer> sortedValues = new ArrayList<>();
+        inorderTraversal(root, sortedValues);
     }
 }
