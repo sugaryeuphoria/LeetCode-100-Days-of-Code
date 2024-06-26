@@ -65,4 +65,6 @@ public class Day166 {
         if (start > end) {
             return null;
         }
+        // Find the middle index of the current sublist
+        int mid = start + (end - start) / 2;
 }
