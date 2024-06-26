@@ -73,4 +73,6 @@ public class Day166 {
         node.left = buildBalancedBST(sortedValues, start, mid - 1);
         // Recursively build the right subtree from the right sublist
         node.right = buildBalancedBST(sortedValues, mid + 1, end);
+         // Return the current node
+         return node;
 }
