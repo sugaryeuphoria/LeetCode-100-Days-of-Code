@@ -45,5 +45,8 @@ public class Day166 {
         // Step 1: Get sorted values via in-order traversal
         List<Integer> sortedValues = new ArrayList<>();
         inorderTraversal(root, sortedValues);
+        // Step 2: Build balanced BST from sorted values
+        return buildBalancedBST(sortedValues, 0, sortedValues.size() - 1);
+    }
     }
 }
