@@ -60,4 +60,9 @@ public class Day166 {
          // Recursively traverse the right subtree
          inorderTraversal(node.right, sortedValues);
     }
+    private TreeNode buildBalancedBST(List<Integer> sortedValues, int start, int end) {
+        // Base case: if start index is greater than end index, return null
+        if (start > end) {
+            return null;
+        }
 }
