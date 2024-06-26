@@ -48,5 +48,10 @@ public class Day166 {
         // Step 2: Build balanced BST from sorted values
         return buildBalancedBST(sortedValues, 0, sortedValues.size() - 1);
     }
+    private void inorderTraversal(TreeNode node, List<Integer> sortedValues) {
+        // Base case: if the node is null, return
+        if (node == null) {
+            return;
+        }
     }
 }
