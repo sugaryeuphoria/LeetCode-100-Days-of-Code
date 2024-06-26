@@ -53,5 +53,7 @@ public class Day166 {
         if (node == null) {
             return;
         }
+        // Recursively traverse the left subtree
+        inorderTraversal(node.left, sortedValues);
     }
 }
