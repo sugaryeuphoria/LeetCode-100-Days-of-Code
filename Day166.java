@@ -69,4 +69,6 @@ public class Day166 {
         int mid = start + (end - start) / 2;
         // Create a new TreeNode with the middle element's value
         TreeNode node = new TreeNode(sortedValues.get(mid));
+        // Recursively build the left subtree from the left sublist
+        node.left = buildBalancedBST(sortedValues, start, mid - 1);
 }
