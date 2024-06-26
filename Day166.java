@@ -55,5 +55,7 @@ public class Day166 {
         }
         // Recursively traverse the left subtree
         inorderTraversal(node.left, sortedValues);
+        // Add the current node's value to the sorted values list
+        sortedValues.add(node.val);
     }
 }
