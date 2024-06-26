@@ -11,6 +11,10 @@ Example 2:
 Input: root = [2,1,3]
 Output: [2,1,3]
  
+Constraints:
+
+The number of nodes in the tree is in the range [1, 104].
+1 <= Node.val <= 105
 */
 
 public class Day166 {
