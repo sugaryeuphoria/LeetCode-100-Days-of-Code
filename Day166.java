@@ -67,4 +67,6 @@ public class Day166 {
         }
         // Find the middle index of the current sublist
         int mid = start + (end - start) / 2;
+        // Create a new TreeNode with the middle element's value
+        TreeNode node = new TreeNode(sortedValues.get(mid));
 }
