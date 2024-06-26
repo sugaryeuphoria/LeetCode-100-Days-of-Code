@@ -1,3 +1,4 @@
+
 /*1382. Balance a Binary Search Tree 
 Given the root of a binary search tree, return a balanced binary search tree with the same node values. If there is more than one answer, return any of them.
 A binary search tree is balanced if the depth of the two subtrees of every node never differs by more than 1.
@@ -19,6 +20,26 @@ The number of nodes in the tree is in the range [1, 104].
 import java.util.ArrayList;
 import java.util.List;
 
+// Definition for a binary tree node.
+class TreeNode {
+    int val;
+    TreeNode left;
+    TreeNode right;
+
+    TreeNode() {
+    }
+
+    TreeNode(int val) {
+        this.val = val;
+    }
+
+    TreeNode(int val, TreeNode left, TreeNode right) {
+        this.val = val;
+        this.left = left;
+        this.right = right;
+    }
+}
+
 public class Day166 {
-    
+
 }
