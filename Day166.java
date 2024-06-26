@@ -71,4 +71,6 @@ public class Day166 {
         TreeNode node = new TreeNode(sortedValues.get(mid));
         // Recursively build the left subtree from the left sublist
         node.left = buildBalancedBST(sortedValues, start, mid - 1);
+        // Recursively build the right subtree from the right sublist
+        node.right = buildBalancedBST(sortedValues, mid + 1, end);
 }
