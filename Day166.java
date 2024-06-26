@@ -48,6 +48,7 @@ public class Day166 {
         // Step 2: Build balanced BST from sorted values
         return buildBalancedBST(sortedValues, 0, sortedValues.size() - 1);
     }
+
     private void inorderTraversal(TreeNode node, List<Integer> sortedValues) {
         // Base case: if the node is null, return
         if (node == null) {
@@ -57,9 +58,10 @@ public class Day166 {
         inorderTraversal(node.left, sortedValues);
         // Add the current node's value to the sorted values list
         sortedValues.add(node.val);
-         // Recursively traverse the right subtree
-         inorderTraversal(node.right, sortedValues);
+        // Recursively traverse the right subtree
+        inorderTraversal(node.right, sortedValues);
     }
+
     private TreeNode buildBalancedBST(List<Integer> sortedValues, int start, int end) {
         // Base case: if start index is greater than end index, return null
         if (start > end) {
@@ -73,6 +75,7 @@ public class Day166 {
         node.left = buildBalancedBST(sortedValues, start, mid - 1);
         // Recursively build the right subtree from the right sublist
         node.right = buildBalancedBST(sortedValues, mid + 1, end);
-         // Return the current node
-         return node;
+        // Return the current node
+        return node;
+    }
 }
