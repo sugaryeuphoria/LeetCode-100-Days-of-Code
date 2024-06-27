@@ -1,3 +1,6 @@
+"""
+1791. Find Center of Star Graph
+"""
 class Solution:
     def findCenter(self, edges: List[List[int]]) -> int:
         # Check the first two edges
