@@ -13,6 +13,15 @@ Example 2:
 
 Input: edges = [[1,2],[5,1],[1,3],[1,4]]
 Output: 1
+
+Constraints:
+
+3 <= n <= 105
+edges.length == n - 1
+edges[i].length == 2
+1 <= ui, vi <= n
+ui != vi
+The given edges represent a valid star graph.
 """
 class Solution:
     def findCenter(self, edges: List[List[int]]) -> int:
