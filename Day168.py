@@ -31,6 +31,15 @@ Explanation: The figure above shows the country and the assigned values of [4,3,
 - The road (1,3) has an importance of 3 + 5 = 8.
 The total importance of all roads is 9 + 3 + 8 = 20.
 It can be shown that we cannot obtain a greater total importance than 20.
+
+Constraints:
+
+2 <= n <= 5 * 104
+1 <= roads.length <= 5 * 104
+roads[i].length == 2
+0 <= ai, bi <= n - 1
+ai != bi
+There are no duplicate roads.
 """
 class Solution(object):
     def maximumImportance(self, n, roads):
