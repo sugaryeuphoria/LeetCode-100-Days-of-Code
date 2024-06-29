@@ -39,3 +39,8 @@ class Solution {
   vector<vector<int>> getAncestors(int n, vector<vector<int>>& edges) {
     vector<vector<int>> ans(n);
     vector<vector<int>> graph(n);
+     for (const vector<int>& edge : edges) {
+      const int u = edge[0];
+      const int v = edge[1];
+      graph[u].push_back(v);
+    }
