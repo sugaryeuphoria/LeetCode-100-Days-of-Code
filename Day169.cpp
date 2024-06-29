@@ -33,3 +33,7 @@ The above diagram represents the input graph.
 - Node 2 has two ancestors 0 and 1.
 - Node 3 has three ancestors 0, 1, and 2.
 - Node 4 has four ancestors 0, 1, 2, and 3.*/
+
+class Solution {
+ public:
+  vector<vector<int>> getAncestors(int n, vector<vector<int>>& edges) {
