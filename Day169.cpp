@@ -37,3 +37,5 @@ The above diagram represents the input graph.
 class Solution {
  public:
   vector<vector<int>> getAncestors(int n, vector<vector<int>>& edges) {
+    vector<vector<int>> ans(n);
+    vector<vector<int>> graph(n);
