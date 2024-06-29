@@ -44,3 +44,8 @@ class Solution {
       const int v = edge[1];
       graph[u].push_back(v);
     }
+    for (int i = 0; i < n; ++i)
+      dfs(graph, i, i, vector<bool>(n), ans);
+
+    return ans;
+  }
