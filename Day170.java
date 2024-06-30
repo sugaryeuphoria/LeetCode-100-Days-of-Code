@@ -57,4 +57,7 @@ class UnionFind {
             p[i] = i;
             // Initial size of each set is 1
             size[i] = 1;
+        }
+        cnt = n; // Initially, there are 'n' disjoint sets
+    }
 }
