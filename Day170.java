@@ -66,5 +66,48 @@ class UnionFind {
         }
         return p[x]; // Return the root of the set containing 'x'
     }
+    public boolean union(int a, int b) {
+        int pa = find(a - 1), pb = find(b - 1); // Find roots of sets containing 'a' and 'b'
+        if (pa == pb) {
+            return false; // 'a' and 'b' are already in the same set
+        }
+        if (size[pa] > size[pb]) {
+            p[pb] = pa; // Attach smaller tree under larger tree
+            size[pa] += size[pb]; // Update the size of the set
+        } else {
+            p[pa] = pb; // Attach smaller tree under larger tree
+            size[pb] += size[pa]; // Update the size of the set
+        }
+        --cnt; // Decrease the number of disjoint sets
+        return true; // Union was successful
+    }
+}
 
+class Solution {
+    public int maxNumEdgesToRemove(int n, int[][] edges) {
+        UnionFind ufa = new UnionFind(n); // Union-find for Alice
+        UnionFind ufb = new UnionFind(n); // Union-find for Bob
+        int ans = 0; // Counter for the number of removable edges
+        for (var e : edges) {
+            int t = e[0], u = e[1], v = e[2]; // Extract edge type and nodes
+            if (t == 3) { // Type 3 edge
+                if (ufa.union(u, v)) { // Try to union in Alice's union-find
+                    ufb.union(u, v); // Also union in Bob's union-find
+                } else {
+                    ++ans; // Edge is redundant
+                }
+            }
+        }
+        for (var e : edges) {
+            int t = e[0], u = e[1], v = e[2]; // Extract edge type and nodes
+            if (t == 1 && !ufa.union(u, v)) { // Type 1 edge for Alice
+                ++ans; // Edge is redundant
+            }
+            if (t == 2 && !ufb.union(u, v)) { // Type 2 edge for Bob
+                ++ans; // Edge is redundant
+            }
+        }
+        // Check if both Alice and Bob can traverse the graph
+        return ufa.cnt == 1 && ufb.cnt == 1 ? ans : -1;
+    }
 }
