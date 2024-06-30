@@ -44,3 +44,6 @@ class UnionFind {
     private int[] p;
     // Array to store the size of each set
     private int[] size;
+    // Number of disjoint sets
+    public int cnt;
+}
