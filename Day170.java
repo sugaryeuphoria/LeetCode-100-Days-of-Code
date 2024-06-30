@@ -55,4 +55,6 @@ class UnionFind {
         for (int i = 0; i < n; ++i) {
             // Each node is its own parent initially
             p[i] = i;
+            // Initial size of each set is 1
+            size[i] = 1;
 }
