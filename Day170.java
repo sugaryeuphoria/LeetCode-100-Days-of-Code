@@ -60,4 +60,8 @@ class UnionFind {
         }
         cnt = n; // Initially, there are 'n' disjoint sets
     }
+    public int find(int x) {
+        if (p[x] != x) {
+            p[x] = find(p[x]); // Path compression
+        }
 }
