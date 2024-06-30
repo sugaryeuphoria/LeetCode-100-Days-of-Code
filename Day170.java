@@ -64,4 +64,7 @@ class UnionFind {
         if (p[x] != x) {
             p[x] = find(p[x]); // Path compression
         }
+        return p[x]; // Return the root of the set containing 'x'
+    }
+
 }
