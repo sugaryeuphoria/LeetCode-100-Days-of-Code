@@ -40,3 +40,5 @@ edges[i].length == 3
 All tuples (typei, ui, vi) are distinct.
 */
 class UnionFind {
+    // Array to store the parent of each node
+    private int[] p;
