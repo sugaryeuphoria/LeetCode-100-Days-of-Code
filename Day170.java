@@ -46,4 +46,7 @@ class UnionFind {
     private int[] size;
     // Number of disjoint sets
     public int cnt;
+
+    public UnionFind(int n) {
+        // Initialize parent array
 }
