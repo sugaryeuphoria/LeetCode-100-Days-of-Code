@@ -50,4 +50,6 @@ class UnionFind {
     public UnionFind(int n) {
         // Initialize parent array
         p = new int[n];
+        // Initialize size array
+        size = new int[n];
 }
