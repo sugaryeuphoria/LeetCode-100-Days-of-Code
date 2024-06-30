@@ -52,4 +52,7 @@ class UnionFind {
         p = new int[n];
         // Initialize size array
         size = new int[n];
+        for (int i = 0; i < n; ++i) {
+            // Each node is its own parent initially
+            p[i] = i;
 }
