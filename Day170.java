@@ -29,4 +29,13 @@ Example 3:
 Input: n = 4, edges = [[3,2,3],[1,1,2],[2,3,4]]
 Output: -1
 Explanation: In the current graph, Alice cannot reach node 4 from the other nodes. Likewise, Bob cannot reach 1. Therefore it's impossible to make the graph fully traversable.
+
+Constraints:
+
+1 <= n <= 105
+1 <= edges.length <= min(105, 3 * n * (n - 1) / 2)
+edges[i].length == 3
+1 <= typei <= 3
+1 <= ui < vi <= n
+All tuples (typei, ui, vi) are distinct.
 */
