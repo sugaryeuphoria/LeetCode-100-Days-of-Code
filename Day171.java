@@ -11,6 +11,11 @@ Example 2:
 Input: arr = [1,2,34,3,4,5,7,23,12]
 Output: true
 Explanation: [5,7,23] are three consecutive odds.
+
+Constraints:
+
+1 <= arr.length <= 1000
+1 <= arr[i] <= 1000
 */
 public class Day171 {
     
