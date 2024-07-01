@@ -18,5 +18,7 @@ Constraints:
 1 <= arr[i] <= 1000
 */
 public class Day171 {
-    
+    public boolean threeConsecutiveOdds(int[] arr) {
+
+    }
 }
