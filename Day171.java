@@ -19,6 +19,9 @@ Constraints:
 */
 public class Day171 {
     public boolean threeConsecutiveOdds(int[] arr) {
+        // Iterate through the array up to the third last element
+        for (int i = 0; i < arr.length - 2; i++) {
 
+        }
     }
 }
