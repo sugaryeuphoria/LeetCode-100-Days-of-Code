@@ -48,3 +48,5 @@ class Solution(object):
         n = len(nums)
          # Compute the differences for the four scenarios
         min_diff = float('inf')
+        for i in range(4):
+            min_diff = min(min_diff, nums[n - 4 + i] - nums[i])
