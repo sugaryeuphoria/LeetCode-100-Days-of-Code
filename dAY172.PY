@@ -34,4 +34,9 @@ In the first move, change 100 to 7. nums becomes [3,7,20].
 In the second move, change 20 to 7. nums becomes [3,7,7].
 In the third move, change 3 to 7. nums becomes [7,7,7].
 After performing 3 moves, the difference between the minimum and maximum is 7 - 7 = 0.
+
+Constraints:
+
+1 <= nums.length <= 105
+-109 <= nums[i] <= 109
 """
