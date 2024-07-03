@@ -46,3 +46,5 @@ class Solution(object):
             return 0
         nums.sort()
         n = len(nums)
+         # Compute the differences for the four scenarios
+        min_diff = float('inf')
