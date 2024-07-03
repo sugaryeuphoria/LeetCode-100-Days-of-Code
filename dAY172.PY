@@ -44,3 +44,5 @@ class Solution(object):
     def minDifference(self, nums):
         if len(nums) <= 4:
             return 0
+        nums.sort()
+        n = len(nums)
