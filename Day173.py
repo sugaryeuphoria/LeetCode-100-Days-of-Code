@@ -49,3 +49,6 @@ class Solution(object):
          # Traverse the list
         while current:
             if current.val != 0:
+                # Accumulate sum if current node is not zero
+                sum_between_zeros += current.val
+            else:
