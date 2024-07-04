@@ -41,3 +41,5 @@ class ListNode(object):
         self.next = next
 class Solution(object):
     def mergeNodes(self, head):
+        # Initialize a pointer to traverse the list
+        current = head.next  # Skip the initial zero
