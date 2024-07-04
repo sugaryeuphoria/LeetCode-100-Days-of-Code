@@ -26,4 +26,11 @@ The above figure represents the given linked list. The modified list contains
 - The sum of the nodes marked in green: 1 = 1.
 - The sum of the nodes marked in red: 3 = 3.
 - The sum of the nodes marked in yellow: 2 + 2 = 4.
+
+Constraints:
+
+The number of nodes in the list is in the range [3, 2 * 105].
+0 <= Node.val <= 1000
+There are no two consecutive nodes with Node.val == 0.
+The beginning and end of the linked list have Node.val == 0.
 """
