@@ -62,3 +62,5 @@ class Solution(object):
                     sum_between_zeros = 0
                     # Move to the next node
             current = current.next
+            # Return the next of dummy node which points to the head of the modified list
+        return dummy.next
