@@ -39,28 +39,36 @@ class ListNode(object):
     def __init__(self, val=0, next=None):
         self.val = val
         self.next = next
+
 class Solution(object):
     def mergeNodes(self, head):
+        """
+        :type head: Optional[ListNode]
+        :rtype: Optional[ListNode]
+        """
         # Initialize a pointer to traverse the list
         current = head.next  # Skip the initial zero
         dummy = ListNode(0)  # Dummy node to ease the new list creation
         tail = dummy  # Tail pointer for the new list
         sum_between_zeros = 0
-         # Traverse the list
+
+        # Traverse the list
         while current:
             if current.val != 0:
                 # Accumulate sum if current node is not zero
                 sum_between_zeros += current.val
             else:
-                 # When a zero is encountered, it indicates the end of a segment
+                # When a zero is encountered, it indicates the end of a segment
                 if sum_between_zeros != 0:
                     # Create a new node with the accumulated sum
                     tail.next = ListNode(sum_between_zeros)
-                     # Move the tail pointer to the new node
+                    # Move the tail pointer to the new node
                     tail = tail.next
                     # Reset the accumulator
                     sum_between_zeros = 0
-                    # Move to the next node
+            # Move to the next node
             current = current.next
-            # Return the next of dummy node which points to the head of the modified list
+
+        # Return the next of dummy node which points to the head of the modified list
         return dummy.next
+
