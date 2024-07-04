@@ -60,3 +60,5 @@ class Solution(object):
                     tail = tail.next
                     # Reset the accumulator
                     sum_between_zeros = 0
+                    # Move to the next node
+            current = current.next
