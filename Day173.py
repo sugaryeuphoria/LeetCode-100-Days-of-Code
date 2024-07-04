@@ -52,3 +52,5 @@ class Solution(object):
                 # Accumulate sum if current node is not zero
                 sum_between_zeros += current.val
             else:
+                 # When a zero is encountered, it indicates the end of a segment
+                if sum_between_zeros != 0:
