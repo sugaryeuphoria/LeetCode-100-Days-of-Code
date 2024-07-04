@@ -54,3 +54,5 @@ class Solution(object):
             else:
                  # When a zero is encountered, it indicates the end of a segment
                 if sum_between_zeros != 0:
+                    # Create a new node with the accumulated sum
+                    tail.next = ListNode(sum_between_zeros)
