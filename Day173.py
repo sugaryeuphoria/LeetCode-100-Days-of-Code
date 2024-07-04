@@ -46,3 +46,6 @@ class Solution(object):
         dummy = ListNode(0)  # Dummy node to ease the new list creation
         tail = dummy  # Tail pointer for the new list
         sum_between_zeros = 0
+         # Traverse the list
+        while current:
+            if current.val != 0:
