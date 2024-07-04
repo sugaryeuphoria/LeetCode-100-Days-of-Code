@@ -44,3 +44,5 @@ class Solution(object):
         # Initialize a pointer to traverse the list
         current = head.next  # Skip the initial zero
         dummy = ListNode(0)  # Dummy node to ease the new list creation
+        tail = dummy  # Tail pointer for the new list
+        sum_between_zeros = 0
