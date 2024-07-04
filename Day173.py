@@ -56,3 +56,5 @@ class Solution(object):
                 if sum_between_zeros != 0:
                     # Create a new node with the accumulated sum
                     tail.next = ListNode(sum_between_zeros)
+                     # Move the tail pointer to the new node
+                    tail = tail.next
