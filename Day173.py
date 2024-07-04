@@ -58,3 +58,5 @@ class Solution(object):
                     tail.next = ListNode(sum_between_zeros)
                      # Move the tail pointer to the new node
                     tail = tail.next
+                    # Reset the accumulator
+                    sum_between_zeros = 0
