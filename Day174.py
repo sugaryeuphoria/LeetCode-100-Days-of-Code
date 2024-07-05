@@ -52,3 +52,5 @@ class ListNode:
         self.next = next
 class Solution:
     def nodesBetweenCriticalPoints(self, head):
+         if not head or not head.next or not head.next.next:
+            return [-1, -1]
