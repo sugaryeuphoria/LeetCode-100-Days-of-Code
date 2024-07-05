@@ -60,3 +60,11 @@ class Solution:
             prev, curr, next = head, head.next, head.next.next
             # current node index, starting from 1 as the head node is index 0
             index = 1
+
+            while next:
+                if (curr.val > prev.val and curr.val > next.val) or (curr.val < prev.val and curr.val < next.val):
+                    critical_points.append(index)
+                prev = curr
+                curr = next
+                next = next.next
+                index += 1
