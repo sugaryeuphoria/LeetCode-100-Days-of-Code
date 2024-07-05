@@ -58,3 +58,5 @@ class Solution:
             critical_points = []
             
             prev, curr, next = head, head.next, head.next.next
+            # current node index, starting from 1 as the head node is index 0
+            index = 1
