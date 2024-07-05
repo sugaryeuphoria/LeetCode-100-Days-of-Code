@@ -79,3 +79,16 @@ class Solution:
                 min_distance = min(min_distance, critical_points[i] - critical_points[i - 1])
             
             return [min_distance, max_distance]
+         
+# Example usage:
+# Construct the linked list: 5 -> 3 -> 1 -> 2 -> 5 -> 1 -> 2
+head = ListNode(5)
+head.next = ListNode(3)
+head.next.next = ListNode(1)
+head.next.next.next = ListNode(2)
+head.next.next.next.next = ListNode(5)
+head.next.next.next.next.next = ListNode(1)
+head.next.next.next.next.next.next = ListNode(2)
+
+solution = Solution()
+print(solution.nodesBetweenCriticalPoints(head))  # Output: [1, 3]
