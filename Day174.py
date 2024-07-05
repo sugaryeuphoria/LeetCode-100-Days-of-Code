@@ -68,3 +68,5 @@ class Solution:
                 curr = next
                 next = next.next
                 index += 1
+            if len(critical_points) < 2:
+                return [-1, -1]
