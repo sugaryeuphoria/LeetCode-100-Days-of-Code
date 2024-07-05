@@ -38,4 +38,9 @@ Explanation: There are two critical points:
 Both the minimum and maximum distances are between the second and the fifth node.
 Thus, minDistance and maxDistance is 5 - 2 = 3.
 Note that the last node is not considered a local maxima because it does not have a next node.
+
+Constraints:
+
+The number of nodes in the list is in the range [2, 105].
+1 <= Node.val <= 105
 """
