@@ -54,3 +54,7 @@ class Solution:
     def nodesBetweenCriticalPoints(self, head):
          if not head or not head.next or not head.next.next:
             return [-1, -1]
+          # List to store the positions of critical points
+            critical_points = []
+            
+            prev, curr, next = head, head.next, head.next.next
