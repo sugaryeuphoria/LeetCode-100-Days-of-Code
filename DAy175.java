@@ -19,4 +19,9 @@ Input: numBottles = 15, numExchange = 4
 Output: 19
 Explanation: You can exchange 4 empty bottles to get 1 full water bottle. 
 Number of water bottles you can drink: 15 + 3 + 1 = 19.
- */
+ 
+Constraints:
+
+1 <= numBottles <= 100
+2 <= numExchange <= 100
+*/
