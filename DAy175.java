@@ -26,5 +26,7 @@ Constraints:
 2 <= numExchange <= 100
 */
 class Day175 {
+    public int numWaterBottles(int numBottles, int numExchange) {
 
+    }
 }
