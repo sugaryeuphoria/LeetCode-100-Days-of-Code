@@ -28,6 +28,7 @@ Constraints:
 class Day175 {
     public int numWaterBottles(int numBottles, int numExchange) {
         int ans = numBottles;
+        for (; numBottles >= numExchange; ++ans) {
 
     }
 }
