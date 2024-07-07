@@ -25,3 +25,6 @@ Constraints:
 1 <= numBottles <= 100
 2 <= numExchange <= 100
 */
+class Day175 {
+
+}
