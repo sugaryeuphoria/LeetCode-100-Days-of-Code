@@ -34,7 +34,7 @@ public class Day176 {
         for (int i = 2; i <= n; i++){
             last = (last + k) % i;
             last = last % n + 1;
-
+            return last;
         }
     }
 }
