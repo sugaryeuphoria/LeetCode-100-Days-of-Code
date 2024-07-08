@@ -31,7 +31,10 @@ Explanation: The friends leave in this order: 5, 4, 6, 2, 3. The winner is frien
 public class Day176 {
     public int findTheWinner(int n, int k) {
         int last = 0;
-        for (int i = 2; i <= n; i++)
+        for (int i = 2; i <= n; i++){
+            last = (last + k) % i;
+            last = last % n + 1;
 
+        }
     }
 }
