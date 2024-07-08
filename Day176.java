@@ -30,6 +30,7 @@ Explanation: The friends leave in this order: 5, 4, 6, 2, 3. The winner is frien
 */
 public class Day176 {
     public int findTheWinner(int n, int k) {
+        int last = 0;
 
     }
 }
