@@ -40,6 +40,7 @@ public class Day177 {
         double tot = 0;
         int t = 0;
         for (var e : customers) {
+            int a = e[0], b = e[1];
 
     }
 }
