@@ -39,6 +39,7 @@ public class Day177 {
     public double averageWaitingTime(int[][] customers) {
         double tot = 0;
         int t = 0;
+        for (var e : customers) {
 
     }
 }
