@@ -37,6 +37,7 @@ arrivali <= arrivali+1
 
 public class Day177 {
     public double averageWaitingTime(int[][] customers) {
+        double tot = 0;
 
     }
 }
