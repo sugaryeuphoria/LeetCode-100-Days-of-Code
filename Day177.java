@@ -27,6 +27,12 @@ Explanation:
 3) The third customer arrives at time 10, the chef takes his order and starts preparing it at time 11, and finishes at time 14, so the waiting time of the third customer is 14 - 10 = 4.
 4) The fourth customer arrives at time 20, the chef takes his order and starts preparing it immediately at time 20, and finishes at time 21, so the waiting time of the fourth customer is 21 - 20 = 1.
 So the average waiting time = (2 + 6 + 4 + 1) / 4 = 3.25.
+
+Constraints:
+
+1 <= customers.length <= 105
+1 <= arrivali, timei <= 104
+arrivali <= arrivali+1
 */
 
 public class Day177 {
