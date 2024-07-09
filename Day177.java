@@ -43,6 +43,8 @@ public class Day177 {
             int a = e[0], b = e[1];
             t = Math.max(t, a) + b;
             tot += t - a;
+        }
+        return tot / customers.length;
 
     }
 }
