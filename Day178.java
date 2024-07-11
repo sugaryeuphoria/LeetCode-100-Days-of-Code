@@ -17,5 +17,15 @@ public class Day178 {
                 reverse(chars, start + 1, i - 1);
             }
         }
+         // Build the result string ignoring the parentheses
+         StringBuilder result = new StringBuilder();
+         for (char c : chars) {
+             if (c != '(' && c != ')') {
+                 result.append(c);
+             }
+         }
+         
+         return result.toString();
+     }
     }
 }
