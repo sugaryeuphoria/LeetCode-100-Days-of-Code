@@ -11,5 +11,7 @@ public class Day178 {
                  // Push the index of the '(' onto the stack
                  stack.push(i);
                 } else if (chars[i] == ')') {
+                     // Pop the index of the matching '('
+                int start = stack.pop();
     }
 }
