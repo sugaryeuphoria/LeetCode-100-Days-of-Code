@@ -8,5 +8,8 @@ public class Day178 {
          // Traverse the string
          for (int i = 0; i < chars.length; i++) {
             if (chars[i] == '(') {
+                 // Push the index of the '(' onto the stack
+                 stack.push(i);
+                } else if (chars[i] == ')') {
     }
 }
