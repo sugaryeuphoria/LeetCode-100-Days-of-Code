@@ -13,5 +13,9 @@ public class Day178 {
                 } else if (chars[i] == ')') {
                      // Pop the index of the matching '('
                 int start = stack.pop();
+                // Reverse the substring between '(' and ')'
+                reverse(chars, start + 1, i - 1);
+            }
+        }
     }
 }
