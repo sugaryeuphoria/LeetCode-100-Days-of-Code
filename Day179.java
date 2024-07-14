@@ -48,6 +48,8 @@ public class Day179 {
         char prevC = formula.charAt(0);
         // Get the length of the formula
         int length = formula.length();
+         // Iterate through the formula starting from the second character
+         for (int i = 1; i < length; i++) {
     }
 
 }
