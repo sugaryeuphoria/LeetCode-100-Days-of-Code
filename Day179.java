@@ -52,6 +52,8 @@ public class Day179 {
          for (int i = 1; i < length; i++) {
             // Get the current character
             char c = formula.charAt(i);
+            // Check if current character is a lowercase letter or both current and previous are digits
+            boolean flag = Character.isLowerCase(c) || (Character.isDigit(c) && Character.isDigit(prevC));
     }
 
 }
