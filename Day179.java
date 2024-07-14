@@ -62,6 +62,8 @@ public class Day179 {
                 // Update prevC to the current character
                 prevC = c;
          }
+         // Split the processed string into array by spaces
+        String[] array = sb.toString().split(" ");
     }
 
 }
