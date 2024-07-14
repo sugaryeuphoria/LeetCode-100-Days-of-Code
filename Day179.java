@@ -69,6 +69,8 @@ public class Day179 {
         String[] array = sb.toString().split(" ");
         // Initialize a stack to process the elements
          Stack<String> stack = new Stack<String>();
+         // Get the length of the array
+         int arrayLength = array.length;
     }
 
 }
