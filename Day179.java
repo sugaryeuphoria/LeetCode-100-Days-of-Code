@@ -39,7 +39,9 @@ formula consists of English letters, digits, '(', and ')'.
 formula is always valid.
 */
 
+import java.util.Set;
 import java.util.Stack;
+import java.util.TreeMap;
 
 public class Day179 {
     public String countOfAtoms(String formula) {
@@ -71,6 +73,75 @@ public class Day179 {
          Stack<String> stack = new Stack<String>();
          // Get the length of the array
          int arrayLength = array.length;
+         // Iterate through the array elements
+        for (int i = 0; i < arrayLength; i++) {
+            String str = array[i]; // Get the current string element
+            
+            if (str.equals(")")) { // If the current string is a closing parenthesis
+                if (i < arrayLength - 1 && Character.isDigit(array[i + 1].charAt(0))) // Check if the next element is a digit
+                    stack.push(str); // Push the closing parenthesis to the stack
+                else { // If next element is not a digit
+                    Stack<String> tempStack = new Stack<String>(); // Temporary stack to hold elements inside parentheses
+                    while (!stack.peek().equals("(")) // Pop elements until an opening parenthesis is found
+                        tempStack.push(stack.pop());
+                    stack.pop(); // Pop the opening parenthesis
+                    while (!tempStack.isEmpty()) // Push back elements from tempStack to the main stack
+                        stack.push(tempStack.pop());
+                }
+            } else if (Character.isDigit(str.charAt(0))) { // If the current string is a digit
+                int count = Integer.parseInt(str); // Convert the string to an integer count
+                String prev = stack.pop(); // Pop the previous element from the stack
+                
+                if (prev.equals(")")) { // If the previous element is a closing parenthesis
+                    Stack<String> tempStack = new Stack<String>(); // Temporary stack to hold elements inside parentheses
+                    while (!stack.peek().equals("(")) { // Pop elements until an opening parenthesis is found
+                        String element = stack.pop();
+                        int index = element.indexOf(','); // Find the index of comma in the element
+                        if (index >= 0) { // If comma is found
+                            String atom = element.substring(0, index); // Extract the atom name
+                            int atomCount = Integer.parseInt(element.substring(index + 1)) * count; // Multiply the count
+                            tempStack.push(atom + "," + atomCount); // Push the updated element to tempStack
+                        } else
+                            tempStack.push(element + "," + str); // If no comma, append count to element and push
+                    }
+                    stack.pop(); // Pop the opening parenthesis
+                    while (!tempStack.isEmpty()) // Push back elements from tempStack to the main stack
+                        stack.push(tempStack.pop());
+                } else { // If previous element is not a closing parenthesis
+                    String curStr = prev + "," + str; // Combine the element with count
+                    stack.push(curStr); // Push the combined string to the stack
+                }
+            } else
+                stack.push(str); // If current string is neither closing parenthesis nor digit, push it to the stack
+        }
+        
+        // Create a TreeMap to store atom counts in sorted order
+        TreeMap<String, Integer> map = new TreeMap<String, Integer>();
+        while (!stack.isEmpty()) { // Process elements from the stack
+            String atomCount = stack.pop(); // Pop the top element from the stack
+            int index = atomCount.indexOf(','); // Find the index of comma
+            if (index >= 0) { // If comma is found
+                String atom = atomCount.substring(0, index); // Extract the atom name
+                int count = Integer.parseInt(atomCount.substring(index + 1)); // Extract the count
+                count += map.getOrDefault(atom, 0); // Add to the existing count in the map
+                map.put(atom, count); // Update the map with the new count
+            } else {
+                int count = map.getOrDefault(atomCount, 0) + 1; // If no comma, increment the count in the map
+                map.put(atomCount, count); // Update the map
+            }
+        }
+        
+        // Build the output string in the required format
+        StringBuffer output = new StringBuffer();
+        Set<String> keySet = map.keySet(); // Get the set of keys (atom names) from the map
+        for (String atom : keySet) { // Iterate through the atom names
+            int count = map.get(atom); // Get the count of the current atom
+            output.append(atom); // Append the atom name to the output
+            if (count > 1) // If count is greater than 1
+                output.append(count); // Append the count to the output
+        }
+        
+        return output.toString(); // Return the final output string
     }
 
 }
