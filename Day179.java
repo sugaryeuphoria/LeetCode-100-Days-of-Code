@@ -46,6 +46,8 @@ public class Day179 {
         sb.append(formula.charAt(0));
         // Store the first character as prevC
         char prevC = formula.charAt(0);
+        // Get the length of the formula
+        int length = formula.length();
     }
 
 }
