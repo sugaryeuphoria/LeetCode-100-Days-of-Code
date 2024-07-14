@@ -44,6 +44,8 @@ public class Day179 {
         StringBuffer sb = new StringBuffer();
         // Append the first character of the formula to sb
         sb.append(formula.charAt(0));
+        // Store the first character as prevC
+        char prevC = formula.charAt(0);
     }
 
 }
