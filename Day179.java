@@ -42,6 +42,8 @@ public class Day179 {
     public String countOfAtoms(String formula) {
         // Initialize a StringBuffer to build a processed formula string
         StringBuffer sb = new StringBuffer();
+        // Append the first character of the formula to sb
+        sb.append(formula.charAt(0));
     }
 
 }
