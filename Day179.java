@@ -56,6 +56,9 @@ public class Day179 {
             boolean flag = Character.isLowerCase(c) || (Character.isDigit(c) && Character.isDigit(prevC));
             // If flag is false, append a space before the current character
             if (!flag)
+                sb.append(' ');
+                // Append the current character
+                sb.append(c);
     }
 
 }
