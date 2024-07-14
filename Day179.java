@@ -50,6 +50,8 @@ public class Day179 {
         int length = formula.length();
          // Iterate through the formula starting from the second character
          for (int i = 1; i < length; i++) {
+            // Get the current character
+            char c = formula.charAt(i);
     }
 
 }
