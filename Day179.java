@@ -59,6 +59,9 @@ public class Day179 {
                 sb.append(' ');
                 // Append the current character
                 sb.append(c);
+                // Update prevC to the current character
+                prevC = c;
+         }
     }
 
 }
