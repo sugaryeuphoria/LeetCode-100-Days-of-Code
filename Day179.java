@@ -38,6 +38,9 @@ Constraints:
 formula consists of English letters, digits, '(', and ')'.
 formula is always valid.
 */
+
+import java.util.Stack;
+
 public class Day179 {
     public String countOfAtoms(String formula) {
         // Initialize a StringBuffer to build a processed formula string
@@ -64,6 +67,8 @@ public class Day179 {
          }
          // Split the processed string into array by spaces
         String[] array = sb.toString().split(" ");
+        // Initialize a stack to process the elements
+         Stack<String> stack = new Stack<String>();
     }
 
 }
