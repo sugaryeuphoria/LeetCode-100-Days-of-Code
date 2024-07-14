@@ -39,5 +39,8 @@ formula consists of English letters, digits, '(', and ')'.
 formula is always valid.
 */
 public class Day179 {
+    public String countOfAtoms(String formula) {
+
+    }
     
 }
