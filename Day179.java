@@ -54,6 +54,8 @@ public class Day179 {
             char c = formula.charAt(i);
             // Check if current character is a lowercase letter or both current and previous are digits
             boolean flag = Character.isLowerCase(c) || (Character.isDigit(c) && Character.isDigit(prevC));
+            // If flag is false, append a space before the current character
+            if (!flag)
     }
 
 }
