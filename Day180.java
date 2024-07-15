@@ -32,6 +32,14 @@ The binary tree described by descriptions is valid.
 */
 import java.util.HashMap;
 import java.util.HashSet;
+
+class TreeNode {
+    int val;
+    TreeNode left;
+    TreeNode right;
+    TreeNode(int val) { this.val = val; }
+}
+
 public class Day180 {
     
 }
