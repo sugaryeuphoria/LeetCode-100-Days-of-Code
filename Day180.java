@@ -21,6 +21,14 @@ Input: descriptions = [[1,2,1],[2,3,0],[3,4,1]]
 Output: [1,2,null,null,3,4]
 Explanation: The root node is the node with value 1 since it has no parent.
 The resulting binary tree is shown in the diagram.
+
+Constraints:
+
+1 <= descriptions.length <= 104
+descriptions[i].length == 3
+1 <= parenti, childi <= 105
+0 <= isLefti <= 1
+The binary tree described by descriptions is valid.
 */
 public class Day180 {
     
