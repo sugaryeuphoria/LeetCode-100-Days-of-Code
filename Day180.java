@@ -42,7 +42,8 @@ class TreeNode {
 
 public class Day180 {
     public TreeNode createBinaryTree(int[][] descriptions) {
-
+        HashMap<Integer, TreeNode> nodes = new HashMap<>();
+        HashSet<Integer> children = new HashSet<>();
     }
     
 }
