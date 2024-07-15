@@ -61,6 +61,16 @@ public class Day180 {
 
             children.add(childVal);
         }
+        // Step 2: Find the root (a node that is never a child)
+        TreeNode root = null;
+        for (int val : nodes.keySet()) {
+            if (!children.contains(val)) {
+                root = nodes.get(val);
+                break;
+            }
+        }
+
+        return root;
 
     }
     
