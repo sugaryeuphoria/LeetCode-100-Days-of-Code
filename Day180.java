@@ -44,6 +44,24 @@ public class Day180 {
     public TreeNode createBinaryTree(int[][] descriptions) {
         HashMap<Integer, TreeNode> nodes = new HashMap<>();
         HashSet<Integer> children = new HashSet<>();
+        // Step 1: Create all nodes and collect all child nodes
+        for (int[] description : descriptions) {
+            int parentVal = description[0];
+            int childVal = description[1];
+            boolean isLeft = description[2] == 1;
+
+            nodes.putIfAbsent(parentVal, new TreeNode(parentVal));
+            nodes.putIfAbsent(childVal, new TreeNode(childVal));
+
+            if (isLeft) {
+                nodes.get(parentVal).left = nodes.get(childVal);
+            } else {
+                nodes.get(parentVal).right = nodes.get(childVal);
+            }
+
+            children.add(childVal);
+        }
+
     }
     
 }
