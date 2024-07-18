@@ -37,3 +37,4 @@ class TreeNode(object):
     
 class Solution(object):
     def countPairs(self, root, distance):
+        self.result = 0
