@@ -50,3 +50,9 @@ class Solution(object):
                 for r in right_distances:
                     if l + r <= distance:
                         self.result += 1
+
+            # Return updated distances
+            return [d + 1 for d in left_distances + right_distances if d + 1 < distance]            
+
+
+                        
