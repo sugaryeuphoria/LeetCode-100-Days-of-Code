@@ -43,3 +43,5 @@ class Solution(object):
                 return []
             if not node.left and not node.right:
                 return [1]
+            left_distances = dfs(node.left)
+            right_distances = dfs(node.right)
