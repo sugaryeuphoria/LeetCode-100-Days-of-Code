@@ -54,5 +54,6 @@ class Solution(object):
             # Return updated distances
             return [d + 1 for d in left_distances + right_distances if d + 1 < distance]            
 
-
+        dfs(root)
+        return self.result
                         
