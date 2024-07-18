@@ -28,3 +28,8 @@ The number of nodes in the tree is in the range [1, 210].
 1 <= Node.val <= 100
 1 <= distance <= 10
 """
+class TreeNode(object):
+    def __init__(self, val=0, left=None, right=None):
+        self.val = val
+        self.left = left
+        self.right = right
