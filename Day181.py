@@ -45,3 +45,8 @@ class Solution(object):
                 return [1]
             left_distances = dfs(node.left)
             right_distances = dfs(node.right)
+            # Count pairs
+            for l in left_distances:
+                for r in right_distances:
+                    if l + r <= distance:
+                        self.result += 1
