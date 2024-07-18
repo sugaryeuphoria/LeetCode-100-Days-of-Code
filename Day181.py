@@ -38,3 +38,8 @@ class TreeNode(object):
 class Solution(object):
     def countPairs(self, root, distance):
         self.result = 0
+        def dfs(node):
+            if not node:
+                return []
+            if not node.left and not node.right:
+                return [1]
