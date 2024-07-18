@@ -33,3 +33,7 @@ class TreeNode(object):
         self.val = val
         self.left = left
         self.right = right
+
+    
+class Solution(object):
+    def countPairs(self, root, distance):
