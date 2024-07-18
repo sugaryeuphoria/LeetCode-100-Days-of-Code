@@ -21,4 +21,10 @@ Example 3:
 Input: root = [7,1,4,6,null,5,3,null,null,null,null,null,2], distance = 3
 Output: 1
 Explanation: The only good pair is [2,5].
+
+Constraints:
+
+The number of nodes in the tree is in the range [1, 210].
+1 <= Node.val <= 100
+1 <= distance <= 10
 """
