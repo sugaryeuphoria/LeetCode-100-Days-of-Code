@@ -36,3 +36,5 @@ All the values of mapping[i] are unique.
 """
 class Solution(object):
     def sortJumbled(self, mapping, nums):
+        # Define a helper function to get the mapped value of a number
+        def get_mapped_value(num):
