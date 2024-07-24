@@ -34,3 +34,5 @@ All the values of mapping[i] are unique.
 1 <= nums.length <= 3 * 104
 0 <= nums[i] < 109
 """
+class Solution(object):
+    def sortJumbled(self, mapping, nums):
