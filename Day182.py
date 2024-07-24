@@ -54,3 +54,5 @@ print(solution.sortJumbled(mapping, nums))
 # Define the mapping array and the nums array for the second example
 mapping = [0,1,2,3,4,5,6,7,8,9]
 nums = [789, 456, 123]
+# Print the sorted array based on mapped values
+print(solution.sortJumbled(mapping, nums))
