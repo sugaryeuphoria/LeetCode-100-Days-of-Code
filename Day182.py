@@ -40,3 +40,5 @@ class Solution(object):
         def get_mapped_value(num):
             # Convert the number to a string and map each digit using the mapping array
             mapped_num = ''.join(str(mapping[int(digit)]) for digit in str(num))
+            # Convert the mapped string back to an integer
+            return int(mapped_num)
