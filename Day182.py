@@ -49,3 +49,5 @@ solution = Solution()
 # Define the mapping array and the nums array for the first example
 mapping = [8,9,4,0,2,1,3,5,7,6]
 nums = [991, 338, 38]
+# Print the sorted array based on mapped values
+print(solution.sortJumbled(mapping, nums))
