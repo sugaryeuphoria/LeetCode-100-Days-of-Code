@@ -25,4 +25,12 @@ Example 2:
 Input: mapping = [0,1,2,3,4,5,6,7,8,9], nums = [789,456,123]
 Output: [123,456,789]
 Explanation: 789 maps to 789, 456 maps to 456, and 123 maps to 123. Thus, the sorted array is [123,456,789].
+
+Constraints:
+
+mapping.length == 10
+0 <= mapping[i] <= 9
+All the values of mapping[i] are unique.
+1 <= nums.length <= 3 * 104
+0 <= nums[i] < 109
 """
