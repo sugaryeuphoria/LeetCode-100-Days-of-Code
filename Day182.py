@@ -38,3 +38,5 @@ class Solution(object):
     def sortJumbled(self, mapping, nums):
         # Define a helper function to get the mapped value of a number
         def get_mapped_value(num):
+            # Convert the number to a string and map each digit using the mapping array
+            mapped_num = ''.join(str(mapping[int(digit)]) for digit in str(num))
