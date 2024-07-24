@@ -44,3 +44,5 @@ class Solution(object):
             return int(mapped_num)
         # Sort the nums array using the mapped values as the key for sorting
         return sorted(nums, key=lambda x: get_mapped_value(x))
+    # Example usage
+solution = Solution()
