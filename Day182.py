@@ -42,3 +42,5 @@ class Solution(object):
             mapped_num = ''.join(str(mapping[int(digit)]) for digit in str(num))
             # Convert the mapped string back to an integer
             return int(mapped_num)
+        # Sort the nums array using the mapped values as the key for sorting
+        return sorted(nums, key=lambda x: get_mapped_value(x))
