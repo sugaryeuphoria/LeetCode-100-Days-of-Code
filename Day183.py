@@ -65,3 +65,9 @@ class Solution(object):
             # Sort the count list in ascending order
         cnt.sort()
         ans = 0
+
+        # Calculate the minimum pushes required
+        for i in range(26):
+            ans += (i // 8 + 1) * cnt[25 - i]
+        
+        return ans
