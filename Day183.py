@@ -62,3 +62,5 @@ class Solution(object):
         # Count occurrences of each letter in the word
         for char in word:
             cnt[ord(char) - ord('a')] += 1
+            # Sort the count list in ascending order
+        cnt.sort()
