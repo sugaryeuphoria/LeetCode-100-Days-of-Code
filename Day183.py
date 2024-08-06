@@ -57,12 +57,12 @@ word consists of lowercase English letters.
 """
 class Solution(object):
     def minimumPushes(self, word):
-         # Initialize a list to count occurrences of each letter
+        # Initialize a list to count occurrences of each letter
         cnt = [0] * 26
         # Count occurrences of each letter in the word
         for char in word:
             cnt[ord(char) - ord('a')] += 1
-            # Sort the count list in ascending order
+        # Sort the count list in ascending order
         cnt.sort()
         ans = 0
 
