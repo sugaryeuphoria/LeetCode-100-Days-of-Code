@@ -55,3 +55,5 @@ Constraints:
 1 <= word.length <= 105
 word consists of lowercase English letters.
 """
+class Solution(object):
+    def minimumPushes(self, word):
