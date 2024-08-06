@@ -49,4 +49,9 @@ Explanation: The remapped keypad given in the image provides the minimum cost.
 "i" -> one push on key 9
 Total cost is 1 * 2 + 1 * 2 + 1 * 2 + 1 * 2 + 1 * 2 + 1 * 2 + 1 * 2 + 2 * 2 + 6 * 1 = 24.
 It can be shown that no other mapping can provide a lower cost.
+
+Constraints:
+
+1 <= word.length <= 105
+word consists of lowercase English letters.
 """
