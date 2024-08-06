@@ -64,3 +64,4 @@ class Solution(object):
             cnt[ord(char) - ord('a')] += 1
             # Sort the count list in ascending order
         cnt.sort()
+        ans = 0
