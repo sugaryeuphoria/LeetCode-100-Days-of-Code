@@ -57,3 +57,5 @@ word consists of lowercase English letters.
 """
 class Solution(object):
     def minimumPushes(self, word):
+         # Initialize a list to count occurrences of each letter
+        cnt = [0] * 26
