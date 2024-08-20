@@ -19,3 +19,8 @@ Constraints:
 1 <= piles.length <= 100
 1 <= piles[i] <= 104
 */
+class Solution {
+    public int stoneGameII(int[] piles) {
+
+    }
+}
