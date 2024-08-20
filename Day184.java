@@ -28,5 +28,7 @@ class Solution {
         // mem[i][M] will store the maximum stones Alice can collect starting from index 'i' with 'M'.
         int[] suffix = new int[n];
         // Create a 'suffix' array where suffix[i] represents the sum of piles from index 'i' to the end of the array.
-    }
+        Arrays.stream(mem).forEach(A -> Arrays.fill(A, -1));
+        // Initialize the memoization table with -1 to indicate that the subproblem hasn't been computed yet.
+    }   
 }
