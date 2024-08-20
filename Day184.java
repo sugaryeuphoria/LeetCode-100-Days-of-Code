@@ -30,5 +30,8 @@ class Solution {
         // Create a 'suffix' array where suffix[i] represents the sum of piles from index 'i' to the end of the array.
         Arrays.stream(mem).forEach(A -> Arrays.fill(A, -1));
         // Initialize the memoization table with -1 to indicate that the subproblem hasn't been computed yet.
+        suffix[n - 1] = piles[n - 1];
+        // Initialize the last element of the suffix array with the value of the last pile, since it's the only element left.
+
     }   
 }
