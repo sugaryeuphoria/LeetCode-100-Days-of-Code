@@ -38,5 +38,27 @@ class Solution {
         // For each pile, calculate the sum of piles from that index to the end by adding the current pile to the sum of the next pile.
         return stoneGameII(suffix, 0, 1, mem);
         // Call the helper function to compute the maximum number of stones Alice can collect starting from the first pile with M = 1.
+    }
+
+    // Helper function to return the maximum number of stones Alice can get from piles[i..n) with M.
+    private int stoneGameII(int[] suffix, int i, int M, int[][] mem) {
+        if (i + 2 * M >= suffix.length)
+        // Base case: If Alice can take all remaining piles (i.e., `i + 2 * M >= n`), she takes all the stones.
+          return suffix[i];
+    
+        if (mem[i][M] != -1)
+        // If the result for this subproblem is already computed, return it to avoid redundant calculations.
+          return mem[i][M];
+    
+        int opponent = suffix[i];
+        // Initialize 'opponent' with the total stones Alice can collect starting from index 'i'.
+    
+        for (int X = 1; X <= 2 * M; ++X)
+        // Try all possible moves where Alice takes between 1 and 2 * M piles.
+          opponent = Math.min(opponent, stoneGameII(suffix, i + X, Math.max(M, X), mem));
+        // The opponent will minimize the stones Alice can get, so find the minimum value by taking the best move for the opponent.
+    
+        return mem[i][M] = suffix[i] - opponent;
+        // Store the result in the memoization table and return the maximum stones Alice can collect.
     }   
 }
