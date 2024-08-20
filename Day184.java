@@ -32,6 +32,9 @@ class Solution {
         // Initialize the memoization table with -1 to indicate that the subproblem hasn't been computed yet.
         suffix[n - 1] = piles[n - 1];
         // Initialize the last element of the suffix array with the value of the last pile, since it's the only element left.
-
+        for (int i = n - 2; i >= 0; --i)
+        // Fill the suffix array from the second last pile to the first pile.
+        suffix[i] = suffix[i + 1] + piles[i];
+        // For each pile, calculate the sum of piles from that index to the end by adding the current pile to the sum of the next pile.
     }   
 }
