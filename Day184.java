@@ -23,5 +23,9 @@ class Solution {
     public int stoneGameII(int[] piles) {
         final int n = piles.length;
         // Get the number of piles
+        int[][] mem = new int[n][n];
+        // Create a memoization table 'mem' to store results of subproblems.
+        // mem[i][M] will store the maximum stones Alice can collect starting from index 'i' with 'M'.
+
     }
 }
