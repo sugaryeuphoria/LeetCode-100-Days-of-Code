@@ -26,6 +26,7 @@ class Solution {
         int[][] mem = new int[n][n];
         // Create a memoization table 'mem' to store results of subproblems.
         // mem[i][M] will store the maximum stones Alice can collect starting from index 'i' with 'M'.
-
+        int[] suffix = new int[n];
+        // Create a 'suffix' array where suffix[i] represents the sum of piles from index 'i' to the end of the array.
     }
 }
