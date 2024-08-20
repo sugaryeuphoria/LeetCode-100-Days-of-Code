@@ -21,6 +21,7 @@ Constraints:
 */
 class Solution {
     public int stoneGameII(int[] piles) {
-
+        final int n = piles.length;
+        // Get the number of piles
     }
 }
