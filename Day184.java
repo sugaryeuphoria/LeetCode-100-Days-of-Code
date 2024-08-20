@@ -13,4 +13,9 @@ Example 2:
 
 Input: piles = [1,2,3,4,5,100]
 Output: 104 
+
+Constraints:
+
+1 <= piles.length <= 100
+1 <= piles[i] <= 104
 */
