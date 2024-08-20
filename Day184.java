@@ -36,5 +36,7 @@ class Solution {
         // Fill the suffix array from the second last pile to the first pile.
         suffix[i] = suffix[i + 1] + piles[i];
         // For each pile, calculate the sum of piles from that index to the end by adding the current pile to the sum of the next pile.
+        return stoneGameII(suffix, 0, 1, mem);
+        // Call the helper function to compute the maximum number of stones Alice can collect starting from the first pile with M = 1.
     }   
 }
