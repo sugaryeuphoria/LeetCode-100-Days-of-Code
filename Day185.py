@@ -36,3 +36,5 @@ The height of the n-ary tree is less than or equal to 1000.
 
 Follow up: Recursive solution is trivial, could you do it iteratively?
 """
+class Solution(object):
+    def postorder(self, root):
