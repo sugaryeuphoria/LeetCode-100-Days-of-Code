@@ -38,3 +38,5 @@ Follow up: Recursive solution is trivial, could you do it iteratively?
 """
 class Solution(object):
     def postorder(self, root):
+        if not root:
+            return []
