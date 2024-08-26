@@ -42,3 +42,7 @@ class Solution(object):
             return []
         
         result = []
+        def traverse(node):
+            for child in node.children:
+                traverse(child)
+            result.append(node.val)
