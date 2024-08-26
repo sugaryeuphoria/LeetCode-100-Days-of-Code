@@ -40,3 +40,5 @@ class Solution(object):
     def postorder(self, root):
         if not root:
             return []
+        
+        result = []
