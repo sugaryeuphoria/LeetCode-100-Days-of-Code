@@ -39,3 +39,8 @@ from collections import defaultdict
 
 class Solution(object):
     def maxProbability(self, n, edges, succProb, start_node, end_node):
+         # Create a graph from the edges and probabilities
+        graph = defaultdict(list)
+        for (a, b), prob in zip(edges, succProb):
+            graph[a].append((b, prob))
+            graph[b].append((a, prob))
