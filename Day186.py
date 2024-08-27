@@ -76,5 +76,11 @@ class Solution(object):
                     heapq.heappush(max_heap, (-new_prob, neighbor))
         
         return 0.0  # No path found from start to end
+    
+# Example usage:
+sol = Solution()
+print(sol.maxProbability(3, [[0,1],[1,2],[0,2]], [0.5,0.5,0.2], 0, 2))  # Output: 0.25
+print(sol.maxProbability(3, [[0,1],[1,2],[0,2]], [0.5,0.5,0.3], 0, 2))  # Output: 0.3
+print(sol.maxProbability(3, [[0,1]], [0.5], 0, 2))  # Output: 0.0
         
        
