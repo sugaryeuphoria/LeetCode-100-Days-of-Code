@@ -61,5 +61,9 @@ class Solution(object):
         max_heap = [(-1.0, start_node)]  # (negative probability, node)
         max_prob = [0.0] * n
         max_prob[start_node] = 1.0
+
+        while max_heap:
+            curr_prob, node = heapq.heappop(max_heap)
+            curr_prob = -curr_prob  # Convert back to positive
         
        
