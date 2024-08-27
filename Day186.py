@@ -65,5 +65,16 @@ class Solution(object):
         while max_heap:
             curr_prob, node = heapq.heappop(max_heap)
             curr_prob = -curr_prob  # Convert back to positive
+
+            if node == end_node:
+                return curr_prob
+            
+            for neighbor, edge_prob in graph[node]:
+                new_prob = curr_prob * edge_prob
+                if new_prob > max_prob[neighbor]:
+                    max_prob[neighbor] = new_prob
+                    heapq.heappush(max_heap, (-new_prob, neighbor))
+        
+        return 0.0  # No path found from start to end
         
        
