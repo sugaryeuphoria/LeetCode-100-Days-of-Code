@@ -51,4 +51,10 @@ class Solution(object):
         :type end_node: int
         :rtype: float
         """
+        # Build the graph
+        graph = defaultdict(list)
+        for (a, b), prob in zip(edges, succProb):
+            graph[a].append((b, prob))
+            graph[b].append((a, prob))
+        
        
