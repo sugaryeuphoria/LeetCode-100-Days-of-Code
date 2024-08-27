@@ -57,7 +57,7 @@ class Solution(object):
             graph[a].append((b, prob))
             graph[b].append((a, prob))
 
-            # Priority queue to store the max probability paths
+        # Priority queue to store the max probability paths
         max_heap = [(-1.0, start_node)]  # (negative probability, node)
         max_prob = [0.0] * n
         max_prob[start_node] = 1.0
