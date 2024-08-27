@@ -26,4 +26,15 @@ Example 3:
 Input: n = 3, edges = [[0,1]], succProb = [0.5], start = 0, end = 2
 Output: 0.00000
 Explanation: There is no path between 0 and 2.
+
+Constraints:
+
+2 <= n <= 10^4
+0 <= start, end < n
+start != end
+0 <= a, b < n
+a != b
+0 <= succProb.length == edges.length <= 2*10^4
+0 <= succProb[i] <= 1
+There is at most one edge between every two nodes.
 """
