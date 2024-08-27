@@ -34,3 +34,8 @@ a != b
 0 <= succProb[i] <= 1
 There is at most one edge between every two nodes.
 """
+import heapq
+from collections import defaultdict
+
+class Solution(object):
+    def maxProbability(self, n, edges, succProb, start_node, end_node):
