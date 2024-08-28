@@ -46,3 +46,6 @@ class Solution(object):
             bottom = dfs(i + 1, j)
             left = dfs(i, j - 1)
             right = dfs(i, j + 1)
+
+            # This island is a sub-island only if all directions are sub-islands
+            return top and bottom and left and right
