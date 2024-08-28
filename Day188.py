@@ -40,3 +40,9 @@ class Solution(object):
             
             # Mark this cell as visited
             grid2[i][j] = 0
+
+            # Check all four directions
+            top = dfs(i - 1, j)
+            bottom = dfs(i + 1, j)
+            left = dfs(i, j - 1)
+            right = dfs(i, j + 1)
