@@ -33,3 +33,7 @@ class Solution(object):
             # If out of bounds or water, return True (as it's not affecting the sub-island status)
             if i < 0 or i >= len(grid2) or j < 0 or j >= len(grid2[0]) or grid2[i][j] == 0:
                 return True
+            
+            # If this part of grid2 is land but not in grid1, it's not a sub-island
+            if grid1[i][j] == 0:
+                return False
