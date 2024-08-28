@@ -37,3 +37,6 @@ class Solution(object):
             # If this part of grid2 is land but not in grid1, it's not a sub-island
             if grid1[i][j] == 0:
                 return False
+            
+            # Mark this cell as visited
+            grid2[i][j] = 0
