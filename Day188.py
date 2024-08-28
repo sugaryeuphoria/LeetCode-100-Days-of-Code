@@ -51,3 +51,12 @@ class Solution(object):
             return top and bottom and left and right
          
             sub_islands_count = 0
+
+            for i in range(len(grid2)):
+            for j in range(len(grid2[0])):
+                if grid2[i][j] == 1:
+                    # Perform DFS and check if this island is a sub-island
+                    if dfs(i, j):
+                        sub_islands_count += 1
+        
+        return sub_islands_count
