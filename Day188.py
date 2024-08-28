@@ -19,4 +19,11 @@ Input: grid1 = [[1,0,1,0,1],[1,1,1,1,1],[0,0,0,0,0],[1,1,1,1,1],[1,0,1,0,1]], gr
 Output: 2 
 Explanation: In the picture above, the grid on the left is grid1 and the grid on the right is grid2.
 The 1s colored red in grid2 are those considered to be part of a sub-island. There are two sub-islands.
+
+Constraints:
+
+m == grid1.length == grid2.length
+n == grid1[i].length == grid2[i].length
+1 <= m, n <= 500
+grid1[i][j] and grid2[i][j] are either 0 or 1.
 """
