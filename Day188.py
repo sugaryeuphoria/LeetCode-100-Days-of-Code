@@ -49,3 +49,5 @@ class Solution(object):
 
             # This island is a sub-island only if all directions are sub-islands
             return top and bottom and left and right
+         
+            sub_islands_count = 0
