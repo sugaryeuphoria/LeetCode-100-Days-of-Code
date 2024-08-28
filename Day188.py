@@ -27,3 +27,5 @@ n == grid1[i].length == grid2[i].length
 1 <= m, n <= 500
 grid1[i][j] and grid2[i][j] are either 0 or 1.
 """
+class Solution(object):
+    def countSubIslands(self, grid1, grid2):
