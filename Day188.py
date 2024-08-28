@@ -29,3 +29,7 @@ grid1[i][j] and grid2[i][j] are either 0 or 1.
 """
 class Solution(object):
     def countSubIslands(self, grid1, grid2):
+         def dfs(i, j):
+            # If out of bounds or water, return True (as it's not affecting the sub-island status)
+            if i < 0 or i >= len(grid2) or j < 0 or j >= len(grid2[0]) or grid2[i][j] == 0:
+                return True
