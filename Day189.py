@@ -40,4 +40,4 @@ No two stones are at the same coordinate point.
 """
 class Solution(object):
     def removeStones(self, stones):
-        
+        parent = {}
