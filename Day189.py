@@ -38,3 +38,6 @@ Constraints:
 0 <= xi, yi <= 104
 No two stones are at the same coordinate point.
 """
+class Solution(object):
+    def removeStones(self, stones):
+        
