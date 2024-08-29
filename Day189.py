@@ -60,3 +60,10 @@ class Solution(object):
             if ~y not in parent:
                 parent[~y] = ~y
             union(x, ~y)
+
+             # The number of connected components in the Union-Find structure
+        num_connected_components = len({find(x) for x in parent})
+
+        # The maximum number of stones that can be removed is
+        # total stones - number of connected components
+        return len(stones) - num_connected_components
