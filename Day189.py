@@ -52,3 +52,11 @@ class Solution(object):
             rootY = find(y)
             if rootX != rootY:
                 parent[rootX] = rootY
+
+                for x, y in stones:
+            # Use ~y to differentiate row and column indices, avoiding conflicts
+            if x not in parent:
+                parent[x] = x
+            if ~y not in parent:
+                parent[~y] = ~y
+            union(x, ~y)
