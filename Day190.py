@@ -48,4 +48,5 @@ class Solution(object):
         # Transform the number k times
         for _ in range(k):
             num_str = str(sum(int(digit) for digit in num_str))
-        
+        # The result is the final number after all transformations
+        return int(num_str)
