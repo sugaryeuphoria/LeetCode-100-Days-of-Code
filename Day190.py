@@ -45,3 +45,7 @@ class Solution(object):
     def getLucky(self, s, k):
         # Convert the string to the corresponding integer string
         num_str = ''.join(str(ord(char) - ord('a') + 1) for char in s)
+        # Transform the number k times
+        for _ in range(k):
+            num_str = str(sum(int(digit) for digit in num_str))
+        
