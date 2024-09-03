@@ -41,3 +41,5 @@ Constraints:
 1 <= k <= 10
 s consists of lowercase English letters.
 """
+class Solution(object):
+    def getLucky(self, s, k):
