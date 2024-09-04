@@ -75,3 +75,9 @@ class Solution(object):
                 for _ in range(command):
                     new_x = x + direction_vectors[direction][0]
                     new_y = y + direction_vectors[direction][1]
+                    if (new_x, new_y) in obstacle_set:
+                        break  # Stop if there's an obstacle
+                    x, y = new_x, new_y
+                    max_distance_sq = max(max_distance_sq, x*x + y*y)
+        
+        return max_distance_sq
