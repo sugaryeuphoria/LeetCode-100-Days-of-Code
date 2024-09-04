@@ -47,4 +47,14 @@ Explanation: The robot starts at (0, 0):
 3. Turn right.
 4. Move south 6 units to (0, 0).
 The furthest point the robot ever gets from the origin is (0, 6), which squared is 62 = 36 units away.
+
+Constraints:
+
+1 <= commands.length <= 104
+commands[i] is either -2, -1, or an integer in the range [1, 9].
+0 <= obstacles.length <= 104
+-3 * 104 <= xi, yi <= 3 * 104
+The answer is guaranteed to be less than 231.
 """
+class Solution(object):
+    def robotSim(self, commands, obstacles):
