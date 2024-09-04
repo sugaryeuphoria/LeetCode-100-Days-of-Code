@@ -65,3 +65,6 @@ class Solution(object):
         max_distance_sq = 0
         # Convert obstacles list to a set of tuples for O(1) lookup
         obstacle_set = set(map(tuple, obstacles))
+        for command in commands:
+            if command == -2:  # Turn left
+                direction = (direction - 1) % 4
