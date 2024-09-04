@@ -60,3 +60,4 @@ class Solution(object):
     def robotSim(self, commands, obstacles):
         # Directions: North, East, South, West
         direction_vectors = [(0, 1), (1, 0), (0, -1), (-1, 0)]
+        direction = 0  # Start facing north
