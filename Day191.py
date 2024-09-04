@@ -70,3 +70,8 @@ class Solution(object):
                 direction = (direction - 1) % 4
                 elif command == -1:  # Turn right
                 direction = (direction + 1) % 4
+                else:
+                # Move forward command units in the current direction
+                for _ in range(command):
+                    new_x = x + direction_vectors[direction][0]
+                    new_y = y + direction_vectors[direction][1]
