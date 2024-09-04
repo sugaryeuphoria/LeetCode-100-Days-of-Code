@@ -62,3 +62,4 @@ class Solution(object):
         direction_vectors = [(0, 1), (1, 0), (0, -1), (-1, 0)]
         direction = 0  # Start facing north
         x, y = 0, 0  # Start at the origin (0, 0)
+        max_distance_sq = 0
