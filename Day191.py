@@ -68,3 +68,5 @@ class Solution(object):
         for command in commands:
             if command == -2:  # Turn left
                 direction = (direction - 1) % 4
+                elif command == -1:  # Turn right
+                direction = (direction + 1) % 4
