@@ -61,3 +61,4 @@ class Solution(object):
         # Directions: North, East, South, West
         direction_vectors = [(0, 1), (1, 0), (0, -1), (-1, 0)]
         direction = 0  # Start facing north
+        x, y = 0, 0  # Start at the origin (0, 0)
