@@ -68,9 +68,9 @@ class Solution(object):
         for command in commands:
             if command == -2:  # Turn left
                 direction = (direction - 1) % 4
-                elif command == -1:  # Turn right
+            elif command == -1:  # Turn right
                 direction = (direction + 1) % 4
-                else:
+            else:
                 # Move forward command units in the current direction
                 for _ in range(command):
                     new_x = x + direction_vectors[direction][0]
