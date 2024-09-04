@@ -58,3 +58,5 @@ The answer is guaranteed to be less than 231.
 """
 class Solution(object):
     def robotSim(self, commands, obstacles):
+        # Directions: North, East, South, West
+        direction_vectors = [(0, 1), (1, 0), (0, -1), (-1, 0)]
