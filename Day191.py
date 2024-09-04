@@ -63,3 +63,5 @@ class Solution(object):
         direction = 0  # Start facing north
         x, y = 0, 0  # Start at the origin (0, 0)
         max_distance_sq = 0
+        # Convert obstacles list to a set of tuples for O(1) lookup
+        obstacle_set = set(map(tuple, obstacles))
