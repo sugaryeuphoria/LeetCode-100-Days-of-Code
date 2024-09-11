@@ -28,3 +28,5 @@ Constraints:
 
 0 <= start, goal <= 109
 """
+class Solution(object):
+    def minBitFlips(self, start, goal):
