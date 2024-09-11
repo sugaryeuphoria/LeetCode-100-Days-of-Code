@@ -30,3 +30,5 @@ Constraints:
 """
 class Solution(object):
     def minBitFlips(self, start, goal):
+        # XOR start and goal to get the positions where bits differ
+        xor_result = start ^ goal
