@@ -32,3 +32,5 @@ class Solution(object):
     def minBitFlips(self, start, goal):
         # XOR start and goal to get the positions where bits differ
         xor_result = start ^ goal
+         # Count the number of 1s in the binary representation of xor_result
+        return bin(xor_result).count('1')
