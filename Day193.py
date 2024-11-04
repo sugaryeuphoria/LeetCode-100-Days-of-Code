@@ -52,3 +52,5 @@ class Solution(object):
     def compressedString(self, word):
         grp = groupby(word)  # Group consecutive identical characters
         ans = []
+         for c, v in g:
+            k = len(list(v))  # Count occurrences of the character
