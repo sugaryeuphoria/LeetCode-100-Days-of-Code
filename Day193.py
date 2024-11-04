@@ -54,3 +54,5 @@ class Solution(object):
         ans = []
          for c, v in g:
             k = len(list(v))  # Count occurrences of the character
+             while k > 0:
+                x = min(9, k)  # Limit to a maximum of 9 for each segment
