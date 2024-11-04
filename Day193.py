@@ -48,3 +48,5 @@ Constraints:
 word consists only of lowercase English letters.
 """
 from itertools import groupby
+class Solution(object):
+    def compressedString(self, word):
