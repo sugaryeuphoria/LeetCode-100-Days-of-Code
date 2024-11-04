@@ -52,7 +52,8 @@ class Solution(object):
     def compressedString(self, word):
         grp = groupby(word)  # Group consecutive identical characters
         ans = []
-         for c, v in g:
+        for c, v in g:
             k = len(list(v))  # Count occurrences of the character
-             while k > 0:
+            while k > 0:
                 x = min(9, k)  # Limit to a maximum of 9 for each segment
+                 k -= x  # Reduce the count by the amount added
