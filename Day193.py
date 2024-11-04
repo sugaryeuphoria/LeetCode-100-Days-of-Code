@@ -56,4 +56,5 @@ class Solution(object):
             k = len(list(v))  # Count occurrences of the character
             while k > 0:
                 x = min(9, k)  # Limit to a maximum of 9 for each segment
-                 k -= x  # Reduce the count by the amount added
+                k -= x  # Reduce the count by the amount added
+                return "".join(ans)  # Combine list into a single compressed string
