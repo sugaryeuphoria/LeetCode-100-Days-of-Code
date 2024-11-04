@@ -41,4 +41,9 @@ Initially, comp = "". Apply the operation 3 times, choosing "aaaaaaaaa", "aaaaa"
 For prefix "aaaaaaaaa", append "9" followed by "a" to comp.
 For prefix "aaaaa", append "5" followed by "a" to comp.
 For prefix "bb", append "2" followed by "b" to comp.
+
+Constraints:
+
+1 <= word.length <= 2 * 105
+word consists only of lowercase English letters.
 """
