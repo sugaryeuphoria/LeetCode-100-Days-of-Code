@@ -47,3 +47,4 @@ Constraints:
 1 <= word.length <= 2 * 105
 word consists only of lowercase English letters.
 """
+from itertools import groupby
