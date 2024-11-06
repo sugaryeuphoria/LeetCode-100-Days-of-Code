@@ -30,4 +30,9 @@ Example 3:
 Input: nums = [3,16,8,4,2]
 Output: false
 Explanation: It can be shown that it is not possible to sort the input array using any number of operations.
+
+Constraints:
+
+1 <= nums.length <= 100
+1 <= nums[i] <= 28
 """
