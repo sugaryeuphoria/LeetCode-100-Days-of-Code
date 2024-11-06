@@ -54,3 +54,7 @@ class Solution(object):
             setBits = bin(num).count('1')  # Counting set bits for Python 2 compatibility
             # If the current number has a different count of set bits than the previous segment
             if setBits != prevSetBits:
+                 # Check if the maximum of the previous segment is greater than the minimum of the current segment
+                if prevMax > currMin:
+                    # If so, return False as the array cannot be sorted as required
+                    return False
