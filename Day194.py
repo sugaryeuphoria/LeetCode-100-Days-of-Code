@@ -44,3 +44,5 @@ class Solution(object):
         prevSetBits = 0
         # Initialize the maximum value of the previous segment to negative infinity
         prevMax = -float('inf')
+        # Initialize the maximum value of the current segment to negative infinity
+        currMax = -float('inf')
