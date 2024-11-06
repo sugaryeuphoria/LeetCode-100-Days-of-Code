@@ -37,3 +37,6 @@ Constraints:
 1 <= nums[i] <= 28
 """
 import math 
+class Solution(object):
+    # Function to check if the array can be segmented and sorted as described
+    def canSortArray(self, nums):
