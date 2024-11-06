@@ -58,3 +58,11 @@ class Solution(object):
                 if prevMax > currMin:
                     # If so, return False as the array cannot be sorted as required
                     return False
+                 # Update the previous segment's set bit count to the current one
+                prevSetBits = setBits
+                # Set the previous segment's max value to the current segment's max
+                prevMax = currMax
+                # Start a new segment with the current number as the max
+                currMax = num
+                # Start a new segment with the current number as the min
+                currMin = num
