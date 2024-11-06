@@ -42,3 +42,5 @@ class Solution(object):
     def canSortArray(self, nums):
         # Initialize the number of set bits in the previous segment
         prevSetBits = 0
+        # Initialize the maximum value of the previous segment to negative infinity
+        prevMax = -float('inf')
