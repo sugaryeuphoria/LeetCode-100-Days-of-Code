@@ -66,3 +66,7 @@ class Solution(object):
                 currMax = num
                 # Start a new segment with the current number as the min
                 currMin = num
+                else:
+                # If the set bit count is the same, continue updating the current segment's max and min
+                currMax = max(currMax, num)
+                currMin = min(currMin, num)
