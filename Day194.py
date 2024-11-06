@@ -46,3 +46,11 @@ class Solution(object):
         prevMax = -float('inf')
         # Initialize the maximum value of the current segment to negative infinity
         currMax = -float('inf')
+        # Initialize the minimum value of the current segment to positive infinity
+        currMin = float('inf')
+        # Iterate through each number in the array
+        for num in nums:
+            # Calculate the number of set bits (1s) in the binary representation of the number
+            setBits = bin(num).count('1')  # Counting set bits for Python 2 compatibility
+            # If the current number has a different count of set bits than the previous segment
+            if setBits != prevSetBits:
