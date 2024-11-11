@@ -34,3 +34,4 @@ import bisect
 
 class Solution(object):
     def primeSubOperation(self, nums):
+        kMax = 1000
