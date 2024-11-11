@@ -37,3 +37,5 @@ class Solution(object):
         kMax = 1000
         # Generate all primes up to kMax using Sieve of Eratosthenes
         primes = self._sieveEratosthenes(kMax)
+        # Track the previous number in the transformed strictly increasing array
+        prevNum = 0
