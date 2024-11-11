@@ -51,3 +51,6 @@ class Solution(object):
         
         #Helper function to generate all prime numbers up to n using the Sieve of Eratosthenes
         def _sieveEratosthenes(self, n):
+            isPrime = [True] * n
+            isPrime[0] = False
+            isPrime[1] = False
