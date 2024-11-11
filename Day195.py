@@ -39,3 +39,6 @@ class Solution(object):
         primes = self._sieveEratosthenes(kMax)
         # Track the previous number in the transformed strictly increasing array
         prevNum = 0
+        for num in nums:
+            # Find the smallest possible prime to subtract that makes `num` > `prevNum`
+            i = bisect.bisect_left(primes, num - prevNum)  # Find index of smallest prime >= (num - prevNum)
