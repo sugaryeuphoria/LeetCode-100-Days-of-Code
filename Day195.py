@@ -42,3 +42,8 @@ class Solution(object):
         for num in nums:
             # Find the smallest possible prime to subtract that makes `num` > `prevNum`
             i = bisect.bisect_left(primes, num - prevNum)  # Find index of smallest prime >= (num - prevNum)
+            if i > 0:
+                num -= primes[i - 1]  # Use the largest prime less than `num - prevNum`
+            if num <= prevNum:  # Check if `num` is now not strictly greater than `prevNum`
+                return False
+            prevNum = num  # Update `prevNum` for the next iteration
