@@ -23,4 +23,10 @@ Example 3:
 Input: nums = [5,8,3]
 Output: false
 Explanation: It can be proven that there is no way to perform operations to make nums sorted in strictly increasing order, so the answer is false. 
+
+Constraints:
+
+1 <= nums.length <= 1000
+1 <= nums[i] <= 1000
+nums.length == n
 """
