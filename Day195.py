@@ -60,3 +60,6 @@ class Solution(object):
                 if isPrime[i]:
                     for j in range(i * i, n, i):
                         isPrime[j] = False
+
+            # Return all numbers that are still marked as prime
+            return [i for i in range(n) if isPrime[i]]
