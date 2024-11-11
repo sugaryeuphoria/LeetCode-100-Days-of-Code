@@ -35,3 +35,5 @@ import bisect
 class Solution(object):
     def primeSubOperation(self, nums):
         kMax = 1000
+        # Generate all primes up to kMax using Sieve of Eratosthenes
+        primes = self._sieveEratosthenes(kMax)
