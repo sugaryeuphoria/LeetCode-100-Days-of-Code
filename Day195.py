@@ -30,3 +30,7 @@ Constraints:
 1 <= nums[i] <= 1000
 nums.length == n
 """
+import bisect
+
+class Solution(object):
+    def primeSubOperation(self, nums):
