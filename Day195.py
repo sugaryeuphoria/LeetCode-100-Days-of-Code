@@ -47,3 +47,7 @@ class Solution(object):
             if num <= prevNum:  # Check if `num` is now not strictly greater than `prevNum`
                 return False
             prevNum = num  # Update `prevNum` for the next iteration
+            return True
+        
+        #Helper function to generate all prime numbers up to n using the Sieve of Eratosthenes
+        def _sieveEratosthenes(self, n):
