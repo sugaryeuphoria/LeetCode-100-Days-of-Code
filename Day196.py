@@ -30,4 +30,10 @@ Output: [0]
 Explanation:
 No item has a price less than or equal to 5, so no item can be chosen.
 Hence, the answer to the query is 0.
+
+Constraints:
+
+1 <= items.length, queries.length <= 105
+items[i].length == 2
+1 <= pricei, beautyi, queries[j] <= 109
 """
