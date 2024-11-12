@@ -37,3 +37,7 @@ Constraints:
 items[i].length == 2
 1 <= pricei, beautyi, queries[j] <= 109
 """
+from bisect import bisect_right
+
+class Solution(object):
+    def maximumBeauty(self, items, queries):
