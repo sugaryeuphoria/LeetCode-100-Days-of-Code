@@ -57,4 +57,7 @@ class Solution(object):
 
         # Result array for each query
         result = [0] * len(queries)
+
+        # Iterate over sorted queries and find max beauty for each
+        for query, original_index in sorted_queries:
         
