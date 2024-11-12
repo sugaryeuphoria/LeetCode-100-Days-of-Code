@@ -60,4 +60,12 @@ class Solution(object):
 
         # Iterate over sorted queries and find max beauty for each
         for query, original_index in sorted_queries:
+            # Find the largest price less than or equal to query using binary search
+            idx = bisect_right(max_beauty_at_price, (query, float('inf'))) - 1
+            if idx >= 0:
+                result[original_index] = max_beauty_at_price[idx][1]
+            else:
+                result[original_index] = 0
+
+        return result
         
