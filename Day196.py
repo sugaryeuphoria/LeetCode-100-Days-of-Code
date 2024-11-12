@@ -41,3 +41,5 @@ from bisect import bisect_right
 
 class Solution(object):
     def maximumBeauty(self, items, queries):
+        # Sort items by price first, and if same price then by beauty
+        items.sort()
