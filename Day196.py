@@ -43,3 +43,14 @@ class Solution(object):
     def maximumBeauty(self, items, queries):
         # Sort items by price first, and if same price then by beauty
         items.sort()
+
+        # Prepare a list to store the max beauty up to each price
+        max_beauty_at_price = []
+        current_max_beauty = 0
+        
+        for price, beauty in items:
+            current_max_beauty = max(current_max_beauty, beauty)
+            max_beauty_at_price.append((price, current_max_beauty))
+
+        # Sort queries while keeping track of original indices
+        sorted_queries = sorted((q, i) for i, q in enumerate(queries))
