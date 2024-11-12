@@ -54,3 +54,7 @@ class Solution(object):
 
         # Sort queries while keeping track of original indices
         sorted_queries = sorted((q, i) for i, q in enumerate(queries))
+
+        # Result array for each query
+        result = [0] * len(queries)
+        
