@@ -45,3 +45,7 @@ class Solution:
 
                 if total == 0:
                     result.append([nums[i], nums[left], nums[right]])
+
+                    # Skip duplicates for the second element
+                    while left < right and nums[left] == nums[left + 1]:
+                        left += 1
