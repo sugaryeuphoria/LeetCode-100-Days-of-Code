@@ -49,3 +49,7 @@ class Solution:
                     # Skip duplicates for the second element
                     while left < right and nums[left] == nums[left + 1]:
                         left += 1
+
+                    # Skip duplicates for the third element
+                    while left < right and nums[right] == nums[right - 1]:
+                        right -= 1
