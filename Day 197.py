@@ -33,3 +33,8 @@ class Solution:
     def threeSum(self, nums):
         nums.sort()
         result = []
+
+        for i in range(len(nums) - 2):
+            # Avoid duplicates for the first element
+            if i > 0 and nums[i] == nums[i - 1]:
+                continue
