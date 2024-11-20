@@ -27,3 +27,6 @@ s consists of only the letters 'a', 'b', and 'c'.
 0 <= k <= s.length
 """
 from collections import Counter
+class Solution(object):
+    def takeCharacters(self, s, k):
+        cnt = Counter(s)
