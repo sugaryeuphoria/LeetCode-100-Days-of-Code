@@ -53,3 +53,6 @@ class Solution(object):
 
                 # Update the maximum length of the valid window
                 ans = max(ans, i - j + 1)
+
+                # Return the minimum length of string needed
+                return len(s) - ans
