@@ -34,3 +34,6 @@ class Solution(object):
         if any(cnt[c] < k for c in "abc"):
             # Return -1 if it's impossible to take k of each character
             return -1  
+        
+        # Initialize the answer (window size) and left pointer 'j'
+        ans = j = 0
