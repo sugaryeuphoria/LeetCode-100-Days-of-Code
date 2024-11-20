@@ -20,4 +20,9 @@ Input: s = "a", k = 1
 Output: -1
 Explanation: It is not possible to take one 'b' or 'c' so return -1.
 
+Constraints:
+
+1 <= s.length <= 105
+s consists of only the letters 'a', 'b', and 'c'.
+0 <= k <= s.length
 """
