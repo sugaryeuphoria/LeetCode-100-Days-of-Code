@@ -30,3 +30,7 @@ from collections import Counter
 class Solution(object):
     def takeCharacters(self, s, k):
         cnt = Counter(s)
+        # Check if any character ('a', 'b', 'c') has less than 'k' occurrences
+        if any(cnt[c] < k for c in "abc"):
+            # Return -1 if it's impossible to take k of each character
+            return -1  
