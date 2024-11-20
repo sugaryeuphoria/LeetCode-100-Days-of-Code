@@ -43,3 +43,8 @@ class Solution(object):
 
             # Decrease the count of the current character at 'i'
             cnt[c] -= 1 
+
+            # While the count of the current character is less than 'k', move the left pointer
+            while cnt[c] < k:
+                # Increment the count of character at left pointer 'j'
+                cnt[s[j]] += 1
