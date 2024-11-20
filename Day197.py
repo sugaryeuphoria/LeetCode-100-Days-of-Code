@@ -48,3 +48,8 @@ class Solution(object):
             while cnt[c] < k:
                 # Increment the count of character at left pointer 'j'
                 cnt[s[j]] += 1
+                # Move the left pointer to the right
+                j += 1
+
+                # Update the maximum length of the valid window
+                ans = max(ans, i - j + 1)
