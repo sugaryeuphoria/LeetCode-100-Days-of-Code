@@ -37,3 +37,9 @@ class Solution(object):
         
         # Initialize the answer (window size) and left pointer 'j'
         ans = j = 0
+
+        # Iterate over the string, with 'i' as the right pointer
+        for i, c in enumerate(s):
+
+            # Decrease the count of the current character at 'i'
+            cnt[c] -= 1 
