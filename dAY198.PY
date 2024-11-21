@@ -41,3 +41,5 @@ class Solution(object):
         """
         # Sort the array
         nums.sort()
+        # Initialize with a large value
+        closest_sum = float('inf')
