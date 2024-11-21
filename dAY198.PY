@@ -39,3 +39,5 @@ class Solution(object):
         :type target: int
         :rtype: int
         """
+        # Sort the array
+        nums.sort()
