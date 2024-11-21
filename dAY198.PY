@@ -46,3 +46,7 @@ class Solution(object):
         # Iterate over the array, treating nums[i] as the first element of the triplet
         for i in range(len(nums) - 2):
             left, right = i + 1, len(nums) - 1
+
+            while left < right:
+                # Calculate the current sum of the triplet
+                current_sum = nums[i] + nums[left] + nums[right]
