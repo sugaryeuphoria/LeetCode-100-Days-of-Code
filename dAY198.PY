@@ -43,3 +43,6 @@ class Solution(object):
         nums.sort()
         # Initialize with a large value
         closest_sum = float('inf')
+        # Iterate over the array, treating nums[i] as the first element of the triplet
+        for i in range(len(nums) - 2):
+            left, right = i + 1, len(nums) - 1
