@@ -61,3 +61,8 @@ class Solution(object):
                 elif current_sum > target:
                     right -= 1
                 else:
+                    # If we find an exact match, return the sum immediately
+                    return current_sum
+        
+        return closest_sum
+
