@@ -50,3 +50,7 @@ class Solution(object):
             while left < right:
                 # Calculate the current sum of the triplet
                 current_sum = nums[i] + nums[left] + nums[right]
+
+                # Check if the current sum is closer to the target
+                if abs(current_sum - target) < abs(closest_sum - target):
+                    closest_sum = current_sum
