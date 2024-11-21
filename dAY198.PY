@@ -54,3 +54,10 @@ class Solution(object):
                 # Check if the current sum is closer to the target
                 if abs(current_sum - target) < abs(closest_sum - target):
                     closest_sum = current_sum
+
+                    # Move the pointers based on the comparison of current_sum and target
+                if current_sum < target:
+                    left += 1
+                elif current_sum > target:
+                    right -= 1
+                else:
