@@ -32,3 +32,10 @@ Constraints:
 -1000 <= nums[i] <= 1000
 -104 <= target <= 104
 """
+class Solution(object):
+    def threeSumClosest(self, nums, target):
+        """
+        :type nums: List[int]
+        :type target: int
+        :rtype: int
+        """
