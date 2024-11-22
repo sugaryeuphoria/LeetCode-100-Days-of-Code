@@ -47,3 +47,6 @@ class Solution(object):
             # Get the current digit and its corresponding letters
             current_digit = digits[index]
             for letter in phone_map[current_digit]:
+                # Add the letter and recurse with the next index
+                current_combination.append(letter)
+                backtrack(index + 1, current_combination)
