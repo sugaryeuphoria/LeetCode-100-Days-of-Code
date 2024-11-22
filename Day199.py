@@ -50,3 +50,6 @@ class Solution(object):
                 # Add the letter and recurse with the next index
                 current_combination.append(letter)
                 backtrack(index + 1, current_combination)
+                # Backtrack by removing the last added letter
+                current_combination.pop()
+        
