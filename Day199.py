@@ -52,4 +52,9 @@ class Solution(object):
                 backtrack(index + 1, current_combination)
                 # Backtrack by removing the last added letter
                 current_combination.pop()
+        # Start the backtracking process
+        backtrack(0, [])
+        
+        return result
+
         
