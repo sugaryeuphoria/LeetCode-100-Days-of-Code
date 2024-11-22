@@ -38,3 +38,5 @@ class Solution(object):
 
         # This will hold the list of all combinations
         result = []
+        # Helper function to perform backtracking
+        def backtrack(index, current_combination):
