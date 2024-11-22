@@ -44,3 +44,6 @@ class Solution(object):
             if index == len(digits):
                 result.append("".join(current_combination))
                 return
+            # Get the current digit and its corresponding letters
+            current_digit = digits[index]
+            for letter in phone_map[current_digit]:
