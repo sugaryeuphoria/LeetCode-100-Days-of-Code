@@ -40,3 +40,7 @@ class Solution(object):
         result = []
         # Helper function to perform backtracking
         def backtrack(index, current_combination):
+            # If the current combination is the same length as digits, we have a full combination
+            if index == len(digits):
+                result.append("".join(current_combination))
+                return
