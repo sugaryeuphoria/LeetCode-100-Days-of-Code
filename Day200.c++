@@ -40,6 +40,7 @@ searchWord consists of lowercase English letters.
 class Solution {
 public:
     int isPrefixOfWord(string sentence, string searchWord) {
-
+        // Tracks the current word index (1-indexed)
+        int wordIndex = 1;
     }
 };
