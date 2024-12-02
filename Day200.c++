@@ -58,5 +58,10 @@ public:
             if (currentWord.find(searchWord) == 0) {
                 return wordIndex;
             }
-    }
+
+            // Update position and word index
+            pos = spacePos + 1;
+            wordIndex++;
+        }
+        return -1; // No word has searchWord as a prefix
 };
