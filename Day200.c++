@@ -51,5 +51,7 @@ public:
              // Handle the last word
              spacePos = sentence.size();
          }
+         // Extract the current word
+            string currentWord = sentence.substr(pos, spacePos - pos);
     }
 };
