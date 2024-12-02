@@ -44,5 +44,10 @@ public:
         int wordIndex = 1;
         // Tracks the position in the sentence
         size_t pos = 0;
+
+         while (pos < sentence.size()) {
+            // Find the next space or end of the word
+             size_t spacePos = sentence.find(' ', pos);
+             
     }
 };
