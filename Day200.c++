@@ -53,5 +53,10 @@ public:
          }
          // Extract the current word
             string currentWord = sentence.substr(pos, spacePos - pos);
+
+            // Check if searchWord is a prefix of currentWord
+            if (currentWord.find(searchWord) == 0) {
+                return wordIndex;
+            }
     }
 };
