@@ -48,6 +48,8 @@ public:
          while (pos < sentence.size()) {
             // Find the next space or end of the word
              size_t spacePos = sentence.find(' ', pos);
-             
+             // Handle the last word
+             spacePos = sentence.size();
+         }
     }
 };
