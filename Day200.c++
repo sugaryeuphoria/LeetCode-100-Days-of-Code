@@ -37,3 +37,9 @@ Constraints:
 sentence consists of lowercase English letters and spaces.
 searchWord consists of lowercase English letters.
 """
+class Solution {
+public:
+    int isPrefixOfWord(string sentence, string searchWord) {
+
+    }
+};
