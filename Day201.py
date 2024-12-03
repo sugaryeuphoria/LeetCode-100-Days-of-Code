@@ -49,3 +49,5 @@ class Solution:
         result = []
         # Pointer to track the next space to be added
         space_index = 0
+        # Iterate through the characters in the string
+        for i in range(len(s)):
