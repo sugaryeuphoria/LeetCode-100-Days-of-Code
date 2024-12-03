@@ -43,3 +43,7 @@ s consists only of lowercase and uppercase English letters.
 0 <= spaces[i] <= s.length - 1
 All the values of spaces are strictly increasing.
 """
+class Solution:
+    def addSpaces(self, s, spaces):
+        # Pointer to track the current position in the input string
+        result = []
