@@ -34,4 +34,12 @@ Input: s = "spacing", spaces = [0,1,2,3,4,5,6]
 Output: " s p a c i n g"
 Explanation:
 We are also able to place spaces before the first character of the string.
+
+Constraints:
+
+1 <= s.length <= 3 * 105
+s consists only of lowercase and uppercase English letters.
+1 <= spaces.length <= 3 * 105
+0 <= spaces[i] <= s.length - 1
+All the values of spaces are strictly increasing.
 """
