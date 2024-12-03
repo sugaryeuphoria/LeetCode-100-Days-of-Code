@@ -53,3 +53,5 @@ class Solution:
         for i in range(len(s)):
              # If the current index matches one of the space indices, insert a space
             if space_index < len(spaces) and i == spaces[space_index]:
+                 # Add a space at the current position
+                 result.append(' ')
