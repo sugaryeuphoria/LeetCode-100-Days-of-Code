@@ -57,3 +57,5 @@ class Solution:
                  result.append(' ')
                  # Move to the next space index
                  space_index += 1
+                 # Append the current character
+                 result.append(s[i])
