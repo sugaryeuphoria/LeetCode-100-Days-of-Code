@@ -51,3 +51,5 @@ class Solution:
         space_index = 0
         # Iterate through the characters in the string
         for i in range(len(s)):
+             # If the current index matches one of the space indices, insert a space
+            if space_index < len(spaces) and i == spaces[space_index]:
