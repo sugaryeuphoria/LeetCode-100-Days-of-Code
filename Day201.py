@@ -59,3 +59,5 @@ class Solution:
                  space_index += 1
                  # Append the current character
                  result.append(s[i])
+        # Convert the list of characters back to a string
+        return ''.join(result)
