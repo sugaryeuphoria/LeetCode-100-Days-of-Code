@@ -47,3 +47,5 @@ class Solution:
     def addSpaces(self, s, spaces):
         # Pointer to track the current position in the input string
         result = []
+        # Pointer to track the next space to be added
+        space_index = 0
