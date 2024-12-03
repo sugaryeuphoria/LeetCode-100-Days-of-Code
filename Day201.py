@@ -55,3 +55,5 @@ class Solution:
             if space_index < len(spaces) and i == spaces[space_index]:
                  # Add a space at the current position
                  result.append(' ')
+                 # Move to the next space index
+                 space_index += 1
