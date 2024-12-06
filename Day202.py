@@ -57,3 +57,8 @@ class Solution(object):
             # Check if adding this number would exceed the maxSum
             if current_sum + num > maxSum:
                 break
+            # Otherwise, add this number to the current sum
+            current_sum += num
+            count += 1
+        
+        return count
