@@ -51,3 +51,6 @@ class Solution(object):
         count = 0
         # Iterate through the range [1, n] and check the conditions
         for num in range(1, n + 1):
+            # Skip the number if it is in the banned set
+            if num in banned_set:
+                continue
