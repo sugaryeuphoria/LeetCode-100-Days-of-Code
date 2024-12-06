@@ -54,3 +54,6 @@ class Solution(object):
             # Skip the number if it is in the banned set
             if num in banned_set:
                 continue
+            # Check if adding this number would exceed the maxSum
+            if current_sum + num > maxSum:
+                break
