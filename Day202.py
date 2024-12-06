@@ -43,3 +43,5 @@ Constraints:
 """
 class Solution(object):
     def maxCount(self, banned, n, maxSum):
+        # Convert the banned list to a set for faster lookups
+        banned_set = set(banned)
