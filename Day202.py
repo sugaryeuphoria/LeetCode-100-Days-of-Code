@@ -45,3 +45,5 @@ class Solution(object):
     def maxCount(self, banned, n, maxSum):
         # Convert the banned list to a set for faster lookups
         banned_set = set(banned)
+        # Variable to keep track of the sum of selected integers
+        current_sum = 0
