@@ -49,3 +49,5 @@ class Solution(object):
         current_sum = 0
         # Variable to keep track of the number of selected integers
         count = 0
+        # Iterate through the range [1, n] and check the conditions
+        for num in range(1, n + 1):
