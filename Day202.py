@@ -41,3 +41,5 @@ Constraints:
 1 <= banned[i], n <= 104
 1 <= maxSum <= 109
 """
+class Solution(object):
+    def maxCount(self, banned, n, maxSum):
