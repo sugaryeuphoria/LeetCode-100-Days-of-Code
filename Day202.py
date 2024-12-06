@@ -47,3 +47,5 @@ class Solution(object):
         banned_set = set(banned)
         # Variable to keep track of the sum of selected integers
         current_sum = 0
+        # Variable to keep track of the number of selected integers
+        count = 0
