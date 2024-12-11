@@ -36,3 +36,13 @@ Constraints:
 1 <= nums.length <= 105
 0 <= nums[i], k <= 105
 """
+class Solution(object):
+    def maximumBeauty(self, nums, k):
+        """
+        :type nums: List[int]
+        :type k: int
+        :rtype: int
+        """
+        # Step 1: Prepare the range endpoints for the sweep line technique
+        events = []
+        for num in nums:
