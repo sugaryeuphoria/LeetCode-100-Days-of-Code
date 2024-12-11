@@ -30,4 +30,9 @@ Input: nums = [1,1,1,1], k = 10
 Output: 4
 Explanation: In this example we don't have to apply any operations.
 The beauty of the array nums is 4 (whole array).
+
+Constraints:
+
+1 <= nums.length <= 105
+0 <= nums[i], k <= 105
 """
