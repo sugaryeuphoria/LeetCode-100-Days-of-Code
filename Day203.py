@@ -50,3 +50,12 @@ class Solution(object):
             events.append((num + k + 1, -1))  # Range end
             # Step 2: Sort the events by value, resolving ties by type (-1 comes before +1)
         events.sort()
+        # Step 3: Sweep through events and calculate maximum overlap
+        max_beauty = 0
+        current_overlap = 0
+
+        for _, event_type in events:
+            current_overlap += event_type
+            max_beauty = max(max_beauty, current_overlap)
+
+        return max_beauty
