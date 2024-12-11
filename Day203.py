@@ -46,3 +46,5 @@ class Solution(object):
         # Step 1: Prepare the range endpoints for the sweep line technique
         events = []
         for num in nums:
+            events.append((num - k, 1))  # Range start
+            events.append((num + k + 1, -1))  # Range end
