@@ -48,3 +48,5 @@ class Solution(object):
         for num in nums:
             events.append((num - k, 1))  # Range start
             events.append((num + k + 1, -1))  # Range end
+            # Step 2: Sort the events by value, resolving ties by type (-1 comes before +1)
+        events.sort()
